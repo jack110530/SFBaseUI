@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - SFBaseUI (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - SFBaseUI (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  SFBaseUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  SFBaseUI: 0a759bb3b50715b976741a279178c298c2f538cb
+
+PODFILE CHECKSUM: 1de99d40682d0c9e70af6e768fb1715ec7c3ab46
+
+COCOAPODS: 1.9.3

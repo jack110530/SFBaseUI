@@ -1,0 +1,6 @@
+framework module SFBaseUI {
+  umbrella header "SFBaseUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

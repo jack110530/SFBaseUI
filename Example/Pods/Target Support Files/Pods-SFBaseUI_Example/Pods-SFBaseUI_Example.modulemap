@@ -1,0 +1,6 @@
+framework module Pods_SFBaseUI_Example {
+  umbrella header "Pods-SFBaseUI_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
