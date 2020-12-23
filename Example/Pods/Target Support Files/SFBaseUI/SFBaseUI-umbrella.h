@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "SFBaseUI.h"
 
 FOUNDATION_EXPORT double SFBaseUIVersionNumber;
 FOUNDATION_EXPORT const unsigned char SFBaseUIVersionString[];

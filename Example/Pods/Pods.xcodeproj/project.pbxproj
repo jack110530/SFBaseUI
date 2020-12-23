@@ -12,50 +12,60 @@
 		1290409FCCA84EB303C739F40C1391DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
 		14C511527597E5846AB2627F791C7D8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */; };
+		1829AC8BC636D773C8BE10467CC98D6C /* SFCountdownButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D07813F0A03067DEFF46C817697CB60 /* SFCountdownButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		292242C713B8F11C1D5557AF8DE9AD99 /* Pods-SFBaseUI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3751DB91833836D40FFB5781E84EF7 /* Pods-SFBaseUI_Tests-dummy.m */; };
 		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
+		3B806C3B0ABDDE03ECC19654B22F791A /* SFBaseUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C08A12522CE3BE9A399167E102B838A /* SFBaseUI.bundle */; };
 		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5C50EF6FFA695D7D77D95B36223D8133 /* SFBaseUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 994713E92DB538F0F4F9F2CE0A2C8F2A /* SFBaseUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6AE239C5D116E1C06F5705699FB9EAF0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */; };
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
 		7605A004E4A9853A68E5C77B7FA63586 /* Pods-SFBaseUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B6FEF234D1801C7384AA7B2C781422B /* Pods-SFBaseUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		796155D5003D10E2B02F01D5E3045EA0 /* Pods-SFBaseUI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 972309BA2B4F2DC718744428413E010E /* Pods-SFBaseUI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E79B7A55FCD8DD3835E0956E4CFE9E9 /* SFBaseUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 513B97D1D11EC321DA26F1E71D9A70FF /* SFBaseUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		845ED3C8A5D701E713AD8CB34D46869E /* SFCountdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BD748D8887308CF4F8DE587522EFA7FA /* SFCountdownButton.m */; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
-		89866FC3CA0EFAEC08E8C7B71F0FC057 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
 		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */; };
 		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */; };
+		A62CAC88240B59217EDA5C18B910D7A4 /* SFBaseUI.h in Headers */ = {isa = PBXBuildFile; fileRef = B8B3C2FEF59CD293F7AD77B756570074 /* SFBaseUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B25D795BDC4F426BC01EFC911F368B81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		B42F0C769203D2381273D7FC6B2E0513 /* Pods-SFBaseUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF506F1988AC5249C3B85EB931CB2FB /* Pods-SFBaseUI_Example-dummy.m */; };
 		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B9E2FACA7D7591AC021E05A6834E640B /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 060416846B0423A4FCDD1811313ADB8B /* ReplaceMe.m */; };
 		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC7B4F2F77FD5CE2CD1450E0A7A5ADC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
-		CCCE3B20843AEDFAE7293CEAABE4E102 /* SFBaseUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9306B8D2CF44B0DD0647FB736A03DCD /* SFBaseUI-dummy.m */; };
 		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E0B8D095C732352C854D365B9E5B993D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAA89EEF1039078430D7A886477E365 /* UIKit.framework */; };
+		E3CC1FE7F3FA2B505FBF50DC052F10A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
+		EF6BD9EEE79B268861A216DF6B475603 /* SFBaseUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3E056E4B698D7EAB7FEE75D743B3C4 /* SFBaseUI-dummy.m */; };
 		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3EEC33A6492AE6196A8C3BDDEB49EC17 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
-			remoteInfo = FBSnapshotTestCase;
-		};
-		7FF64720D14A01FD82A35E9F6D6A6AD5 /* PBXContainerItemProxy */ = {
+		38DD9114D6E3FB773A87B0308891A1E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DE81D8E48200B144F652CA92FEC6DFD2;
 			remoteInfo = SFBaseUI;
 		};
-		FC524715C7EB28DF8679192DCE60015B /* PBXContainerItemProxy */ = {
+		668D453DF832A0EABFB5CA0DAC37C437 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A760FD18CE8720D1FF53020A712B1CF;
+			remoteInfo = "SFBaseUI-SFBaseUI";
+		};
+		8C5505C96FA12B48DF69871EC25DC37F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
+			remoteInfo = FBSnapshotTestCase;
+		};
+		D970106E6D00247BD53C8DFDF7E7B70C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -65,69 +75,80 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		060416846B0423A4FCDD1811313ADB8B /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = SFBaseUI/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		07F6E61B810D3FB54FEB49BCDD859E81 /* SFBaseUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFBaseUI.release.xcconfig; sourceTree = "<group>"; };
 		08E6FE28020F27B9086EB089DE91106F /* Pods-SFBaseUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SFBaseUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		0935A255CBFE977847B6C78F2F907BDB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0B3E056E4B698D7EAB7FEE75D743B3C4 /* SFBaseUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFBaseUI-dummy.m"; sourceTree = "<group>"; };
 		0D3751DB91833836D40FFB5781E84EF7 /* Pods-SFBaseUI_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SFBaseUI_Tests-dummy.m"; sourceTree = "<group>"; };
 		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		1435BCCACEAE03C8B8CF05BE61B98E91 /* Pods-SFBaseUI_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SFBaseUI_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		16FD85FF6327D9E582C784DF7A213E71 /* Pods-SFBaseUI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SFBaseUI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		19DDD4F82858DC20637B663A70048155 /* SFBaseUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFBaseUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DDD4F82858DC20637B663A70048155 /* SFBaseUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SFBaseUI.framework; path = SFBaseUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		1DF506F1988AC5249C3B85EB931CB2FB /* Pods-SFBaseUI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SFBaseUI_Example-dummy.m"; sourceTree = "<group>"; };
 		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
-		23D14BCA3E39D4F9CEACA496B1B1016C /* SFBaseUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFBaseUI.release.xcconfig; sourceTree = "<group>"; };
 		24589F6DB392836548338231C82F398D /* Pods-SFBaseUI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SFBaseUI_Example-frameworks.sh"; sourceTree = "<group>"; };
 		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		299255F73BD4089FC5281F5443F8F7EA /* Pods-SFBaseUI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SFBaseUI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2E455F5AFBF26CE680ED313C7DDFB5DD /* SFBaseUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SFBaseUI.modulemap; sourceTree = "<group>"; };
+		2C08A12522CE3BE9A399167E102B838A /* SFBaseUI.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SFBaseUI.bundle; path = "SFBaseUI-SFBaseUI.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3159BD41885AB469935E75D04943421C /* Pods-SFBaseUI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SFBaseUI_Tests.modulemap"; sourceTree = "<group>"; };
 		33F11734EB5E000F000185A8DBF87A6C /* Pods-SFBaseUI_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SFBaseUI_Tests-Info.plist"; sourceTree = "<group>"; };
 		357DF0227A2F588319B4FAD0AC916345 /* Pods-SFBaseUI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SFBaseUI_Example.modulemap"; sourceTree = "<group>"; };
+		3B6F7CD073C609B431A3919DD7D1EFA1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		4B6FEF234D1801C7384AA7B2C781422B /* Pods-SFBaseUI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SFBaseUI_Example-umbrella.h"; sourceTree = "<group>"; };
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
-		555A4547A27920DAC9E44574A175D7D1 /* SFBaseUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFBaseUI.debug.xcconfig; sourceTree = "<group>"; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		513B97D1D11EC321DA26F1E71D9A70FF /* SFBaseUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFBaseUI-umbrella.h"; sourceTree = "<group>"; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		76F8389804A6FAA1225C9A74054157D2 /* SFBaseUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFBaseUI-prefix.pch"; sourceTree = "<group>"; };
 		7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
-		8BAE3BD99CBF3A862BB32009A935CA15 /* SFBaseUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SFBaseUI-Info.plist"; sourceTree = "<group>"; };
+		8C7F453A7F49113638E716593C70AD9F /* ResourceBundle-SFBaseUI-SFBaseUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SFBaseUI-SFBaseUI-Info.plist"; sourceTree = "<group>"; };
 		8CAA89EEF1039078430D7A886477E365 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
-		9296447BF9BA36644571C164DAB825E0 /* Pods_SFBaseUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFBaseUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9296447BF9BA36644571C164DAB825E0 /* Pods_SFBaseUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SFBaseUI_Example.framework; path = "Pods-SFBaseUI_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
 		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		972309BA2B4F2DC718744428413E010E /* Pods-SFBaseUI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SFBaseUI_Tests-umbrella.h"; sourceTree = "<group>"; };
-		994713E92DB538F0F4F9F2CE0A2C8F2A /* SFBaseUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFBaseUI-umbrella.h"; sourceTree = "<group>"; };
 		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
-		9B8B7DB569D6EEEAAB5F716DADD54E76 /* SFBaseUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SFBaseUI.podspec; sourceTree = "<group>"; tabWidth = 2; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D07813F0A03067DEFF46C817697CB60 /* SFCountdownButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SFCountdownButton.h; path = SFBaseUI/Classes/SFCountdownButton.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AA925CA4A46851ED4D983764644C4640 /* SFBaseUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SFBaseUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		B3EEF23E182A1AF30CD58EBFF4E10EA8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
-		B9306B8D2CF44B0DD0647FB736A03DCD /* SFBaseUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFBaseUI-dummy.m"; sourceTree = "<group>"; };
-		C03296E783BD392FD843198397D44F89 /* SFBaseUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFBaseUI-prefix.pch"; sourceTree = "<group>"; };
+		B8B3C2FEF59CD293F7AD77B756570074 /* SFBaseUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SFBaseUI.h; path = SFBaseUI/Classes/SFBaseUI.h; sourceTree = "<group>"; };
+		BD748D8887308CF4F8DE587522EFA7FA /* SFCountdownButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SFCountdownButton.m; path = SFBaseUI/Classes/SFCountdownButton.m; sourceTree = "<group>"; };
 		C32DEB43C952DD0E7A799DA04E778819 /* Pods-SFBaseUI_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SFBaseUI_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		C5AD3D1EE64C6217F748B49CA81BAEF4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C512A9D520F9AE8053991A06E8BFF44F /* SFBaseUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SFBaseUI.modulemap; sourceTree = "<group>"; };
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		D65492E580F8042539908D51ECC90B1E /* Pods-SFBaseUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SFBaseUI_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D65C7170E6EAEBEF85B228AF1CA7A6EE /* Pods_SFBaseUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFBaseUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65C7170E6EAEBEF85B228AF1CA7A6EE /* Pods_SFBaseUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SFBaseUI_Tests.framework; path = "Pods-SFBaseUI_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		DAB69975A0DE49243C001A082D472616 /* Pods-SFBaseUI_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SFBaseUI_Example-Info.plist"; sourceTree = "<group>"; };
 		E9F3BECA54E77D65650635A04994636C /* Pods-SFBaseUI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SFBaseUI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F0F6F3D06DC66CAAE8095CB878ADB1BA /* Pods-SFBaseUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SFBaseUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F71B96574BE8D4FD48957844ECECFC13 /* Pods-SFBaseUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SFBaseUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F8D2D57BF4B00D29B2D286190A88A21C /* SFBaseUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFBaseUI.debug.xcconfig; sourceTree = "<group>"; };
+		FBAF48223A6668B8509A2916C2A66353 /* SFBaseUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SFBaseUI-Info.plist"; sourceTree = "<group>"; };
 		FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		33B5151535B1E26862AA035C11D5AE70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41B45B735382E6B241FC441485D6E74C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,11 +165,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A13B11D37B907910175F1ED23F9051CC /* Frameworks */ = {
+		7536470C72D88EE32B75A7D7CDB5D211 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89866FC3CA0EFAEC08E8C7B71F0FC057 /* Foundation.framework in Frameworks */,
+				E3CC1FE7F3FA2B505FBF50DC052F10A4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,15 +196,26 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		320C9AEBD06F76BE565B6A82687BCE16 /* Products */ = {
+		3823B3FA3CD852AB5AD7C8057736C8C4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */,
 				9296447BF9BA36644571C164DAB825E0 /* Pods_SFBaseUI_Example.framework */,
 				D65C7170E6EAEBEF85B228AF1CA7A6EE /* Pods_SFBaseUI_Tests.framework */,
+				2C08A12522CE3BE9A399167E102B838A /* SFBaseUI.bundle */,
 				19DDD4F82858DC20637B663A70048155 /* SFBaseUI.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		427A027A44230AFC8894C24C30D97F05 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B3EEF23E182A1AF30CD58EBFF4E10EA8 /* LICENSE */,
+				3B6F7CD073C609B431A3919DD7D1EFA1 /* README.md */,
+				AA925CA4A46851ED4D983764644C4640 /* SFBaseUI.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		4BA2479549DD918290454B1CDCD0B92B /* Core */ = {
@@ -207,14 +239,12 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		704179CC6D18412DE4F1883D9E2E985F /* Pod */ = {
+		5F75AF5F99374C317C194B4513045EF6 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0935A255CBFE977847B6C78F2F907BDB /* LICENSE */,
-				C5AD3D1EE64C6217F748B49CA81BAEF4 /* README.md */,
-				9B8B7DB569D6EEEAAB5F716DADD54E76 /* SFBaseUI.podspec */,
+				992F3AC0EFDCF1ACE0FDFE1914F7FA0B /* SFBaseUI */,
 			);
-			name = Pod;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		7103A3F88F05360BEBD96889D189EEF3 /* Pods-SFBaseUI_Example */ = {
@@ -232,21 +262,6 @@
 			);
 			name = "Pods-SFBaseUI_Example";
 			path = "Target Support Files/Pods-SFBaseUI_Example";
-			sourceTree = "<group>";
-		};
-		73A293FCF7BF23E2742207BCD07ED34A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2E455F5AFBF26CE680ED313C7DDFB5DD /* SFBaseUI.modulemap */,
-				B9306B8D2CF44B0DD0647FB736A03DCD /* SFBaseUI-dummy.m */,
-				8BAE3BD99CBF3A862BB32009A935CA15 /* SFBaseUI-Info.plist */,
-				C03296E783BD392FD843198397D44F89 /* SFBaseUI-prefix.pch */,
-				994713E92DB538F0F4F9F2CE0A2C8F2A /* SFBaseUI-umbrella.h */,
-				555A4547A27920DAC9E44574A175D7D1 /* SFBaseUI.debug.xcconfig */,
-				23D14BCA3E39D4F9CEACA496B1B1016C /* SFBaseUI.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SFBaseUI";
 			sourceTree = "<group>";
 		};
 		7DE5752EED0A4C4A430975244947611A /* iOS */ = {
@@ -268,20 +283,14 @@
 			name = SwiftSupport;
 			sourceTree = "<group>";
 		};
-		95728A3687B8A891C4CBDAD2A718C8B9 /* Development Pods */ = {
+		992F3AC0EFDCF1ACE0FDFE1914F7FA0B /* SFBaseUI */ = {
 			isa = PBXGroup;
 			children = (
-				B57A0F5E76B0B3C1904F2790C347DA4C /* SFBaseUI */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		B57A0F5E76B0B3C1904F2790C347DA4C /* SFBaseUI */ = {
-			isa = PBXGroup;
-			children = (
-				060416846B0423A4FCDD1811313ADB8B /* ReplaceMe.m */,
-				704179CC6D18412DE4F1883D9E2E985F /* Pod */,
-				73A293FCF7BF23E2742207BCD07ED34A /* Support Files */,
+				B8B3C2FEF59CD293F7AD77B756570074 /* SFBaseUI.h */,
+				9D07813F0A03067DEFF46C817697CB60 /* SFCountdownButton.h */,
+				BD748D8887308CF4F8DE587522EFA7FA /* SFCountdownButton.m */,
+				427A027A44230AFC8894C24C30D97F05 /* Pod */,
+				C94A013C28A5813C34007C38920137E5 /* Support Files */,
 			);
 			name = SFBaseUI;
 			path = ../..;
@@ -317,17 +326,34 @@
 				B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */,
 				906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */,
 			);
+			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		C94A013C28A5813C34007C38920137E5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C7F453A7F49113638E716593C70AD9F /* ResourceBundle-SFBaseUI-SFBaseUI-Info.plist */,
+				C512A9D520F9AE8053991A06E8BFF44F /* SFBaseUI.modulemap */,
+				0B3E056E4B698D7EAB7FEE75D743B3C4 /* SFBaseUI-dummy.m */,
+				FBAF48223A6668B8509A2916C2A66353 /* SFBaseUI-Info.plist */,
+				76F8389804A6FAA1225C9A74054157D2 /* SFBaseUI-prefix.pch */,
+				513B97D1D11EC321DA26F1E71D9A70FF /* SFBaseUI-umbrella.h */,
+				F8D2D57BF4B00D29B2D286190A88A21C /* SFBaseUI.debug.xcconfig */,
+				07F6E61B810D3FB54FEB49BCDD859E81 /* SFBaseUI.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SFBaseUI";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				95728A3687B8A891C4CBDAD2A718C8B9 /* Development Pods */,
+				5F75AF5F99374C317C194B4513045EF6 /* Development Pods */,
 				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
 				E81A37DBDE41E671312C56736544E2FA /* Pods */,
-				320C9AEBD06F76BE565B6A82687BCE16 /* Products */,
+				3823B3FA3CD852AB5AD7C8057736C8C4 /* Products */,
 				06208072C5D8DF9D0752AB34CFF027C5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -375,14 +401,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3BAF23B7F15BA9EB2BEB77C9B29DE0E3 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5C50EF6FFA695D7D77D95B36223D8133 /* SFBaseUI-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		731B2A771E95440881AF94130392A39A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -396,6 +414,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				796155D5003D10E2B02F01D5E3045EA0 /* Pods-SFBaseUI_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF41B8502171BE52405C58D4D5085622 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E79B7A55FCD8DD3835E0956E4CFE9E9 /* SFBaseUI-umbrella.h in Headers */,
+				A62CAC88240B59217EDA5C18B910D7A4 /* SFBaseUI.h in Headers */,
+				1829AC8BC636D773C8BE10467CC98D6C /* SFCountdownButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,12 +442,29 @@
 			buildRules = (
 			);
 			dependencies = (
-				3CD8DC26C03BBB56BEF7D50BFD679E12 /* PBXTargetDependency */,
+				94E9661221DA4C48AA99C64F63E49ABB /* PBXTargetDependency */,
 			);
 			name = "Pods-SFBaseUI_Example";
 			productName = "Pods-SFBaseUI_Example";
 			productReference = 9296447BF9BA36644571C164DAB825E0 /* Pods_SFBaseUI_Example.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		7A760FD18CE8720D1FF53020A712B1CF /* SFBaseUI-SFBaseUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54FC4160259D7473A86AAC8F6A4BA3F2 /* Build configuration list for PBXNativeTarget "SFBaseUI-SFBaseUI" */;
+			buildPhases = (
+				51F1CB7B06494D12AF9461FBE9D8C612 /* Sources */,
+				33B5151535B1E26862AA035C11D5AE70 /* Frameworks */,
+				43C6B645C15C1FEE325DB25CBF78F59A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SFBaseUI-SFBaseUI";
+			productName = "SFBaseUI-SFBaseUI";
+			productReference = 2C08A12522CE3BE9A399167E102B838A /* SFBaseUI.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */ = {
 			isa = PBXNativeTarget;
@@ -451,8 +496,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				16CEB370BFACB398F2BDDAECDF3961AE /* PBXTargetDependency */,
-				AE74FBD7EE4C0F7A7B9A937C88B7A780 /* PBXTargetDependency */,
+				4003BCC8C8C1F71423801631ACED63BE /* PBXTargetDependency */,
+				A01D8236EEAD2D062380833624F36F9E /* PBXTargetDependency */,
 			);
 			name = "Pods-SFBaseUI_Tests";
 			productName = "Pods-SFBaseUI_Tests";
@@ -461,16 +506,17 @@
 		};
 		DE81D8E48200B144F652CA92FEC6DFD2 /* SFBaseUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41109F2CDDC1828A626A1866D9A5DCD7 /* Build configuration list for PBXNativeTarget "SFBaseUI" */;
+			buildConfigurationList = 26525AB589EC3F487E0A9856816F108F /* Build configuration list for PBXNativeTarget "SFBaseUI" */;
 			buildPhases = (
-				3BAF23B7F15BA9EB2BEB77C9B29DE0E3 /* Headers */,
-				26688D8799DD6D2D802B21EDB1C6886E /* Sources */,
-				A13B11D37B907910175F1ED23F9051CC /* Frameworks */,
-				C254D96C3BED129B8CF01C686A28DE71 /* Resources */,
+				FF41B8502171BE52405C58D4D5085622 /* Headers */,
+				9DA350795DB23548C543BE04D5BEDB62 /* Sources */,
+				7536470C72D88EE32B75A7D7CDB5D211 /* Frameworks */,
+				2C09EB75E8F245F5807B2A958D4A50A3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				85E9BB18CB842E02A1B4AD47BD0D4950 /* PBXTargetDependency */,
 			);
 			name = SFBaseUI;
 			productName = SFBaseUI;
@@ -495,7 +541,7 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 320C9AEBD06F76BE565B6A82687BCE16 /* Products */;
+			productRefGroup = 3823B3FA3CD852AB5AD7C8057736C8C4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -503,12 +549,28 @@
 				2DBAD04BA1C1B2FE2C6E5DF3204382B7 /* Pods-SFBaseUI_Example */,
 				A95A3184B55F25C5859EFC2AC65A8FC5 /* Pods-SFBaseUI_Tests */,
 				DE81D8E48200B144F652CA92FEC6DFD2 /* SFBaseUI */,
+				7A760FD18CE8720D1FF53020A712B1CF /* SFBaseUI-SFBaseUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2C09EB75E8F245F5807B2A958D4A50A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B806C3B0ABDDE03ECC19654B22F791A /* SFBaseUI.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3E0A8F7CFEF652C628FBBC93016E847D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43C6B645C15C1FEE325DB25CBF78F59A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -529,13 +591,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C254D96C3BED129B8CF01C686A28DE71 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -547,12 +602,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		26688D8799DD6D2D802B21EDB1C6886E /* Sources */ = {
+		51F1CB7B06494D12AF9461FBE9D8C612 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9E2FACA7D7591AC021E05A6834E640B /* ReplaceMe.m in Sources */,
-				CCCE3B20843AEDFAE7293CEAABE4E102 /* SFBaseUI-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA350795DB23548C543BE04D5BEDB62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6BD9EEE79B268861A216DF6B475603 /* SFBaseUI-dummy.m in Sources */,
+				845ED3C8A5D701E713AD8CB34D46869E /* SFCountdownButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,58 +645,33 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		16CEB370BFACB398F2BDDAECDF3961AE /* PBXTargetDependency */ = {
+		4003BCC8C8C1F71423801631ACED63BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FBSnapshotTestCase;
 			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
-			targetProxy = 3EEC33A6492AE6196A8C3BDDEB49EC17 /* PBXContainerItemProxy */;
+			targetProxy = 8C5505C96FA12B48DF69871EC25DC37F /* PBXContainerItemProxy */;
 		};
-		3CD8DC26C03BBB56BEF7D50BFD679E12 /* PBXTargetDependency */ = {
+		85E9BB18CB842E02A1B4AD47BD0D4950 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SFBaseUI-SFBaseUI";
+			target = 7A760FD18CE8720D1FF53020A712B1CF /* SFBaseUI-SFBaseUI */;
+			targetProxy = 668D453DF832A0EABFB5CA0DAC37C437 /* PBXContainerItemProxy */;
+		};
+		94E9661221DA4C48AA99C64F63E49ABB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SFBaseUI;
 			target = DE81D8E48200B144F652CA92FEC6DFD2 /* SFBaseUI */;
-			targetProxy = 7FF64720D14A01FD82A35E9F6D6A6AD5 /* PBXContainerItemProxy */;
+			targetProxy = 38DD9114D6E3FB773A87B0308891A1E5 /* PBXContainerItemProxy */;
 		};
-		AE74FBD7EE4C0F7A7B9A937C88B7A780 /* PBXTargetDependency */ = {
+		A01D8236EEAD2D062380833624F36F9E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-SFBaseUI_Example";
 			target = 2DBAD04BA1C1B2FE2C6E5DF3204382B7 /* Pods-SFBaseUI_Example */;
-			targetProxy = FC524715C7EB28DF8679192DCE60015B /* PBXContainerItemProxy */;
+			targetProxy = D970106E6D00247BD53C8DFDF7E7B70C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		139D901E2C05810164BAFA545C0334DF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 555A4547A27920DAC9E44574A175D7D1 /* SFBaseUI.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SFBaseUI/SFBaseUI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SFBaseUI/SFBaseUI-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SFBaseUI/SFBaseUI.modulemap";
-				PRODUCT_MODULE_NAME = SFBaseUI;
-				PRODUCT_NAME = SFBaseUI;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		396FD3B0D3790EE71B40CE22F340AB01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 08E6FE28020F27B9086EB089DE91106F /* Pods-SFBaseUI_Example.debug.xcconfig */;
@@ -733,37 +770,22 @@
 			};
 			name = Release;
 		};
-		89E6BC1E89383E768F75EE4DDA26FB6B /* Release */ = {
+		6FC7C11D36A37C8E85FAE29E4610518F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23D14BCA3E39D4F9CEACA496B1B1016C /* SFBaseUI.release.xcconfig */;
+			baseConfigurationReference = F8D2D57BF4B00D29B2D286190A88A21C /* SFBaseUI.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SFBaseUI/SFBaseUI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SFBaseUI/SFBaseUI-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SFBaseUI";
+				IBSC_MODULE = SFBaseUI;
+				INFOPLIST_FILE = "Target Support Files/SFBaseUI/ResourceBundle-SFBaseUI-SFBaseUI-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SFBaseUI/SFBaseUI.modulemap";
-				PRODUCT_MODULE_NAME = SFBaseUI;
 				PRODUCT_NAME = SFBaseUI;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = Debug;
 		};
 		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -818,7 +840,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -987,14 +1010,94 @@
 			};
 			name = Release;
 		};
+		C223355C7189A44EEB3959C09F9D8C61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8D2D57BF4B00D29B2D286190A88A21C /* SFBaseUI.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SFBaseUI/SFBaseUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SFBaseUI/SFBaseUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SFBaseUI/SFBaseUI.modulemap";
+				PRODUCT_MODULE_NAME = SFBaseUI;
+				PRODUCT_NAME = SFBaseUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C3FCE2E09D413AA2A514261177C6BB50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07F6E61B810D3FB54FEB49BCDD859E81 /* SFBaseUI.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SFBaseUI";
+				IBSC_MODULE = SFBaseUI;
+				INFOPLIST_FILE = "Target Support Files/SFBaseUI/ResourceBundle-SFBaseUI-SFBaseUI-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = SFBaseUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		FFE77E9C858252780F488F576F966B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07F6E61B810D3FB54FEB49BCDD859E81 /* SFBaseUI.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SFBaseUI/SFBaseUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SFBaseUI/SFBaseUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SFBaseUI/SFBaseUI.modulemap";
+				PRODUCT_MODULE_NAME = SFBaseUI;
+				PRODUCT_NAME = SFBaseUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		41109F2CDDC1828A626A1866D9A5DCD7 /* Build configuration list for PBXNativeTarget "SFBaseUI" */ = {
+		26525AB589EC3F487E0A9856816F108F /* Build configuration list for PBXNativeTarget "SFBaseUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				139D901E2C05810164BAFA545C0334DF /* Debug */,
-				89E6BC1E89383E768F75EE4DDA26FB6B /* Release */,
+				C223355C7189A44EEB3959C09F9D8C61 /* Debug */,
+				FFE77E9C858252780F488F576F966B44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1004,6 +1107,15 @@
 			buildConfigurations = (
 				916E0404255105F480DC4950B7625F7A /* Debug */,
 				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54FC4160259D7473A86AAC8F6A4BA3F2 /* Build configuration list for PBXNativeTarget "SFBaseUI-SFBaseUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FC7C11D36A37C8E85FAE29E4610518F /* Debug */,
+				C3FCE2E09D413AA2A514261177C6BB50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

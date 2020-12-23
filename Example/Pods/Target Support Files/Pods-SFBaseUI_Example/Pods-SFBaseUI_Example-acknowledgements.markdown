@@ -3,7 +3,10 @@ This application makes use of the following third party libraries:
 
 ## SFBaseUI
 
-Copyright (c) 2020 jack110530 <hsf_ios@sina.com>
+
+MIT License
+
+Copyright (c) 2020 jack110530
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

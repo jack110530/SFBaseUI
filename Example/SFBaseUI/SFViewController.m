@@ -8,6 +8,7 @@
 
 #import "SFViewController.h"
 
+
 @interface SFViewController ()
 
 @end
@@ -17,7 +18,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+}
+
+- (IBAction)push:(UIButton *)sender {
+    
 }
 
 - (void)didReceiveMemoryWarning

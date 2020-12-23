@@ -18,5 +18,11 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "SFBaseUI/Classes/**/*"
+  "source_files": "SFBaseUI/Classes/**/*",
+  "public_header_files": "SFBaseUI/Classes/SFBaseUI.h",
+  "resource_bundles": {
+    "SFBaseUI": [
+      "SFBaseUI/Assets/*"
+    ]
+  }
 }
