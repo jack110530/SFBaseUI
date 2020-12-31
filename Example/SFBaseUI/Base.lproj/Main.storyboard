@@ -18,20 +18,7 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lW-mC-Lnv">
-                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="push:" destination="whP-gf-Uak" eventType="touchUpInside" id="DVa-Ty-JH4"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="9lW-mC-Lnv" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="9fq-JS-TnN"/>
-                            <constraint firstItem="9lW-mC-Lnv" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="I36-ca-ERW"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="pgM-45-Hbv"/>
                 </viewController>

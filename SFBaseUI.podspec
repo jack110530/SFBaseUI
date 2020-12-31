@@ -31,14 +31,14 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'SFBaseUI/Classes/**/*'
-  s.public_header_files = 'SFBaseUI/Classes/SFBaseUI.h'
+#  s.public_header_files = 'SFBaseUI/Classes/SFBaseUI.h'
   
   s.resource_bundles = {
       'SFBaseUI' => ['SFBaseUI/Assets/*']
   }
 
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'Masonry'
+  s.dependency 'Masonry'
   # s.dependency 'SFCategory/SFKit'
   
   

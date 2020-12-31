@@ -7,7 +7,7 @@
 //
 
 #import "SFViewController.h"
-
+#import <SFBaseUI/SFBaseUI.h>
 
 @interface SFViewController ()
 
@@ -18,12 +18,63 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-}
-
-- (IBAction)push:(UIButton *)sender {
+    
+//    [self testNSObject];
+//    [self testUIView];
+//    [self testUILabel];
+    [self testUIButton];
+    
+    
+    
     
 }
+
+
+// MARK: NSObject
+- (void)testNSObject {
+//    NSObject *obj = NSObject.sf_new;
+}
+
+
+// MARK: UIView
+- (void)testUIView {
+    UIView *view = UIView
+    .begin
+    .frame(CGRectMake(100, 300, 100, 100))
+    .backgroundColor([UIColor redColor])
+    .alpha(0.5)
+    .end;
+    
+    [self.view addSubview:view];
+}
+
+// MARK: UILabel
+- (void)testUILabel {
+//    UILabel *label = UILabel.begin.frame(CGRectMake(100, 300, 100, 100)).text(@"ssss").end;
+//    label.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:label];
+    
+}
+
+
+
+// MARK: UIButton
+- (void)testUIButton {
+    UIButton *btn = UIButton
+    .begin
+    .frame(CGRectMake(100, 300, 100, 100))
+    .backgroundColor([UIColor grayColor])
+    .titleForState(@"test", UIControlStateNormal)
+    .titleFont([UIFont systemFontOfSize:30])
+    .image([UIImage imageNamed:@"gift"])
+    .end;
+    
+    [self.view addSubview:btn];
+}
+
+
+
+
 
 - (void)didReceiveMemoryWarning
 {

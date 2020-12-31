@@ -4,7 +4,9 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - SFBaseUI (0.1.0)
+  - Masonry (1.1.0)
+  - SFBaseUI (0.1.0):
+    - Masonry
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -13,6 +15,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - FBSnapshotTestCase
+    - Masonry
 
 EXTERNAL SOURCES:
   SFBaseUI:
@@ -20,7 +23,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SFBaseUI: 2ced74748503df0d9fb6b41bfd12849d84a7a9bb
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SFBaseUI: b2394fb04f1f976063847baff7274f086f201c2a
 
 PODFILE CHECKSUM: f524b254451af4764cc453eb04d0036938fa2786
 
