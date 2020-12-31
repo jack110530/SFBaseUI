@@ -61,12 +61,10 @@
 // MARK: UIButton
 - (void)testUIButton {
     UIButton *btn = UIButton
-    .begin
+    .beginWithType(UIButtonTypeClose)
     .frame(CGRectMake(100, 300, 100, 100))
-    .backgroundColor([UIColor grayColor])
     .titleForState(@"test", UIControlStateNormal)
     .titleFont([UIFont systemFontOfSize:30])
-    .image([UIImage imageNamed:@"gift"])
     .end;
     
     [self.view addSubview:btn];
