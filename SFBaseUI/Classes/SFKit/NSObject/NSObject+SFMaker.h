@@ -13,8 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSObject (SFMaker)
 
 @property (nonatomic, weak) SFMaker *maker;
-- (SFMaker *)begin;
-+ (SFMaker *)begin;
+- (SFMaker *)make;
++ (SFMaker *)make;
 
 @end
 

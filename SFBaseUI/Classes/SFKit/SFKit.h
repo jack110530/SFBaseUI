@@ -18,16 +18,15 @@
 
 
 // MARK: UIView
-#import "SFMaker+UIViewGeometry.h"
-#import "SFMaker+UIViewRendering.h"
+#import "UIView+SFMaker.h"
 
 
 // MARK: UILabel
-#import "SFMaker+UILabel.h"
+#import "UILabel+SFMaker.h"
 
 
 // MARK: UIButton
-#import "SFMaker+UIButton.h"
+#import "UIButton+SFMaker.h"
 
 
 

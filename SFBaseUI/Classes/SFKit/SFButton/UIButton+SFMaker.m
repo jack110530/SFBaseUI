@@ -9,4 +9,11 @@
 
 @implementation UIButton (SFMaker)
 
++ (SFMaker* (^)(UIButtonType type))makeWithType {
+    return ^SFMaker* (UIButtonType type) {
+        UIButton *btn = [UIButton buttonWithType:type];
+        return btn.maker;
+    };
+}
+
 @end

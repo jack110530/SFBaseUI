@@ -39,10 +39,11 @@
 // MARK: UIView
 - (void)testUIView {
     UIView *view = UIView
-    .begin
+    .make
     .frame(CGRectMake(100, 300, 100, 100))
     .backgroundColor([UIColor redColor])
     .alpha(0.5)
+    .title(@"")
     .end;
     
     [self.view addSubview:view];
@@ -61,7 +62,7 @@
 // MARK: UIButton
 - (void)testUIButton {
     UIButton *btn = UIButton
-    .beginWithType(UIButtonTypeClose)
+    .makeWithType(UIButtonTypeClose)
     .frame(CGRectMake(100, 300, 100, 100))
     .titleForState(@"test", UIControlStateNormal)
     .titleFont([UIFont systemFontOfSize:30])

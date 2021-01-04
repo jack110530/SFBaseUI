@@ -18,8 +18,10 @@
 #import "UIButton+SFMaker.h"
 #import "SFKit.h"
 #import "SFMaker+UILabel.h"
+#import "UILabel+SFMaker.h"
 #import "SFMaker+UIViewGeometry.h"
 #import "SFMaker+UIViewRendering.h"
+#import "UIView+SFMaker.h"
 
 FOUNDATION_EXPORT double SFBaseUIVersionNumber;
 FOUNDATION_EXPORT const unsigned char SFBaseUIVersionString[];

@@ -29,10 +29,10 @@
 }
 
 #pragma mark - func
-- (SFMaker *)begin {
+- (SFMaker *)make {
     return self.maker;
 }
-+ (SFMaker *)begin {
++ (SFMaker *)make {
     NSObject *obj = [[self alloc]init];
     return obj.maker;
 }
