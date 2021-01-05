@@ -63,6 +63,7 @@
 - (void)testUIButton {
     UIButton *btn = UIButton
     .makeWithType(UIButtonTypeClose)
+    .backgroundColor([UIColor redColor])
     .frame(CGRectMake(100, 300, 100, 100))
     .titleForState(@"test", UIControlStateNormal)
     .titleFont([UIFont systemFontOfSize:30])
