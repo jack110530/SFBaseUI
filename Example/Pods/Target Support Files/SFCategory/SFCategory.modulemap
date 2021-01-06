@@ -1,0 +1,6 @@
+framework module SFCategory {
+  umbrella header "SFCategory-umbrella.h"
+
+  export *
+  module * { export * }
+}

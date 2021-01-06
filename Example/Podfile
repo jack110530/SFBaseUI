@@ -10,5 +10,7 @@ target 'SFBaseUI_Example' do
 
     pod 'FBSnapshotTestCase'
   end
+  
+  pod 'SFCategory', :git => 'https://github.com/jack110530/SFCategory.git', :branch => 'master'
     
 end

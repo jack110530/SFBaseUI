@@ -18,15 +18,57 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "SFBaseUI/Classes/**/*",
+  "source_files": "SFBaseUI/Classes/SFBaseUI.h",
+  "public_header_files": "SFBaseUI/Classes/SFBaseUI.h",
   "resource_bundles": {
     "SFBaseUI": [
       "SFBaseUI/Assets/*"
     ]
   },
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
   "dependencies": {
     "Masonry": [
 
+    ],
+    "SFCategory": [
+
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "SFMakerKit",
+      "public_header_files": "SFBaseUI/Classes/SFMakerKit/SFMakerKit.h",
+      "subspecs": [
+        {
+          "name": "SFButton",
+          "source_files": "SFBaseUI/Classes/SFMakerKit/SFButton/*.{h,m}"
+        },
+        {
+          "name": "SFLabel",
+          "source_files": "SFBaseUI/Classes/SFMakerKit/SFLabel/*.{h,m}"
+        },
+        {
+          "name": "SFObject",
+          "source_files": "SFBaseUI/Classes/SFMakerKit/SFObject/*.{h,m}"
+        },
+        {
+          "name": "SFView",
+          "source_files": "SFBaseUI/Classes/SFMakerKit/SFView/*.{h,m}"
+        }
+      ]
+    },
+    {
+      "name": "SFUIKit",
+      "public_header_files": "SFBaseUI/Classes/SFUIKit/SFUIKit.h",
+      "subspecs": [
+        {
+          "name": "SFButton",
+          "source_files": "SFBaseUI/Classes/SFUIKit/SFButton/*.{h,m}"
+        }
+      ]
+    }
+  ]
 }
