@@ -175,6 +175,17 @@
     };
 }
 
+/// addActionForEvent
+- (SFMaker* (^)(id target, SEL sel, UIControlEvents events))addActionForEvent {
+    return ^SFMaker* ((id target, SEL sel, UIControlEvents events)) {
+        if ([self.obj isKindOfClass:[UIButton class]]) {
+            UIButton *btn = (UIButton *)self.obj;
+            [btn addTarget:target action:sel forControlEvents:events];
+        }
+        return self;
+    };
+}
+
 
 
 @end

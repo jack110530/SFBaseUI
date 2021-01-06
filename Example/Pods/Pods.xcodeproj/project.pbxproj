@@ -8,75 +8,75 @@
 
 /* Begin PBXBuildFile section */
 		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEEB1F6C31B89937C80AD46D2ECA574 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		01824C6A43E7DD7B53DB0C9144E15387 /* UIButton+SFMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A389C2A3A77F401CC8651A74474AF /* UIButton+SFMaker.m */; };
+		0075413A428B38CB831FE055A2C761E0 /* SFMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = A7ED8A59D736F53FA476B5F82C7BE91C /* SFMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05A040F35BF1C88F869404E1A940B493 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 98E5B4DDA3A6742DA86BC33EDEB35F59 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05EA1447EEA0EB669F8DEE73964A7C60 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B32DC82B087A3199F46DEE37F30C42D4 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0967598607D521318F69D7D39D517B20 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FB1357DE7D247BE34CCB29EDCCFAC /* ViewController+MASAdditions.m */; };
 		098630ECDB64ED7B89F5F687C82B4AC3 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA48B7947D5AC0DDE52563C2DC8A5E3D /* NSArray+MASAdditions.m */; };
 		0AF1AD35706D90B1A91F291B899EF8C0 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = EDFA8CC2AD68834644662EE1AC469B03 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AF3F407B81462B8AE6C0BB8D5FE75B0 /* SFBaseUI.h in Headers */ = {isa = PBXBuildFile; fileRef = DDEBFEF1DA68C60710AB256236186A9D /* SFBaseUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B152E4DB1FB372392B3627788E2A227 /* SFMaker+UIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4858308A8D881940B008382AF1CBBC2B /* SFMaker+UIButton.m */; };
 		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A282C53A123426D0DC6CB96D76A6B7 /* UIApplication+StrictKeyWindow.m */; };
+		122A7C133D93E5F7FAB57973FB5DE8D3 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571D18C2E4315CA0EE50281AEB95D9C8 /* Masonry.framework */; };
 		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DA303DBB7E087CE9560BA4AE5D91CC /* UIImage+Diff.m */; };
 		14C511527597E5846AB2627F791C7D8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E1DF1791AD5AA72DFFD4CB94F5FA17F /* QuartzCore.framework */; };
 		1972E85F0FCD0F3EAF28ED7CD036286E /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 268C4808A7B284FD5CE12AF500644E1A /* Masonry-dummy.m */; };
-		22B1652596D634A3F418D8B2AB52CB76 /* SFMaker+UILabel.h in Headers */ = {isa = PBXBuildFile; fileRef = FF969FA90CD8C9C67A96064E3648EE4E /* SFMaker+UILabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19E7FBE8E4386E0DEB97D8F5103E00A9 /* SFMaker+UIViewRendering.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C101CB57C81A11C3AE8B7E6CDBFC409 /* SFMaker+UIViewRendering.m */; };
+		1ED0CB6A4E1F5A67E939FD5A8B9E46AB /* SFMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C294314A99E0CB7689C7BC8DEF8120 /* SFMaker.m */; };
 		280D36330BAC5715615FF4A8B42D60D6 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = A394C2C6ABAE5BF5090CF2AD98C696AF /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		292242C713B8F11C1D5557AF8DE9AD99 /* Pods-SFBaseUI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3751DB91833836D40FFB5781E84EF7 /* Pods-SFBaseUI_Tests-dummy.m */; };
 		297A3627CF2F032CBFDC61D1A3786E63 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E8B0053FC9C12650256AC7795C1C6 /* MASViewAttribute.m */; };
-		29B5BE1AE4372BB2858FACCD42E3E99E /* SFBaseUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F2A446BEBB1DE91FECDB74C2D8D925 /* SFBaseUI-dummy.m */; };
+		2D5AD2927C4C6BE46C0483726F899C70 /* SFBaseUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4656B6E3206832435B81B74BEF49E6 /* SFBaseUI-dummy.m */; };
+		2DB6E23D7AB0110A5D77A21F9080C482 /* SFBaseUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CC9BD9A564A6C4AAA3A7013F38DD3BA /* SFBaseUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 9016A8DDB9A4258DCC8B1B3DDECA0207 /* UIImage+Compare.m */; };
 		346080C0D1CA23399ADD739D722D7CEF /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 05ED7991BE91B391C4F38B25354DEEB6 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A62A047DFF4A1AE32B0DF7D816F8F62 /* SFMaker+UIButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EF829E5D150010D7FDE857E3EAC56FA /* SFMaker+UIButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A850E101E259BAFE06061D72CEBD5A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C659800879B63083DE392800723BE1 /* Foundation.framework */; };
+		3CBB4F80537E51B40A49E7F2F63E79D6 /* SFBaseUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 13076459A9822732DA80C3B134094C93 /* SFBaseUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DA5F1D8E51CDD102A871C2F37770C7B /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = E1664911F55968A776BA11F00D8E434D /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3DBC8F21396E7B84D01C81EE2F6F8735 /* SFCountdownButton.h in Headers */ = {isa = PBXBuildFile; fileRef = EB593E75BC13A02F921EA2E5DA5F3A5F /* SFCountdownButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = F793D8588CD60BFFC82AF37C9BC308D0 /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		428C1A33CBCD43783FBB04D167F56636 /* NSObject+SFMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = A35C2975BF43F1732791EE9DB0FC34B0 /* NSObject+SFMaker.m */; };
 		4B0981F9AC628CF5100C50FF4A163A4A /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 602E46B1DC438E157FEFDB89FFC1FEE0 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FBB04BD13AF3BF687992C39570C793D /* SFMaker+UILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1091DD2B912F42B2462D3E34780755D /* SFMaker+UILabel.m */; };
+		4E24C671CF2152D7880256CD3E43E237 /* NSObject+SFMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA0ED1239733482D0E263F614292205 /* NSObject+SFMaker.m */; };
 		51E6CF3392CA70B680F37DE0951C7047 /* Pods-SFBaseUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B6FEF234D1801C7384AA7B2C781422B /* Pods-SFBaseUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5BDC45F4E61FAAD8EC5FD594454AB58A /* UILabel+SFMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F440517D9083089E8742290AE34178 /* UILabel+SFMaker.m */; };
-		5EE4A65D20B081632C84E71E0E142AEA /* SFMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 782C111C3AEDB4F1E84AA9ED6D9E88F7 /* SFMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5468F9308BCF4CC811EAEC301361D55C /* SFMakerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 51684C1983B6FBC7AD0CA38C4FC84C89 /* SFMakerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A6AD3A5BBDBFD0B4AF936BD518EC0B1 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F83E555D0CF0CB47EB4F7E712AAAE4 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6AE239C5D116E1C06F5705699FB9EAF0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD5C82799AB5A03561274DB41F07AC5 /* XCTest.framework */; };
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B839A35A2BFBEC3479FF1552F569BC /* FBSnapshotTestCase-dummy.m */; };
-		6EBE3EAFEAE500CBEC84646B9726B059 /* SFBaseUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2068AE550739AEC653B0499F12E3ABA9 /* SFBaseUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F3579BE3204ADE99BE7D219951F6F50 /* SFMaker+UIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9949E1AC5ED1A2CD35918C0B54068E07 /* SFMaker+UIButton.m */; };
-		74A10880C27D4327767C08C1AAEDB359 /* SFMaker+UIViewRendering.h in Headers */ = {isa = PBXBuildFile; fileRef = C7A682AB6058D2646E50372122241CB6 /* SFMaker+UIViewRendering.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		771754FE8F7399192C29BC89E4817683 /* SFMaker+UIViewRendering.h in Headers */ = {isa = PBXBuildFile; fileRef = 560B9504D1280CA411B05B9AA32482F2 /* SFMaker+UIViewRendering.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78B2727EE5D693F58D019DB098005101 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AAAA6DA488D5DF77D99C020E582627 /* MASConstraintMaker.m */; };
 		796155D5003D10E2B02F01D5E3045EA0 /* Pods-SFBaseUI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 972309BA2B4F2DC718744428413E010E /* Pods-SFBaseUI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BFF65958F014760B6AC4742824892EB /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 823AE4B4979D09F91ADB18679CF355CD /* MASCompositeConstraint.m */; };
-		838E8DBE1D5A943D279B7346236A220F /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571D18C2E4315CA0EE50281AEB95D9C8 /* Masonry.framework */; };
-		84BD159901D833CEBB29F430C2E43AD0 /* SFMaker+UIViewRendering.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C91B6F4F60290C99A81039DA4B89D7 /* SFMaker+UIViewRendering.m */; };
 		8539B851E01A58467BE49CA3FA77223C /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A6BCDB8B38970BAAE92CDDEBB3B20 /* MASLayoutConstraint.m */; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD9A6CFD4331B9A23C2F7983498CF3 /* FBSnapshotTestController.m */; };
-		8A02033B9BFCC6801DA8CB42AE77A1BB /* UIView+SFMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B8AFCEC442CE8483811C0808156F16 /* UIView+SFMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B92011C9373001132C8148BFC8F50B3 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 636796616D38EB5C7185BD684C7AE48B /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C43B4427803F45E5EE12A79C135ABCEE /* FBSnapshotTestCase.m */; };
 		8D4D1F6E4709EBB13974E95DC1059DDC /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = B17D6A5548097996EE3796656A32B6D2 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D65CE579E516BDD5FB36CAA21D693F6 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 351B469F82A69464763DA9A8A556D5E4 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 67380272F2DF7819A336DF552AD92896 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90352DAA6D0C12104F40F65E5E2DE771 /* SFButton.h in Headers */ = {isa = PBXBuildFile; fileRef = B3ACDEB0067EE09CC25DCB3D1D9E1C86 /* SFButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		941955A19C40899D275604E6E9C21A6D /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 66BA6286FFDDBFEF509A327789F6D690 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9AAD8E6F8B9E688A3EABE832417660F7 /* SFBaseUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C08A12522CE3BE9A399167E102B838A /* SFBaseUI.bundle */; };
+		96E2BABB35318BAB3F668B520A875035 /* NSObject+SFMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFD44D358BD6D92DCDE6867CB2DDE00 /* NSObject+SFMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D546E1168C04B0B2EAE005D9275D18B /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D39570D3C32595968B12039E56A71CC2 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3538C14800BA6D283B6500C766E4F0D3 /* SwiftSupport.swift */; };
-		A2AD5329A9EFC83C6273CB0FE1F07DB0 /* SFBaseUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C5DF61B5D92AFB36542BDC8713FA1C1 /* SFBaseUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A35FBEEC7D088AEC05297E8292A32C77 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0204C03E3631573430F1065E0C562121 /* View+MASAdditions.m */; };
 		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A691C70504B82F1D79E0F50DF6B488 /* UIImage+Snapshot.m */; };
-		A64248E623337229CE84155C8F2A74A0 /* SFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D303F9FD4A8A46FF70D4A3F76F7FE32F /* SFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE05627B4B8FEE7ED008A18DE1B41B14 /* SFMaker+UIViewGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E324621EAA6EFC74E88A3981F73259 /* SFMaker+UIViewGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF7FE5F107C4702D8536148214E6DDE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C659800879B63083DE392800723BE1 /* Foundation.framework */; };
+		AA9A10C825A02B66AB917415CB5BE62F /* UIButton+SFMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 850C8E6B465B21445FC375ED4C6E36A2 /* UIButton+SFMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC202EED2402964807053DE1788E66C4 /* SFCountdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D57B1E361602576FFA2849E9B65DA6A8 /* SFCountdownButton.m */; };
+		ADDD0273FE40668FCC7A4B0414DAC7AB /* SFMaker+UIViewGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = DE65B867D13FEBAB04BA2B64994142EF /* SFMaker+UIViewGeometry.m */; };
+		ADEAD0D85BA741103A2FAD3FB7A94118 /* SFMaker+UILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E713C057B10472B24BE53963BDE8B5 /* SFMaker+UILabel.m */; };
+		B140B3740E0BF609784AD6A4DD93E7B4 /* SFMaker+UIViewGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4A24D745DFEE54923013F55847A995 /* SFMaker+UIViewGesture.m */; };
 		B25D795BDC4F426BC01EFC911F368B81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C659800879B63083DE392800723BE1 /* Foundation.framework */; };
-		B4074B2A7C5B9CA866BB9B3CCF0F1C31 /* SFMaker+UIViewGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2138AF336C42C73D73471F80CA0B79 /* SFMaker+UIViewGeometry.m */; };
+		B41BC834CE5F0CB6A4787C0BFE68CA84 /* SFMaker+UIViewGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 75C88510E91745C8F103A87601CD3972 /* SFMaker+UIViewGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 43FD0500F155110FC81738ABCFD8722E /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B7D645EC004610E8A581E532D28771EC /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E502E95D75F8DF19C71E7419515430D /* MASViewConstraint.m */; };
+		BA986727815D742D78F2EE2E9C8E1D44 /* SFMaker+UILabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EF4F631035CD8B3CDD8ABB76C4A604F /* SFMaker+UILabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0861ADB4C5FA30F4F9E051F7638A264 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CB974288A2892A90F9702F03E0697C /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		C1D22EE4698B63ADBB4037F921BF1468 /* SFCountdownButton.h in Headers */ = {isa = PBXBuildFile; fileRef = BC583DAF5E466DD829FC97B62D0A9B99 /* SFCountdownButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 8940D361FD89F610F4C862B772A33E51 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C4F31FDBA074F27BAD8DE43D40D44A00 /* SFMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 245D7C51FEAABED16FA2569AC48C2236 /* SFMaker.m */; };
-		C973238925097C810D9A72079098BF57 /* UIView+SFMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 01107F0A77839858CE9107E24E8CE069 /* UIView+SFMaker.m */; };
-		CA18708BDADC92B6420D24E0FB60B009 /* SFCountdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D161AC2A0710D4A3AB951445E675EBD3 /* SFCountdownButton.m */; };
-		CC03E06587029614DD477BDA30467F39 /* UILabel+SFMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 773EFE536CFF0EAEA9201B7084F2E6FD /* UILabel+SFMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA5E06C3B05B9DA6717B594B03D52C85 /* SFMaker+UIViewGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC043153E78EC15BBDC6BD1D56771BF /* SFMaker+UIViewGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC7B4F2F77FD5CE2CD1450E0A7A5ADC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C659800879B63083DE392800723BE1 /* Foundation.framework */; };
 		CE93C54413259B4AC3683B6EB874D466 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9622FCB360DEC4256351F3BB2B53974E /* UIKit.framework */; };
 		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 2547F69451A0A27A16D11D9705986E91 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		D0A1756ECFFC19665C681A2FCCF7689B /* SFMaker+UIButton.h in Headers */ = {isa = PBXBuildFile; fileRef = BD6C08846EACDC228AF352BDE902B4DD /* SFMaker+UIButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E05E5FE3524F0CC9996A24979DD06B22 /* Pods-SFBaseUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF506F1988AC5249C3B85EB931CB2FB /* Pods-SFBaseUI_Example-dummy.m */; };
 		E0B8D095C732352C854D365B9E5B993D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9622FCB360DEC4256351F3BB2B53974E /* UIKit.framework */; };
 		E3B0A60D8350CBCDE31CB53ED0A4F8F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C659800879B63083DE392800723BE1 /* Foundation.framework */; };
@@ -85,50 +85,51 @@
 		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0A71045D2C733C3BD6340095E5E033 /* FBSnapshotTestCasePlatform.m */; };
 		E8DD5D1D406150E1C80AD015271B6848 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A12C368749FD2EEF1BB8849594446F /* MASConstraint.m */; };
 		EAE8B0895956885A752B173683A0D889 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = FCE1DDE1A00CE0531A4DF74A6C2EB5F8 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB0A4B9C176F7B21CA78CAD8D5365B98 /* UIButton+SFMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90BA74761E7096AAA9CEAEB386EB4F /* UIButton+SFMaker.m */; };
+		EED6E8248179F23540EF5B69C4C9AA4D /* SFBaseUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C08A12522CE3BE9A399167E102B838A /* SFBaseUI.bundle */; };
 		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = E20173728E322CA943398A88168AD012 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B367BF20EC952AD50F06D3171735002D /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAFBFA90F7BC3E7CF50F8A5CF0A8B264 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 25A8E30D4F9F5E4535B69508873FAD12 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB11D64B9E5E3A8588EFF26652C70F55 /* UIButton+SFMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 41B59B27B3615BDC781A90841C259EAF /* UIButton+SFMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE4F612777B91CC9FD11A23EDCAFDD91 /* NSObject+SFMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 67261E488778DFFBBF0C30F8C90C4829 /* NSObject+SFMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDD8943C1E337AA64677BF7E70B1AFE0 /* SFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F98F854DEF13727405FE511C9F47E7F /* SFButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2E226CC4E37AF23DCE6FE70D6994A760 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
-			remoteInfo = Masonry;
-		};
-		58FA3C6C79CA956361438BF37D9C4D60 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7A760FD18CE8720D1FF53020A712B1CF;
-			remoteInfo = "SFBaseUI-SFBaseUI";
-		};
-		694C780E8197A6858EE575EE67513690 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2DBAD04BA1C1B2FE2C6E5DF3204382B7;
-			remoteInfo = "Pods-SFBaseUI_Example";
-		};
-		BD56387823B5808C4995DC1520C979E0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DE81D8E48200B144F652CA92FEC6DFD2;
-			remoteInfo = SFBaseUI;
-		};
-		C2FF65274261261EA53EEA006B42BA6F /* PBXContainerItemProxy */ = {
+		007F06649A62F17AE8D6722D610FC0AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
 			remoteInfo = FBSnapshotTestCase;
 		};
-		E792923C8D819F1B6C94AFEBFF8247DA /* PBXContainerItemProxy */ = {
+		8AB66C04A78A4BE08C1BC69F3926D7AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A760FD18CE8720D1FF53020A712B1CF;
+			remoteInfo = "SFBaseUI-SFBaseUI";
+		};
+		9AC3B5682E1421968DED0FF796C8B4F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
+		B4E483231FBADED4B074057D2510A5BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE81D8E48200B144F652CA92FEC6DFD2;
+			remoteInfo = SFBaseUI;
+		};
+		D267DB563B4295696A82E08137D23BC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DBAD04BA1C1B2FE2C6E5DF3204382B7;
+			remoteInfo = "Pods-SFBaseUI_Example";
+		};
+		DF7E6D0FFFDC1C11457440AA0102914D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -138,103 +139,105 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01107F0A77839858CE9107E24E8CE069 /* UIView+SFMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+SFMaker.m"; sourceTree = "<group>"; };
 		0204C03E3631573430F1065E0C562121 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
 		03F83E555D0CF0CB47EB4F7E712AAAE4 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
 		04DBA5D9D467E921B4B19C0DDD06E742 /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
 		05ED7991BE91B391C4F38B25354DEEB6 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		07361569CA0EBB7A4B82320D5DBD8181 /* SFBaseUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SFBaseUI-Info.plist"; sourceTree = "<group>"; };
 		08E6FE28020F27B9086EB089DE91106F /* Pods-SFBaseUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SFBaseUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		0A3F23B72DC418293353ECD746C91E4D /* SFBaseUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFBaseUI-prefix.pch"; sourceTree = "<group>"; };
 		0B0A71045D2C733C3BD6340095E5E033 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		0D3751DB91833836D40FFB5781E84EF7 /* Pods-SFBaseUI_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SFBaseUI_Tests-dummy.m"; sourceTree = "<group>"; };
 		0D85C3E6E50008C91B87CB4DB841D90A /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
-		10F2A446BEBB1DE91FECDB74C2D8D925 /* SFBaseUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFBaseUI-dummy.m"; sourceTree = "<group>"; };
+		13076459A9822732DA80C3B134094C93 /* SFBaseUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFBaseUIKit.h; sourceTree = "<group>"; };
 		1435BCCACEAE03C8B8CF05BE61B98E91 /* Pods-SFBaseUI_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SFBaseUI_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1577217FD910A9B22350A50FC4B784BE /* SFBaseUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFBaseUI.release.xcconfig; sourceTree = "<group>"; };
 		16FD85FF6327D9E582C784DF7A213E71 /* Pods-SFBaseUI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SFBaseUI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		17AAAA6DA488D5DF77D99C020E582627 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
 		184DD14C00CA1A9D3DC375878AAC19A1 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
 		19DDD4F82858DC20637B663A70048155 /* SFBaseUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SFBaseUI.framework; path = SFBaseUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B9704ACF892393D0791E6789AFDBABD /* SFBaseUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SFBaseUI.modulemap; sourceTree = "<group>"; };
-		1C5DF61B5D92AFB36542BDC8713FA1C1 /* SFBaseUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SFBaseUI.h; path = SFBaseUI/Classes/SFBaseUI.h; sourceTree = "<group>"; };
+		1A24D819457D1B8D3CC297E106814E9E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		1D0FB1357DE7D247BE34CCB29EDCCFAC /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		1D2D3341B6D733A719F073897A67C375 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		1DF506F1988AC5249C3B85EB931CB2FB /* Pods-SFBaseUI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SFBaseUI_Example-dummy.m"; sourceTree = "<group>"; };
 		1F2A6BCDB8B38970BAAE92CDDEBB3B20 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
 		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2068AE550739AEC653B0499F12E3ABA9 /* SFBaseUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFBaseUI-umbrella.h"; sourceTree = "<group>"; };
-		21E2EBD56D98DC48532449F68E8C9E32 /* SFBaseUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFBaseUI.release.xcconfig; sourceTree = "<group>"; };
-		22C91B6F4F60290C99A81039DA4B89D7 /* SFMaker+UIViewRendering.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFMaker+UIViewRendering.m"; sourceTree = "<group>"; };
 		24589F6DB392836548338231C82F398D /* Pods-SFBaseUI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SFBaseUI_Example-frameworks.sh"; sourceTree = "<group>"; };
-		245D7C51FEAABED16FA2569AC48C2236 /* SFMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFMaker.m; sourceTree = "<group>"; };
+		24C294314A99E0CB7689C7BC8DEF8120 /* SFMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFMaker.m; sourceTree = "<group>"; };
 		2547F69451A0A27A16D11D9705986E91 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		25A8E30D4F9F5E4535B69508873FAD12 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
 		268C4808A7B284FD5CE12AF500644E1A /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
 		27DA303DBB7E087CE9560BA4AE5D91CC /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		299255F73BD4089FC5281F5443F8F7EA /* Pods-SFBaseUI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SFBaseUI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2C08A12522CE3BE9A399167E102B838A /* SFBaseUI.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SFBaseUI.bundle; path = "SFBaseUI-SFBaseUI.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C101CB57C81A11C3AE8B7E6CDBFC409 /* SFMaker+UIViewRendering.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFMaker+UIViewRendering.m"; sourceTree = "<group>"; };
+		2C57A7BAF108ABE78B7639FAB4D29515 /* SFBaseUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFBaseUI-prefix.pch"; sourceTree = "<group>"; };
 		2CEEB1F6C31B89937C80AD46D2ECA574 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		2EF4F631035CD8B3CDD8ABB76C4A604F /* SFMaker+UILabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFMaker+UILabel.h"; sourceTree = "<group>"; };
+		2EF829E5D150010D7FDE857E3EAC56FA /* SFMaker+UIButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFMaker+UIButton.h"; sourceTree = "<group>"; };
 		3159BD41885AB469935E75D04943421C /* Pods-SFBaseUI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SFBaseUI_Tests.modulemap"; sourceTree = "<group>"; };
 		33F11734EB5E000F000185A8DBF87A6C /* Pods-SFBaseUI_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SFBaseUI_Tests-Info.plist"; sourceTree = "<group>"; };
 		351B469F82A69464763DA9A8A556D5E4 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		3538C14800BA6D283B6500C766E4F0D3 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		357DF0227A2F588319B4FAD0AC916345 /* Pods-SFBaseUI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SFBaseUI_Example.modulemap"; sourceTree = "<group>"; };
 		3E1DF1791AD5AA72DFFD4CB94F5FA17F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		41B59B27B3615BDC781A90841C259EAF /* UIButton+SFMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+SFMaker.h"; sourceTree = "<group>"; };
+		3F98F854DEF13727405FE511C9F47E7F /* SFButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFButton.m; sourceTree = "<group>"; };
 		41CB974288A2892A90F9702F03E0697C /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		43B8AFCEC442CE8483811C0808156F16 /* UIView+SFMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+SFMaker.h"; sourceTree = "<group>"; };
 		43FD0500F155110FC81738ABCFD8722E /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		4858308A8D881940B008382AF1CBBC2B /* SFMaker+UIButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFMaker+UIButton.m"; sourceTree = "<group>"; };
 		498E8B0053FC9C12650256AC7795C1C6 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
-		4A58DD84AA11364F1048476175C6EBB5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		4B6FEF234D1801C7384AA7B2C781422B /* Pods-SFBaseUI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SFBaseUI_Example-umbrella.h"; sourceTree = "<group>"; };
 		51578A1CEE9E9D26C7DF19EE8277B170 /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
-		51F440517D9083089E8742290AE34178 /* UILabel+SFMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SFMaker.m"; sourceTree = "<group>"; };
+		51684C1983B6FBC7AD0CA38C4FC84C89 /* SFMakerKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFMakerKit.h; sourceTree = "<group>"; };
+		560B9504D1280CA411B05B9AA32482F2 /* SFMaker+UIViewRendering.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFMaker+UIViewRendering.h"; sourceTree = "<group>"; };
 		571D18C2E4315CA0EE50281AEB95D9C8 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FC9EC2355A2546BB2925E494C5A70A2 /* SFBaseUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SFBaseUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5FA0ED1239733482D0E263F614292205 /* NSObject+SFMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SFMaker.m"; sourceTree = "<group>"; };
 		602E46B1DC438E157FEFDB89FFC1FEE0 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
 		636796616D38EB5C7185BD684C7AE48B /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		66BA6286FFDDBFEF509A327789F6D690 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
-		67261E488778DFFBBF0C30F8C90C4829 /* NSObject+SFMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+SFMaker.h"; sourceTree = "<group>"; };
 		67380272F2DF7819A336DF552AD92896 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
-		6E2138AF336C42C73D73471F80CA0B79 /* SFMaker+UIViewGeometry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFMaker+UIViewGeometry.m"; sourceTree = "<group>"; };
+		6F4656B6E3206832435B81B74BEF49E6 /* SFBaseUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFBaseUI-dummy.m"; sourceTree = "<group>"; };
 		73DA2B3A3C8E6F3A7D976D1C4C4BCEC9 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		75B839A35A2BFBEC3479FF1552F569BC /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		75C88510E91745C8F103A87601CD3972 /* SFMaker+UIViewGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFMaker+UIViewGeometry.h"; sourceTree = "<group>"; };
 		7731683F4BFFF04ACBB3E9BA86F1B2BA /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
-		773EFE536CFF0EAEA9201B7084F2E6FD /* UILabel+SFMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UILabel+SFMaker.h"; sourceTree = "<group>"; };
-		782C111C3AEDB4F1E84AA9ED6D9E88F7 /* SFMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFMaker.h; sourceTree = "<group>"; };
-		78345A37CA95A5A6878EBD5CB0518DF4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7CC9BD9A564A6C4AAA3A7013F38DD3BA /* SFBaseUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFBaseUI-umbrella.h"; sourceTree = "<group>"; };
+		7E4A24D745DFEE54923013F55847A995 /* SFMaker+UIViewGesture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFMaker+UIViewGesture.m"; sourceTree = "<group>"; };
 		7E502E95D75F8DF19C71E7419515430D /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
 		823AE4B4979D09F91ADB18679CF355CD /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		850C8E6B465B21445FC375ED4C6E36A2 /* UIButton+SFMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+SFMaker.h"; sourceTree = "<group>"; };
 		8940D361FD89F610F4C862B772A33E51 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		8AD5C82799AB5A03561274DB41F07AC5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		8B7A389C2A3A77F401CC8651A74474AF /* UIButton+SFMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SFMaker.m"; sourceTree = "<group>"; };
 		9016A8DDB9A4258DCC8B1B3DDECA0207 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		909597D5A7270BB0B845363BD757AC74 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		91592F07389EAAF9277C382FA2BB95B7 /* ResourceBundle-SFBaseUI-SFBaseUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SFBaseUI-SFBaseUI-Info.plist"; sourceTree = "<group>"; };
 		9296447BF9BA36644571C164DAB825E0 /* Pods_SFBaseUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SFBaseUI_Example.framework; path = "Pods-SFBaseUI_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A691C70504B82F1D79E0F50DF6B488 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		94C659800879B63083DE392800723BE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		9622FCB360DEC4256351F3BB2B53974E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		972309BA2B4F2DC718744428413E010E /* Pods-SFBaseUI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SFBaseUI_Tests-umbrella.h"; sourceTree = "<group>"; };
 		98E5B4DDA3A6742DA86BC33EDEB35F59 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		9949E1AC5ED1A2CD35918C0B54068E07 /* SFMaker+UIButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFMaker+UIButton.m"; sourceTree = "<group>"; };
+		9C60FF9E352805023DB47BBCA0F6C706 /* SFBaseUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SFBaseUI.modulemap; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A35C2975BF43F1732791EE9DB0FC34B0 /* NSObject+SFMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SFMaker.m"; sourceTree = "<group>"; };
+		9F90BA74761E7096AAA9CEAEB386EB4F /* UIButton+SFMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SFMaker.m"; sourceTree = "<group>"; };
 		A394C2C6ABAE5BF5090CF2AD98C696AF /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		A4A12C368749FD2EEF1BB8849594446F /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		A5ADEF2C33BF1C36E1F6020EA61D65B7 /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
+		A7ED8A59D736F53FA476B5F82C7BE91C /* SFMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFMaker.h; sourceTree = "<group>"; };
 		B17D6A5548097996EE3796656A32B6D2 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
 		B32DC82B087A3199F46DEE37F30C42D4 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
 		B367BF20EC952AD50F06D3171735002D /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
-		BD6C08846EACDC228AF352BDE902B4DD /* SFMaker+UIButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFMaker+UIButton.h"; sourceTree = "<group>"; };
+		B3ACDEB0067EE09CC25DCB3D1D9E1C86 /* SFButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFButton.h; sourceTree = "<group>"; };
+		BC583DAF5E466DD829FC97B62D0A9B99 /* SFCountdownButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFCountdownButton.h; sourceTree = "<group>"; };
+		BCC043153E78EC15BBDC6BD1D56771BF /* SFMaker+UIViewGesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFMaker+UIViewGesture.h"; sourceTree = "<group>"; };
 		BF110DE70107316228863B82A51A09D3 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		C32DEB43C952DD0E7A799DA04E778819 /* Pods-SFBaseUI_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SFBaseUI_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		C43B4427803F45E5EE12A79C135ABCEE /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
-		C7A682AB6058D2646E50372122241CB6 /* SFMaker+UIViewRendering.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFMaker+UIViewRendering.h"; sourceTree = "<group>"; };
-		C9E324621EAA6EFC74E88A3981F73259 /* SFMaker+UIViewGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFMaker+UIViewGeometry.h"; sourceTree = "<group>"; };
-		D161AC2A0710D4A3AB951445E675EBD3 /* SFCountdownButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SFCountdownButton.m; path = SFBaseUI/Classes/SFCountdownButton.m; sourceTree = "<group>"; };
-		D23196A46B50A304512DFB55DC60E53E /* SFBaseUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SFBaseUI-Info.plist"; sourceTree = "<group>"; };
-		D303F9FD4A8A46FF70D4A3F76F7FE32F /* SFKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFKit.h; sourceTree = "<group>"; };
+		CAFD44D358BD6D92DCDE6867CB2DDE00 /* NSObject+SFMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+SFMaker.h"; sourceTree = "<group>"; };
+		CECE036804606158CBFCBCFBB6D033D0 /* SFBaseUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SFBaseUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D1885B4543716F43A8067258CA8A8EC3 /* ResourceBundle-SFBaseUI-SFBaseUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SFBaseUI-SFBaseUI-Info.plist"; sourceTree = "<group>"; };
+		D2814D02D88D232F616B4282A182F830 /* SFBaseUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFBaseUI.debug.xcconfig; sourceTree = "<group>"; };
 		D39570D3C32595968B12039E56A71CC2 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		D57B1E361602576FFA2849E9B65DA6A8 /* SFCountdownButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFCountdownButton.m; sourceTree = "<group>"; };
 		D65492E580F8042539908D51ECC90B1E /* Pods-SFBaseUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SFBaseUI_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D65C7170E6EAEBEF85B228AF1CA7A6EE /* Pods_SFBaseUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SFBaseUI_Tests.framework; path = "Pods-SFBaseUI_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8AD9A6CFD4331B9A23C2F7983498CF3 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
@@ -242,22 +245,28 @@
 		DA48B7947D5AC0DDE52563C2DC8A5E3D /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
 		DAB69975A0DE49243C001A082D472616 /* Pods-SFBaseUI_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SFBaseUI_Example-Info.plist"; sourceTree = "<group>"; };
 		DC7C362325DB688A8F95677E534F634A /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		DDEBFEF1DA68C60710AB256236186A9D /* SFBaseUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SFBaseUI.h; path = SFBaseUI/Classes/SFBaseUI.h; sourceTree = "<group>"; };
+		DE65B867D13FEBAB04BA2B64994142EF /* SFMaker+UIViewGeometry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFMaker+UIViewGeometry.m"; sourceTree = "<group>"; };
 		DFE72805626641332E27A0EE2C6EF88B /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
-		E1091DD2B912F42B2462D3E34780755D /* SFMaker+UILabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFMaker+UILabel.m"; sourceTree = "<group>"; };
 		E1664911F55968A776BA11F00D8E434D /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
 		E20173728E322CA943398A88168AD012 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		E9E713C057B10472B24BE53963BDE8B5 /* SFMaker+UILabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFMaker+UILabel.m"; sourceTree = "<group>"; };
 		E9F3BECA54E77D65650635A04994636C /* Pods-SFBaseUI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SFBaseUI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EB593E75BC13A02F921EA2E5DA5F3A5F /* SFCountdownButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SFCountdownButton.h; path = SFBaseUI/Classes/SFCountdownButton.h; sourceTree = "<group>"; };
 		EDFA8CC2AD68834644662EE1AC469B03 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
 		F0F6F3D06DC66CAAE8095CB878ADB1BA /* Pods-SFBaseUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SFBaseUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F71B96574BE8D4FD48957844ECECFC13 /* Pods-SFBaseUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SFBaseUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F793D8588CD60BFFC82AF37C9BC308D0 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		FCE1DDE1A00CE0531A4DF74A6C2EB5F8 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
-		FE0BCED2D285DCA445C0C34BEFF56FAC /* SFBaseUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFBaseUI.debug.xcconfig; sourceTree = "<group>"; };
-		FF969FA90CD8C9C67A96064E3648EE4E /* SFMaker+UILabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFMaker+UILabel.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		096A259D063EE336E0972564943965E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41B45B735382E6B241FC441485D6E74C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,12 +283,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4E1DCEA58874F00D87560E4395986BB8 /* Frameworks */ = {
+		5914F96521683F69F88D585246430C00 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF7FE5F107C4702D8536148214E6DDE3 /* Foundation.framework in Frameworks */,
-				838E8DBE1D5A943D279B7346236A220F /* Masonry.framework in Frameworks */,
+				3A850E101E259BAFE06061D72CEBD5A0 /* Foundation.framework in Frameworks */,
+				122A7C133D93E5F7FAB57973FB5DE8D3 /* Masonry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,13 +298,6 @@
 			files = (
 				E51F496BDC6ACADE04FDA059C6CB2342 /* Foundation.framework in Frameworks */,
 				CE93C54413259B4AC3683B6EB874D466 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A373AF7765D8937E5ED889ACA21A41D4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,22 +315,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		040F45BA29BAA8914D9327FC340AE595 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				91592F07389EAAF9277C382FA2BB95B7 /* ResourceBundle-SFBaseUI-SFBaseUI-Info.plist */,
-				1B9704ACF892393D0791E6789AFDBABD /* SFBaseUI.modulemap */,
-				10F2A446BEBB1DE91FECDB74C2D8D925 /* SFBaseUI-dummy.m */,
-				D23196A46B50A304512DFB55DC60E53E /* SFBaseUI-Info.plist */,
-				0A3F23B72DC418293353ECD746C91E4D /* SFBaseUI-prefix.pch */,
-				2068AE550739AEC653B0499F12E3ABA9 /* SFBaseUI-umbrella.h */,
-				FE0BCED2D285DCA445C0C34BEFF56FAC /* SFBaseUI.debug.xcconfig */,
-				21E2EBD56D98DC48532449F68E8C9E32 /* SFBaseUI.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SFBaseUI";
-			sourceTree = "<group>";
-		};
 		06208072C5D8DF9D0752AB34CFF027C5 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -336,6 +322,16 @@
 				EB74A05668A29AE7449BC4105144AFBC /* Pods-SFBaseUI_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		220A0B1DC972E8B1311DDC83427A1142 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1D2D3341B6D733A719F073897A67C375 /* LICENSE */,
+				1A24D819457D1B8D3CC297E106814E9E /* README.md */,
+				CECE036804606158CBFCBCFBB6D033D0 /* SFBaseUI.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		259BA79A1126B5CEDE808CE53B8E4DE9 /* iOS */ = {
@@ -364,14 +360,41 @@
 			path = "../Target Support Files/Masonry";
 			sourceTree = "<group>";
 		};
-		3CC9C9592D5C492594CE6B9B4769B657 /* Pod */ = {
+		3B15C0C1733C3CDB5703E9620CC8DB1A /* SFMakerKit */ = {
 			isa = PBXGroup;
 			children = (
-				78345A37CA95A5A6878EBD5CB0518DF4 /* LICENSE */,
-				4A58DD84AA11364F1048476175C6EBB5 /* README.md */,
-				5FC9EC2355A2546BB2925E494C5A70A2 /* SFBaseUI.podspec */,
+				51684C1983B6FBC7AD0CA38C4FC84C89 /* SFMakerKit.h */,
+				42B533FF46097AB18E157D6CEA1C28EF /* NSObject */,
+				3C8188D7309A7FEF11479C47E933CC4D /* SFButton */,
+				5553DD833DC039A6A2D4E2AA43EBB749 /* SFLabel */,
+				A08296A614A863CD113F270211827D23 /* SFView */,
 			);
-			name = Pod;
+			name = SFMakerKit;
+			path = SFBaseUI/Classes/SFMakerKit;
+			sourceTree = "<group>";
+		};
+		3C8188D7309A7FEF11479C47E933CC4D /* SFButton */ = {
+			isa = PBXGroup;
+			children = (
+				2EF829E5D150010D7FDE857E3EAC56FA /* SFMaker+UIButton.h */,
+				4858308A8D881940B008382AF1CBBC2B /* SFMaker+UIButton.m */,
+				850C8E6B465B21445FC375ED4C6E36A2 /* UIButton+SFMaker.h */,
+				9F90BA74761E7096AAA9CEAEB386EB4F /* UIButton+SFMaker.m */,
+			);
+			name = SFButton;
+			path = SFButton;
+			sourceTree = "<group>";
+		};
+		42B533FF46097AB18E157D6CEA1C28EF /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				CAFD44D358BD6D92DCDE6867CB2DDE00 /* NSObject+SFMaker.h */,
+				5FA0ED1239733482D0E263F614292205 /* NSObject+SFMaker.m */,
+				A7ED8A59D736F53FA476B5F82C7BE91C /* SFMaker.h */,
+				24C294314A99E0CB7689C7BC8DEF8120 /* SFMaker.m */,
+			);
+			name = NSObject;
+			path = NSObject;
 			sourceTree = "<group>";
 		};
 		4A62A50A353010EE22AD4E07C3F1E2CC /* Pods */ = {
@@ -383,16 +406,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		603B6733D15DDB29748B89629D71D399 /* NSObject */ = {
+		5553DD833DC039A6A2D4E2AA43EBB749 /* SFLabel */ = {
 			isa = PBXGroup;
 			children = (
-				67261E488778DFFBBF0C30F8C90C4829 /* NSObject+SFMaker.h */,
-				A35C2975BF43F1732791EE9DB0FC34B0 /* NSObject+SFMaker.m */,
-				782C111C3AEDB4F1E84AA9ED6D9E88F7 /* SFMaker.h */,
-				245D7C51FEAABED16FA2569AC48C2236 /* SFMaker.m */,
+				2EF4F631035CD8B3CDD8ABB76C4A604F /* SFMaker+UILabel.h */,
+				E9E713C057B10472B24BE53963BDE8B5 /* SFMaker+UILabel.m */,
 			);
-			name = NSObject;
-			path = NSObject;
+			name = SFLabel;
+			path = SFLabel;
+			sourceTree = "<group>";
+		};
+		5F75AF5F99374C317C194B4513045EF6 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9DA7A73A2F416710C9BC517F896DBED /* SFBaseUI */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		7103A3F88F05360BEBD96889D189EEF3 /* Pods-SFBaseUI_Example */ = {
@@ -420,19 +449,6 @@
 			name = SwiftSupport;
 			sourceTree = "<group>";
 		};
-		7477F0E38A8350382F0E278DBF36DAB9 /* SFKit */ = {
-			isa = PBXGroup;
-			children = (
-				D303F9FD4A8A46FF70D4A3F76F7FE32F /* SFKit.h */,
-				603B6733D15DDB29748B89629D71D399 /* NSObject */,
-				FBD5E2D1B4B4CA5A8CF17877D7BBDF8B /* SFButton */,
-				BBD0FDE144A75AA238D353DCF4A05FDB /* SFLabel */,
-				A5AF82FA63C1F519C201FCC046691439 /* SFView */,
-			);
-			name = SFKit;
-			path = SFBaseUI/Classes/SFKit;
-			sourceTree = "<group>";
-		};
 		7CCF7D1AA6AE105E48E6A9CA8861E692 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,18 +464,47 @@
 			path = "../Target Support Files/FBSnapshotTestCase";
 			sourceTree = "<group>";
 		};
-		A5AF82FA63C1F519C201FCC046691439 /* SFView */ = {
+		9C887A1A29FD5BF40FA69C744775504F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C9E324621EAA6EFC74E88A3981F73259 /* SFMaker+UIViewGeometry.h */,
-				6E2138AF336C42C73D73471F80CA0B79 /* SFMaker+UIViewGeometry.m */,
-				C7A682AB6058D2646E50372122241CB6 /* SFMaker+UIViewRendering.h */,
-				22C91B6F4F60290C99A81039DA4B89D7 /* SFMaker+UIViewRendering.m */,
-				43B8AFCEC442CE8483811C0808156F16 /* UIView+SFMaker.h */,
-				01107F0A77839858CE9107E24E8CE069 /* UIView+SFMaker.m */,
+				D1885B4543716F43A8067258CA8A8EC3 /* ResourceBundle-SFBaseUI-SFBaseUI-Info.plist */,
+				9C60FF9E352805023DB47BBCA0F6C706 /* SFBaseUI.modulemap */,
+				6F4656B6E3206832435B81B74BEF49E6 /* SFBaseUI-dummy.m */,
+				07361569CA0EBB7A4B82320D5DBD8181 /* SFBaseUI-Info.plist */,
+				2C57A7BAF108ABE78B7639FAB4D29515 /* SFBaseUI-prefix.pch */,
+				7CC9BD9A564A6C4AAA3A7013F38DD3BA /* SFBaseUI-umbrella.h */,
+				D2814D02D88D232F616B4282A182F830 /* SFBaseUI.debug.xcconfig */,
+				1577217FD910A9B22350A50FC4B784BE /* SFBaseUI.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SFBaseUI";
+			sourceTree = "<group>";
+		};
+		A08296A614A863CD113F270211827D23 /* SFView */ = {
+			isa = PBXGroup;
+			children = (
+				75C88510E91745C8F103A87601CD3972 /* SFMaker+UIViewGeometry.h */,
+				DE65B867D13FEBAB04BA2B64994142EF /* SFMaker+UIViewGeometry.m */,
+				BCC043153E78EC15BBDC6BD1D56771BF /* SFMaker+UIViewGesture.h */,
+				7E4A24D745DFEE54923013F55847A995 /* SFMaker+UIViewGesture.m */,
+				560B9504D1280CA411B05B9AA32482F2 /* SFMaker+UIViewRendering.h */,
+				2C101CB57C81A11C3AE8B7E6CDBFC409 /* SFMaker+UIViewRendering.m */,
 			);
 			name = SFView;
 			path = SFView;
+			sourceTree = "<group>";
+		};
+		A9DA7A73A2F416710C9BC517F896DBED /* SFBaseUI */ = {
+			isa = PBXGroup;
+			children = (
+				DDEBFEF1DA68C60710AB256236186A9D /* SFBaseUI.h */,
+				220A0B1DC972E8B1311DDC83427A1142 /* Pod */,
+				D85A561168AD76E13D195DE7EB39CF25 /* SFBaseUIKit */,
+				3B15C0C1733C3CDB5703E9620CC8DB1A /* SFMakerKit */,
+				9C887A1A29FD5BF40FA69C744775504F /* Support Files */,
+			);
+			name = SFBaseUI;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		B658CE446B469A6CB1DD01F837BFE848 /* FBSnapshotTestCase */ = {
@@ -473,16 +518,16 @@
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
-		BBD0FDE144A75AA238D353DCF4A05FDB /* SFLabel */ = {
+		BCCE5BF4489E885032BCEF3C447888BE /* SFButton */ = {
 			isa = PBXGroup;
 			children = (
-				FF969FA90CD8C9C67A96064E3648EE4E /* SFMaker+UILabel.h */,
-				E1091DD2B912F42B2462D3E34780755D /* SFMaker+UILabel.m */,
-				773EFE536CFF0EAEA9201B7084F2E6FD /* UILabel+SFMaker.h */,
-				51F440517D9083089E8742290AE34178 /* UILabel+SFMaker.m */,
+				B3ACDEB0067EE09CC25DCB3D1D9E1C86 /* SFButton.h */,
+				3F98F854DEF13727405FE511C9F47E7F /* SFButton.m */,
+				BC583DAF5E466DD829FC97B62D0A9B99 /* SFCountdownButton.h */,
+				D57B1E361602576FFA2849E9B65DA6A8 /* SFCountdownButton.m */,
 			);
-			name = SFLabel;
-			path = SFLabel;
+			name = SFButton;
+			path = SFButton;
 			sourceTree = "<group>";
 		};
 		C7C2EC74ECAD9B23623F0D004B656EC5 /* Products */ = {
@@ -532,24 +577,26 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
-		CC76CA67752FCB86B5AD5448194AAE25 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E64BA9BDDE39D2970B2C1A5B1D928969 /* SFBaseUI */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				CC76CA67752FCB86B5AD5448194AAE25 /* Development Pods */,
+				5F75AF5F99374C317C194B4513045EF6 /* Development Pods */,
 				E37236A997A0AFE3B3B04832A616C7CF /* Frameworks */,
 				4A62A50A353010EE22AD4E07C3F1E2CC /* Pods */,
 				C7C2EC74ECAD9B23623F0D004B656EC5 /* Products */,
 				06208072C5D8DF9D0752AB34CFF027C5 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D85A561168AD76E13D195DE7EB39CF25 /* SFBaseUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				13076459A9822732DA80C3B134094C93 /* SFBaseUIKit.h */,
+				BCCE5BF4489E885032BCEF3C447888BE /* SFButton */,
+			);
+			name = SFBaseUIKit;
+			path = SFBaseUI/Classes/SFBaseUIKit;
 			sourceTree = "<group>";
 		};
 		E37236A997A0AFE3B3B04832A616C7CF /* Frameworks */ = {
@@ -559,20 +606,6 @@
 				259BA79A1126B5CEDE808CE53B8E4DE9 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E64BA9BDDE39D2970B2C1A5B1D928969 /* SFBaseUI */ = {
-			isa = PBXGroup;
-			children = (
-				1C5DF61B5D92AFB36542BDC8713FA1C1 /* SFBaseUI.h */,
-				EB593E75BC13A02F921EA2E5DA5F3A5F /* SFCountdownButton.h */,
-				D161AC2A0710D4A3AB951445E675EBD3 /* SFCountdownButton.m */,
-				3CC9C9592D5C492594CE6B9B4769B657 /* Pod */,
-				7477F0E38A8350382F0E278DBF36DAB9 /* SFKit */,
-				040F45BA29BAA8914D9327FC340AE595 /* Support Files */,
-			);
-			name = SFBaseUI;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		EB74A05668A29AE7449BC4105144AFBC /* Pods-SFBaseUI_Tests */ = {
@@ -613,18 +646,6 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		FBD5E2D1B4B4CA5A8CF17877D7BBDF8B /* SFButton */ = {
-			isa = PBXGroup;
-			children = (
-				BD6C08846EACDC228AF352BDE902B4DD /* SFMaker+UIButton.h */,
-				9949E1AC5ED1A2CD35918C0B54068E07 /* SFMaker+UIButton.m */,
-				41B59B27B3615BDC781A90841C259EAF /* UIButton+SFMaker.h */,
-				8B7A389C2A3A77F401CC8651A74474AF /* UIButton+SFMaker.m */,
-			);
-			name = SFButton;
-			path = SFButton;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -640,6 +661,27 @@
 				F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */,
 				D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */,
 				B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BB3051F09E3AB3F0F5AAD13B02AB73D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E2BABB35318BAB3F668B520A875035 /* NSObject+SFMaker.h in Headers */,
+				2DB6E23D7AB0110A5D77A21F9080C482 /* SFBaseUI-umbrella.h in Headers */,
+				0AF3F407B81462B8AE6C0BB8D5FE75B0 /* SFBaseUI.h in Headers */,
+				3CBB4F80537E51B40A49E7F2F63E79D6 /* SFBaseUIKit.h in Headers */,
+				90352DAA6D0C12104F40F65E5E2DE771 /* SFButton.h in Headers */,
+				C1D22EE4698B63ADBB4037F921BF1468 /* SFCountdownButton.h in Headers */,
+				3A62A047DFF4A1AE32B0DF7D816F8F62 /* SFMaker+UIButton.h in Headers */,
+				BA986727815D742D78F2EE2E9C8E1D44 /* SFMaker+UILabel.h in Headers */,
+				B41BC834CE5F0CB6A4787C0BFE68CA84 /* SFMaker+UIViewGeometry.h in Headers */,
+				CA5E06C3B05B9DA6717B594B03D52C85 /* SFMaker+UIViewGesture.h in Headers */,
+				771754FE8F7399192C29BC89E4817683 /* SFMaker+UIViewRendering.h in Headers */,
+				0075413A428B38CB831FE055A2C761E0 /* SFMaker.h in Headers */,
+				5468F9308BCF4CC811EAEC301361D55C /* SFMakerKit.h in Headers */,
+				AA9A10C825A02B66AB917415CB5BE62F /* UIButton+SFMaker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,26 +716,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B01B7C66040770A5D42CB6B4B7E163EF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FE4F612777B91CC9FD11A23EDCAFDD91 /* NSObject+SFMaker.h in Headers */,
-				6EBE3EAFEAE500CBEC84646B9726B059 /* SFBaseUI-umbrella.h in Headers */,
-				A2AD5329A9EFC83C6273CB0FE1F07DB0 /* SFBaseUI.h in Headers */,
-				3DBC8F21396E7B84D01C81EE2F6F8735 /* SFCountdownButton.h in Headers */,
-				A64248E623337229CE84155C8F2A74A0 /* SFKit.h in Headers */,
-				D0A1756ECFFC19665C681A2FCCF7689B /* SFMaker+UIButton.h in Headers */,
-				22B1652596D634A3F418D8B2AB52CB76 /* SFMaker+UILabel.h in Headers */,
-				AE05627B4B8FEE7ED008A18DE1B41B14 /* SFMaker+UIViewGeometry.h in Headers */,
-				74A10880C27D4327767C08C1AAEDB359 /* SFMaker+UIViewRendering.h in Headers */,
-				5EE4A65D20B081632C84E71E0E142AEA /* SFMaker.h in Headers */,
-				FB11D64B9E5E3A8588EFF26652C70F55 /* UIButton+SFMaker.h in Headers */,
-				CC03E06587029614DD477BDA30467F39 /* UILabel+SFMaker.h in Headers */,
-				8A02033B9BFCC6801DA8CB42AE77A1BB /* UIView+SFMaker.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EE23D700AEBE9D0B9DD12556973E6C55 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -717,8 +739,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				134B0EE6F291B1DCD77C11A33C228D10 /* PBXTargetDependency */,
-				8000E57DBD0CF2B1994DE7A99FE119FE /* PBXTargetDependency */,
+				2723A85F21CCDAC459BEEB655BAFD84C /* PBXTargetDependency */,
+				51402A893575D4C272BA3FB17BD36146 /* PBXTargetDependency */,
 			);
 			name = "Pods-SFBaseUI_Example";
 			productName = "Pods-SFBaseUI_Example";
@@ -745,11 +767,11 @@
 		};
 		7A760FD18CE8720D1FF53020A712B1CF /* SFBaseUI-SFBaseUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E277EE4008C802D8875DC3927A49396C /* Build configuration list for PBXNativeTarget "SFBaseUI-SFBaseUI" */;
+			buildConfigurationList = 54D416B06E2F1E8065F03BDE4C690FE9 /* Build configuration list for PBXNativeTarget "SFBaseUI-SFBaseUI" */;
 			buildPhases = (
-				BE9C20D01047FC2121DDC0FE990C10A9 /* Sources */,
-				A373AF7765D8937E5ED889ACA21A41D4 /* Frameworks */,
-				055AAE70897AE7248A2C5795DE6520B9 /* Resources */,
+				89E262FE8E11FC38C5842844B01C89E8 /* Sources */,
+				096A259D063EE336E0972564943965E3 /* Frameworks */,
+				E4CECF34D343C83B7E62DFEE6D287425 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -790,8 +812,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				38798B23D911DAC866640948CCFC787E /* PBXTargetDependency */,
-				2C29A93EB9F8579350CC3E90F3E365CD /* PBXTargetDependency */,
+				E038F2A2C5EE68434C3306A4AA404F8A /* PBXTargetDependency */,
+				1135009074DDD087A24BADE8848D2860 /* PBXTargetDependency */,
 			);
 			name = "Pods-SFBaseUI_Tests";
 			productName = "Pods-SFBaseUI_Tests";
@@ -800,18 +822,18 @@
 		};
 		DE81D8E48200B144F652CA92FEC6DFD2 /* SFBaseUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6B4C3FAE356454043BDC374034A4EF09 /* Build configuration list for PBXNativeTarget "SFBaseUI" */;
+			buildConfigurationList = F65F83197E06E5BA61033FB1C164E18C /* Build configuration list for PBXNativeTarget "SFBaseUI" */;
 			buildPhases = (
-				B01B7C66040770A5D42CB6B4B7E163EF /* Headers */,
-				16747FE33012879EC1D92B3C22DF69EF /* Sources */,
-				4E1DCEA58874F00D87560E4395986BB8 /* Frameworks */,
-				9B841CABB0229F3D5BB3D1EA558FD9FD /* Resources */,
+				6BB3051F09E3AB3F0F5AAD13B02AB73D /* Headers */,
+				EA4A250ECB939ABEC8C34A4D4B8026A2 /* Sources */,
+				5914F96521683F69F88D585246430C00 /* Frameworks */,
+				D99E7BF975942D8D74094980274E3B7E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A3C846ACEBE281AF25361E4E0087CE27 /* PBXTargetDependency */,
-				733E2DB02DA6AB6DAD75787B46EAC036 /* PBXTargetDependency */,
+				528E5ACE86A5E9421D46D0AD3D83101B /* PBXTargetDependency */,
+				78CE5A9698767B16EB0A57C56E09AEE0 /* PBXTargetDependency */,
 			);
 			name = SFBaseUI;
 			productName = SFBaseUI;
@@ -851,13 +873,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		055AAE70897AE7248A2C5795DE6520B9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		535936DBAD867DF797F45FAD284B63A7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -886,11 +901,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B841CABB0229F3D5BB3D1EA558FD9FD /* Resources */ = {
+		D99E7BF975942D8D74094980274E3B7E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AAD8E6F8B9E688A3EABE832417660F7 /* SFBaseUI.bundle in Resources */,
+				EED6E8248179F23540EF5B69C4C9AA4D /* SFBaseUI.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4CECF34D343C83B7E62DFEE6D287425 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -923,21 +945,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		16747FE33012879EC1D92B3C22DF69EF /* Sources */ = {
+		89E262FE8E11FC38C5842844B01C89E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				428C1A33CBCD43783FBB04D167F56636 /* NSObject+SFMaker.m in Sources */,
-				29B5BE1AE4372BB2858FACCD42E3E99E /* SFBaseUI-dummy.m in Sources */,
-				CA18708BDADC92B6420D24E0FB60B009 /* SFCountdownButton.m in Sources */,
-				6F3579BE3204ADE99BE7D219951F6F50 /* SFMaker+UIButton.m in Sources */,
-				4FBB04BD13AF3BF687992C39570C793D /* SFMaker+UILabel.m in Sources */,
-				B4074B2A7C5B9CA866BB9B3CCF0F1C31 /* SFMaker+UIViewGeometry.m in Sources */,
-				84BD159901D833CEBB29F430C2E43AD0 /* SFMaker+UIViewRendering.m in Sources */,
-				C4F31FDBA074F27BAD8DE43D40D44A00 /* SFMaker.m in Sources */,
-				01824C6A43E7DD7B53DB0C9144E15387 /* UIButton+SFMaker.m in Sources */,
-				5BDC45F4E61FAAD8EC5FD594454AB58A /* UILabel+SFMaker.m in Sources */,
-				C973238925097C810D9A72079098BF57 /* UIView+SFMaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -957,13 +968,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE9C20D01047FC2121DDC0FE990C10A9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D02AA4D3543381CA1BE7D330774E817D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -972,85 +976,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EA4A250ECB939ABEC8C34A4D4B8026A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E24C671CF2152D7880256CD3E43E237 /* NSObject+SFMaker.m in Sources */,
+				2D5AD2927C4C6BE46C0483726F899C70 /* SFBaseUI-dummy.m in Sources */,
+				FDD8943C1E337AA64677BF7E70B1AFE0 /* SFButton.m in Sources */,
+				AC202EED2402964807053DE1788E66C4 /* SFCountdownButton.m in Sources */,
+				0B152E4DB1FB372392B3627788E2A227 /* SFMaker+UIButton.m in Sources */,
+				ADEAD0D85BA741103A2FAD3FB7A94118 /* SFMaker+UILabel.m in Sources */,
+				ADDD0273FE40668FCC7A4B0414DAC7AB /* SFMaker+UIViewGeometry.m in Sources */,
+				B140B3740E0BF609784AD6A4DD93E7B4 /* SFMaker+UIViewGesture.m in Sources */,
+				19E7FBE8E4386E0DEB97D8F5103E00A9 /* SFMaker+UIViewRendering.m in Sources */,
+				1ED0CB6A4E1F5A67E939FD5A8B9E46AB /* SFMaker.m in Sources */,
+				EB0A4B9C176F7B21CA78CAD8D5365B98 /* UIButton+SFMaker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		134B0EE6F291B1DCD77C11A33C228D10 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Masonry;
-			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = 2E226CC4E37AF23DCE6FE70D6994A760 /* PBXContainerItemProxy */;
-		};
-		2C29A93EB9F8579350CC3E90F3E365CD /* PBXTargetDependency */ = {
+		1135009074DDD087A24BADE8848D2860 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-SFBaseUI_Example";
 			target = 2DBAD04BA1C1B2FE2C6E5DF3204382B7 /* Pods-SFBaseUI_Example */;
-			targetProxy = 694C780E8197A6858EE575EE67513690 /* PBXContainerItemProxy */;
+			targetProxy = D267DB563B4295696A82E08137D23BC3 /* PBXContainerItemProxy */;
 		};
-		38798B23D911DAC866640948CCFC787E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FBSnapshotTestCase;
-			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
-			targetProxy = C2FF65274261261EA53EEA006B42BA6F /* PBXContainerItemProxy */;
-		};
-		733E2DB02DA6AB6DAD75787B46EAC036 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SFBaseUI-SFBaseUI";
-			target = 7A760FD18CE8720D1FF53020A712B1CF /* SFBaseUI-SFBaseUI */;
-			targetProxy = 58FA3C6C79CA956361438BF37D9C4D60 /* PBXContainerItemProxy */;
-		};
-		8000E57DBD0CF2B1994DE7A99FE119FE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SFBaseUI;
-			target = DE81D8E48200B144F652CA92FEC6DFD2 /* SFBaseUI */;
-			targetProxy = BD56387823B5808C4995DC1520C979E0 /* PBXContainerItemProxy */;
-		};
-		A3C846ACEBE281AF25361E4E0087CE27 /* PBXTargetDependency */ = {
+		2723A85F21CCDAC459BEEB655BAFD84C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
 			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = E792923C8D819F1B6C94AFEBFF8247DA /* PBXContainerItemProxy */;
+			targetProxy = DF7E6D0FFFDC1C11457440AA0102914D /* PBXContainerItemProxy */;
+		};
+		51402A893575D4C272BA3FB17BD36146 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SFBaseUI;
+			target = DE81D8E48200B144F652CA92FEC6DFD2 /* SFBaseUI */;
+			targetProxy = B4E483231FBADED4B074057D2510A5BA /* PBXContainerItemProxy */;
+		};
+		528E5ACE86A5E9421D46D0AD3D83101B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = 9AC3B5682E1421968DED0FF796C8B4F0 /* PBXContainerItemProxy */;
+		};
+		78CE5A9698767B16EB0A57C56E09AEE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SFBaseUI-SFBaseUI";
+			target = 7A760FD18CE8720D1FF53020A712B1CF /* SFBaseUI-SFBaseUI */;
+			targetProxy = 8AB66C04A78A4BE08C1BC69F3926D7AD /* PBXContainerItemProxy */;
+		};
+		E038F2A2C5EE68434C3306A4AA404F8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
+			targetProxy = 007F06649A62F17AE8D6722D610FC0AD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0EFDAD3187E71763260372AE563109E9 /* Release */ = {
+		13722F9B80CA7CEC1FA8BF3382AAED84 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21E2EBD56D98DC48532449F68E8C9E32 /* SFBaseUI.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SFBaseUI";
-				IBSC_MODULE = SFBaseUI;
-				INFOPLIST_FILE = "Target Support Files/SFBaseUI/ResourceBundle-SFBaseUI-SFBaseUI-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = SFBaseUI;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		31FDDD3C3D8A24B9AA7D35292AFC2222 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE0BCED2D285DCA445C0C34BEFF56FAC /* SFBaseUI.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SFBaseUI";
-				IBSC_MODULE = SFBaseUI;
-				INFOPLIST_FILE = "Target Support Files/SFBaseUI/ResourceBundle-SFBaseUI-SFBaseUI-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = SFBaseUI;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		3EF99740127E23DE618810B922EC1920 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21E2EBD56D98DC48532449F68E8C9E32 /* SFBaseUI.release.xcconfig */;
+			baseConfigurationReference = 1577217FD910A9B22350A50FC4B784BE /* SFBaseUI.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1077,6 +1065,23 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		37F434BA5838C98A06952F0C9FE24ED0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1577217FD910A9B22350A50FC4B784BE /* SFBaseUI.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SFBaseUI";
+				IBSC_MODULE = SFBaseUI;
+				INFOPLIST_FILE = "Target Support Files/SFBaseUI/ResourceBundle-SFBaseUI-SFBaseUI-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = SFBaseUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -1368,37 +1373,6 @@
 			};
 			name = Debug;
 		};
-		950E1B17D82AE824DF17F953217030AD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE0BCED2D285DCA445C0C34BEFF56FAC /* SFBaseUI.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SFBaseUI/SFBaseUI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SFBaseUI/SFBaseUI-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SFBaseUI/SFBaseUI.modulemap";
-				PRODUCT_MODULE_NAME = SFBaseUI;
-				PRODUCT_NAME = SFBaseUI;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		A858DE4D0B740E9899A447710546119F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F0F6F3D06DC66CAAE8095CB878ADB1BA /* Pods-SFBaseUI_Tests.debug.xcconfig */;
@@ -1429,6 +1403,54 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B481C9DF9D05E94F5126F053417F9098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2814D02D88D232F616B4282A182F830 /* SFBaseUI.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SFBaseUI/SFBaseUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SFBaseUI/SFBaseUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SFBaseUI/SFBaseUI.modulemap";
+				PRODUCT_MODULE_NAME = SFBaseUI;
+				PRODUCT_NAME = SFBaseUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B63BD9B45E1B29B1548DF47AD382D1B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2814D02D88D232F616B4282A182F830 /* SFBaseUI.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SFBaseUI";
+				IBSC_MODULE = SFBaseUI;
+				INFOPLIST_FILE = "Target Support Files/SFBaseUI/ResourceBundle-SFBaseUI-SFBaseUI-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = SFBaseUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -1516,20 +1538,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		54D416B06E2F1E8065F03BDE4C690FE9 /* Build configuration list for PBXNativeTarget "SFBaseUI-SFBaseUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B63BD9B45E1B29B1548DF47AD382D1B2 /* Debug */,
+				37F434BA5838C98A06952F0C9FE24ED0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5BF7C77AAD158A665A570E30833C3320 /* Build configuration list for PBXNativeTarget "Pods-SFBaseUI_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A858DE4D0B740E9899A447710546119F /* Debug */,
 				4F4D6E01247497FCE9CECDAB16157C88 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6B4C3FAE356454043BDC374034A4EF09 /* Build configuration list for PBXNativeTarget "SFBaseUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				950E1B17D82AE824DF17F953217030AD /* Debug */,
-				3EF99740127E23DE618810B922EC1920 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1552,11 +1574,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E277EE4008C802D8875DC3927A49396C /* Build configuration list for PBXNativeTarget "SFBaseUI-SFBaseUI" */ = {
+		F65F83197E06E5BA61033FB1C164E18C /* Build configuration list for PBXNativeTarget "SFBaseUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				31FDDD3C3D8A24B9AA7D35292AFC2222 /* Debug */,
-				0EFDAD3187E71763260372AE563109E9 /* Release */,
+				B481C9DF9D05E94F5126F053417F9098 /* Debug */,
+				13722F9B80CA7CEC1FA8BF3382AAED84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

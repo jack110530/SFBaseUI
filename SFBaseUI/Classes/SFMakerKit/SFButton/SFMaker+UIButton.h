@@ -56,6 +56,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// imageEdgeInsets
 - (SFMaker* (^)(UIEdgeInsets inserts))imageEdgeInsets;
 
+/// addActionForEvent
+- (SFMaker* (^)(id target, SEL sel, UIControlEvents events))addActionForEvent;
+
 @end
 
 NS_ASSUME_NONNULL_END

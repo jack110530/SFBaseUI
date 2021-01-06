@@ -20,13 +20,17 @@
     [super viewDidLoad];
     
 //    [self testNSObject];
-//    [self testUIView];
+    [self testUIView];
 //    [self testUILabel];
-    [self testUIButton];
+//    [self testUIButton];
     
     
     
     
+}
+
+- (void)gestureEvent {
+    NSLog(@"%s", __func__);
 }
 
 
@@ -44,6 +48,7 @@
     .backgroundColor([UIColor redColor])
     .alpha(0.5)
     .title(@"")
+    .addSingleTap(self, @selector(gestureEvent))
     .end;
     
     [self.view addSubview:view];
@@ -61,15 +66,15 @@
 
 // MARK: UIButton
 - (void)testUIButton {
-    UIButton *btn = UIButton
-    .makeWithType(UIButtonTypeClose)
-    .backgroundColor([UIColor redColor])
-    .frame(CGRectMake(100, 300, 100, 100))
-    .titleForState(@"test", UIControlStateNormal)
-    .titleFont([UIFont systemFontOfSize:30])
-    .end;
+//    UIButton *btn = UIButton
+//    .makeWithType(UIButtonTypeClose)
+//    .backgroundColor([UIColor redColor])
+//    .frame(CGRectMake(100, 300, 100, 100))
+//    .titleForState(@"test", UIControlStateNormal)
+//    .titleFont([UIFont systemFontOfSize:30])
+//    .end;
     
-    [self.view addSubview:btn];
+//    [self.view addSubview:btn];
 }
 
 

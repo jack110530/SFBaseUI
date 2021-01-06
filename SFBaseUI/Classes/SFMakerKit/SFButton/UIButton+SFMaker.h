@@ -7,9 +7,6 @@
 
 #import <UIKit/UIKit.h>
 #import "NSObject+SFMaker.h"
-#import "SFMaker+UIViewGeometry.h"
-#import "SFMaker+UIViewRendering.h"
-#import "SFMaker+UIButton.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
