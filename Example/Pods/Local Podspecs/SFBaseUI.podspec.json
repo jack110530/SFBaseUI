@@ -40,6 +40,7 @@
   "subspecs": [
     {
       "name": "SFMakerKit",
+      "source_files": "SFBaseUI/Classes/SFMakerKit/SFMakerKit.h",
       "public_header_files": "SFBaseUI/Classes/SFMakerKit/SFMakerKit.h",
       "subspecs": [
         {
@@ -62,6 +63,7 @@
     },
     {
       "name": "SFUIKit",
+      "source_files": "SFBaseUI/Classes/SFUIKit/SFUIKit.h",
       "public_header_files": "SFBaseUI/Classes/SFUIKit/SFUIKit.h",
       "subspecs": [
         {

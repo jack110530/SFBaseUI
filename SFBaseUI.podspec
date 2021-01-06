@@ -36,6 +36,7 @@ TODO: Add long description of the pod here.
   # SFMakerKit
   s.subspec 'SFMakerKit' do |ss|
 
+    ss.source_files = 'SFBaseUI/Classes/SFMakerKit/SFMakerKit.h'
     ss.public_header_files = 'SFBaseUI/Classes/SFMakerKit/SFMakerKit.h'
 
     # SFButton
@@ -64,6 +65,7 @@ TODO: Add long description of the pod here.
   # SFUIKit
   s.subspec 'SFUIKit' do |ss|
 
+    ss.source_files = 'SFBaseUI/Classes/SFUIKit/SFUIKit.h'
     ss.public_header_files = 'SFBaseUI/Classes/SFUIKit/SFUIKit.h'
 
     # SFButton
