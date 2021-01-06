@@ -12,5 +12,6 @@ target 'SFBaseUI_Example' do
   end
   
   pod 'SFCategory', :git => 'https://github.com/jack110530/SFCategory.git', :branch => 'master'
+  pod 'SFMacro', :git => 'https://github.com/jack110530/SFMacro.git', :branch => 'master'
     
 end

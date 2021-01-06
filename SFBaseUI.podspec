@@ -84,6 +84,7 @@ TODO: Add long description of the pod here.
   s.frameworks = 'UIKit', 'Foundation'
   s.dependency 'Masonry'
   s.dependency 'SFCategory'
+  s.dependency 'SFMacro'
   
   
 end

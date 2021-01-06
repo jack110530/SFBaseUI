@@ -1,0 +1,6 @@
+framework module SFMacro {
+  umbrella header "SFMacro-umbrella.h"
+
+  export *
+  module * { export * }
+}
