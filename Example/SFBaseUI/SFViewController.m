@@ -47,7 +47,6 @@
     .frame(CGRectMake(100, 300, 100, 100))
     .backgroundColor([UIColor redColor])
     .alpha(0.5)
-    .title(@"")
     .addSingleTap(self, @selector(gestureEvent))
     .end;
     
@@ -56,9 +55,14 @@
 
 // MARK: UILabel
 - (void)testUILabel {
-//    UILabel *label = UILabel.begin.frame(CGRectMake(100, 300, 100, 100)).text(@"ssss").end;
-//    label.backgroundColor = [UIColor redColor];
-//    [self.view addSubview:label];
+    UILabel *label = UILabel
+    .make
+    .frame(CGRectMake(100, 300, 100, 100))
+    .backgroundColor([UIColor redColor])
+    .text(@"ssssss")
+    .textColor([UIColor redColor])
+    .end;
+    [self.view addSubview:label];
     
 }
 
@@ -66,15 +70,14 @@
 
 // MARK: UIButton
 - (void)testUIButton {
-//    UIButton *btn = UIButton
-//    .makeWithType(UIButtonTypeClose)
-//    .backgroundColor([UIColor redColor])
-//    .frame(CGRectMake(100, 300, 100, 100))
-//    .titleForState(@"test", UIControlStateNormal)
-//    .titleFont([UIFont systemFontOfSize:30])
-//    .end;
-    
-//    [self.view addSubview:btn];
+    UIButton *btn = UIButton
+    .makeWithType(UIButtonTypeCustom)
+    .backgroundColor([UIColor redColor])
+    .frame(CGRectMake(100, 300, 100, 100))
+    .titleForState(@"test", UIControlStateNormal)
+    .titleFont([UIFont systemFontOfSize:30])
+    .end;
+    [self.view addSubview:btn];
 }
 
 

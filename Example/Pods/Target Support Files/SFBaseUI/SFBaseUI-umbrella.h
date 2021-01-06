@@ -17,6 +17,7 @@
 #import "SFMaker+UILabel.h"
 #import "NSObject+SFMaker.h"
 #import "SFMaker.h"
+#import "SFMaker+UIView.h"
 #import "SFMaker+UIViewGeometry.h"
 #import "SFMaker+UIViewGesture.h"
 #import "SFMaker+UIViewRendering.h"

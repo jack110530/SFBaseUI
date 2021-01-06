@@ -42,5 +42,29 @@
     };
 }
 
+/// textAlignment
+- (SFMaker* (^)(NSTextAlignment value))textAlignment {
+    return ^SFMaker* (NSTextAlignment value) {
+        if ([self.obj isKindOfClass:[UILabel class]]) {
+            UILabel *label = (UILabel *)self.obj;
+            label.textAlignment = value;
+        }
+        return self;
+    };
+}
+
+/// numberOfLines
+- (SFMaker* (^)(NSInteger value))numberOfLines {
+    return ^SFMaker* (NSInteger value) {
+        if ([self.obj isKindOfClass:[UILabel class]]) {
+            UILabel *label = (UILabel *)self.obj;
+            label.numberOfLines = value;
+        }
+        return self;
+    };
+}
+
+
+
 
 @end

@@ -20,6 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// textColor
 - (SFMaker* (^)(UIColor *value))textColor;
 
+/// textAlignment
+- (SFMaker* (^)(NSTextAlignment value))textAlignment;
+
+/// numberOfLines
+- (SFMaker* (^)(NSInteger value))numberOfLines;
+
 @end
 
 NS_ASSUME_NONNULL_END

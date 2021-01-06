@@ -18,6 +18,7 @@
 
 
 // MARK: UIView
+#import "SFMaker+UIView.h"
 #import "SFMaker+UIViewGeometry.h"
 #import "SFMaker+UIViewRendering.h"
 #import "SFMaker+UIViewGesture.h"
