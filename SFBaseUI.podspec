@@ -30,16 +30,58 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'SFBaseUI/Classes/**/*'
-#  s.public_header_files = 'SFBaseUI/Classes/SFBaseUI.h'
+  s.source_files = 'SFBaseUI/Classes/SFBaseUI.h'
+  s.public_header_files = 'SFBaseUI/Classes/SFBaseUI.h'
+
+  # SFMakerKit
+  s.subspec 'SFMakerKit' do |ss|
+
+    ss.public_header_files = 'SFBaseUI/Classes/SFMakerKit/SFMakerKit.h'
+
+    # SFButton
+    ss.subspec 'SFButton' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFMakerKit/SFButton/*.{h,m}'
+    end
+
+    # SFLabel
+    ss.subspec 'SFLabel' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFMakerKit/SFLabel/*.{h,m}'
+    end
+
+    # SFObject
+    ss.subspec 'SFObject' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFMakerKit/SFObject/*.{h,m}'
+    end
+
+    # SFView
+    ss.subspec 'SFView' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFMakerKit/SFView/*.{h,m}'
+    end
+
+  end
+
+
+  # SFUIKit
+  s.subspec 'SFUIKit' do |ss|
+
+    ss.public_header_files = 'SFBaseUI/Classes/SFUIKit/SFUIKit.h'
+
+    # SFButton
+    ss.subspec 'SFButton' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFButton/*.{h,m}'
+    end
+
+  end
+
+
   
   s.resource_bundles = {
       'SFBaseUI' => ['SFBaseUI/Assets/*']
   }
 
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit', 'Foundation'
   s.dependency 'Masonry'
-  # s.dependency 'SFCategory/SFKit'
+  s.dependency 'SFCategory'
   
   
 end
