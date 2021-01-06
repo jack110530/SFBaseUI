@@ -11,16 +11,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SFMaker (UIViewGesture)
 
-/// addSingleTap
+/// 【UIView】addSingleTap
 - (SFMaker* (^)(id target, SEL sel))addSingleTap;
 
-/// addDoubleTap
+/// 【UIView】addDoubleTap
 - (SFMaker* (^)(id target, SEL sel))addDoubleTap;
 
-/// addTapWithNum
+/// 【UIView】addTapWithNum
 - (SFMaker* (^)(id target, SEL sel, NSUInteger numberOfTapsRequired))addTapWithNum;
 
-/// addLongPressWithDuration
+/// 【UIView】addLongPressWithDuration
 - (SFMaker* (^)(id target, SEL sel, NSTimeInterval minimumPressDuration))addLongPressWithDuration;
 
 @end

@@ -9,7 +9,7 @@
 
 @implementation SFMaker (UIViewGesture)
 
-/// addSingleTap
+/// 【UIView】addSingleTap
 - (SFMaker* (^)(id target, SEL sel))addSingleTap {
     return ^SFMaker* (id target, SEL sel) {
         if ([self.obj isKindOfClass:[UIView class]]) {
@@ -23,7 +23,7 @@
     };
 }
 
-/// addDoubleTap
+/// 【UIView】addDoubleTap
 - (SFMaker* (^)(id target, SEL sel))addDoubleTap {
     return ^SFMaker* (id target, SEL sel) {
         if ([self.obj isKindOfClass:[UIView class]]) {
@@ -37,7 +37,7 @@
     };
 }
 
-/// addTapWithNum
+/// 【UIView】addTapWithNum
 - (SFMaker* (^)(id target, SEL sel, NSUInteger numberOfTapsRequired))addTapWithNum {
     return ^SFMaker* (id target, SEL sel, NSUInteger numberOfTapsRequired) {
         if ([self.obj isKindOfClass:[UIView class]]) {
@@ -51,7 +51,7 @@
     };
 }
 
-/// addLongPressWithDuration
+/// 【UIView】addLongPressWithDuration
 - (SFMaker* (^)(id target, SEL sel, NSTimeInterval minimumPressDuration))addLongPressWithDuration {
     return ^SFMaker* (id target, SEL sel, NSTimeInterval minimumPressDuration) {
         if ([self.obj isKindOfClass:[UIView class]]) {

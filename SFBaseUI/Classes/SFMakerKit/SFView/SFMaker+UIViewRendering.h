@@ -11,28 +11,28 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SFMaker (UIViewRendering)
 
-/// clipsToBounds
+/// 【UIView】clipsToBounds
 - (SFMaker* (^)(BOOL value))clipsToBounds;
 
-/// backgroundColor
+/// 【UIView】backgroundColor
 - (SFMaker* (^)(UIColor *value))backgroundColor;
 
-/// alpha
+/// 【UIView】alpha
 - (SFMaker* (^)(CGFloat value))alpha;
 
-/// opaque
+/// 【UIView】opaque
 - (SFMaker* (^)(BOOL value))opaque;
 
-/// hidden
+/// 【UIView】hidden
 - (SFMaker* (^)(BOOL value))hidden;
 
-/// contentMode
+/// 【UIView】contentMode
 - (SFMaker* (^)(UIViewContentMode value))contentMode;
 
-/// maskView
+/// 【UIView】maskView
 - (SFMaker* (^)(UIView *value))maskView;
 
-/// tintColor
+/// 【UIView】tintColor
 - (SFMaker* (^)(UIColor *value))tintColor;
 
 @end

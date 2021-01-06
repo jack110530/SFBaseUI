@@ -9,7 +9,7 @@
 
 @implementation SFMaker (UIViewGeometry)
 
-/// frame
+/// 【UIView】frame
 - (SFMaker* (^)(CGRect frame))frame {
     return ^SFMaker* (CGRect frame) {
         if ([self.obj isKindOfClass:[UIView class]]) {
@@ -20,7 +20,7 @@
     };
 }
 
-/// origin
+/// 【UIView】origin
 - (SFMaker* (^)(CGPoint origin))origin {
     return ^SFMaker* (CGPoint origin) {
         if ([self.obj isKindOfClass:[UIView class]]) {
@@ -33,7 +33,7 @@
     };
 }
 
-/// x
+/// 【UIView】x
 - (SFMaker* (^)(CGFloat x))x {
     return ^SFMaker* (CGFloat x) {
         if ([self.obj isKindOfClass:[UIView class]]) {
@@ -46,7 +46,7 @@
     };
 }
 
-/// y
+/// 【UIView】y
 - (SFMaker* (^)(CGFloat x))y {
     return ^SFMaker* (CGFloat y) {
         if ([self.obj isKindOfClass:[UIView class]]) {
@@ -59,7 +59,7 @@
     };
 }
 
-/// size
+/// 【UIView】size
 - (SFMaker* (^)(CGSize size))size {
     return ^SFMaker* (CGSize size) {
         if ([self.obj isKindOfClass:[UIView class]]) {
@@ -72,7 +72,7 @@
     };
 }
 
-/// width
+/// 【UIView】width
 - (SFMaker* (^)(CGFloat width))width {
     return ^SFMaker* (CGFloat width) {
         if ([self.obj isKindOfClass:[UIView class]]) {
@@ -85,7 +85,7 @@
     };
 }
 
-/// height
+/// 【UIView】height
 - (SFMaker* (^)(CGFloat height))height {
     return ^SFMaker* (CGFloat height) {
         if ([self.obj isKindOfClass:[UIView class]]) {
@@ -98,7 +98,7 @@
     };
 }
 
-/// center
+/// 【UIView】center
 - (SFMaker* (^)(CGPoint center))center {
     return ^SFMaker* (CGPoint center) {
         if ([self.obj isKindOfClass:[UIView class]]) {
@@ -109,7 +109,7 @@
     };
 }
 
-/// centerX
+/// 【UIView】centerX
 - (SFMaker* (^)(CGFloat centerX))centerX {
     return ^SFMaker* (CGFloat centerX) {
         if ([self.obj isKindOfClass:[UIView class]]) {
@@ -120,7 +120,7 @@
     };
 }
 
-/// centerY
+/// 【UIView】centerY
 - (SFMaker* (^)(CGFloat centerY))centerY {
     return ^SFMaker* (CGFloat centerY) {
         if ([self.obj isKindOfClass:[UIView class]]) {

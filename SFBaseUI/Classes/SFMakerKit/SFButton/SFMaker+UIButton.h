@@ -11,52 +11,52 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SFMaker (UIButton)
 
-/// title
+/// 【UIButton】title
 - (SFMaker* (^)(NSString *title))title;
 
-/// titleForState
+/// 【UIButton】titleForState
 - (SFMaker* (^)(NSString *title, UIControlState state))titleForState;
 
-/// titleColor
+/// 【UIButton】titleColor
 - (SFMaker* (^)(UIColor *color))titleColor;
 
-/// titleColorForState
+/// 【UIButton】titleColorForState
 - (SFMaker* (^)(UIColor *color, UIControlState state))titleColorForState;
 
-/// titleFont
+/// 【UIButton】titleFont
 - (SFMaker* (^)(UIFont *font))titleFont;
 
-/// systemTitleFontSize
+/// 【UIButton】systemTitleFontSize
 - (SFMaker* (^)(CGFloat size))systemTitleFontSize;
 
-/// systemTitleFontSizeAndWeight
+/// 【UIButton】systemTitleFontSizeAndWeight
 - (SFMaker* (^)(CGFloat size, UIFontWeight weight))systemTitleFontSizeAndWeight;
 
-/// boldSystemTitleFontSize
+/// 【UIButton】boldSystemTitleFontSize
 - (SFMaker* (^)(CGFloat size))boldSystemTitleFontSize;
 
-/// image
+/// 【UIButton】image
 - (SFMaker* (^)(UIImage *image))image;
 
-/// imageForState
+/// 【UIButton】imageForState
 - (SFMaker* (^)(UIImage *image, UIControlState state))imageForState;
 
-/// backgroundImage
+/// 【UIButton】backgroundImage
 - (SFMaker* (^)(UIImage *image))backgroundImage;
 
-/// backgroundImageForState
+/// 【UIButton】backgroundImageForState
 - (SFMaker* (^)(UIImage *image, UIControlState state))backgroundImageForState;
 
-/// contentEdgeInsets
+/// 【UIButton】contentEdgeInsets
 - (SFMaker* (^)(UIEdgeInsets inserts))contentEdgeInsets;
 
-/// titleEdgeInsets
+/// 【UIButton】titleEdgeInsets
 - (SFMaker* (^)(UIEdgeInsets inserts))titleEdgeInsets;
 
-/// imageEdgeInsets
+/// 【UIButton】imageEdgeInsets
 - (SFMaker* (^)(UIEdgeInsets inserts))imageEdgeInsets;
 
-/// addActionForEvent
+/// 【UIButton】addActionForEvent
 - (SFMaker* (^)(id target, SEL sel, UIControlEvents events))addActionForEvent;
 
 @end

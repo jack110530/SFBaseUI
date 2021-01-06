@@ -9,7 +9,7 @@
 
 @implementation SFMaker (UIViewRendering)
 
-/// clipsToBounds
+/// 【UIView】clipsToBounds
 - (SFMaker* (^)(BOOL value))clipsToBounds {
     return ^SFMaker* (BOOL value) {
         if ([self.obj isKindOfClass:[UIView class]]) {
@@ -20,7 +20,7 @@
     };
 }
 
-/// backgroundColor
+/// 【UIView】backgroundColor
 - (SFMaker* (^)(UIColor *value))backgroundColor {
     return ^SFMaker* (UIColor *value) {
         if ([self.obj isKindOfClass:[UIView class]]) {
@@ -31,7 +31,7 @@
     };
 }
 
-/// alpha
+/// 【UIView】alpha
 - (SFMaker* (^)(CGFloat value))alpha {
     return ^SFMaker* (CGFloat value) {
         if ([self.obj isKindOfClass:[UIView class]]) {
@@ -42,7 +42,7 @@
     };
 }
 
-/// opaque
+/// 【UIView】opaque
 - (SFMaker* (^)(BOOL value))opaque {
     return ^SFMaker* (BOOL value) {
         if ([self.obj isKindOfClass:[UIView class]]) {
@@ -53,7 +53,7 @@
     };
 }
 
-/// hidden
+/// 【UIView】hidden
 - (SFMaker* (^)(BOOL value))hidden {
     return ^SFMaker* (BOOL value) {
         if ([self.obj isKindOfClass:[UIView class]]) {
@@ -64,7 +64,7 @@
     };
 }
 
-/// contentMode
+/// 【UIView】contentMode
 - (SFMaker* (^)(UIViewContentMode value))contentMode {
     return ^SFMaker* (UIViewContentMode value) {
         if ([self.obj isKindOfClass:[UIView class]]) {
@@ -75,7 +75,7 @@
     };
 }
 
-/// maskView
+/// 【UIView】maskView
 - (SFMaker* (^)(UIView *value))maskView {
     return ^SFMaker* (UIView *value) {
         if ([self.obj isKindOfClass:[UIView class]]) {
@@ -86,7 +86,7 @@
     };
 }
 
-/// tintColor
+/// 【UIView】tintColor
 - (SFMaker* (^)(UIColor *value))tintColor {
     return ^SFMaker* (UIColor *value) {
         if ([self.obj isKindOfClass:[UIView class]]) {

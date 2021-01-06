@@ -11,34 +11,34 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SFMaker (UIViewGeometry)
 
-/// frame
+/// 【UIView】frame
 - (SFMaker* (^)(CGRect frame))frame;
 
-/// origin
+/// 【UIView】origin
 - (SFMaker* (^)(CGPoint origin))origin;
 
-/// x
+/// 【UIView】x
 - (SFMaker* (^)(CGFloat x))x;
 
-/// y
+/// 【UIView】y
 - (SFMaker* (^)(CGFloat x))y;
 
-/// size
+/// 【UIView】size
 - (SFMaker* (^)(CGSize size))size;
 
-/// width
+/// 【UIView】width
 - (SFMaker* (^)(CGFloat width))width;
 
-/// height
+/// 【UIView】height
 - (SFMaker* (^)(CGFloat height))height;
 
-/// center
+/// 【UIView】center
 - (SFMaker* (^)(CGPoint center))center;
 
-/// centerX
+/// 【UIView】centerX
 - (SFMaker* (^)(CGFloat centerX))centerX;
 
-/// centerY
+/// 【UIView】centerY
 - (SFMaker* (^)(CGFloat centerY))centerY;
 
 @end

@@ -9,7 +9,7 @@
 
 @implementation SFMaker (UIView)
 
-/// userInteractionEnabled
+/// 【UIView】userInteractionEnabled
 - (SFMaker* (^)(BOOL value))userInteractionEnabled {
     return ^SFMaker* (BOOL value) {
         if ([self.obj isKindOfClass:[UIView class]]) {

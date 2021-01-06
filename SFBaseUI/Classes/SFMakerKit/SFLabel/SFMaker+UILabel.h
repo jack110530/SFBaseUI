@@ -11,19 +11,28 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SFMaker (UILabel)
 
-/// text
+/// 【UILabel】text
 - (SFMaker* (^)(NSString *value))text;
 
-/// font
+/// 【UILabel】font
 - (SFMaker* (^)(UIFont *value))font;
 
-/// textColor
+/// 【UILabel】systemFontSize
+- (SFMaker* (^)(CGFloat size))systemFontSize;
+
+/// 【UILabel】systemFontSizeAndWeight
+- (SFMaker* (^)(CGFloat size, UIFontWeight weight))systemFontSizeAndWeight;
+
+/// 【UILabel】boldSystemFontSize
+- (SFMaker* (^)(CGFloat size))boldSystemFontSize;
+
+/// 【UILabel】textColor
 - (SFMaker* (^)(UIColor *value))textColor;
 
-/// textAlignment
+/// 【UILabel】textAlignment
 - (SFMaker* (^)(NSTextAlignment value))textAlignment;
 
-/// numberOfLines
+/// 【UILabel】numberOfLines
 - (SFMaker* (^)(NSInteger value))numberOfLines;
 
 @end

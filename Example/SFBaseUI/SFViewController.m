@@ -20,8 +20,8 @@
     [super viewDidLoad];
     
 //    [self testNSObject];
-    [self testUIView];
-//    [self testUILabel];
+//    [self testUIView];
+    [self testUILabel];
 //    [self testUIButton];
     
     
@@ -36,7 +36,7 @@
 
 // MARK: NSObject
 - (void)testNSObject {
-//    NSObject *obj = NSObject.sf_new;
+    NSObject *obj = NSObject.make.end;
 }
 
 
@@ -60,7 +60,9 @@
     .frame(CGRectMake(100, 300, 100, 100))
     .backgroundColor([UIColor redColor])
     .text(@"ssssss")
-    .textColor([UIColor redColor])
+    .textColor([UIColor whiteColor])
+    .textAlignment(NSTextAlignmentCenter)
+    .boldSystemFontSize(24)
     .end;
     [self.view addSubview:label];
     

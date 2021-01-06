@@ -9,7 +9,7 @@
 
 @implementation SFMaker (UIButton)
 
-/// title
+/// 【UIButton】title
 - (SFMaker* (^)(NSString *title))title {
     return ^SFMaker* ((NSString *title)) {
         if ([self.obj isKindOfClass:[UIButton class]]) {
@@ -20,7 +20,7 @@
     };
 }
 
-/// titleForState
+/// 【UIButton】titleForState
 - (SFMaker* (^)(NSString *title, UIControlState state))titleForState {
     return ^SFMaker* ((NSString *title, UIControlState state)) {
         if ([self.obj isKindOfClass:[UIButton class]]) {
@@ -31,7 +31,7 @@
     };
 }
 
-/// titleColor
+/// 【UIButton】titleColor
 - (SFMaker* (^)(UIColor *color))titleColor {
     return ^SFMaker* ((UIColor *color)) {
         if ([self.obj isKindOfClass:[UIButton class]]) {
@@ -42,7 +42,7 @@
     };
 }
 
-/// titleColorForState
+/// 【UIButton】titleColorForState
 - (SFMaker* (^)(UIColor *color, UIControlState state))titleColorForState {
     return ^SFMaker* ((UIColor *color, UIControlState state)) {
         if ([self.obj isKindOfClass:[UIButton class]]) {
@@ -53,7 +53,7 @@
     };
 }
 
-/// titleFont
+/// 【UIButton】titleFont
 - (SFMaker* (^)(UIFont *font))titleFont {
     return ^SFMaker* ((UIFont *font)) {
         if ([self.obj isKindOfClass:[UIButton class]]) {
@@ -64,7 +64,7 @@
     };
 }
 
-/// systemTitleFontSize
+/// 【UIButton】systemTitleFontSize
 - (SFMaker* (^)(CGFloat size))systemTitleFontSize {
     return ^SFMaker* ((CGFloat size)) {
         if ([self.obj isKindOfClass:[UIButton class]]) {
@@ -75,7 +75,7 @@
     };
 }
 
-/// systemTitleFontSizeAndWeight
+/// 【UIButton】systemTitleFontSizeAndWeight
 - (SFMaker* (^)(CGFloat size, UIFontWeight weight))systemTitleFontSizeAndWeight {
     return ^SFMaker* ((CGFloat size, UIFontWeight weight)) {
         if ([self.obj isKindOfClass:[UIButton class]]) {
@@ -86,7 +86,7 @@
     };
 }
 
-/// boldSystemTitleFontSize
+/// 【UIButton】boldSystemTitleFontSize
 - (SFMaker* (^)(CGFloat size))boldSystemTitleFontSize {
     return ^SFMaker* ((CGFloat size)) {
         if ([self.obj isKindOfClass:[UIButton class]]) {
@@ -98,7 +98,7 @@
 }
 
 
-/// image
+/// 【UIButton】image
 - (SFMaker* (^)(UIImage *image))image {
     return ^SFMaker* ((UIImage *image)) {
         if ([self.obj isKindOfClass:[UIButton class]]) {
@@ -109,7 +109,7 @@
     };
 }
 
-/// imageForState
+/// 【UIButton】imageForState
 - (SFMaker* (^)(UIImage *image, UIControlState state))imageForState {
     return ^SFMaker* ((UIImage *image, UIControlState state)) {
         if ([self.obj isKindOfClass:[UIButton class]]) {
@@ -120,7 +120,7 @@
     };
 }
 
-/// backgroundImage
+/// 【UIButton】backgroundImage
 - (SFMaker* (^)(UIImage *image))backgroundImage {
     return ^SFMaker* ((UIImage *image)) {
         if ([self.obj isKindOfClass:[UIButton class]]) {
@@ -131,7 +131,7 @@
     };
 }
 
-/// backgroundImageForState
+/// 【UIButton】backgroundImageForState
 - (SFMaker* (^)(UIImage *image, UIControlState state))backgroundImageForState {
     return ^SFMaker* ((UIImage *image, UIControlState state)) {
         if ([self.obj isKindOfClass:[UIButton class]]) {
@@ -142,7 +142,7 @@
     };
 }
 
-/// contentEdgeInsets
+/// 【UIButton】contentEdgeInsets
 - (SFMaker* (^)(UIEdgeInsets inserts))contentEdgeInsets {
     return ^SFMaker* ((UIEdgeInsets inserts)) {
         if ([self.obj isKindOfClass:[UIButton class]]) {
@@ -153,7 +153,7 @@
     };
 }
 
-/// titleEdgeInsets
+/// 【UIButton】titleEdgeInsets
 - (SFMaker* (^)(UIEdgeInsets inserts))titleEdgeInsets {
     return ^SFMaker* ((UIEdgeInsets inserts)) {
         if ([self.obj isKindOfClass:[UIButton class]]) {
@@ -164,7 +164,7 @@
     };
 }
 
-/// imageEdgeInsets
+/// 【UIButton】imageEdgeInsets
 - (SFMaker* (^)(UIEdgeInsets inserts))imageEdgeInsets {
     return ^SFMaker* ((UIEdgeInsets inserts)) {
         if ([self.obj isKindOfClass:[UIButton class]]) {
@@ -175,7 +175,7 @@
     };
 }
 
-/// addActionForEvent
+/// 【UIButton】addActionForEvent
 - (SFMaker* (^)(id target, SEL sel, UIControlEvents events))addActionForEvent {
     return ^SFMaker* ((id target, SEL sel, UIControlEvents events)) {
         if ([self.obj isKindOfClass:[UIButton class]]) {

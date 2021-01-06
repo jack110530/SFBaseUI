@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SFMaker (UIView)
 
-/// userInteractionEnabled
+/// 【UIView】userInteractionEnabled
 - (SFMaker* (^)(BOOL value))userInteractionEnabled;
 
 @end
