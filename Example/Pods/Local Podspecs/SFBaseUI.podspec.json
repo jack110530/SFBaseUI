@@ -70,8 +70,32 @@
       "public_header_files": "SFBaseUI/Classes/SFUIKit/SFUIKit.h",
       "subspecs": [
         {
+          "name": "SFProtocol",
+          "source_files": "SFBaseUI/Classes/SFUIKit/SFProtocol/*.{h,m}"
+        },
+        {
+          "name": "SFView",
+          "source_files": "SFBaseUI/Classes/SFUIKit/SFView/*.{h,m}"
+        },
+        {
           "name": "SFButton",
           "source_files": "SFBaseUI/Classes/SFUIKit/SFButton/*.{h,m}"
+        },
+        {
+          "name": "SFViewController",
+          "source_files": "SFBaseUI/Classes/SFUIKit/SFViewController/*.{h,m}"
+        },
+        {
+          "name": "SFScroll",
+          "source_files": "SFBaseUI/Classes/SFUIKit/SFScroll/*.{h,m}"
+        },
+        {
+          "name": "SFTable",
+          "source_files": "SFBaseUI/Classes/SFUIKit/SFTable/*.{h,m}"
+        },
+        {
+          "name": "SFCollection",
+          "source_files": "SFBaseUI/Classes/SFUIKit/SFCollection/*.{h,m}"
         }
       ]
     }

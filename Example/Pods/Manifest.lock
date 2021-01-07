@@ -38,9 +38,39 @@ PODS:
   - SFBaseUI/SFUIKit (0.1.0):
     - Masonry
     - SFBaseUI/SFUIKit/SFButton (= 0.1.0)
+    - SFBaseUI/SFUIKit/SFCollection (= 0.1.0)
+    - SFBaseUI/SFUIKit/SFProtocol (= 0.1.0)
+    - SFBaseUI/SFUIKit/SFScroll (= 0.1.0)
+    - SFBaseUI/SFUIKit/SFTable (= 0.1.0)
+    - SFBaseUI/SFUIKit/SFView (= 0.1.0)
+    - SFBaseUI/SFUIKit/SFViewController (= 0.1.0)
     - SFCategory
     - SFMacro
   - SFBaseUI/SFUIKit/SFButton (0.1.0):
+    - Masonry
+    - SFCategory
+    - SFMacro
+  - SFBaseUI/SFUIKit/SFCollection (0.1.0):
+    - Masonry
+    - SFCategory
+    - SFMacro
+  - SFBaseUI/SFUIKit/SFProtocol (0.1.0):
+    - Masonry
+    - SFCategory
+    - SFMacro
+  - SFBaseUI/SFUIKit/SFScroll (0.1.0):
+    - Masonry
+    - SFCategory
+    - SFMacro
+  - SFBaseUI/SFUIKit/SFTable (0.1.0):
+    - Masonry
+    - SFCategory
+    - SFMacro
+  - SFBaseUI/SFUIKit/SFView (0.1.0):
+    - Masonry
+    - SFCategory
+    - SFMacro
+  - SFBaseUI/SFUIKit/SFViewController (0.1.0):
     - Masonry
     - SFCategory
     - SFMacro
@@ -57,9 +87,12 @@ PODS:
   - SFCategory/SFFoundation/NSString (0.1.1):
     - YYCategories
   - SFCategory/SFKit (0.1.1):
+    - SFCategory/SFKit/UIButton (= 0.1.1)
     - SFCategory/SFKit/UIImage (= 0.1.1)
     - SFCategory/SFKit/UIView (= 0.1.1)
     - SFCategory/SFKit/UIViewController (= 0.1.1)
+    - YYCategories
+  - SFCategory/SFKit/UIButton (0.1.1):
     - YYCategories
   - SFCategory/SFKit/UIImage (0.1.1):
     - YYCategories
@@ -96,7 +129,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SFCategory:
-    :commit: 1a3ad2d14d2e5fb67f4b3aeced9338d7ebf4e00d
+    :commit: 172cafe1552652461723f2d0586bfe99078e7aa4
     :git: https://github.com/jack110530/SFCategory.git
   SFMacro:
     :commit: 218f0edd943751fbce262f274e2ae373d36e5e90
@@ -105,8 +138,8 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  SFBaseUI: 7e3d52665c06fa1556cc89e2040d31c50ff873d6
-  SFCategory: e51ce414e566262a6dc00fefffbb4d189bba27c9
+  SFBaseUI: 43edcc1cb5d2c51512cb5ac93fe1cc19e925c710
+  SFCategory: 4adc606da20bcce6620f10a89cda3dc2b105274c
   SFMacro: feaf9eaac7cfa4797a99a3d8119895ff843335fe
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 

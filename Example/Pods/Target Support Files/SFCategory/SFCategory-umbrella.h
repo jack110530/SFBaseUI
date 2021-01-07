@@ -12,7 +12,9 @@
 
 #import "SFCategory.h"
 #import "NSObject+SFExtension.h"
-#import "NSString+sfRegex.h"
+#import "NSString+SFRegex.h"
+#import "UIButton+SFEnlargeScope.h"
+#import "UIButton+SFExtension.h"
 #import "UIImage+SFExtension.h"
 #import "UIView+SFAnimation.h"
 #import "UIView+SFClip.h"

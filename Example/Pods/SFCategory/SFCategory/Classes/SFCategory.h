@@ -27,13 +27,9 @@
 #import "UIView+SFGradient.h"
 #import "UIView+SFAnimation.h"
 
-// MARK: UIView
+// MARK: UIButton
 #import "UIButton+SFExtension.h"
 #import "UIButton+SFEnlargeScope.h"
-
-
-// MARK: UIColor
-
 
 // MARK: UIImage
 #import "UIImage+SFExtension.h"

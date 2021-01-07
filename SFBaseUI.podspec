@@ -67,10 +67,40 @@ TODO: Add long description of the pod here.
 
     ss.source_files = 'SFBaseUI/Classes/SFUIKit/SFUIKit.h'
     ss.public_header_files = 'SFBaseUI/Classes/SFUIKit/SFUIKit.h'
-
+    
+    # SFProtocol
+    ss.subspec 'SFProtocol' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFProtocol/*.{h,m}'
+    end
+    
+    # SFView
+    ss.subspec 'SFView' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFView/*.{h,m}'
+    end
+    
     # SFButton
     ss.subspec 'SFButton' do |sss|
       sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFButton/*.{h,m}'
+    end
+    
+    # SFViewController
+    ss.subspec 'SFViewController' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFViewController/*.{h,m}'
+    end
+    
+    # SFScroll
+    ss.subspec 'SFScroll' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFScroll/*.{h,m}'
+    end
+    
+    # SFTable
+    ss.subspec 'SFTable' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFTable/*.{h,m}'
+    end
+    
+    # SFCollection
+    ss.subspec 'SFCollection' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFCollection/*.{h,m}'
     end
 
   end

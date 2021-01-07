@@ -1,6 +1,6 @@
 //
-//  NSObject+SFExtension.h
-//  SFCategory
+//  SFCustomUIProtocol.h
+//  SFBaseUI
 //
 //  Created by 黄山锋 on 2021/1/6.
 //
@@ -9,9 +9,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (SFExtension)
-+ (NSString *)sf_className;
-- (NSString *)sf_className;
+@protocol SFCustomUIProtocol <NSObject>
+
+- (void)customUI;
+
 @end
 
 NS_ASSUME_NONNULL_END

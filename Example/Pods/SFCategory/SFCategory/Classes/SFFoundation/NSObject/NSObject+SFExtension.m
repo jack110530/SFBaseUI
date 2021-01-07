@@ -11,4 +11,7 @@
 + (NSString *)sf_className {
     return NSStringFromClass(self);
 }
+- (NSString *)sf_className {
+    return NSStringFromClass([self class]);
+}
 @end

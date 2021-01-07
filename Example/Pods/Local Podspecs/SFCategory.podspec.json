@@ -51,6 +51,10 @@
           "source_files": "SFCategory/Classes/SFKit/UIView/*.{h,m}"
         },
         {
+          "name": "UIButton",
+          "source_files": "SFCategory/Classes/SFKit/UIButton/*.{h,m}"
+        },
+        {
           "name": "UIImage",
           "source_files": "SFCategory/Classes/SFKit/UIImage/*.{h,m}"
         },
