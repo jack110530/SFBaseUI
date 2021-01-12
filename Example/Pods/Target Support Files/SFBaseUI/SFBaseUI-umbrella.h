@@ -30,6 +30,7 @@
 #import "SFCountdownButton.h"
 #import "SFCountdownLabel.h"
 #import "SFCountdownView.h"
+#import "SFCircleProgressView.h"
 #import "SFCollectionViewReusedProtocol.h"
 #import "SFCustomUIProtocol.h"
 #import "SFReusedProtocol.h"

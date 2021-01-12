@@ -107,6 +107,11 @@ TODO: Add long description of the pod here.
     ss.subspec 'SFCountdown' do |sss|
       sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFCountdown/*.{h,m}'
     end
+    
+    # SFProgress
+    ss.subspec 'SFProgress' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFProgress/*.{h,m}'
+    end
 
   end
 

@@ -103,6 +103,10 @@
         {
           "name": "SFCountdown",
           "source_files": "SFBaseUI/Classes/SFUIKit/SFCountdown/*.{h,m}"
+        },
+        {
+          "name": "SFProgress",
+          "source_files": "SFBaseUI/Classes/SFUIKit/SFProgress/*.{h,m}"
         }
       ]
     }

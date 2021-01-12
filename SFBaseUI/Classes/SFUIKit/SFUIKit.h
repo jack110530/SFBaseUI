@@ -50,4 +50,8 @@
 #import "SFCountdownView.h"
 
 
+#pragma mark - SFProgress
+#import "SFCircleProgressView.h"
+
+
 #endif /* SFUIKit_h */

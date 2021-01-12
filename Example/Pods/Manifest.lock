@@ -46,6 +46,7 @@ PODS:
     - SFBaseUI/SFUIKit/SFButton (= 0.1.0)
     - SFBaseUI/SFUIKit/SFCollection (= 0.1.0)
     - SFBaseUI/SFUIKit/SFCountdown (= 0.1.0)
+    - SFBaseUI/SFUIKit/SFProgress (= 0.1.0)
     - SFBaseUI/SFUIKit/SFProtocol (= 0.1.0)
     - SFBaseUI/SFUIKit/SFScroll (= 0.1.0)
     - SFBaseUI/SFUIKit/SFTable (= 0.1.0)
@@ -65,6 +66,11 @@ PODS:
     - SFCrashInspector
     - SFMacro
   - SFBaseUI/SFUIKit/SFCountdown (0.1.0):
+    - Masonry
+    - SFCategory
+    - SFCrashInspector
+    - SFMacro
+  - SFBaseUI/SFUIKit/SFProgress (0.1.0):
     - Masonry
     - SFCategory
     - SFCrashInspector
@@ -165,7 +171,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  SFBaseUI: ce0a546f2be42b514c11b2a17e929bff2d2750a6
+  SFBaseUI: e5f3082fee1e19a3e42fa2bb83d20d534dcd80c4
   SFCategory: 4adc606da20bcce6620f10a89cda3dc2b105274c
   SFCrashInspector: b89568cbbb18d9318984911789dacde5efa02236
   SFMacro: feaf9eaac7cfa4797a99a3d8119895ff843335fe
