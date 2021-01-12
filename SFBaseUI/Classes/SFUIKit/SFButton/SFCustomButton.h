@@ -1,8 +1,8 @@
 //
-//  SFButton.h
-//  FBSnapshotTestCase
+//  SFCustomButton.h
+//  SFBaseUI
 //
-//  Created by 黄山锋 on 2021/1/6.
+//  Created by 黄山锋 on 2021/1/12.
 //
 
 #import <UIKit/UIKit.h>
@@ -16,7 +16,7 @@ typedef NS_ENUM(NSUInteger, SFButtonLayoutStyle) {
     SFButtonLayoutStyleBottom       // 图片在下
 };
 
-@interface SFButton : UIButton
+@interface SFCustomButton : UIButton
 
 #pragma mark - 自定义布局
 /// 图片文字布局样式，默认图片在右

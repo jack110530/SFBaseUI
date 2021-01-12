@@ -1,13 +1,13 @@
 //
-//  SFButton.m
-//  FBSnapshotTestCase
+//  SFCustomButton.m
+//  SFBaseUI
 //
-//  Created by 黄山锋 on 2021/1/6.
+//  Created by 黄山锋 on 2021/1/12.
 //
 
-#import "SFButton.h"
+#import "SFCustomButton.h"
 
-@implementation SFButton
+@implementation SFCustomButton
 
 #pragma mark - 自定义布局
 - (void)drawRect:(CGRect)rect {

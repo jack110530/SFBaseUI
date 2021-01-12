@@ -23,8 +23,7 @@
 
 
 #pragma mark - SFButton
-#import "SFButton.h"
-#import "SFCountdownButton.h"
+#import "SFCustomButton.h"
 
 
 #pragma mark - SFScroll
