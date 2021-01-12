@@ -102,6 +102,11 @@ TODO: Add long description of the pod here.
     ss.subspec 'SFCollection' do |sss|
       sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFCollection/*.{h,m}'
     end
+    
+    # SFCountdown
+    ss.subspec 'SFCountdown' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFCountdown/*.{h,m}'
+    end
 
   end
 
@@ -115,6 +120,7 @@ TODO: Add long description of the pod here.
   s.dependency 'Masonry'
   s.dependency 'SFCategory'
   s.dependency 'SFMacro'
+  s.dependency 'SFCrashInspector'
   
   
 end

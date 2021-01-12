@@ -38,6 +38,9 @@
     ],
     "SFMacro": [
 
+    ],
+    "SFCrashInspector": [
+
     ]
   },
   "subspecs": [
@@ -96,6 +99,10 @@
         {
           "name": "SFCollection",
           "source_files": "SFBaseUI/Classes/SFUIKit/SFCollection/*.{h,m}"
+        },
+        {
+          "name": "SFCountdown",
+          "source_files": "SFBaseUI/Classes/SFUIKit/SFCountdown/*.{h,m}"
         }
       ]
     }

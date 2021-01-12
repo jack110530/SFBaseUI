@@ -10,6 +10,7 @@ PODS:
     - SFBaseUI/SFMakerKit (= 0.1.0)
     - SFBaseUI/SFUIKit (= 0.1.0)
     - SFCategory
+    - SFCrashInspector
     - SFMacro
   - SFBaseUI/SFMakerKit (0.1.0):
     - Masonry
@@ -18,61 +19,80 @@ PODS:
     - SFBaseUI/SFMakerKit/SFObject (= 0.1.0)
     - SFBaseUI/SFMakerKit/SFView (= 0.1.0)
     - SFCategory
+    - SFCrashInspector
     - SFMacro
   - SFBaseUI/SFMakerKit/SFButton (0.1.0):
     - Masonry
     - SFCategory
+    - SFCrashInspector
     - SFMacro
   - SFBaseUI/SFMakerKit/SFLabel (0.1.0):
     - Masonry
     - SFCategory
+    - SFCrashInspector
     - SFMacro
   - SFBaseUI/SFMakerKit/SFObject (0.1.0):
     - Masonry
     - SFCategory
+    - SFCrashInspector
     - SFMacro
   - SFBaseUI/SFMakerKit/SFView (0.1.0):
     - Masonry
     - SFCategory
+    - SFCrashInspector
     - SFMacro
   - SFBaseUI/SFUIKit (0.1.0):
     - Masonry
     - SFBaseUI/SFUIKit/SFButton (= 0.1.0)
     - SFBaseUI/SFUIKit/SFCollection (= 0.1.0)
+    - SFBaseUI/SFUIKit/SFCountdown (= 0.1.0)
     - SFBaseUI/SFUIKit/SFProtocol (= 0.1.0)
     - SFBaseUI/SFUIKit/SFScroll (= 0.1.0)
     - SFBaseUI/SFUIKit/SFTable (= 0.1.0)
     - SFBaseUI/SFUIKit/SFView (= 0.1.0)
     - SFBaseUI/SFUIKit/SFViewController (= 0.1.0)
     - SFCategory
+    - SFCrashInspector
     - SFMacro
   - SFBaseUI/SFUIKit/SFButton (0.1.0):
     - Masonry
     - SFCategory
+    - SFCrashInspector
     - SFMacro
   - SFBaseUI/SFUIKit/SFCollection (0.1.0):
     - Masonry
     - SFCategory
+    - SFCrashInspector
+    - SFMacro
+  - SFBaseUI/SFUIKit/SFCountdown (0.1.0):
+    - Masonry
+    - SFCategory
+    - SFCrashInspector
     - SFMacro
   - SFBaseUI/SFUIKit/SFProtocol (0.1.0):
     - Masonry
     - SFCategory
+    - SFCrashInspector
     - SFMacro
   - SFBaseUI/SFUIKit/SFScroll (0.1.0):
     - Masonry
     - SFCategory
+    - SFCrashInspector
     - SFMacro
   - SFBaseUI/SFUIKit/SFTable (0.1.0):
     - Masonry
     - SFCategory
+    - SFCrashInspector
     - SFMacro
   - SFBaseUI/SFUIKit/SFView (0.1.0):
     - Masonry
     - SFCategory
+    - SFCrashInspector
     - SFMacro
   - SFBaseUI/SFUIKit/SFViewController (0.1.0):
     - Masonry
     - SFCategory
+    - SFCrashInspector
     - SFMacro
   - SFCategory (0.1.1):
     - SFCategory/SFFoundation (= 0.1.1)
@@ -100,6 +120,7 @@ PODS:
     - YYCategories
   - SFCategory/SFKit/UIViewController (0.1.1):
     - YYCategories
+  - SFCrashInspector (0.1.0)
   - SFMacro (0.1.1)
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
@@ -109,6 +130,7 @@ DEPENDENCIES:
   - FBSnapshotTestCase
   - SFBaseUI (from `../`)
   - SFCategory (from `https://github.com/jack110530/SFCategory.git`, branch `master`)
+  - SFCrashInspector (from `https://github.com/jack110530/SFCrashInspector.git`)
   - SFMacro (from `https://github.com/jack110530/SFMacro.git`, branch `master`)
 
 SPEC REPOS:
@@ -123,6 +145,8 @@ EXTERNAL SOURCES:
   SFCategory:
     :branch: master
     :git: https://github.com/jack110530/SFCategory.git
+  SFCrashInspector:
+    :git: https://github.com/jack110530/SFCrashInspector.git
   SFMacro:
     :branch: master
     :git: https://github.com/jack110530/SFMacro.git
@@ -131,6 +155,9 @@ CHECKOUT OPTIONS:
   SFCategory:
     :commit: 172cafe1552652461723f2d0586bfe99078e7aa4
     :git: https://github.com/jack110530/SFCategory.git
+  SFCrashInspector:
+    :commit: 990c54b3569e992c6945240d90bd5f903f0075bd
+    :git: https://github.com/jack110530/SFCrashInspector.git
   SFMacro:
     :commit: 218f0edd943751fbce262f274e2ae373d36e5e90
     :git: https://github.com/jack110530/SFMacro.git
@@ -138,11 +165,12 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  SFBaseUI: 43edcc1cb5d2c51512cb5ac93fe1cc19e925c710
+  SFBaseUI: ce0a546f2be42b514c11b2a17e929bff2d2750a6
   SFCategory: 4adc606da20bcce6620f10a89cda3dc2b105274c
+  SFCrashInspector: b89568cbbb18d9318984911789dacde5efa02236
   SFMacro: feaf9eaac7cfa4797a99a3d8119895ff843335fe
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: 22c63daabd15922f7ccf8b7bd286dc71a7bb032c
+PODFILE CHECKSUM: 37260e1fa4eb42fabee6e6b46f57f9e2fabf2dd7
 
 COCOAPODS: 1.9.3

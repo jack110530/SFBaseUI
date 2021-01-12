@@ -7,6 +7,7 @@
 //
 
 #import "SFCountdownButton.h"
+#import <SFCrashInspector/SFProxy.h>
 
 @interface SFCountdownButton ()
 @property (nonatomic, assign) SFCountdownStatus status;
@@ -234,7 +235,8 @@
 }
 - (NSTimer *)timer {
     if (!_timer) {
-        _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(counting) userInfo:nil repeats:YES];
+        SFProxy *proxy = [SFProxy proxyWithTarget:self];
+        _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:proxy selector:@selector(counting) userInfo:nil repeats:YES];
         [[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
         [_timer setFireDate:[NSDate distantFuture]];
     }
