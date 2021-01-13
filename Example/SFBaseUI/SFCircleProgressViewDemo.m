@@ -43,9 +43,15 @@
         make.size.mas_equalTo(CGSizeMake(200, 200));
     }];
 }
-- (IBAction)change:(id)sender {
-    [self.progressView setProgress:0.8 animated:YES];
-    [self.progressView1 setProgress:0.8 animated:YES];
+- (IBAction)change:(UIButton *)sender {
+    sender.selected = !sender.selected;
+    if (sender.selected) {
+        [self.progressView setProgress:0.8 animated:YES];
+        [self.progressView1 setProgress:0.8 animated:YES];
+    }else{
+        [self.progressView setProgress:0.3 animated:YES];
+        [self.progressView1 setProgress:0.3 animated:YES];
+    }
 }
 
 @end

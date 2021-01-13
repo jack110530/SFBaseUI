@@ -88,7 +88,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 // MARK: 回调
-@property (nonatomic,copy) void (^countdownDidFinishedBlock)(void);
+/// 开始倒计时回调
+@property (nonatomic, copy) void (^countdownDidStartBlock)(void);
+/// 正在倒计时回调
+@property (nonatomic, copy) void (^countdownIsCountingBlock)(NSTimeInterval ti);
+/// 倒计时完成回调
+@property (nonatomic, copy) void (^countdownDidFinishedBlock)(void);
+
 
 @end
 

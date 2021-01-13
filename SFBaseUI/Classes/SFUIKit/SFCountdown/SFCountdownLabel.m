@@ -68,6 +68,9 @@
 #pragma mark - func
 - (void)counting {
     self.t--;
+    if (self.countdownIsCountingBlock) {
+        self.countdownIsCountingBlock(self.t);
+    }
     if (self.t < 0) {
         [self.timer setFireDate:[NSDate distantFuture]];
         if (self.countdownDidFinishedBlock) {
@@ -256,6 +259,9 @@
     NSTimeInterval lastSeconds = deadline - [[NSDate date] timeIntervalSince1970];
     if (lastSeconds > 0) {
         self.t = lastSeconds;
+        if (self.countdownDidStartBlock) {
+            self.countdownDidStartBlock();
+        }
         [self.timer setFireDate:[NSDate distantPast]];
     }
 }
