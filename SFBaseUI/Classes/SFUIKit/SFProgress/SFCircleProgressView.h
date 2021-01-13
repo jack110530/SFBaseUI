@@ -11,9 +11,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SFCircleProgressView : SFView
 
-/// 当前进度 0~1，默认0
-@property (nonatomic,assign) IBInspectable float progress;
-
 /// 开始角度，默认(-M_PI_2)
 @property (nonatomic,assign) IBInspectable CGFloat startAngle;
 /// 结束角度，默认(M_PI_2*3)
@@ -22,9 +19,37 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,assign) IBInspectable CGFloat progressWidth;
 /// 进度条颜色，默认orangeColor
 @property (nonatomic,strong) IBInspectable UIColor *progressTintColor;
-/// 进度条背景颜色，默认grayColor
+/// 进度条背景颜色，默认lightGrayColor
 @property (nonatomic,strong) IBInspectable UIColor *trackTintColor;
 
+
+/// 当前进度 0~1，默认0
+@property (nonatomic,assign) IBInspectable float progress;
+
+/// 动画方式设置进度
+/// @param progress 进度
+/// @param animated 是否需要动画
+/// during默认1s，timingFunction默认Linear
+- (void)setProgress:(float)progress animated:(BOOL)animated;
+
+/// 动画方式设置进度
+/// @param progress 进度
+/// @param animated 是否需要动画
+/// @param during 动画时长
+/// timingFunction默认Linear
+- (void)setProgress:(float)progress
+           animated:(BOOL)animated
+             during:(NSTimeInterval)during;
+
+/// 动画方式设置进度
+/// @param progress 进度
+/// @param animated 是否需要动画
+/// @param during 动画时长
+/// @param timingFunction 动画方式
+- (void)setProgress:(float)progress
+           animated:(BOOL)animated
+             during:(NSTimeInterval)during
+     timingFunction:(CAMediaTimingFunctionName)timingFunction;
 
 @end
 

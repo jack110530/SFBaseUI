@@ -11,8 +11,9 @@
 #import <Masonry/Masonry.h>
 
 @interface SFCircleProgressViewDemo ()
-{}
 @property (nonatomic,strong) SFCircleProgressView *progressView;
+@property (nonatomic,strong) SFCircleProgressView *progressView1;
+
 @end
 
 @implementation SFCircleProgressViewDemo
@@ -21,8 +22,13 @@
     [super viewDidLoad];
     self.progressView = [[SFCircleProgressView alloc]initWithFrame:CGRectZero];
     [self.view addSubview:self.progressView];
-    self.progressView.progress = 0.5;
+    self.progressView.progress = 0.3;
     
+    self.progressView1 = [[SFCircleProgressView alloc]initWithFrame:CGRectZero];
+    [self.view addSubview:self.progressView1];
+    self.progressView1.progress = 0.3;
+    self.progressView1.startAngle = M_PI;
+    self.progressView1.endAngle = M_PI*2;
 }
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
@@ -30,9 +36,16 @@
         make.top.left.mas_equalTo(100);
         make.size.mas_equalTo(CGSizeMake(100, 100));
     }];
+    
+    [self.progressView1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.progressView.mas_bottom).offset(50);
+        make.centerX.mas_equalTo(0);
+        make.size.mas_equalTo(CGSizeMake(200, 200));
+    }];
 }
 - (IBAction)change:(id)sender {
     [self.progressView setProgress:0.8 animated:YES];
+    [self.progressView1 setProgress:0.8 animated:YES];
 }
 
 @end

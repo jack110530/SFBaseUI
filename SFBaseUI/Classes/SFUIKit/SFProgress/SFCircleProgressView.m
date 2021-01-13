@@ -13,13 +13,12 @@
 #define SFDefault_endAngle          (M_PI_2*3)
 #define SFDefault_progressWidth     (10)
 #define SFDefault_progressTintColor [UIColor orangeColor]
-#define SFDefault_trackTintColor    [UIColor grayColor]
+#define SFDefault_trackTintColor    [UIColor lightGrayColor]
 
 @interface SFCircleProgressView ()
 
 @property (nonatomic,strong) CAShapeLayer *trackLayer;
 @property (nonatomic,strong) CAShapeLayer *progressLayer;
-@property (nonatomic,assign) BOOL isDrawed;
 
 @end
 
@@ -35,40 +34,57 @@ IB_DESIGNABLE
     [self.layer addSublayer:self.progressLayer];
 }
 - (void)drawRect:(CGRect)rect {
-    UIBezierPath *path = [self getPathWithRect:rect progress:1];
+    UIBezierPath *path = [self getPathWithRect:rect];
     self.trackLayer.path = path.CGPath;
-    if (!self.isDrawed) {
-        UIBezierPath *path = [self getPathWithRect:self.bounds progress:self.progress];
-        self.progressLayer.path = path.CGPath;
-        self.isDrawed = YES;
-    }
+    self.progressLayer.path = path.CGPath;
 }
 
 #pragma mark - func
-- (UIBezierPath *)getPathWithRect:(CGRect)rect progress:(float)progress {
+- (UIBezierPath *)getPathWithRect:(CGRect)rect {
     CGPoint center = CGPointMake(rect.size.width/2.0, rect.size.height/2.0);
     CGFloat progressWidth = (self.progressWidth==0)?SFDefault_progressWidth:self.progressWidth;
     CGFloat radius = rect.size.width/2.0-progressWidth;
     CGFloat startAngle = (self.startAngle==0)?SFDefault_startAngle:self.startAngle;
     CGFloat endAngle = (self.endAngle==0)?SFDefault_endAngle:self.endAngle;
-    CGFloat allAngle = endAngle - startAngle;
-    CGFloat progressAngle = allAngle*progress + startAngle;
-    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center radius:radius startAngle:startAngle endAngle:progressAngle clockwise:YES];
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center radius:radius startAngle:startAngle endAngle:endAngle clockwise:YES];
     path.lineCapStyle = kCGLineCapRound;
     return path;
+}
+// MARK: 进度
+- (void)setProgress:(float)progress {
+    [self setProgress:progress animated:NO];
+}
+- (void)setProgress:(float)progress animated:(BOOL)animated {
+    [self setProgress:progress animated:animated during:1];
+}
+- (void)setProgress:(float)progress animated:(BOOL)animated during:(NSTimeInterval)during {
+    [self setProgress:progress animated:animated during:1 timingFunction:kCAMediaTimingFunctionLinear];
+}
+- (void)setProgress:(float)progress animated:(BOOL)animated during:(NSTimeInterval)during timingFunction:(CAMediaTimingFunctionName)timingFunction {
+    if (progress < 0) {
+        progress = 0;
+    }
+    if (progress > 1) {
+        progress = 1;
+    }
+    float fromProgress = _progress;
+    _progress = progress;
+    float toProgress = _progress;
+    [self.progressLayer removeAllAnimations];
+    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    anim.fromValue = [NSNumber numberWithFloat:fromProgress];
+    anim.toValue = [NSNumber numberWithFloat:toProgress];
+    anim.removedOnCompletion = NO;
+    anim.fillMode = kCAFillModeForwards;
+    anim.beginTime = CACurrentMediaTime() + 0;
+    anim.duration = animated?during:0.1;
+    anim.repeatCount = 1;
+    anim.timingFunction = [CAMediaTimingFunction functionWithName:timingFunction];
+    [self.progressLayer addAnimation:anim forKey:@"anim_grow"];
 }
 
 
 #pragma mark - setter
-- (void)setProgress:(float)progress {
-    _progress = progress;
-    if (self.isDrawed) {
-        UIBezierPath *path = [self getPathWithRect:self.bounds progress:progress];
-        self.progressLayer.path = path.CGPath;
-    }else{
-        [self setNeedsDisplay];
-    }
-}
 - (void)setProgressWidth:(CGFloat)progressWidth {
     _progressWidth = progressWidth;
     self.trackLayer.lineWidth = progressWidth;
