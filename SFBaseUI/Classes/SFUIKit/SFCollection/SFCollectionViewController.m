@@ -28,7 +28,7 @@
 }
 
 
-#pragma mark - customLayout
+#pragma mark - custom layout
 - (void)viewWillLayoutSubviews {
     [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);

@@ -36,7 +36,7 @@
     [self.view addSubview:self.scrollView];
 }
 
-#pragma mark - customLayout
+#pragma mark - custom layout
 - (void)viewWillLayoutSubviews {
     [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.scrollView);

@@ -28,7 +28,7 @@
     [self sf_registerFooter:[SFCollectionReusableView class]];
 }
 
-#pragma mark - customLayout
+#pragma mark - custom layout
 - (void)layoutSubviews {
     // 自定义布局
     [super layoutSubviews];
