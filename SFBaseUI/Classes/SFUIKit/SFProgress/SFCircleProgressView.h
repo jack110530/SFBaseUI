@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /// 当前进度 0~1，默认0
-@property (nonatomic,assign) IBInspectable float progress;
+@property (nonatomic,assign) float progress;
 
 /// 动画方式设置进度
 /// @param progress 进度
