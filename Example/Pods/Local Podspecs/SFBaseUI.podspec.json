@@ -41,6 +41,9 @@
     ],
     "SFCrashInspector": [
 
+    ],
+    "ReactiveObjC": [
+
     ]
   },
   "subspecs": [
@@ -107,6 +110,17 @@
         {
           "name": "SFProgress",
           "source_files": "SFBaseUI/Classes/SFUIKit/SFProgress/*.{h,m}"
+        }
+      ]
+    },
+    {
+      "name": "SFMvvm",
+      "source_files": "SFBaseUI/Classes/SFMvvm/SFMvvm.h",
+      "public_header_files": "SFBaseUI/Classes/SFMvvm/SFMvvm.h",
+      "subspecs": [
+        {
+          "name": "SFTableMvvm",
+          "source_files": "SFBaseUI/Classes/SFMvvm/SFTableMvvm/*.{h,m}"
         }
       ]
     }

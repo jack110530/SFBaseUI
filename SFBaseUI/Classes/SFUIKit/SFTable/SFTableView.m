@@ -8,6 +8,10 @@
 #import "SFTableView.h"
 #import <SFCategory/NSObject+SFExtension.h>
 
+@interface SFTableView ()
+@property (nonatomic, strong) NSMutableSet *reuseIdentifierSet;
+@end
+
 @implementation SFTableView
 
 #pragma mark - init
@@ -37,7 +41,7 @@
 /// 注册cell
 /// @param cell cell类对象
 - (void)sf_registerCell:(nullable Class<SFReusedProtocol>)cell {
-    [self registerClass:cell forCellReuseIdentifier:[cell sf_reuseIdentifier]];
+    [self sf_registerCells:@[cell]];
 }
 
 /// 注册cell
@@ -45,13 +49,14 @@
 - (void)sf_registerCells:(NSArray<Class<SFReusedProtocol>> *)cells {
     for (Class cell in cells) {
         [self registerClass:cell forCellReuseIdentifier:[cell sf_reuseIdentifier]];
+        [self.reuseIdentifierSet addObject:[cell sf_reuseIdentifier]];
     }
 }
 
 /// 注册cell（nib）
 /// @param cell cell类对象
 - (void)sf_registerNibCell:(nullable Class<SFReusedProtocol>)cell {
-    [self registerNib:[UINib nibWithNibName:cell.sf_className bundle:nil] forCellReuseIdentifier:[cell sf_reuseIdentifier]];
+    [self sf_registerNibCells:@[cell]];
 }
 
 /// 注册cell（nib）
@@ -59,6 +64,7 @@
 - (void)sf_registerNibCells:(NSArray<Class<SFReusedProtocol>> *)cells {
     for (Class cell in cells) {
         [self registerNib:[UINib nibWithNibName:cell.sf_className bundle:nil] forCellReuseIdentifier:[cell sf_reuseIdentifier]];
+        [self.reuseIdentifierSet addObject:[cell sf_reuseIdentifier]];
     }
 }
 
@@ -67,7 +73,7 @@
 /// 注册section
 /// @param section section类对象
 - (void)sf_registerSection:(nullable Class<SFTableViewReusedProtocol>)section {
-    [self registerClass:section forHeaderFooterViewReuseIdentifier:[section sf_reuseIdentifier]];
+    [self sf_registerSections:@[section]];
 }
 
 /// 注册section
@@ -75,13 +81,14 @@
 - (void)sf_registerSections:(NSArray<Class<SFTableViewReusedProtocol>> *)sections {
     for (Class section in sections) {
         [self registerClass:section forHeaderFooterViewReuseIdentifier:[section sf_reuseIdentifier]];
+        [self.reuseIdentifierSet addObject:[section sf_reuseIdentifier]];
     }
 }
 
 /// 注册section（nib）
 /// @param section section类对象
 - (void)sf_registerNibSection:(nullable Class<SFTableViewReusedProtocol>)section {
-    [self registerNib:[UINib nibWithNibName:section.sf_className bundle:nil] forHeaderFooterViewReuseIdentifier:[section sf_reuseIdentifier]];
+    [self sf_registerNibSections:@[section]];
 }
 
 /// 注册section（nib）
@@ -89,6 +96,7 @@
 - (void)sf_registerNibSections:(NSArray<Class<SFTableViewReusedProtocol>> *)sections {
     for (Class section in sections) {
         [self registerNib:[UINib nibWithNibName:section.sf_className bundle:nil] forHeaderFooterViewReuseIdentifier:[section sf_reuseIdentifier]];
+        [self.reuseIdentifierSet addObject:[section sf_reuseIdentifier]];
     }
 }
 
@@ -97,6 +105,10 @@
 /// @param cell cell类对象
 /// @param indexPath indexPath
 - (__kindof UITableViewCell *)dequeueCell:(nullable Class<SFTableViewReusedProtocol>)cell indexPath:(NSIndexPath *)indexPath {
+    NSString *reuseIdentifier = [cell sf_reuseIdentifier];
+    if (![self.reuseIdentifierSet containsObject:reuseIdentifier]) {
+        [self sf_registerCell:cell];
+    }
     return [self dequeueReusableCellWithIdentifier:[cell sf_reuseIdentifier] forIndexPath:indexPath];
 }
 
@@ -104,10 +116,22 @@
 /// @param section section
 - (nullable __kindof UITableViewHeaderFooterView *)dequeueSection:(nullable Class<SFTableViewReusedProtocol>)section {
     if (section) {
+        NSString *reuseIdentifier = [section sf_reuseIdentifier];
+        if (![self.reuseIdentifierSet containsObject:reuseIdentifier]) {
+            [self sf_registerSection:section];
+        }
         return [self dequeueReusableHeaderFooterViewWithIdentifier:[section sf_reuseIdentifier]];
     }else{
         return nil;
     }
+}
+
+#pragma mark - getter
+- (NSMutableSet *)reuseIdentifierSet {
+    if (!_reuseIdentifierSet) {
+        _reuseIdentifierSet = [NSMutableSet set];
+    }
+    return _reuseIdentifierSet;
 }
 
 @end

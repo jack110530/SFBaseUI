@@ -198,6 +198,7 @@ fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFBaseUI/SFBaseUI.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFCategory/SFCategory.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFCrashInspector/SFCrashInspector.framework"
@@ -206,6 +207,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFBaseUI/SFBaseUI.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFCategory/SFCategory.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFCrashInspector/SFCrashInspector.framework"

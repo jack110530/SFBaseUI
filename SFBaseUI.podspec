@@ -114,6 +114,20 @@ TODO: Add long description of the pod here.
     end
 
   end
+  
+  
+  # SFMvvm
+  s.subspec 'SFMvvm' do |ss|
+
+    ss.source_files = 'SFBaseUI/Classes/SFMvvm/SFMvvm.h'
+    ss.public_header_files = 'SFBaseUI/Classes/SFMvvm/SFMvvm.h'
+
+    # SFTableMvvm
+    ss.subspec 'SFTableMvvm' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFMvvm/SFTableMvvm/*.{h,m}'
+    end
+
+  end
 
 
   
@@ -126,6 +140,6 @@ TODO: Add long description of the pod here.
   s.dependency 'SFCategory'
   s.dependency 'SFMacro'
   s.dependency 'SFCrashInspector'
-  
+  s.dependency 'ReactiveObjC'
   
 end

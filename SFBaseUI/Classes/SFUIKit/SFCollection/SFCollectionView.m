@@ -10,6 +10,9 @@
 #import "SFCollectionReusableView.h"
 #import <SFCategory/NSObject+SFExtension.h>
 
+@interface SFCollectionView ()
+@property (nonatomic, strong) NSMutableSet *reuseIdentifierSet;
+@end
 
 @implementation SFCollectionView
 
@@ -39,7 +42,7 @@
 /// 注册cell
 /// @param cell cell类对象
 - (void)sf_registerCell:(nullable Class<SFReusedProtocol>)cell {
-    [self registerClass:cell forCellWithReuseIdentifier:[cell sf_reuseIdentifier]];
+    [self sf_registerCells:@[cell]];
 }
 
 /// 注册cell
@@ -47,13 +50,14 @@
 - (void)sf_registerCells:(NSArray<Class<SFReusedProtocol>> *)cells {
     for (Class cell in cells) {
         [self registerClass:cell forCellWithReuseIdentifier:[cell sf_reuseIdentifier]];
+        [self.reuseIdentifierSet addObject:[cell sf_reuseIdentifier]];
     }
 }
 
 /// 注册cell（nib）
 /// @param cell cell类对象
 - (void)sf_registerNibCell:(nullable Class<SFReusedProtocol>)cell {
-    [self registerNib:[UINib nibWithNibName:cell.sf_className bundle:nil] forCellWithReuseIdentifier:[cell sf_reuseIdentifier]];
+    [self sf_registerNibCells:@[cell]];
 }
 
 /// 注册cell（nib）
@@ -61,6 +65,7 @@
 - (void)sf_registerNibCells:(NSArray<Class<SFReusedProtocol>> *)cells {
     for (Class cell in cells) {
         [self registerNib:[UINib nibWithNibName:cell.sf_className bundle:nil] forCellWithReuseIdentifier:[cell sf_reuseIdentifier]];
+        [self.reuseIdentifierSet addObject:[cell sf_reuseIdentifier]];
     }
 }
 
@@ -68,7 +73,7 @@
 /// 注册header
 /// @param header header类对象
 - (void)sf_registerHeader:(nullable Class<SFCollectionViewReusedProtocol>)header {
-    [self registerClass:header forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:[header sf_reuseIdentifier]];
+    [self sf_registerHeaders:@[header]];
 }
 
 /// 注册header
@@ -76,13 +81,14 @@
 - (void)sf_registerHeaders:(NSArray<Class<SFCollectionViewReusedProtocol>> *)headers {
     for (Class header in headers) {
         [self registerClass:header forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:[header sf_reuseIdentifier]];
+        [self.reuseIdentifierSet addObject:[header sf_reuseIdentifier]];
     }
 }
 
 /// 注册header（nib）
 /// @param header header类对象
 - (void)sf_registerNibHeader:(nullable Class<SFCollectionViewReusedProtocol>)header {
-    [self registerNib:[UINib nibWithNibName:header.sf_className bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:[header sf_reuseIdentifier]];
+    [self sf_registerNibHeaders:@[header]];
 }
 
 /// 注册header（nib）
@@ -90,6 +96,7 @@
 - (void)sf_registerNibHeaders:(NSArray<Class<SFCollectionViewReusedProtocol>> *)headers {
     for (Class header in headers) {
         [self registerNib:[UINib nibWithNibName:header.sf_className bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:[header sf_reuseIdentifier]];
+        [self.reuseIdentifierSet addObject:[header sf_reuseIdentifier]];
     }
 }
 
@@ -97,7 +104,7 @@
 /// 注册footer
 /// @param footer footer类对象
 - (void)sf_registerFooter:(nullable Class<SFCollectionViewReusedProtocol>)footer {
-    [self registerClass:footer forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:[footer sf_reuseIdentifier]];
+    [self sf_registerFooters:@[footer]];
 }
 
 /// 注册footer
@@ -105,13 +112,14 @@
 - (void)sf_registerFooters:(NSArray<Class<SFCollectionViewReusedProtocol>> *)footers {
     for (Class footer in footers) {
         [self registerClass:footer forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:[footer sf_reuseIdentifier]];
+        [self.reuseIdentifierSet addObject:[footer sf_reuseIdentifier]];
     }
 }
 
 /// 注册footer（nib）
 /// @param footer footer类对象
 - (void)sf_registerNibFooter:(nullable Class<SFCollectionViewReusedProtocol>)footer {
-    [self registerNib:[UINib nibWithNibName:footer.sf_className bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:[footer sf_reuseIdentifier]];
+    [self sf_registerNibFooters:@[footer]];
 }
 
 /// 注册footer（nib）
@@ -119,6 +127,7 @@
 - (void)sf_registerNibFooters:(NSArray<Class<SFCollectionViewReusedProtocol>> *)footers {
     for (Class footer in footers) {
         [self registerNib:[UINib nibWithNibName:footer.sf_className bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:[footer sf_reuseIdentifier]];
+        [self.reuseIdentifierSet addObject:[footer sf_reuseIdentifier]];
     }
 }
 
@@ -163,6 +172,14 @@
     }else{
         return [self dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:[SFCollectionReusableView sf_reuseIdentifier] forIndexPath:indexPath];
     }
+}
+
+#pragma mark - getter
+- (NSMutableSet *)reuseIdentifierSet {
+    if (!_reuseIdentifierSet) {
+        _reuseIdentifierSet = [NSMutableSet set];
+    }
+    return _reuseIdentifierSet;
 }
 
 

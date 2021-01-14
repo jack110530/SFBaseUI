@@ -15,6 +15,7 @@
 		5114071925AD386800886F20 /* SFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5114071825AD386800886F20 /* SFHomeViewController.m */; };
 		511407AB25AD4F8D00886F20 /* SFCircleProgressViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 511407A925AD4F8D00886F20 /* SFCircleProgressViewDemo.m */; };
 		511407AC25AD4F8D00886F20 /* SFCircleProgressViewDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 511407AA25AD4F8D00886F20 /* SFCircleProgressViewDemo.xib */; };
+		51EE18DA25AFFEB600524345 /* SFTableMvvmDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE18D925AFFEB600524345 /* SFTableMvvmDemo.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -59,6 +60,8 @@
 		511407A925AD4F8D00886F20 /* SFCircleProgressViewDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFCircleProgressViewDemo.m; sourceTree = "<group>"; };
 		511407AA25AD4F8D00886F20 /* SFCircleProgressViewDemo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFCircleProgressViewDemo.xib; sourceTree = "<group>"; };
 		5159E2D02594664B00C77140 /* SFBaseProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFBaseProtocol.h; sourceTree = "<group>"; };
+		51EE18D825AFFEB600524345 /* SFTableMvvmDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFTableMvvmDemo.h; sourceTree = "<group>"; };
+		51EE18D925AFFEB600524345 /* SFTableMvvmDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFTableMvvmDemo.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SFBaseUI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFBaseUI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -136,6 +139,15 @@
 			name = "SFProgress(进度条)";
 			sourceTree = "<group>";
 		};
+		51EE18D525AFFE8300524345 /* SFMvvm */ = {
+			isa = PBXGroup;
+			children = (
+				51EE18D825AFFEB600524345 /* SFTableMvvmDemo.h */,
+				51EE18D925AFFEB600524345 /* SFTableMvvmDemo.m */,
+			);
+			name = SFMvvm;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +188,7 @@
 				6003F59C195388D20070C39A /* SFAppDelegate.h */,
 				6003F59D195388D20070C39A /* SFAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				51EE18D525AFFE8300524345 /* SFMvvm */,
 				5114079E25AD4F4600886F20 /* SFProgress(进度条) */,
 				5114070925AD372900886F20 /* SFCountdown(倒计时) */,
 				5114071725AD386800886F20 /* SFHomeViewController.h */,
@@ -415,6 +428,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SFBaseUI_Example/Pods-SFBaseUI_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 				"${BUILT_PRODUCTS_DIR}/SFBaseUI/SFBaseUI.framework",
 				"${BUILT_PRODUCTS_DIR}/SFCategory/SFCategory.framework",
 				"${BUILT_PRODUCTS_DIR}/SFCrashInspector/SFCrashInspector.framework",
@@ -424,6 +438,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SFBaseUI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SFCategory.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SFCrashInspector.framework",
@@ -442,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51EE18DA25AFFEB600524345 /* SFTableMvvmDemo.m in Sources */,
 				6003F59E195388D20070C39A /* SFAppDelegate.m in Sources */,
 				5114071925AD386800886F20 /* SFHomeViewController.m in Sources */,
 				511407AB25AD4F8D00886F20 /* SFCircleProgressViewDemo.m in Sources */,
