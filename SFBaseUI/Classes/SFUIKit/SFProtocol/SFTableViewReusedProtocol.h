@@ -34,11 +34,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 出队cell
 /// @param cell cell类对象
 /// @param indexPath indexPath
-- (__kindof UITableViewCell *)dequeueCell:(nullable Class<SFTableViewReusedProtocol>)cell indexPath:(NSIndexPath *)indexPath;
+- (__kindof UITableViewCell *)sf_dequeueCell:(nullable Class<SFTableViewReusedProtocol>)cell indexPath:(NSIndexPath *)indexPath;
 
 /// 出队section
 /// @param section section
-- (nullable __kindof UITableViewHeaderFooterView *)dequeueSection:(nullable Class<SFTableViewReusedProtocol>)section;
+- (nullable __kindof UITableViewHeaderFooterView *)sf_dequeueSection:(nullable Class<SFTableViewReusedProtocol>)section;
 
 @end
 

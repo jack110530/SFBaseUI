@@ -104,7 +104,7 @@
 /// 出队cell
 /// @param cell cell类对象
 /// @param indexPath indexPath
-- (__kindof UITableViewCell *)dequeueCell:(nullable Class<SFTableViewReusedProtocol>)cell indexPath:(NSIndexPath *)indexPath {
+- (__kindof UITableViewCell *)sf_dequeueCell:(nullable Class<SFTableViewReusedProtocol>)cell indexPath:(NSIndexPath *)indexPath {
     NSString *reuseIdentifier = [cell sf_reuseIdentifier];
     if (![self.reuseIdentifierSet containsObject:reuseIdentifier]) {
         [self sf_registerCell:cell];
@@ -114,7 +114,7 @@
 
 /// 出队section
 /// @param section section
-- (nullable __kindof UITableViewHeaderFooterView *)dequeueSection:(nullable Class<SFTableViewReusedProtocol>)section {
+- (nullable __kindof UITableViewHeaderFooterView *)sf_dequeueSection:(nullable Class<SFTableViewReusedProtocol>)section {
     if (section) {
         NSString *reuseIdentifier = [section sf_reuseIdentifier];
         if (![self.reuseIdentifierSet containsObject:reuseIdentifier]) {
