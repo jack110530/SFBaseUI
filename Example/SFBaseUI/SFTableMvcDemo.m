@@ -107,7 +107,7 @@
             [weakSelf.tableViewManager sf_appendCellModels:models inSectionModel:sectionModel];
         }
         // Controller调度层 通知 视图层更新页面
-        [weakSelf.tableViewManager reloadData];
+        [weakSelf.tableViewManager.tableView reloadData];
     }];
 }
 

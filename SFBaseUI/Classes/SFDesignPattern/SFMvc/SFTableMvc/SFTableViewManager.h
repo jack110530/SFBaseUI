@@ -15,8 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SFTableViewManager : NSObject
 @property (nonatomic, strong, readonly) SFTableView *tableView;
-
-#pragma mark - 数据模型
 @property (nonatomic, strong, readonly) SFTableViewModel *tableModel;
 
 
@@ -37,10 +35,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-
-
-/// 刷新
-- (void)reloadData;
 
 
 /*

@@ -29,12 +29,6 @@
 }
 
 
-/// 刷新
-- (void)reloadData {
-    [self.tableView reloadData];
-}
-
-
 #pragma mark - section
 
 /// 赋值sectionModels

@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *desc;
 @property (nonatomic, copy) NSString *img;
+@property (nonatomic, copy) NSString *focus; // 0未关注，1已关注
 
 #pragma mark - 模拟网络请求
 + (void)getWithPage:(NSInteger)page datasSuccess:(void(^)(NSArray<SFNewsModel *> *models))success;
