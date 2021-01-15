@@ -78,6 +78,10 @@
             newsCell2.img = newsModel.img;
         }
     };
+    // 点击cell
+    self.tableViewManager.didSelectRowAtIndexPathBlock = ^(__kindof SFTableView * _Nonnull tableView, __kindof SFTableViewCell * _Nonnull cell, __kindof SFTableViewCellModel * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {
+        // 处理界面之间的跳转
+    };
     
     // View视图层页面交互 通知 Controller调度层去获取数据
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{

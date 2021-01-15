@@ -36,13 +36,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-
-/*
- * 数据源操作
- */
-
-#pragma mark - section
-
+#pragma mark - 数据源操作
+// MARK: section
 /// 赋值sectionModels
 /// @param sectionModels section数据模型数组
 - (void)sf_setSectionModels:(NSArray<SFTableViewSectionModel *> *)sectionModels;
@@ -68,7 +63,7 @@ NS_ASSUME_NONNULL_BEGIN
                        atIndex:(NSInteger)index;
 
 
-#pragma mark - cell
+// MARK: cell
 
 /// 赋值cellModels
 /// @param cellModels cell数据模型数组
