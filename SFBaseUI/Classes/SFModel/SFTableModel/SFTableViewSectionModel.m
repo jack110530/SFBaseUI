@@ -9,4 +9,9 @@
 
 @implementation SFTableViewSectionModel
 
+// YYModel
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{@"cellModels":[SFTableViewCellModel class]};
+}
+
 @end

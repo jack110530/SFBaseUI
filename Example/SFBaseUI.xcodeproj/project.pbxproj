@@ -16,6 +16,11 @@
 		511407AB25AD4F8D00886F20 /* SFCircleProgressViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 511407A925AD4F8D00886F20 /* SFCircleProgressViewDemo.m */; };
 		511407AC25AD4F8D00886F20 /* SFCircleProgressViewDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 511407AA25AD4F8D00886F20 /* SFCircleProgressViewDemo.xib */; };
 		51EE18DA25AFFEB600524345 /* SFTableMvvmDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE18D925AFFEB600524345 /* SFTableMvvmDemo.m */; };
+		51EE191525B0184300524345 /* SFNewsCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE191425B0184300524345 /* SFNewsCell1.m */; };
+		51EE191B25B0185500524345 /* SFNewsCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE191925B0185500524345 /* SFNewsCell2.m */; };
+		51EE191C25B0185500524345 /* SFNewsCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51EE191A25B0185500524345 /* SFNewsCell2.xib */; };
+		51EE192125B0207700524345 /* SFNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE192025B0207700524345 /* SFNewsModel.m */; };
+		51EE195E25B02FD500524345 /* SFNewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE195D25B02FD500524345 /* SFNewsViewModel.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -62,6 +67,15 @@
 		5159E2D02594664B00C77140 /* SFBaseProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFBaseProtocol.h; sourceTree = "<group>"; };
 		51EE18D825AFFEB600524345 /* SFTableMvvmDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFTableMvvmDemo.h; sourceTree = "<group>"; };
 		51EE18D925AFFEB600524345 /* SFTableMvvmDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFTableMvvmDemo.m; sourceTree = "<group>"; };
+		51EE191325B0184300524345 /* SFNewsCell1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFNewsCell1.h; sourceTree = "<group>"; };
+		51EE191425B0184300524345 /* SFNewsCell1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFNewsCell1.m; sourceTree = "<group>"; };
+		51EE191825B0185500524345 /* SFNewsCell2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFNewsCell2.h; sourceTree = "<group>"; };
+		51EE191925B0185500524345 /* SFNewsCell2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFNewsCell2.m; sourceTree = "<group>"; };
+		51EE191A25B0185500524345 /* SFNewsCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFNewsCell2.xib; sourceTree = "<group>"; };
+		51EE191F25B0207700524345 /* SFNewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFNewsModel.h; sourceTree = "<group>"; };
+		51EE192025B0207700524345 /* SFNewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFNewsModel.m; sourceTree = "<group>"; };
+		51EE195C25B02FD500524345 /* SFNewsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFNewsViewModel.h; sourceTree = "<group>"; };
+		51EE195D25B02FD500524345 /* SFNewsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFNewsViewModel.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SFBaseUI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFBaseUI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,6 +129,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5109E73C25B0466000A92422 /* Model(数据层) */ = {
+			isa = PBXGroup;
+			children = (
+				51EE191F25B0207700524345 /* SFNewsModel.h */,
+				51EE192025B0207700524345 /* SFNewsModel.m */,
+			);
+			name = "Model(数据层)";
+			sourceTree = "<group>";
+		};
+		5109E73D25B0466C00A92422 /* View(视图层) */ = {
+			isa = PBXGroup;
+			children = (
+				51EE191325B0184300524345 /* SFNewsCell1.h */,
+				51EE191425B0184300524345 /* SFNewsCell1.m */,
+				51EE191825B0185500524345 /* SFNewsCell2.h */,
+				51EE191925B0185500524345 /* SFNewsCell2.m */,
+				51EE191A25B0185500524345 /* SFNewsCell2.xib */,
+			);
+			name = "View(视图层)";
+			sourceTree = "<group>";
+		};
+		5109E73E25B0467B00A92422 /* ViewModel(双向绑定) */ = {
+			isa = PBXGroup;
+			children = (
+				51EE195C25B02FD500524345 /* SFNewsViewModel.h */,
+				51EE195D25B02FD500524345 /* SFNewsViewModel.m */,
+			);
+			name = "ViewModel(双向绑定)";
+			sourceTree = "<group>";
+		};
 		5114070925AD372900886F20 /* SFCountdown(倒计时) */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +188,9 @@
 			children = (
 				51EE18D825AFFEB600524345 /* SFTableMvvmDemo.h */,
 				51EE18D925AFFEB600524345 /* SFTableMvvmDemo.m */,
+				5109E73E25B0467B00A92422 /* ViewModel(双向绑定) */,
+				5109E73D25B0466C00A92422 /* View(视图层) */,
+				5109E73C25B0466000A92422 /* Model(数据层) */,
 			);
 			name = SFMvvm;
 			sourceTree = "<group>";
@@ -342,6 +389,7 @@
 				5114071325AD374B00886F20 /* SFCountdownButtonDemo.xib in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				51EE191C25B0185500524345 /* SFNewsCell2.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				511407AC25AD4F8D00886F20 /* SFCircleProgressViewDemo.xib in Resources */,
 			);
@@ -434,6 +482,7 @@
 				"${BUILT_PRODUCTS_DIR}/SFCrashInspector/SFCrashInspector.framework",
 				"${BUILT_PRODUCTS_DIR}/SFMacro/SFMacro.framework",
 				"${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -444,6 +493,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SFCrashInspector.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SFMacro.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCategories.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -458,8 +508,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				51EE18DA25AFFEB600524345 /* SFTableMvvmDemo.m in Sources */,
+				51EE192125B0207700524345 /* SFNewsModel.m in Sources */,
+				51EE195E25B02FD500524345 /* SFNewsViewModel.m in Sources */,
 				6003F59E195388D20070C39A /* SFAppDelegate.m in Sources */,
 				5114071925AD386800886F20 /* SFHomeViewController.m in Sources */,
+				51EE191525B0184300524345 /* SFNewsCell1.m in Sources */,
+				51EE191B25B0185500524345 /* SFNewsCell2.m in Sources */,
 				511407AB25AD4F8D00886F20 /* SFCircleProgressViewDemo.m in Sources */,
 				5114071225AD374B00886F20 /* SFCountdownLabelDemo.m in Sources */,
 				5114071125AD374B00886F20 /* SFCountdownViewDemo.m in Sources */,

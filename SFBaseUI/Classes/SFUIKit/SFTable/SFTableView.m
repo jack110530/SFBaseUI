@@ -107,7 +107,11 @@
 - (__kindof UITableViewCell *)sf_dequeueCell:(nullable Class<SFTableViewReusedProtocol>)cell indexPath:(NSIndexPath *)indexPath {
     NSString *reuseIdentifier = [cell sf_reuseIdentifier];
     if (![self.reuseIdentifierSet containsObject:reuseIdentifier]) {
-        [self sf_registerCell:cell];
+        if (cell.sf_loadFromNib) {
+            [self sf_registerNibCell:cell];
+        }else{
+            [self sf_registerCell:cell];
+        }
     }
     return [self dequeueReusableCellWithIdentifier:[cell sf_reuseIdentifier] forIndexPath:indexPath];
 }

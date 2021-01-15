@@ -11,7 +11,8 @@
 
 #import "SFUIKit.h"
 #import "SFMakerKit.h"
-#import "SFMvvm.h"
+#import "SFDesignPattern.h"
+#import "SFModel.h"
 
 
 #endif /* SFBaseUI_h */

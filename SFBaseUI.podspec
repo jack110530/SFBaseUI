@@ -116,19 +116,50 @@ TODO: Add long description of the pod here.
   end
   
   
-  # SFMvvm
-  s.subspec 'SFMvvm' do |ss|
+  # SFDesignPattern
+  s.subspec 'SFDesignPattern' do |ss|
 
-    ss.source_files = 'SFBaseUI/Classes/SFMvvm/SFMvvm.h'
-    ss.public_header_files = 'SFBaseUI/Classes/SFMvvm/SFMvvm.h'
+    ss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h'
+    ss.public_header_files = 'SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h'
+    
+    # SFMvc
+    ss.subspec 'SFMvc' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h'
+      sss.public_header_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h'
+      
+      # SFTableMvc
+      sss.subspec 'SFTableMvc' do |ssss|
+        ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvc/SFTableMvc/*.{h,m}'
+      end
+      
+    end
 
-    # SFTableMvvm
-    ss.subspec 'SFTableMvvm' do |sss|
-      sss.source_files = 'SFBaseUI/Classes/SFMvvm/SFTableMvvm/*.{h,m}'
+    # SFMvvm
+    ss.subspec 'SFMvvm' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h'
+      sss.public_header_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h'
+      
+      # SFTableMvvm
+      sss.subspec 'SFTableMvvm' do |ssss|
+        ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFTableMvvm/*.{h,m}'
+      end
+      
     end
 
   end
 
+  # SFModel
+  s.subspec 'SFModel' do |ss|
+
+    ss.source_files = 'SFBaseUI/Classes/SFModel/SFModel.h'
+    ss.public_header_files = 'SFBaseUI/Classes/SFModel/SFModel.h'
+    
+    # SFTableModel
+    ss.subspec 'SFTableModel' do |sss|
+        sss.source_files = 'SFBaseUI/Classes/SFModel/SFTableModel/*.{h,m}'
+    end
+
+  end
 
   
   s.resource_bundles = {

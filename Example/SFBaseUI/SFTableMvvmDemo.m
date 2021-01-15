@@ -10,9 +10,11 @@
 #import <SFBaseUI/SFBaseUI.h>
 #import <Masonry/Masonry.h>
 
+#import "SFNewsViewModel.h"
+
 @interface SFTableMvvmDemo ()
 @property (nonatomic, strong) SFTableView *tableView;
-@property (nonatomic, strong) SFTableViewViewModel *tableViewViewModel;
+@property (nonatomic, strong) SFNewsViewModel *tableViewViewModel;
 @end
 
 @implementation SFTableMvvmDemo
@@ -22,9 +24,18 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"SFTableMvvmDemo";
     
-    self.tableViewViewModel = [SFTableViewViewModel viewModelWithTableView:self.tableView];
+    [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+    
+    self.tableViewViewModel = [SFNewsViewModel viewModelWithTableView:self.tableView];
+    [self.tableViewViewModel loadData];
 }
 
+
+
+#pragma mark - getter
 - (SFTableView *)tableView {
     if (!_tableView) {
         _tableView = [[SFTableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];

@@ -7,11 +7,11 @@
 
 #import <UIKit/UIKit.h>
 #import "SFCustomUIProtocol.h"
-#import "SFCollectionViewReusedProtocol.h"
+#import "SFTableViewReusedProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SFTableViewCell : UITableViewCell<SFCustomUIProtocol,SFCollectionViewReusedProtocol>
+@interface SFTableViewCell : UITableViewCell<SFCustomUIProtocol,SFTableViewReusedProtocol>
 
 
 @end

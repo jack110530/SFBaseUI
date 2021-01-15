@@ -114,13 +114,42 @@
       ]
     },
     {
-      "name": "SFMvvm",
-      "source_files": "SFBaseUI/Classes/SFMvvm/SFMvvm.h",
-      "public_header_files": "SFBaseUI/Classes/SFMvvm/SFMvvm.h",
+      "name": "SFDesignPattern",
+      "source_files": "SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h",
+      "public_header_files": "SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h",
       "subspecs": [
         {
-          "name": "SFTableMvvm",
-          "source_files": "SFBaseUI/Classes/SFMvvm/SFTableMvvm/*.{h,m}"
+          "name": "SFMvc",
+          "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h",
+          "public_header_files": "SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h",
+          "subspecs": [
+            {
+              "name": "SFTableMvc",
+              "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvc/SFTableMvc/*.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "SFMvvm",
+          "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h",
+          "public_header_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h",
+          "subspecs": [
+            {
+              "name": "SFTableMvvm",
+              "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFTableMvvm/*.{h,m}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SFModel",
+      "source_files": "SFBaseUI/Classes/SFModel/SFModel.h",
+      "public_header_files": "SFBaseUI/Classes/SFModel/SFModel.h",
+      "subspecs": [
+        {
+          "name": "SFTableModel",
+          "source_files": "SFBaseUI/Classes/SFModel/SFTableModel/*.{h,m}"
         }
       ]
     }

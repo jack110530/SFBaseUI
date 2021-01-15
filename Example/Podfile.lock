@@ -9,9 +9,44 @@ PODS:
   - SFBaseUI (0.1.0):
     - Masonry
     - ReactiveObjC
+    - SFBaseUI/SFDesignPattern (= 0.1.0)
     - SFBaseUI/SFMakerKit (= 0.1.0)
-    - SFBaseUI/SFMvvm (= 0.1.0)
+    - SFBaseUI/SFModel (= 0.1.0)
     - SFBaseUI/SFUIKit (= 0.1.0)
+    - SFCategory
+    - SFCrashInspector
+    - SFMacro
+  - SFBaseUI/SFDesignPattern (0.1.0):
+    - Masonry
+    - ReactiveObjC
+    - SFBaseUI/SFDesignPattern/SFMvc (= 0.1.0)
+    - SFBaseUI/SFDesignPattern/SFMvvm (= 0.1.0)
+    - SFCategory
+    - SFCrashInspector
+    - SFMacro
+  - SFBaseUI/SFDesignPattern/SFMvc (0.1.0):
+    - Masonry
+    - ReactiveObjC
+    - SFBaseUI/SFDesignPattern/SFMvc/SFTableMvc (= 0.1.0)
+    - SFCategory
+    - SFCrashInspector
+    - SFMacro
+  - SFBaseUI/SFDesignPattern/SFMvc/SFTableMvc (0.1.0):
+    - Masonry
+    - ReactiveObjC
+    - SFCategory
+    - SFCrashInspector
+    - SFMacro
+  - SFBaseUI/SFDesignPattern/SFMvvm (0.1.0):
+    - Masonry
+    - ReactiveObjC
+    - SFBaseUI/SFDesignPattern/SFMvvm/SFTableMvvm (= 0.1.0)
+    - SFCategory
+    - SFCrashInspector
+    - SFMacro
+  - SFBaseUI/SFDesignPattern/SFMvvm/SFTableMvvm (0.1.0):
+    - Masonry
+    - ReactiveObjC
     - SFCategory
     - SFCrashInspector
     - SFMacro
@@ -49,14 +84,14 @@ PODS:
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFMvvm (0.1.0):
+  - SFBaseUI/SFModel (0.1.0):
     - Masonry
     - ReactiveObjC
-    - SFBaseUI/SFMvvm/SFTableMvvm (= 0.1.0)
+    - SFBaseUI/SFModel/SFTableModel (= 0.1.0)
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFMvvm/SFTableMvvm (0.1.0):
+  - SFBaseUI/SFModel/SFTableModel (0.1.0):
     - Masonry
     - ReactiveObjC
     - SFCategory
@@ -162,6 +197,7 @@ PODS:
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
   - YYCategories/no-arc (1.0.4)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -169,6 +205,7 @@ DEPENDENCIES:
   - SFCategory (from `https://github.com/jack110530/SFCategory.git`, branch `master`)
   - SFCrashInspector (from `https://github.com/jack110530/SFCrashInspector.git`)
   - SFMacro (from `https://github.com/jack110530/SFMacro.git`, branch `master`)
+  - YYModel
 
 SPEC REPOS:
   trunk:
@@ -176,6 +213,7 @@ SPEC REPOS:
     - Masonry
     - ReactiveObjC
     - YYCategories
+    - YYModel
 
 EXTERNAL SOURCES:
   SFBaseUI:
@@ -204,12 +242,13 @@ SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  SFBaseUI: cd9a8c381dc63371e088ba0be5b14b102a349679
+  SFBaseUI: e5c5bd143f54edd16e1d92db7944dc51b0b3462a
   SFCategory: 4adc606da20bcce6620f10a89cda3dc2b105274c
   SFCrashInspector: b89568cbbb18d9318984911789dacde5efa02236
   SFMacro: feaf9eaac7cfa4797a99a3d8119895ff843335fe
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 37260e1fa4eb42fabee6e6b46f57f9e2fabf2dd7
+PODFILE CHECKSUM: e83da358eead2604954ae0756031ece5f041ded9
 
 COCOAPODS: 1.9.3

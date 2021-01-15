@@ -6,13 +6,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SFCustomUIProtocol.h"
+#import "SFTableViewReusedProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SFTableViewCellModel : NSObject
 
 @property (nonatomic, assign) CGFloat height;
-@property (nonatomic, copy) NSString *reuseIdentifier;
+@property (nonatomic, strong) Class<SFCustomUIProtocol,SFTableViewReusedProtocol> cls;
 
 @end
 
