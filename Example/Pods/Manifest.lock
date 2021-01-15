@@ -252,7 +252,6 @@ DEPENDENCIES:
   - SFCategory (from `https://github.com/jack110530/SFCategory.git`, branch `master`)
   - SFCrashInspector (from `https://github.com/jack110530/SFCrashInspector.git`)
   - SFMacro (from `https://github.com/jack110530/SFMacro.git`, branch `master`)
-  - YYModel
 
 SPEC REPOS:
   trunk:

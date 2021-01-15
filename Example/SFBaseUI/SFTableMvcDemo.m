@@ -23,11 +23,31 @@
 
 // 分页
 @property (nonatomic, assign) NSInteger page;
-@property (nonatomic, strong) SFTableViewModel *tableModel;
 
 @end
 
 @implementation SFTableMvcDemo
+
+
+/*
+ Controller调度层：
+ 生成view，然后组装view
+ 响应View的事件和作为view的代理
+ 调用model的数据获取接口，拿到返回数据，处理加工，渲染到view显示
+ 处理view的生命周期
+ 处理界面之间的跳转
+ 
+ Model数据层：
+ 业务逻辑封装
+ 提供数据接口给controller使用
+ 数据持久化存储和读取
+ 作为数据模型存储数据
+ 
+ View视图层：
+ 界面元素搭建，动画效果，数据展示，
+ 接受用户操作并反馈视觉效果
+ */
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,11 +61,12 @@
     
     // 转交代理（MVC中只是单纯的转交代理，为Controller调度层减压）
     self.tableViewManager = [SFTableViewManager managerTableView:self.tableView];
+    
+    // 视图层数据展示
     self.tableViewManager.cellForRowAtIndexPathBlock = ^(__kindof SFTableView * _Nonnull tableView, __kindof SFTableViewCell * _Nonnull cell, __kindof SFTableViewCellModel * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {
         if ([cell isKindOfClass:[SFNewsCell1 class]]) {
             SFNewsCell1 *newsCell1 = (SFNewsCell1 *)cell;
             SFNewsModel *newsModel = (SFNewsModel *)cellModel;
-            
             newsCell1.title = newsModel.title;
             newsCell1.desc = newsModel.desc;
         }
@@ -58,6 +79,7 @@
         }
     };
     
+    // View视图层页面交互 通知 Controller调度层去获取数据
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         self.page = 0;
         [self loadDataWithPage:self.page];
@@ -66,25 +88,26 @@
         self.page++;
         [self loadDataWithPage:self.page];
     }];
+    
+    // 
+    [self.tableView.mj_header beginRefreshing];
 }
 
-// 通知数据层去获取数据
+// Controller调度层 通知 数据层去获取数据
 - (void)loadDataWithPage:(NSInteger)page {
     __weak typeof(self) weakSelf = self;
     [SFNewsModel getWithPage:page datasSuccess:^(NSArray<SFNewsModel *> * _Nonnull models) {
         [self.tableView.mj_header endRefreshing];
         [self.tableView.mj_footer endRefreshing];
         // 获取到数据 -> 逻辑处理，数据组装
+        SFTableViewSectionModel *sectionModel = weakSelf.tableViewManager.tableModel.sectionModels[0];
         if (self.page == 0) {
-            self.tableModel.sectionModels[0].cellModels = models;
+            [weakSelf.tableViewManager sf_setCellModels:models inSectionModel:sectionModel];
         }else{
-            NSArray *cellModels = self.tableModel.sectionModels[0].cellModels;
-            NSMutableArray *newCellModels = [NSMutableArray arrayWithArray:cellModels];
-            [newCellModels addObjectsFromArray:models];
-            self.tableModel.sectionModels[0].cellModels = newCellModels;
+            [weakSelf.tableViewManager sf_appendCellModels:models inSectionModel:sectionModel];
         }
-        // 通知视图层更新页面
-        weakSelf.tableViewManager.tableModel = self.tableModel;
+        // Controller调度层 通知 视图层更新页面
+        [weakSelf.tableViewManager reloadData];
     }];
 }
 
@@ -96,11 +119,6 @@
     }
     return _tableView;
 }
-- (SFTableViewModel *)tableModel {
-    if (!_tableModel) {
-        _tableModel = [[SFTableViewModel alloc]init];
-    }
-    return _tableModel;
-}
+
 
 @end

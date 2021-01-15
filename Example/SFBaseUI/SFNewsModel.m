@@ -51,7 +51,18 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         NSLog(@"数据加载成功");
         // 网络请求的数据格式
-        NSArray *response = [db_datas subarrayWithRange:NSMakeRange(page*pageSize, pageSize)];
+        NSInteger location = page*pageSize;
+        NSInteger length = pageSize;
+        if (location+length >= db_datas.count) {
+            length = db_datas.count - page*pageSize;
+        }
+        if (length <= 0) {
+            if (success) {
+                success(@[]);
+            }
+            return;
+        }
+        NSArray *response = [db_datas subarrayWithRange:NSMakeRange(location, length)];
         
         // 数据层-构造数据模型
         NSMutableArray *models = [NSMutableArray array];
