@@ -71,11 +71,11 @@
 //}
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     __kindof SFTableViewSectionModel *sectionModel = self.tableModel.sectionModels[section];
-    return sectionModel.headerHeight;
+    return [sectionModel.headerHeight floatValue];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     __kindof SFTableViewSectionModel *sectionModel = self.tableModel.sectionModels[section];
-    return sectionModel.footerHeight;
+    return [sectionModel.footerHeight floatValue];
 }
 
 // section header & footer

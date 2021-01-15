@@ -13,7 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SFTableViewCellModel : NSObject
 
-@property (nonatomic, assign) CGFloat height;
+@property (nonatomic, strong) NSNumber *height;
+@property (nonatomic, strong) NSNumber *estimatedHeight;
 @property (nonatomic, strong) Class<SFCustomUIProtocol,SFTableViewReusedProtocol> cls;
 
 @end

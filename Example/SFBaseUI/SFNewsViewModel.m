@@ -45,13 +45,13 @@
 // 通知数据层（Model）获取数据 -> 获取到数据 -> 通知视图层（View）更新数据
 - (void)loadData {
     __weak typeof(self) weakSelf = self;
-    [SFNewsModel getDatasSuccess:^(NSArray<SFNewsModel *> * _Nonnull models) {
-        SFTableViewSectionModel *sectionModel = [[SFTableViewSectionModel alloc]init];
-        sectionModel.cellModels = models;
-        SFTableViewModel *tableModel = [[SFTableViewModel alloc]init];
-        tableModel.sectionModels = @[sectionModel];
-        weakSelf.tableModel = tableModel;
-    }];
+//    [SFNewsModel getDatasSuccess:^(NSArray<SFNewsModel *> * _Nonnull models) {
+//        SFTableViewSectionModel *sectionModel = [[SFTableViewSectionModel alloc]init];
+//        sectionModel.cellModels = models;
+//        SFTableViewModel *tableModel = [[SFTableViewModel alloc]init];
+//        tableModel.sectionModels = @[sectionModel];
+//        weakSelf.tableModel = tableModel;
+//    }];
 }
 
 

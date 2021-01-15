@@ -14,4 +14,13 @@
     return @{@"cellModels":[SFTableViewCellModel class]};
 }
 
+#pragma mark - getter
+- (NSArray<SFTableViewCellModel *> *)cellModels {
+    if (!_cellModels) {
+        _cellModels = @[];
+    }
+    return _cellModels;
+}
+
+
 @end

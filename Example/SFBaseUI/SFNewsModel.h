@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *img;
 
 #pragma mark - 模拟网络请求
-+ (void)getDatasSuccess:(void(^)(NSArray<SFNewsModel *> *models))success;
++ (void)getWithPage:(NSInteger)page datasSuccess:(void(^)(NSArray<SFNewsModel *> *models))success;
 
 @end
 

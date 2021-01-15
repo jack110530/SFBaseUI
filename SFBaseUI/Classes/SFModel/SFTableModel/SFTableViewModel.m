@@ -14,4 +14,14 @@
     return @{@"sectionModels":[SFTableViewSectionModel class]};
 }
 
+#pragma mark - getter
+- (NSArray<SFTableViewSectionModel *> *)sectionModels {
+    if (!_sectionModels) {
+        SFTableViewSectionModel *sectionModel = [[SFTableViewSectionModel alloc]init];
+        _sectionModels = @[sectionModel];
+    }
+    return _sectionModels;
+}
+
+
 @end

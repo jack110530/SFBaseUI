@@ -44,6 +44,12 @@
     ],
     "ReactiveObjC": [
 
+    ],
+    "MJRefresh": [
+
+    ],
+    "YYModel": [
+
     ]
   },
   "subspecs": [

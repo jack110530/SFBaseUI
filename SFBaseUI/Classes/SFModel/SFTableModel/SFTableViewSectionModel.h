@@ -15,8 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSArray<SFTableViewCellModel *> *cellModels;
 @property (nonatomic, strong) UIView *header;
 @property (nonatomic, strong) UIView *footer;
-@property (nonatomic, assign) CGFloat headerHeight;
-@property (nonatomic, assign) CGFloat footerHeight;
+@property (nonatomic, strong) NSNumber *headerHeight;
+@property (nonatomic, strong) NSNumber *footerHeight;
+@property (nonatomic, strong) NSNumber *estimatedHeaderHeight;
+@property (nonatomic, strong) NSNumber *estimatedFooterHeight;
 
 @end
 

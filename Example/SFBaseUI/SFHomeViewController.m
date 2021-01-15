@@ -12,7 +12,9 @@
 #import "SFCountdownViewDemo.h"
 #import "SFCountdownButtonDemo.h"
 #import "SFCircleProgressViewDemo.h"
+#import "SFTableMvcDemo.h"
 #import "SFTableMvvmDemo.h"
+
 
 @interface SFHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -32,6 +34,7 @@
         @"SFCountdownViewDemo",
         @"SFCountdownButtonDemo",
         @"SFCircleProgressViewDemo",
+        @"SFTableMvcDemo",
         @"SFTableMvvmDemo",
     ];
     

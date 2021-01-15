@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2DE2EDC2817FBA8246016C56 /* Pods_SFBaseUI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48C7C2EFC082ED5ACA17673 /* Pods_SFBaseUI_Example.framework */; };
+		5109E7E125B1334A00A92422 /* SFTableMvcDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5109E7E025B1334A00A92422 /* SFTableMvcDemo.m */; };
 		5114071125AD374B00886F20 /* SFCountdownViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5114070C25AD374A00886F20 /* SFCountdownViewDemo.m */; };
 		5114071225AD374B00886F20 /* SFCountdownLabelDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5114070D25AD374A00886F20 /* SFCountdownLabelDemo.m */; };
 		5114071325AD374B00886F20 /* SFCountdownButtonDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5114070E25AD374A00886F20 /* SFCountdownButtonDemo.xib */; };
@@ -52,6 +53,8 @@
 		065F2BD5DFC962D73B9CCCC5 /* Pods-SFBaseUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFBaseUI_Tests.release.xcconfig"; path = "Target Support Files/Pods-SFBaseUI_Tests/Pods-SFBaseUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		15EC3D03496E75C0D2B6024A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		46972D08FEDF50DF7EAFF084 /* Pods-SFBaseUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFBaseUI_Example.release.xcconfig"; path = "Target Support Files/Pods-SFBaseUI_Example/Pods-SFBaseUI_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5109E7DF25B1334A00A92422 /* SFTableMvcDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFTableMvcDemo.h; sourceTree = "<group>"; };
+		5109E7E025B1334A00A92422 /* SFTableMvcDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFTableMvcDemo.m; sourceTree = "<group>"; };
 		5114070A25AD374900886F20 /* SFCountdownButtonDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCountdownButtonDemo.h; sourceTree = "<group>"; };
 		5114070B25AD374A00886F20 /* SFCountdownViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCountdownViewDemo.h; sourceTree = "<group>"; };
 		5114070C25AD374A00886F20 /* SFCountdownViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCountdownViewDemo.m; sourceTree = "<group>"; };
@@ -159,6 +162,39 @@
 			name = "ViewModel(双向绑定)";
 			sourceTree = "<group>";
 		};
+		5109E7DE25B1331600A92422 /* SFMvc */ = {
+			isa = PBXGroup;
+			children = (
+				5109E7E625B1337100A92422 /* Controller(调度层) */,
+				5109E7E525B1336600A92422 /* View(视图层) */,
+				5109E7E425B1335B00A92422 /* Model(数据层) */,
+			);
+			name = SFMvc;
+			sourceTree = "<group>";
+		};
+		5109E7E425B1335B00A92422 /* Model(数据层) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Model(数据层)";
+			sourceTree = "<group>";
+		};
+		5109E7E525B1336600A92422 /* View(视图层) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "View(视图层)";
+			sourceTree = "<group>";
+		};
+		5109E7E625B1337100A92422 /* Controller(调度层) */ = {
+			isa = PBXGroup;
+			children = (
+				5109E7DF25B1334A00A92422 /* SFTableMvcDemo.h */,
+				5109E7E025B1334A00A92422 /* SFTableMvcDemo.m */,
+			);
+			name = "Controller(调度层)";
+			sourceTree = "<group>";
+		};
 		5114070925AD372900886F20 /* SFCountdown(倒计时) */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +271,7 @@
 				6003F59C195388D20070C39A /* SFAppDelegate.h */,
 				6003F59D195388D20070C39A /* SFAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				5109E7DE25B1331600A92422 /* SFMvc */,
 				51EE18D525AFFE8300524345 /* SFMvvm */,
 				5114079E25AD4F4600886F20 /* SFProgress(进度条) */,
 				5114070925AD372900886F20 /* SFCountdown(倒计时) */,
@@ -475,6 +512,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SFBaseUI_Example/Pods-SFBaseUI_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 				"${BUILT_PRODUCTS_DIR}/SFBaseUI/SFBaseUI.framework",
@@ -486,6 +524,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SFBaseUI.framework",
@@ -510,6 +549,7 @@
 				51EE18DA25AFFEB600524345 /* SFTableMvvmDemo.m in Sources */,
 				51EE192125B0207700524345 /* SFNewsModel.m in Sources */,
 				51EE195E25B02FD500524345 /* SFNewsViewModel.m in Sources */,
+				5109E7E125B1334A00A92422 /* SFTableMvcDemo.m in Sources */,
 				6003F59E195388D20070C39A /* SFAppDelegate.m in Sources */,
 				5114071925AD386800886F20 /* SFHomeViewController.m in Sources */,
 				51EE191525B0184300524345 /* SFNewsCell1.m in Sources */,
