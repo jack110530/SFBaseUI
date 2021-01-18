@@ -139,6 +139,16 @@ TODO: Add long description of the pod here.
       sss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h'
       sss.public_header_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h'
       
+      # SFMvvmProtocol
+      sss.subspec 'SFMvvmProtocol' do |ssss|
+        ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvmProtocol/*.{h,m}'
+      end
+      
+      # SFViewModel
+      sss.subspec 'SFViewModel' do |ssss|
+        ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFViewModel/*.{h,m}'
+      end
+      
       # SFTableMvvm
       sss.subspec 'SFTableMvvm' do |ssss|
         ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFTableMvvm/*.{h,m}'

@@ -5,29 +5,20 @@
 //  Created by 黄山锋 on 2021/1/14.
 //
 
-#import <Foundation/Foundation.h>
+#import "SFViewModel.h"
 #import "SFTableView.h"
-#import "SFTableViewCell.h"
 #import "SFTableViewModel.h"
-#import "SFTableViewCellModel.h"
+#import "SFTableViewManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SFTableViewViewModel : NSObject
+@interface SFTableViewViewModel : SFViewModel
 
-#pragma mark - 数据模型
-@property (nonatomic, strong) SFTableViewModel *tableModel;
-
-#pragma mark - 回调
-@property (nonatomic, copy) void (^cellForRowAtIndexPathBlock)(__kindof SFTableView *tableView, __kindof SFTableViewCell *cell, __kindof SFTableViewCellModel *cellModel, NSIndexPath *indexPath);
-
+@property (nonatomic, strong) SFTableViewManager *tableViewManager;
 
 #pragma mark - init
 + (instancetype)viewModelWithTableView:(__kindof SFTableView *)tableView;
 - (instancetype)initWithTableView:(__kindof SFTableView *)tableView;
-
-
-
 
 @end
 

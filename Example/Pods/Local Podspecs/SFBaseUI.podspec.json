@@ -141,6 +141,14 @@
           "public_header_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h",
           "subspecs": [
             {
+              "name": "SFMvvmProtocol",
+              "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvmProtocol/*.{h,m}"
+            },
+            {
+              "name": "SFViewModel",
+              "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFViewModel/*.{h,m}"
+            },
+            {
               "name": "SFTableMvvm",
               "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFTableMvvm/*.{h,m}"
             }

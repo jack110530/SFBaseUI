@@ -7,6 +7,7 @@
 //
 
 #import "SFNewsViewModel.h"
+#import <MJRefresh/MJRefresh.h>
 
 // model
 #import "SFNewsModel.h"
@@ -15,43 +16,46 @@
 #import "SFNewsCell1.h"
 #import "SFNewsCell2.h"
 
+@interface SFNewsViewModel ()
+// 分页
+@property (nonatomic, assign) NSInteger page;
+@end
+
 
 @implementation SFNewsViewModel
 
 #pragma mark - init
-- (instancetype)initWithTableView:(SFTableView *)tableView {
+- (instancetype)initWithTableView:(__kindof SFTableView *)tableView {
     if (self = [super initWithTableView:tableView]) {
-        self.cellForRowAtIndexPathBlock = ^(__kindof SFTableView * _Nonnull tableView, __kindof SFTableViewCell * _Nonnull cell, __kindof SFTableViewCellModel * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {
-            if ([cell isKindOfClass:[SFNewsCell1 class]]) {
-                SFNewsCell1 *newsCell1 = (SFNewsCell1 *)cell;
-                SFNewsModel *newsModel = (SFNewsModel *)cellModel;
-                
-                newsCell1.title = newsModel.title;
-                newsCell1.desc = newsModel.desc;
-            }
-            else if ([cell isKindOfClass:[SFNewsCell2 class]]) {
-                SFNewsCell2 *newsCell2 = (SFNewsCell2 *)cell;
-                SFNewsModel *newsModel = (SFNewsModel *)cellModel;
-                newsCell2.title = newsModel.title;
-                newsCell2.desc = newsModel.desc;
-                newsCell2.img = newsModel.img;
-            }
-        };
+        // View视图层页面交互 通知 Controller调度层去获取数据
+        tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+            self.page = 0;
+            [self loadDataWithPage:self.page];
+        }];
+        tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+            self.page++;
+            [self loadDataWithPage:self.page];
+        }];
     }
     return self;
 }
 
-
-// 通知数据层（Model）获取数据 -> 获取到数据 -> 通知视图层（View）更新数据
-- (void)loadData {
+// Controller调度层 通知 数据层去获取数据
+- (void)loadDataWithPage:(NSInteger)page {
     __weak typeof(self) weakSelf = self;
-//    [SFNewsModel getDatasSuccess:^(NSArray<SFNewsModel *> * _Nonnull models) {
-//        SFTableViewSectionModel *sectionModel = [[SFTableViewSectionModel alloc]init];
-//        sectionModel.cellModels = models;
-//        SFTableViewModel *tableModel = [[SFTableViewModel alloc]init];
-//        tableModel.sectionModels = @[sectionModel];
-//        weakSelf.tableModel = tableModel;
-//    }];
+    [SFNewsModel getWithPage:page datasSuccess:^(NSArray<SFNewsModel *> * _Nonnull models) {
+        [weakSelf.tableViewManager.tableView.mj_header endRefreshing];
+        [weakSelf.tableViewManager.tableView.mj_footer endRefreshing];
+        // 获取到数据 -> 逻辑处理，数据组装
+        SFTableViewSectionModel *sectionModel = weakSelf.tableViewManager.tableModel.sectionModels[0];
+        if (self.page == 0) {
+            [weakSelf.tableViewManager sf_setCellModels:models inSectionModel:sectionModel];
+        }else{
+            [weakSelf.tableViewManager sf_appendCellModels:models inSectionModel:sectionModel];
+        }
+        // Controller调度层 通知 视图层更新页面
+        [weakSelf.tableViewManager.tableView reloadData];
+    }];
 }
 
 

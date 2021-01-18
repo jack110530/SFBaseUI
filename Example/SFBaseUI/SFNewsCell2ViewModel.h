@@ -1,8 +1,8 @@
 //
-//  SFNewsViewModel.h
+//  SFNewsCell2ViewModel.h
 //  SFBaseUI_Example
 //
-//  Created by 黄山锋 on 2021/1/14.
+//  Created by 黄山锋 on 2021/1/18.
 //  Copyright © 2021 jack110530. All rights reserved.
 //
 
@@ -10,8 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SFNewsViewModel : SFTableViewViewModel
-
+@interface SFNewsCell2ViewModel : SFViewModel
 
 @end
 

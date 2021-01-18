@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SFNewsCell2 : SFTableViewCell
+@interface SFNewsCell2 : SFTableViewCell<SFMvvmProtocol>
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *desc;

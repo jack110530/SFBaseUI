@@ -18,6 +18,8 @@
 
 @implementation SFNewsCell2
 
+@synthesize sf_viewModel;
+
 + (BOOL)sf_loadFromNib {
     return YES;
 }

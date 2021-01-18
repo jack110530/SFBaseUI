@@ -71,8 +71,10 @@
             NSString *img = newDic[@"img"]?:@"";
             if ([img isEqualToString:@""]) {
                 [newDic setObject:NSClassFromString(@"SFNewsCell1") forKey:@"cls"];
+                [newDic setObject:NSClassFromString(@"SFNewsCell1ViewModel") forKey:@"viewModelCls"];
             }else{
                 [newDic setObject:NSClassFromString(@"SFNewsCell2") forKey:@"cls"];
+                [newDic setObject:NSClassFromString(@"SFNewsCell2ViewModel") forKey:@"viewModelCls"];
             }
             [newDic setObject:[NSNumber numberWithFloat:UITableViewAutomaticDimension] forKey:@"height"];
             [newDic setObject:[NSNumber numberWithFloat:50] forKey:@"estimatedHeight"];

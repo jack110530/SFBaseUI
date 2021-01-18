@@ -9,12 +9,12 @@
 #import "SFTableMvvmDemo.h"
 #import <SFBaseUI/SFBaseUI.h>
 #import <Masonry/Masonry.h>
-
 #import "SFNewsViewModel.h"
+#import <MJRefresh/MJRefresh.h>
 
 @interface SFTableMvvmDemo ()
 @property (nonatomic, strong) SFTableView *tableView;
-@property (nonatomic, strong) SFNewsViewModel *tableViewViewModel;
+@property (nonatomic, strong) SFNewsViewModel *newsViewModel;
 @end
 
 @implementation SFTableMvvmDemo
@@ -29,8 +29,8 @@
         make.edges.equalTo(self.view);
     }];
     
-    self.tableViewViewModel = [SFNewsViewModel viewModelWithTableView:self.tableView];
-    [self.tableViewViewModel loadData];
+    self.newsViewModel = [SFNewsViewModel viewModelWithTableView:self.tableView];
+    [self.tableView.mj_header beginRefreshing];
 }
 
 

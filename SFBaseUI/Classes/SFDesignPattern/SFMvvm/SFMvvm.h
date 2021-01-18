@@ -8,9 +8,11 @@
 #ifndef SFMvvm_h
 #define SFMvvm_h
 
+// MARK: SFMvvmProtocol
+#import "SFMvvmProtocol.h"
+
 // MARK: SFTableMvvm
 #import "SFTableViewViewModel.h"
-#import "SFTableViewCellViewModel.h"
 
 
 #endif /* SFMvvm_h */

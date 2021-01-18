@@ -22,6 +22,8 @@
 		51EE191C25B0185500524345 /* SFNewsCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51EE191A25B0185500524345 /* SFNewsCell2.xib */; };
 		51EE192125B0207700524345 /* SFNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE192025B0207700524345 /* SFNewsModel.m */; };
 		51EE195E25B02FD500524345 /* SFNewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE195D25B02FD500524345 /* SFNewsViewModel.m */; };
+		51F2251325B55D950001CC88 /* SFNewsCell1ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F2251225B55D950001CC88 /* SFNewsCell1ViewModel.m */; };
+		51F2259F25B5804F0001CC88 /* SFNewsCell2ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F2259E25B5804F0001CC88 /* SFNewsCell2ViewModel.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -79,6 +81,10 @@
 		51EE192025B0207700524345 /* SFNewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFNewsModel.m; sourceTree = "<group>"; };
 		51EE195C25B02FD500524345 /* SFNewsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFNewsViewModel.h; sourceTree = "<group>"; };
 		51EE195D25B02FD500524345 /* SFNewsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFNewsViewModel.m; sourceTree = "<group>"; };
+		51F2251125B55D950001CC88 /* SFNewsCell1ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFNewsCell1ViewModel.h; sourceTree = "<group>"; };
+		51F2251225B55D950001CC88 /* SFNewsCell1ViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFNewsCell1ViewModel.m; sourceTree = "<group>"; };
+		51F2259D25B5804F0001CC88 /* SFNewsCell2ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFNewsCell2ViewModel.h; sourceTree = "<group>"; };
+		51F2259E25B5804F0001CC88 /* SFNewsCell2ViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFNewsCell2ViewModel.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SFBaseUI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFBaseUI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -158,6 +164,10 @@
 			children = (
 				51EE195C25B02FD500524345 /* SFNewsViewModel.h */,
 				51EE195D25B02FD500524345 /* SFNewsViewModel.m */,
+				51F2251125B55D950001CC88 /* SFNewsCell1ViewModel.h */,
+				51F2251225B55D950001CC88 /* SFNewsCell1ViewModel.m */,
+				51F2259D25B5804F0001CC88 /* SFNewsCell2ViewModel.h */,
+				51F2259E25B5804F0001CC88 /* SFNewsCell2ViewModel.m */,
 			);
 			name = "ViewModel(双向绑定)";
 			sourceTree = "<group>";
@@ -546,11 +556,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F2251325B55D950001CC88 /* SFNewsCell1ViewModel.m in Sources */,
 				51EE18DA25AFFEB600524345 /* SFTableMvvmDemo.m in Sources */,
 				51EE192125B0207700524345 /* SFNewsModel.m in Sources */,
 				51EE195E25B02FD500524345 /* SFNewsViewModel.m in Sources */,
 				5109E7E125B1334A00A92422 /* SFTableMvcDemo.m in Sources */,
 				6003F59E195388D20070C39A /* SFAppDelegate.m in Sources */,
+				51F2259F25B5804F0001CC88 /* SFNewsCell2ViewModel.m in Sources */,
 				5114071925AD386800886F20 /* SFHomeViewController.m in Sources */,
 				51EE191525B0184300524345 /* SFNewsCell1.m in Sources */,
 				51EE191B25B0185500524345 /* SFNewsCell2.m in Sources */,
