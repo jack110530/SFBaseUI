@@ -164,6 +164,11 @@ TODO: Add long description of the pod here.
     ss.source_files = 'SFBaseUI/Classes/SFModel/SFModel.h'
     ss.public_header_files = 'SFBaseUI/Classes/SFModel/SFModel.h'
     
+    # SFModelProtocol
+    ss.subspec 'SFModelProtocol' do |sss|
+        sss.source_files = 'SFBaseUI/Classes/SFModel/SFModelProtocol/*.{h,m}'
+    end
+    
     # SFTableModel
     ss.subspec 'SFTableModel' do |sss|
         sss.source_files = 'SFBaseUI/Classes/SFModel/SFTableModel/*.{h,m}'

@@ -9,6 +9,9 @@
 #define SFModel_h
 
 
+// MARK: SFModelProtocol
+#import "SFModelProtocol.h"
+
 // MARK: SFTableModel
 #import "SFTableViewModel.h"
 #import "SFTableViewCellModel.h"

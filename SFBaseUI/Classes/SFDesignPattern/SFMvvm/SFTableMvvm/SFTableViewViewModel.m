@@ -44,9 +44,7 @@
                 if (!mvvmCell.sf_viewModel) {
                     mvvmCell.sf_viewModel = [cellModel.viewModelCls viewModelWithView:cell];
                 }
-                if (mvvmCell.sf_viewModel.updateDataBlock) {
-                    mvvmCell.sf_viewModel.updateDataBlock(cellModel);
-                }
+                [mvvmCell.sf_viewModel updateDataWithModel:cellModel];
             }
         };
     }

@@ -29,14 +29,13 @@
         RAC(self.cell, title) = RACObserve(self, model.title);
         RAC(self.cell, desc) = RACObserve(self, model.desc);
         RACChannelTo(self.cell, comment) = RACChannelTo(self, model.comment);
-        
-        @weakify(self)
-        self.updateDataBlock = ^(SFNewsModel * _Nonnull model) {
-            @strongify(self)
-            self.model = model;
-        };
     }
     return self;
+}
+
+#pragma mark - update
+- (void)updateDataWithModel:(SFNewsModel *)model {
+    self.model = model;
 }
 
 

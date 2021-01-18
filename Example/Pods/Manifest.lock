@@ -129,7 +129,16 @@ PODS:
     - Masonry
     - MJRefresh
     - ReactiveObjC
+    - SFBaseUI/SFModel/SFModelProtocol (= 0.1.0)
     - SFBaseUI/SFModel/SFTableModel (= 0.1.0)
+    - SFCategory
+    - SFCrashInspector
+    - SFMacro
+    - YYModel
+  - SFBaseUI/SFModel/SFModelProtocol (0.1.0):
+    - Masonry
+    - MJRefresh
+    - ReactiveObjC
     - SFCategory
     - SFCrashInspector
     - SFMacro
@@ -308,7 +317,7 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  SFBaseUI: e1487056550b8292b4e3a3babe53dc467d517665
+  SFBaseUI: f104ca3d590101485c3d407c55bfe01357c05b12
   SFCategory: 4adc606da20bcce6620f10a89cda3dc2b105274c
   SFCrashInspector: b89568cbbb18d9318984911789dacde5efa02236
   SFMacro: feaf9eaac7cfa4797a99a3d8119895ff843335fe

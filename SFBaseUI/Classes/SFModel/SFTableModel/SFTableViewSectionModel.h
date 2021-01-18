@@ -6,11 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SFModelProtocol.h"
 #import "SFTableViewCellModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SFTableViewSectionModel : NSObject
+@interface SFTableViewSectionModel : NSObject<SFModelProtocol>
 
 @property (nonatomic, copy) NSArray<SFTableViewCellModel *> *cellModels;
 @property (nonatomic, strong) UIView *header;

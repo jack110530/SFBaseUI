@@ -27,7 +27,7 @@
 #pragma mark - init
 - (instancetype)initWithTableView:(__kindof SFTableView *)tableView {
     if (self = [super initWithTableView:tableView]) {
-        // View视图层页面交互 通知 Controller调度层去获取数据
+        // View视图层页面交互 通知 ViewModel 去获取数据
         tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             self.page = 0;
             [self loadDataWithPage:self.page];
@@ -40,7 +40,7 @@
     return self;
 }
 
-// Controller调度层 通知 数据层去获取数据
+
 - (void)loadDataWithPage:(NSInteger)page {
     __weak typeof(self) weakSelf = self;
     [SFNewsModel getWithPage:page datasSuccess:^(NSArray<SFNewsModel *> * _Nonnull models) {
@@ -53,7 +53,7 @@
         }else{
             [weakSelf.tableViewManager sf_appendCellModels:models inSectionModel:sectionModel];
         }
-        // Controller调度层 通知 视图层更新页面
+        // ViewModel 通知 视图层更新页面
         [weakSelf.tableViewManager.tableView reloadData];
     }];
 }

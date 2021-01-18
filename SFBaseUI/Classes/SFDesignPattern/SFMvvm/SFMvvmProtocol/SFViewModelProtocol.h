@@ -6,15 +6,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SFModelProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol SFViewModelProtocol <NSObject>
 
 @optional
+
 #pragma mark - init
 + (instancetype)viewModelWithView:(UIView *)view;
 - (instancetype)initWithView:(UIView *)view;
+
+#pragma mark - update
+- (void)updateDataWithModel:(__kindof id<SFModelProtocol>)model;
+
 
 @end
 

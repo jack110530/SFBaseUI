@@ -30,6 +30,7 @@
 #import "SFMaker+UIViewGesture.h"
 #import "SFMaker+UIViewRendering.h"
 #import "SFModel.h"
+#import "SFModelProtocol.h"
 #import "SFTableViewCellModel.h"
 #import "SFTableViewModel.h"
 #import "SFTableViewSectionModel.h"

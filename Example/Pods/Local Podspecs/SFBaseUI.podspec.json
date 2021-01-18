@@ -162,6 +162,10 @@
       "public_header_files": "SFBaseUI/Classes/SFModel/SFModel.h",
       "subspecs": [
         {
+          "name": "SFModelProtocol",
+          "source_files": "SFBaseUI/Classes/SFModel/SFModelProtocol/*.{h,m}"
+        },
+        {
           "name": "SFTableModel",
           "source_files": "SFBaseUI/Classes/SFModel/SFTableModel/*.{h,m}"
         }
