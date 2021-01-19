@@ -5,11 +5,15 @@
 //  Created by 黄山锋 on 2021/1/19.
 //
 
-#import <Foundation/Foundation.h>
+#import "SFMvcModelProtocol.h"
+#import "SFMvvmViewModelProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol SFMvvmModelProtocol <NSObject>
+@protocol SFMvvmModelProtocol <SFMvcModelProtocol>
+
+@optional
+@property (nonatomic, strong) Class<SFMvvmViewModelProtocol> viewModelCls;
 
 @end
 

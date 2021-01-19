@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SFMvvmViewModelProtocol.h"
+@protocol SFMvvmViewModelProtocol;
 
 NS_ASSUME_NONNULL_BEGIN
 

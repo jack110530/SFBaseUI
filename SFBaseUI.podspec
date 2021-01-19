@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SFBaseUI'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'SFBaseUI 基础库 UI层'
 
 # This description is used to generate tags and improve search results.
@@ -173,22 +173,25 @@ TODO: Add long description of the pod here.
       
     end
 
-    # # SFMvvm
-    # ss.subspec 'SFMvvm' do |sss|
-    #   sss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h'
-    #   sss.public_header_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h'
+    # SFMvvm
+    ss.subspec 'SFMvvm' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h'
+      sss.public_header_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h'
       
-    #   # SFMvvmProtocol
-    #   sss.subspec 'SFMvvmProtocol' do |ssss|
-    #     ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvmProtocol/*.{h,m}'
-    #   end
+      # SFMvvmProtocol
+      sss.subspec 'SFMvvmProtocol' do |ssss|
+        ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvmProtocol/*.{h,m}'
+        ssss.dependency 'SFBaseUI/SFDesignPattern/SFMvc/SFMvcProtocol'
+      end
       
-    #   # SFTableMvvm
-    #   sss.subspec 'SFTableMvvm' do |ssss|
-    #     ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFTableMvvm/*.{h,m}'
-    #   end
+      # SFTableMvvm
+      sss.subspec 'SFTableMvvm' do |ssss|
+        ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFTableMvvm/*.{h,m}'
+        ssss.dependency 'SFBaseUI/SFDesignPattern/SFMvc/SFTableMvc'
+        ssss.dependency 'SFBaseUI/SFDesignPattern/SFMvvm/SFMvvmProtocol'
+      end
       
-    # end
+    end
 
   end
 

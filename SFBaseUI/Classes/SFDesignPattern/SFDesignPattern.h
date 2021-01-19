@@ -10,7 +10,7 @@
 
 
 #import "SFMvc.h"
-//#import "SFMvvm.h"
+#import "SFMvvm.h"
 
 
 #endif /* SFDesignPattern_h */

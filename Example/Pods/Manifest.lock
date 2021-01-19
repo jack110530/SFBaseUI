@@ -6,50 +6,51 @@ PODS:
     - FBSnapshotTestCase/Core
   - Masonry (1.1.0)
   - ReactiveObjC (3.1.1)
-  - SFBaseUI (0.1.2):
+  - SFBaseUI (0.1.3):
     - Masonry
     - ReactiveObjC
-    - SFBaseUI/SFDesignPattern (= 0.1.2)
-    - SFBaseUI/SFMakerKit (= 0.1.2)
-    - SFBaseUI/SFUIKit (= 0.1.2)
+    - SFBaseUI/SFDesignPattern (= 0.1.3)
+    - SFBaseUI/SFMakerKit (= 0.1.3)
+    - SFBaseUI/SFUIKit (= 0.1.3)
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFDesignPattern (0.1.2):
+  - SFBaseUI/SFDesignPattern (0.1.3):
     - Masonry
     - ReactiveObjC
-    - SFBaseUI/SFDesignPattern/SFModel (= 0.1.2)
-    - SFBaseUI/SFDesignPattern/SFMvc (= 0.1.2)
+    - SFBaseUI/SFDesignPattern/SFModel (= 0.1.3)
+    - SFBaseUI/SFDesignPattern/SFMvc (= 0.1.3)
+    - SFBaseUI/SFDesignPattern/SFMvvm (= 0.1.3)
     - SFBaseUI/SFUIKit
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFDesignPattern/SFModel (0.1.2):
+  - SFBaseUI/SFDesignPattern/SFModel (0.1.3):
     - Masonry
     - ReactiveObjC
-    - SFBaseUI/SFDesignPattern/SFModel/SFTableModel (= 0.1.2)
+    - SFBaseUI/SFDesignPattern/SFModel/SFTableModel (= 0.1.3)
     - SFBaseUI/SFUIKit
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFDesignPattern/SFModel/SFTableModel (0.1.2):
+  - SFBaseUI/SFDesignPattern/SFModel/SFTableModel (0.1.3):
     - Masonry
     - ReactiveObjC
     - SFBaseUI/SFUIKit
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFDesignPattern/SFMvc (0.1.2):
+  - SFBaseUI/SFDesignPattern/SFMvc (0.1.3):
     - Masonry
     - ReactiveObjC
     - SFBaseUI/SFDesignPattern/SFModel
-    - SFBaseUI/SFDesignPattern/SFMvc/SFMvcProtocol (= 0.1.2)
-    - SFBaseUI/SFDesignPattern/SFMvc/SFTableMvc (= 0.1.2)
+    - SFBaseUI/SFDesignPattern/SFMvc/SFMvcProtocol (= 0.1.3)
+    - SFBaseUI/SFDesignPattern/SFMvc/SFTableMvc (= 0.1.3)
     - SFBaseUI/SFUIKit
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFDesignPattern/SFMvc/SFMvcProtocol (0.1.2):
+  - SFBaseUI/SFDesignPattern/SFMvc/SFMvcProtocol (0.1.3):
     - Masonry
     - ReactiveObjC
     - SFBaseUI/SFDesignPattern/SFModel
@@ -57,7 +58,7 @@ PODS:
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFDesignPattern/SFMvc/SFTableMvc (0.1.2):
+  - SFBaseUI/SFDesignPattern/SFMvc/SFTableMvc (0.1.3):
     - Masonry
     - ReactiveObjC
     - SFBaseUI/SFDesignPattern/SFModel
@@ -66,18 +67,44 @@ PODS:
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFMakerKit (0.1.2):
+  - SFBaseUI/SFDesignPattern/SFMvvm (0.1.3):
     - Masonry
     - ReactiveObjC
-    - SFBaseUI/SFMakerKit/SFButton (= 0.1.2)
-    - SFBaseUI/SFMakerKit/SFLabel (= 0.1.2)
-    - SFBaseUI/SFMakerKit/SFMaker (= 0.1.2)
-    - SFBaseUI/SFMakerKit/SFObject (= 0.1.2)
-    - SFBaseUI/SFMakerKit/SFView (= 0.1.2)
+    - SFBaseUI/SFDesignPattern/SFMvvm/SFMvvmProtocol (= 0.1.3)
+    - SFBaseUI/SFDesignPattern/SFMvvm/SFTableMvvm (= 0.1.3)
+    - SFBaseUI/SFUIKit
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFMakerKit/SFButton (0.1.2):
+  - SFBaseUI/SFDesignPattern/SFMvvm/SFMvvmProtocol (0.1.3):
+    - Masonry
+    - ReactiveObjC
+    - SFBaseUI/SFDesignPattern/SFMvc/SFMvcProtocol
+    - SFBaseUI/SFUIKit
+    - SFCategory
+    - SFCrashInspector
+    - SFMacro
+  - SFBaseUI/SFDesignPattern/SFMvvm/SFTableMvvm (0.1.3):
+    - Masonry
+    - ReactiveObjC
+    - SFBaseUI/SFDesignPattern/SFMvc/SFTableMvc
+    - SFBaseUI/SFDesignPattern/SFMvvm/SFMvvmProtocol
+    - SFBaseUI/SFUIKit
+    - SFCategory
+    - SFCrashInspector
+    - SFMacro
+  - SFBaseUI/SFMakerKit (0.1.3):
+    - Masonry
+    - ReactiveObjC
+    - SFBaseUI/SFMakerKit/SFButton (= 0.1.3)
+    - SFBaseUI/SFMakerKit/SFLabel (= 0.1.3)
+    - SFBaseUI/SFMakerKit/SFMaker (= 0.1.3)
+    - SFBaseUI/SFMakerKit/SFObject (= 0.1.3)
+    - SFBaseUI/SFMakerKit/SFView (= 0.1.3)
+    - SFCategory
+    - SFCrashInspector
+    - SFMacro
+  - SFBaseUI/SFMakerKit/SFButton (0.1.3):
     - Masonry
     - ReactiveObjC
     - SFBaseUI/SFMakerKit/SFMaker
@@ -85,55 +112,55 @@ PODS:
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFMakerKit/SFLabel (0.1.2):
+  - SFBaseUI/SFMakerKit/SFLabel (0.1.3):
     - Masonry
     - ReactiveObjC
     - SFBaseUI/SFMakerKit/SFMaker
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFMakerKit/SFMaker (0.1.2):
+  - SFBaseUI/SFMakerKit/SFMaker (0.1.3):
     - Masonry
     - ReactiveObjC
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFMakerKit/SFObject (0.1.2):
-    - Masonry
-    - ReactiveObjC
-    - SFBaseUI/SFMakerKit/SFMaker
-    - SFCategory
-    - SFCrashInspector
-    - SFMacro
-  - SFBaseUI/SFMakerKit/SFView (0.1.2):
+  - SFBaseUI/SFMakerKit/SFObject (0.1.3):
     - Masonry
     - ReactiveObjC
     - SFBaseUI/SFMakerKit/SFMaker
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFUIKit (0.1.2):
+  - SFBaseUI/SFMakerKit/SFView (0.1.3):
     - Masonry
     - ReactiveObjC
-    - SFBaseUI/SFUIKit/SFButton (= 0.1.2)
-    - SFBaseUI/SFUIKit/SFCollection (= 0.1.2)
-    - SFBaseUI/SFUIKit/SFCountdown (= 0.1.2)
-    - SFBaseUI/SFUIKit/SFProgress (= 0.1.2)
-    - SFBaseUI/SFUIKit/SFProtocol (= 0.1.2)
-    - SFBaseUI/SFUIKit/SFScroll (= 0.1.2)
-    - SFBaseUI/SFUIKit/SFTable (= 0.1.2)
-    - SFBaseUI/SFUIKit/SFView (= 0.1.2)
-    - SFBaseUI/SFUIKit/SFViewController (= 0.1.2)
+    - SFBaseUI/SFMakerKit/SFMaker
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFUIKit/SFButton (0.1.2):
+  - SFBaseUI/SFUIKit (0.1.3):
+    - Masonry
+    - ReactiveObjC
+    - SFBaseUI/SFUIKit/SFButton (= 0.1.3)
+    - SFBaseUI/SFUIKit/SFCollection (= 0.1.3)
+    - SFBaseUI/SFUIKit/SFCountdown (= 0.1.3)
+    - SFBaseUI/SFUIKit/SFProgress (= 0.1.3)
+    - SFBaseUI/SFUIKit/SFProtocol (= 0.1.3)
+    - SFBaseUI/SFUIKit/SFScroll (= 0.1.3)
+    - SFBaseUI/SFUIKit/SFTable (= 0.1.3)
+    - SFBaseUI/SFUIKit/SFView (= 0.1.3)
+    - SFBaseUI/SFUIKit/SFViewController (= 0.1.3)
+    - SFCategory
+    - SFCrashInspector
+    - SFMacro
+  - SFBaseUI/SFUIKit/SFButton (0.1.3):
     - Masonry
     - ReactiveObjC
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFUIKit/SFCollection (0.1.2):
+  - SFBaseUI/SFUIKit/SFCollection (0.1.3):
     - Masonry
     - ReactiveObjC
     - SFBaseUI/SFUIKit/SFProtocol
@@ -141,33 +168,33 @@ PODS:
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFUIKit/SFCountdown (0.1.2):
+  - SFBaseUI/SFUIKit/SFCountdown (0.1.3):
     - Masonry
     - ReactiveObjC
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFUIKit/SFProgress (0.1.2):
+  - SFBaseUI/SFUIKit/SFProgress (0.1.3):
     - Masonry
     - ReactiveObjC
     - SFBaseUI/SFUIKit/SFView
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFUIKit/SFProtocol (0.1.2):
+  - SFBaseUI/SFUIKit/SFProtocol (0.1.3):
     - Masonry
     - ReactiveObjC
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFUIKit/SFScroll (0.1.2):
+  - SFBaseUI/SFUIKit/SFScroll (0.1.3):
     - Masonry
     - ReactiveObjC
     - SFBaseUI/SFUIKit/SFViewController
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFUIKit/SFTable (0.1.2):
+  - SFBaseUI/SFUIKit/SFTable (0.1.3):
     - Masonry
     - ReactiveObjC
     - SFBaseUI/SFUIKit/SFProtocol
@@ -175,14 +202,14 @@ PODS:
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFUIKit/SFView (0.1.2):
+  - SFBaseUI/SFUIKit/SFView (0.1.3):
     - Masonry
     - ReactiveObjC
     - SFBaseUI/SFUIKit/SFProtocol
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFBaseUI/SFUIKit/SFViewController (0.1.2):
+  - SFBaseUI/SFUIKit/SFViewController (0.1.3):
     - Masonry
     - ReactiveObjC
     - SFBaseUI/SFUIKit/SFProtocol
@@ -262,7 +289,7 @@ SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  SFBaseUI: a6d8e6ef9e1a08e78c37541bca810aff23f35953
+  SFBaseUI: 6398274fc1922c0d5340a4fef8f32762129f8de1
   SFCategory: 4adc606da20bcce6620f10a89cda3dc2b105274c
   SFCrashInspector: b89568cbbb18d9318984911789dacde5efa02236
   SFMacro: feaf9eaac7cfa4797a99a3d8119895ff843335fe

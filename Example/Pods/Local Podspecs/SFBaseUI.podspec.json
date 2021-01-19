@@ -1,6 +1,6 @@
 {
   "name": "SFBaseUI",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "summary": "SFBaseUI 基础库 UI层",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/jack110530/SFBaseUI",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/jack110530/SFBaseUI.git",
-    "tag": "0.1.2"
+    "tag": "0.1.3"
   },
   "platforms": {
     "ios": "9.0"
@@ -211,6 +211,34 @@
               "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvc/SFTableMvc/*.{h,m}",
               "dependencies": {
                 "SFBaseUI/SFDesignPattern/SFMvc/SFMvcProtocol": [
+
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "SFMvvm",
+          "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h",
+          "public_header_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h",
+          "subspecs": [
+            {
+              "name": "SFMvvmProtocol",
+              "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvmProtocol/*.{h,m}",
+              "dependencies": {
+                "SFBaseUI/SFDesignPattern/SFMvc/SFMvcProtocol": [
+
+                ]
+              }
+            },
+            {
+              "name": "SFTableMvvm",
+              "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFTableMvvm/*.{h,m}",
+              "dependencies": {
+                "SFBaseUI/SFDesignPattern/SFMvc/SFTableMvc": [
+
+                ],
+                "SFBaseUI/SFDesignPattern/SFMvvm/SFMvvmProtocol": [
 
                 ]
               }

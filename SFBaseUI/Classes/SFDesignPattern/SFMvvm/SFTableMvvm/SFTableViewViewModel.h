@@ -5,14 +5,13 @@
 //  Created by 黄山锋 on 2021/1/14.
 //
 
-#import "SFViewModel.h"
-#import "SFTableView.h"
-#import "SFTableViewModel.h"
+#import <Foundation/Foundation.h>
+// manager
 #import "SFTableViewManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SFTableViewViewModel : SFViewModel
+@interface SFTableViewViewModel : NSObject
 
 @property (nonatomic, strong) SFTableViewManager *tableViewManager;
 

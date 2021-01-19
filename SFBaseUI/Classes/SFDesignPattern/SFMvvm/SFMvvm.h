@@ -9,7 +9,9 @@
 #define SFMvvm_h
 
 // MARK: SFMvvmProtocol
-#import "SFMvvmProtocol.h"
+#import "SFMvvmViewProtocol.h"
+#import "SFMvvmModelProtocol.h"
+#import "SFMvvmViewModelProtocol.h"
 
 // MARK: SFTableMvvm
 #import "SFTableViewViewModel.h"

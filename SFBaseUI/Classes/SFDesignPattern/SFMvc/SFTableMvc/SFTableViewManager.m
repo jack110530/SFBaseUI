@@ -134,7 +134,7 @@
     __kindof SFTableViewCellModel *cellModel = sectionModel.cellModels[indexPath.row];
     if ([cellModel conformsToProtocol:@protocol(SFMvcModelProtocol)]) {
         __kindof SFTableViewCellModel<SFMvcModelProtocol> *mvcCellModel = (__kindof SFTableViewCellModel<SFMvcModelProtocol> *)cellModel;
-        __kindof SFTableViewCell *cell = [self.tableView sf_dequeueCell:mvcCellModel.tableViewCellCls indexPath:indexPath];
+        __kindof SFTableViewCell *cell = [self.tableView sf_dequeueCell:mvcCellModel.viewCls indexPath:indexPath];
         if (self.cellForRowAtIndexPathBlock) {
             self.cellForRowAtIndexPathBlock(self.tableView, cell, cellModel, indexPath);
         }

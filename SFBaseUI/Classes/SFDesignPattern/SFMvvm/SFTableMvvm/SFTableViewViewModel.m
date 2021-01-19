@@ -7,8 +7,8 @@
 
 #import "SFTableViewViewModel.h"
 #import <ReactiveObjC/ReactiveObjC.h>
-#import "SFMvvmProtocol.h"
-#import "SFViewModel.h"
+#import "SFMvvmViewProtocol.h"
+#import "SFMvvmModelProtocol.h"
 
 @interface SFTableViewViewModel ()
 @property (nonatomic, strong) SFTableView *tableView;
@@ -39,12 +39,15 @@
         
         // 视图层数据展示
         self.tableViewManager.cellForRowAtIndexPathBlock = ^(__kindof SFTableView * _Nonnull tableView, __kindof SFTableViewCell * _Nonnull cell, __kindof SFTableViewCellModel * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {
-            if ([cell conformsToProtocol:@protocol(SFMvvmProtocol)]) {
-                SFTableViewCell<SFMvvmProtocol> *mvvmCell = (SFTableViewCell<SFMvvmProtocol> *)cell;
-                if (!mvvmCell.sf_viewModel) {
-                    mvvmCell.sf_viewModel = [cellModel.viewModelCls viewModelWithView:cell];
+            if ([cell conformsToProtocol:@protocol(SFMvvmViewProtocol)]) {
+                __kindof SFTableViewCell<SFMvvmViewProtocol> *mvvmCell = (SFTableViewCell<SFMvvmViewProtocol> *)cell;
+                if ([cellModel conformsToProtocol:@protocol(SFMvvmModelProtocol)]) {
+                    __kindof SFTableViewCellModel<SFMvvmModelProtocol> *mvvmCellModel = (__kindof SFTableViewCellModel<SFMvvmModelProtocol> *)cellModel;
+                    if (!mvvmCell.sf_viewModel) {
+                        mvvmCell.sf_viewModel = [mvvmCellModel.viewModelCls viewModelWithView:mvvmCell];
+                    }
+                    [mvvmCell.sf_viewModel updateDataWithModel:mvvmCellModel];
                 }
-                [mvvmCell.sf_viewModel updateDataWithModel:cellModel];
             }
         };
     }
