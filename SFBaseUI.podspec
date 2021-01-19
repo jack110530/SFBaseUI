@@ -154,21 +154,20 @@ TODO: Add long description of the pod here.
 
     end
 
+    # SFProtocol
+    ss.subspec 'SFProtocol' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFProtocol/*.{h,m}'
+    end
+
     # SFMvc
     ss.subspec 'SFMvc' do |sss|
       sss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h'
       sss.public_header_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h'
       sss.dependency 'SFBaseUI/SFDesignPattern/SFModel'
-
-      # SFMvcProtocol
-      sss.subspec 'SFMvcProtocol' do |ssss|
-        ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvcProtocol/*.{h,m}'
-      end
       
       # SFTableMvc
       sss.subspec 'SFTableMvc' do |ssss|
         ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvc/SFTableMvc/*.{h,m}'
-        ssss.dependency 'SFBaseUI/SFDesignPattern/SFMvc/SFMvcProtocol'
       end
       
     end
@@ -178,17 +177,15 @@ TODO: Add long description of the pod here.
       sss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h'
       sss.public_header_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h'
       
-      # SFMvvmProtocol
-      sss.subspec 'SFMvvmProtocol' do |ssss|
-        ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvmProtocol/*.{h,m}'
-        ssss.dependency 'SFBaseUI/SFDesignPattern/SFMvc/SFMvcProtocol'
-      end
-      
       # SFTableMvvm
       sss.subspec 'SFTableMvvm' do |ssss|
         ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFTableMvvm/*.{h,m}'
         ssss.dependency 'SFBaseUI/SFDesignPattern/SFMvc/SFTableMvc'
-        ssss.dependency 'SFBaseUI/SFDesignPattern/SFMvvm/SFMvvmProtocol'
+      end
+
+      # SFBaseMvvm
+      sss.subspec 'SFBaseMvvm' do |ssss|
+        ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFBaseMvvm/*.{h,m}'
       end
       
     end
@@ -209,10 +206,7 @@ TODO: Add long description of the pod here.
   s.dependency 'SFCategory'
   s.dependency 'SFMacro'
   s.dependency 'SFCrashInspector'
-  s.dependency 'ReactiveObjC'
-  # s.dependency 'MJRefresh'
-  # s.dependency 'YYModel'
-  
+  s.dependency 'ReactiveObjC'  
   
   
 end

@@ -8,12 +8,12 @@
 
 #import "SFHomeViewController.h"
 // demo
-//#import "SFCountdownLabelDemo.h"
-//#import "SFCountdownViewDemo.h"
-//#import "SFCountdownButtonDemo.h"
-//#import "SFCircleProgressViewDemo.h"
-//#import "SFTableMvcDemo.h"
-//#import "SFTableMvvmDemo.h"
+#import "SFCountdownLabelDemo.h"
+#import "SFCountdownViewDemo.h"
+#import "SFCountdownButtonDemo.h"
+#import "SFCircleProgressViewDemo.h"
+#import "SFTableMvcDemo.h"
+#import "SFTableMvvmDemo.h"
 
 
 @interface SFHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -30,12 +30,12 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.datas = @[
-//        @"SFCountdownLabelDemo",
-//        @"SFCountdownViewDemo",
-//        @"SFCountdownButtonDemo",
-//        @"SFCircleProgressViewDemo",
-//        @"SFTableMvcDemo",
-//        @"SFTableMvvmDemo",
+        @"SFCountdownLabelDemo",
+        @"SFCountdownViewDemo",
+        @"SFCountdownButtonDemo",
+        @"SFCircleProgressViewDemo",
+        @"SFTableMvcDemo",
+        @"SFTableMvvmDemo",
     ];
     
 }

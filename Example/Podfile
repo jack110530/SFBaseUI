@@ -15,6 +15,8 @@ target 'SFBaseUI_Example' do
   pod 'SFMacro', :git => 'https://github.com/jack110530/SFMacro.git', :branch => 'master'
   pod 'SFCrashInspector', :git => 'https://github.com/jack110530/SFCrashInspector.git'
     
+  pod 'MJRefresh'
+  pod 'YYModel'
     
     
 end

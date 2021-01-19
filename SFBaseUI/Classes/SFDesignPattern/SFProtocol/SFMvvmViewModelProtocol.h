@@ -14,12 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol SFMvvmViewModelProtocol <NSObject>
 
-@optional
+@required
 #pragma mark - init
 + (instancetype)viewModelWithView:(UIView<SFMvvmViewProtocol> *)view;
-- (instancetype)initWithView:(UIView<SFMvvmViewProtocol> *)view;
-
-#pragma mark - update
 - (void)updateDataWithModel:(__kindof id<SFMvvmModelProtocol>)model;
 
 @end

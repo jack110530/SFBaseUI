@@ -13,8 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSNumber *height;
 @property (nonatomic, strong) NSNumber *estimatedHeight;
-//@property (nonatomic, strong) Class<SFCustomUIProtocol,SFTableViewReusedProtocol> cls;
-//@property (nonatomic, strong) Class<SFViewModelProtocol> viewModelCls;
 
 @end
 
