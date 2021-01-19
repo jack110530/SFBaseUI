@@ -7,8 +7,7 @@
 
 #import "SFCountdownView.h"
 #import <SFMacro/SFFunc.h>
-#import <SFCrashInspector/SFProxy.h>
-#import <YYCategories/UIView+YYAdd.h>
+#import <SFCrashInspector/SFCrachInspector.h>
 #import <Masonry/Masonry.h>
 
 #define SFDefaultFmt_deadline   @"yyyy/MM/dd HH:mm:ss截止"
@@ -173,7 +172,9 @@ typedef NS_ENUM(NSUInteger, SFCountdownState) {
 }
 - (void)setState:(SFCountdownState)state {
     if (_state != state) {
-        [self removeAllSubviews];
+        while (self.subviews.count) {
+            [self.subviews.lastObject removeFromSuperview];
+        }
     }
     switch (state) {
         case SFCountdownStateDeadline:

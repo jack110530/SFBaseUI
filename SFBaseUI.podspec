@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SFBaseUI'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'SFBaseUI 基础库 UI层'
 
 # This description is used to generate tags and improve search results.
@@ -72,66 +72,66 @@ TODO: Add long description of the pod here.
   end
 
 
-  # # SFUIKit
-  # s.subspec 'SFUIKit' do |ss|
+  # SFUIKit
+  s.subspec 'SFUIKit' do |ss|
 
-  #   ss.source_files = 'SFBaseUI/Classes/SFUIKit/SFUIKit.h'
-  #   ss.public_header_files = 'SFBaseUI/Classes/SFUIKit/SFUIKit.h'
+    ss.source_files = 'SFBaseUI/Classes/SFUIKit/SFUIKit.h'
+    ss.public_header_files = 'SFBaseUI/Classes/SFUIKit/SFUIKit.h'
     
-  #   # SFProtocol
-  #   ss.subspec 'SFProtocol' do |sss|
-  #     sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFProtocol/*.{h,m}'
-  #   end
+    # SFProtocol
+    ss.subspec 'SFProtocol' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFProtocol/*.{h,m}'
+    end
     
-  #   # SFView
-  #   ss.subspec 'SFView' do |sss|
-  #     sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFView/*.{h,m}'
-  #     sss.dependency 'SFBaseUI/SFUIKit/SFProtocol'
-  #   end
+    # SFView
+    ss.subspec 'SFView' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFView/*.{h,m}'
+      sss.dependency 'SFBaseUI/SFUIKit/SFProtocol'
+    end
     
-  #   # SFButton
-  #   ss.subspec 'SFButton' do |sss|
-  #     sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFButton/*.{h,m}'
-  #   end
+    # SFButton
+    ss.subspec 'SFButton' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFButton/*.{h,m}'
+    end
     
-  #   # SFViewController
-  #   ss.subspec 'SFViewController' do |sss|
-  #     sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFViewController/*.{h,m}'
-  #     sss.dependency 'SFBaseUI/SFUIKit/SFProtocol'
-  #   end
+    # SFViewController
+    ss.subspec 'SFViewController' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFViewController/*.{h,m}'
+      sss.dependency 'SFBaseUI/SFUIKit/SFProtocol'
+    end
     
-  #   # SFScroll
-  #   ss.subspec 'SFScroll' do |sss|
-  #     sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFScroll/*.{h,m}'
-  #     sss.dependency 'SFBaseUI/SFUIKit/SFViewController'
-  #   end
+    # SFScroll
+    ss.subspec 'SFScroll' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFScroll/*.{h,m}'
+      sss.dependency 'SFBaseUI/SFUIKit/SFViewController'
+    end
     
-  #   # SFTable
-  #   ss.subspec 'SFTable' do |sss|
-  #     sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFTable/*.{h,m}'
-  #     sss.dependency 'SFBaseUI/SFUIKit/SFProtocol'
-  #     sss.dependency 'SFBaseUI/SFUIKit/SFViewController'
-  #   end
+    # SFTable
+    ss.subspec 'SFTable' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFTable/*.{h,m}'
+      sss.dependency 'SFBaseUI/SFUIKit/SFProtocol'
+      sss.dependency 'SFBaseUI/SFUIKit/SFViewController'
+    end
     
-  #   # SFCollection
-  #   ss.subspec 'SFCollection' do |sss|
-  #     sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFCollection/*.{h,m}'
-  #     sss.dependency 'SFBaseUI/SFUIKit/SFProtocol'
-  #     sss.dependency 'SFBaseUI/SFUIKit/SFViewController'
-  #   end
+    # SFCollection
+    ss.subspec 'SFCollection' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFCollection/*.{h,m}'
+      sss.dependency 'SFBaseUI/SFUIKit/SFProtocol'
+      sss.dependency 'SFBaseUI/SFUIKit/SFViewController'
+    end
     
-  #   # SFCountdown
-  #   ss.subspec 'SFCountdown' do |sss|
-  #     sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFCountdown/*.{h,m}'
-  #   end
+    # SFCountdown
+    ss.subspec 'SFCountdown' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFCountdown/*.{h,m}'
+    end
     
-  #   # SFProgress
-  #   ss.subspec 'SFProgress' do |sss|
-  #     sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFProgress/*.{h,m}'
-  #     sss.dependency 'SFBaseUI/SFUIKit/SFView'
-  #   end
+    # SFProgress
+    ss.subspec 'SFProgress' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFProgress/*.{h,m}'
+      sss.dependency 'SFBaseUI/SFUIKit/SFView'
+    end
 
-  # end
+  end
   
   
 #  # SFDesignPattern
@@ -202,10 +202,10 @@ TODO: Add long description of the pod here.
   s.frameworks = 'UIKit', 'Foundation'
   
   
-  # s.dependency 'Masonry'
-  # s.dependency 'SFCategory'
-  # s.dependency 'SFMacro'
-  # s.dependency 'SFCrashInspector'
+  s.dependency 'Masonry'
+  s.dependency 'SFCategory'
+  s.dependency 'SFMacro'
+  s.dependency 'SFCrashInspector'
   # s.dependency 'ReactiveObjC'
   # s.dependency 'MJRefresh'
   # s.dependency 'YYModel'

@@ -8,7 +8,7 @@
 #import "SFCollectionView.h"
 #import "SFCollectionViewCell.h"
 #import "SFCollectionReusableView.h"
-#import <SFCategory/NSObject+SFExtension.h>
+#import <SFCategory/SFCategory.h>
 
 @interface SFCollectionView ()
 @property (nonatomic, strong) NSMutableSet *reuseIdentifierSet;

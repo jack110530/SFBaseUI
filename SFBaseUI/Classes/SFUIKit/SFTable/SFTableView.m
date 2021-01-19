@@ -6,7 +6,7 @@
 //
 
 #import "SFTableView.h"
-#import <SFCategory/NSObject+SFExtension.h>
+#import <SFCategory/SFCategory.h>
 
 @interface SFTableView ()
 @property (nonatomic, strong) NSMutableSet *reuseIdentifierSet;

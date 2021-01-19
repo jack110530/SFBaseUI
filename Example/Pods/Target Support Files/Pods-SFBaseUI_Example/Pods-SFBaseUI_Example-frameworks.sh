@@ -197,6 +197,7 @@ if [ -r "${ARTIFACT_LIST_FILE}" ]; then
 fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFBaseUI/SFBaseUI.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFCategory/SFCategory.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFCrashInspector/SFCrashInspector.framework"
@@ -204,6 +205,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFBaseUI/SFBaseUI.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFCategory/SFCategory.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFCrashInspector/SFCrashInspector.framework"

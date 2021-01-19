@@ -6,7 +6,7 @@
 //
 
 #import "SFCollectionReusableView.h"
-#import <SFCategory/NSObject+SFExtension.h>
+#import <SFCategory/SFCategory.h>
 
 @implementation SFCollectionReusableView
 

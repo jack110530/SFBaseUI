@@ -6,7 +6,7 @@
 //
 
 #import "SFCollectionViewCell.h"
-#import <SFCategory/NSObject+SFExtension.h>
+#import <SFCategory/SFCategory.h>
 
 @implementation SFCollectionViewCell
 
