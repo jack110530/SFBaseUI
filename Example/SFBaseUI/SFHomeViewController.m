@@ -12,8 +12,7 @@
 #import "SFCountdownViewDemo.h"
 #import "SFCountdownButtonDemo.h"
 #import "SFCircleProgressViewDemo.h"
-#import "SFTableMvcDemo.h"
-#import "SFTableMvvmDemo.h"
+
 
 
 @interface SFHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -34,8 +33,6 @@
         @"SFCountdownViewDemo",
         @"SFCountdownButtonDemo",
         @"SFCircleProgressViewDemo",
-        @"SFTableMvcDemo",
-        @"SFTableMvvmDemo",
     ];
     
 }

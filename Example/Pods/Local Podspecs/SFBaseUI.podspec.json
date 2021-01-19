@@ -1,6 +1,6 @@
 {
   "name": "SFBaseUI",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "A short description of SFBaseUI.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/jack110530/SFBaseUI",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/jack110530/SFBaseUI.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "9.0"
@@ -116,58 +116,6 @@
         {
           "name": "SFProgress",
           "source_files": "SFBaseUI/Classes/SFUIKit/SFProgress/*.{h,m}"
-        }
-      ]
-    },
-    {
-      "name": "SFDesignPattern",
-      "source_files": "SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h",
-      "public_header_files": "SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h",
-      "subspecs": [
-        {
-          "name": "SFMvc",
-          "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h",
-          "public_header_files": "SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h",
-          "subspecs": [
-            {
-              "name": "SFTableMvc",
-              "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvc/SFTableMvc/*.{h,m}"
-            }
-          ]
-        },
-        {
-          "name": "SFMvvm",
-          "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h",
-          "public_header_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h",
-          "subspecs": [
-            {
-              "name": "SFMvvmProtocol",
-              "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvmProtocol/*.{h,m}"
-            },
-            {
-              "name": "SFViewModel",
-              "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFViewModel/*.{h,m}"
-            },
-            {
-              "name": "SFTableMvvm",
-              "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFTableMvvm/*.{h,m}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "SFModel",
-      "source_files": "SFBaseUI/Classes/SFModel/SFModel.h",
-      "public_header_files": "SFBaseUI/Classes/SFModel/SFModel.h",
-      "subspecs": [
-        {
-          "name": "SFModelProtocol",
-          "source_files": "SFBaseUI/Classes/SFModel/SFModelProtocol/*.{h,m}"
-        },
-        {
-          "name": "SFTableModel",
-          "source_files": "SFBaseUI/Classes/SFModel/SFTableModel/*.{h,m}"
         }
       ]
     }
