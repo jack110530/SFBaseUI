@@ -197,26 +197,18 @@ if [ -r "${ARTIFACT_LIST_FILE}" ]; then
 fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFBaseUI/SFBaseUI.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFCategory/SFCategory.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFCrashInspector/SFCrashInspector.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFMacro/SFMacro.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFBaseUI/SFBaseUI.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFCategory/SFCategory.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFCrashInspector/SFCrashInspector.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFMacro/SFMacro.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

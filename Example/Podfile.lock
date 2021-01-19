@@ -4,75 +4,24 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - Masonry (1.1.0)
-  - MJRefresh (3.5.0)
-  - ReactiveObjC (3.1.1)
   - SFBaseUI (0.1.1):
-    - Masonry
-    - MJRefresh
-    - ReactiveObjC
     - SFBaseUI/SFMakerKit (= 0.1.1)
-    - SFCategory
-    - SFCrashInspector
-    - SFMacro
-    - YYModel
   - SFBaseUI/SFMakerKit (0.1.1):
-    - Masonry
-    - MJRefresh
-    - ReactiveObjC
     - SFBaseUI/SFMakerKit/SFButton (= 0.1.1)
     - SFBaseUI/SFMakerKit/SFLabel (= 0.1.1)
     - SFBaseUI/SFMakerKit/SFMaker (= 0.1.1)
     - SFBaseUI/SFMakerKit/SFObject (= 0.1.1)
     - SFBaseUI/SFMakerKit/SFView (= 0.1.1)
-    - SFCategory
-    - SFCrashInspector
-    - SFMacro
-    - YYModel
   - SFBaseUI/SFMakerKit/SFButton (0.1.1):
-    - Masonry
-    - MJRefresh
-    - ReactiveObjC
     - SFBaseUI/SFMakerKit/SFMaker
-    - SFCategory
-    - SFCrashInspector
-    - SFMacro
-    - YYModel
+    - SFBaseUI/SFMakerKit/SFObject
   - SFBaseUI/SFMakerKit/SFLabel (0.1.1):
-    - Masonry
-    - MJRefresh
-    - ReactiveObjC
     - SFBaseUI/SFMakerKit/SFMaker
-    - SFCategory
-    - SFCrashInspector
-    - SFMacro
-    - YYModel
-  - SFBaseUI/SFMakerKit/SFMaker (0.1.1):
-    - Masonry
-    - MJRefresh
-    - ReactiveObjC
-    - SFCategory
-    - SFCrashInspector
-    - SFMacro
-    - YYModel
+  - SFBaseUI/SFMakerKit/SFMaker (0.1.1)
   - SFBaseUI/SFMakerKit/SFObject (0.1.1):
-    - Masonry
-    - MJRefresh
-    - ReactiveObjC
     - SFBaseUI/SFMakerKit/SFMaker
-    - SFCategory
-    - SFCrashInspector
-    - SFMacro
-    - YYModel
   - SFBaseUI/SFMakerKit/SFView (0.1.1):
-    - Masonry
-    - MJRefresh
-    - ReactiveObjC
     - SFBaseUI/SFMakerKit/SFMaker
-    - SFCategory
-    - SFCrashInspector
-    - SFMacro
-    - YYModel
   - SFCategory (0.1.1):
     - SFCategory/SFFoundation (= 0.1.1)
     - SFCategory/SFKit (= 0.1.1)
@@ -104,7 +53,6 @@ PODS:
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
   - YYCategories/no-arc (1.0.4)
-  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -116,11 +64,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - FBSnapshotTestCase
-    - Masonry
-    - MJRefresh
-    - ReactiveObjC
     - YYCategories
-    - YYModel
 
 EXTERNAL SOURCES:
   SFBaseUI:
@@ -147,15 +91,11 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
-  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  SFBaseUI: edb9b0f0e3d9283da81575541968d4e3a9d3bee4
+  SFBaseUI: a97d23a66337630e8bd4658e456d17fc21837f13
   SFCategory: 4adc606da20bcce6620f10a89cda3dc2b105274c
   SFCrashInspector: b89568cbbb18d9318984911789dacde5efa02236
   SFMacro: feaf9eaac7cfa4797a99a3d8119895ff843335fe
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
-  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: 43165b8b28f97205855832c55fc768ef7e2fc628
 

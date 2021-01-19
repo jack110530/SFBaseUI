@@ -24,29 +24,6 @@
     "UIKit",
     "Foundation"
   ],
-  "dependencies": {
-    "Masonry": [
-
-    ],
-    "SFCategory": [
-
-    ],
-    "SFMacro": [
-
-    ],
-    "SFCrashInspector": [
-
-    ],
-    "ReactiveObjC": [
-
-    ],
-    "MJRefresh": [
-
-    ],
-    "YYModel": [
-
-    ]
-  },
   "subspecs": [
     {
       "name": "SFMakerKit",
@@ -62,6 +39,9 @@
           "source_files": "SFBaseUI/Classes/SFMakerKit/SFButton/*.{h,m}",
           "dependencies": {
             "SFBaseUI/SFMakerKit/SFMaker": [
+
+            ],
+            "SFBaseUI/SFMakerKit/SFObject": [
 
             ]
           }

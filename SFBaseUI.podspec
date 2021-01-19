@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SFBaseUI'
   s.version          = '0.1.1'
-  s.summary          = 'A short description of SFBaseUI.'
+  s.summary          = 'SFBaseUI 基础库 UI层'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -39,7 +39,6 @@ TODO: Add long description of the pod here.
     ss.source_files = 'SFBaseUI/Classes/SFMakerKit/SFMakerKit.h'
     ss.public_header_files = 'SFBaseUI/Classes/SFMakerKit/SFMakerKit.h'
 
-
     # SFMaker
     ss.subspec 'SFMaker' do |sss|
       sss.source_files = 'SFBaseUI/Classes/SFMakerKit/SFMaker/*.{h,m}'
@@ -49,6 +48,7 @@ TODO: Add long description of the pod here.
     ss.subspec 'SFButton' do |sss|
       sss.source_files = 'SFBaseUI/Classes/SFMakerKit/SFButton/*.{h,m}'
       sss.dependency 'SFBaseUI/SFMakerKit/SFMaker'
+      sss.dependency 'SFBaseUI/SFMakerKit/SFObject'
     end
 
     # SFLabel
@@ -202,13 +202,13 @@ TODO: Add long description of the pod here.
   s.frameworks = 'UIKit', 'Foundation'
   
   
-  s.dependency 'Masonry'
-  s.dependency 'SFCategory'
-  s.dependency 'SFMacro'
-  s.dependency 'SFCrashInspector'
-  s.dependency 'ReactiveObjC'
-  s.dependency 'MJRefresh'
-  s.dependency 'YYModel'
+  # s.dependency 'Masonry'
+  # s.dependency 'SFCategory'
+  # s.dependency 'SFMacro'
+  # s.dependency 'SFCrashInspector'
+  # s.dependency 'ReactiveObjC'
+  # s.dependency 'MJRefresh'
+  # s.dependency 'YYModel'
   
   
   
