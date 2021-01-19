@@ -6,9 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
+// view
 #import "SFTableView.h"
 #import "SFTableViewCell.h"
+// model
 #import "SFTableViewModel.h"
+#import "SFTableViewSectionModel.h"
 #import "SFTableViewCellModel.h"
 
 NS_ASSUME_NONNULL_BEGIN

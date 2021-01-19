@@ -1,6 +1,6 @@
 {
   "name": "SFBaseUI",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "SFBaseUI 基础库 UI层",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/jack110530/SFBaseUI",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/jack110530/SFBaseUI.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "9.0"
@@ -35,6 +35,9 @@
 
     ],
     "SFCrashInspector": [
+
+    ],
+    "ReactiveObjC": [
 
     ]
   },
@@ -165,6 +168,43 @@
 
             ]
           }
+        }
+      ]
+    },
+    {
+      "name": "SFDesignPattern",
+      "source_files": "SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h",
+      "public_header_files": "SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h",
+      "subspecs": [
+        {
+          "name": "SFModel",
+          "source_files": "SFBaseUI/Classes/SFDesignPattern/SFModel/SFModel.h",
+          "public_header_files": "SFBaseUI/Classes/SFDesignPattern/SFModel/SFModel.h",
+          "subspecs": [
+            {
+              "name": "SFTableModel",
+              "source_files": "SFBaseUI/Classes/SFDesignPattern/SFModel/SFTableModel/*.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "SFMvc",
+          "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h",
+          "public_header_files": "SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h",
+          "dependencies": {
+            "SFBaseUI/SFUIKit": [
+
+            ],
+            "SFBaseUI/SFDesignPattern/SFModel": [
+
+            ]
+          },
+          "subspecs": [
+            {
+              "name": "SFTableMvc",
+              "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvc/SFTableMvc/*.{h,m}"
+            }
+          ]
         }
       ]
     }
