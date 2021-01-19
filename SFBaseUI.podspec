@@ -39,147 +39,165 @@ TODO: Add long description of the pod here.
     ss.source_files = 'SFBaseUI/Classes/SFMakerKit/SFMakerKit.h'
     ss.public_header_files = 'SFBaseUI/Classes/SFMakerKit/SFMakerKit.h'
 
+
+    # SFMaker
+    ss.subspec 'SFMaker' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFMakerKit/SFMaker/*.{h,m}'
+    end
+
     # SFButton
     ss.subspec 'SFButton' do |sss|
       sss.source_files = 'SFBaseUI/Classes/SFMakerKit/SFButton/*.{h,m}'
+      sss.dependency 'SFBaseUI/SFMakerKit/SFMaker'
     end
 
     # SFLabel
     ss.subspec 'SFLabel' do |sss|
       sss.source_files = 'SFBaseUI/Classes/SFMakerKit/SFLabel/*.{h,m}'
+      sss.dependency 'SFBaseUI/SFMakerKit/SFMaker'
     end
 
     # SFObject
     ss.subspec 'SFObject' do |sss|
       sss.source_files = 'SFBaseUI/Classes/SFMakerKit/SFObject/*.{h,m}'
+      sss.dependency 'SFBaseUI/SFMakerKit/SFMaker'
     end
 
     # SFView
     ss.subspec 'SFView' do |sss|
       sss.source_files = 'SFBaseUI/Classes/SFMakerKit/SFView/*.{h,m}'
+      sss.dependency 'SFBaseUI/SFMakerKit/SFMaker'
     end
 
   end
 
 
-  # SFUIKit
-  s.subspec 'SFUIKit' do |ss|
+  # # SFUIKit
+  # s.subspec 'SFUIKit' do |ss|
 
-    ss.source_files = 'SFBaseUI/Classes/SFUIKit/SFUIKit.h'
-    ss.public_header_files = 'SFBaseUI/Classes/SFUIKit/SFUIKit.h'
+  #   ss.source_files = 'SFBaseUI/Classes/SFUIKit/SFUIKit.h'
+  #   ss.public_header_files = 'SFBaseUI/Classes/SFUIKit/SFUIKit.h'
     
-    # SFProtocol
-    ss.subspec 'SFProtocol' do |sss|
-      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFProtocol/*.{h,m}'
-    end
+  #   # SFProtocol
+  #   ss.subspec 'SFProtocol' do |sss|
+  #     sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFProtocol/*.{h,m}'
+  #   end
     
-    # SFView
-    ss.subspec 'SFView' do |sss|
-      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFView/*.{h,m}'
-    end
+  #   # SFView
+  #   ss.subspec 'SFView' do |sss|
+  #     sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFView/*.{h,m}'
+  #     sss.dependency 'SFBaseUI/SFUIKit/SFProtocol'
+  #   end
     
-    # SFButton
-    ss.subspec 'SFButton' do |sss|
-      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFButton/*.{h,m}'
-    end
+  #   # SFButton
+  #   ss.subspec 'SFButton' do |sss|
+  #     sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFButton/*.{h,m}'
+  #   end
     
-    # SFViewController
-    ss.subspec 'SFViewController' do |sss|
-      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFViewController/*.{h,m}'
-    end
+  #   # SFViewController
+  #   ss.subspec 'SFViewController' do |sss|
+  #     sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFViewController/*.{h,m}'
+  #     sss.dependency 'SFBaseUI/SFUIKit/SFProtocol'
+  #   end
     
-    # SFScroll
-    ss.subspec 'SFScroll' do |sss|
-      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFScroll/*.{h,m}'
-    end
+  #   # SFScroll
+  #   ss.subspec 'SFScroll' do |sss|
+  #     sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFScroll/*.{h,m}'
+  #     sss.dependency 'SFBaseUI/SFUIKit/SFViewController'
+  #   end
     
-    # SFTable
-    ss.subspec 'SFTable' do |sss|
-      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFTable/*.{h,m}'
-    end
+  #   # SFTable
+  #   ss.subspec 'SFTable' do |sss|
+  #     sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFTable/*.{h,m}'
+  #     sss.dependency 'SFBaseUI/SFUIKit/SFProtocol'
+  #     sss.dependency 'SFBaseUI/SFUIKit/SFViewController'
+  #   end
     
-    # SFCollection
-    ss.subspec 'SFCollection' do |sss|
-      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFCollection/*.{h,m}'
-    end
+  #   # SFCollection
+  #   ss.subspec 'SFCollection' do |sss|
+  #     sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFCollection/*.{h,m}'
+  #     sss.dependency 'SFBaseUI/SFUIKit/SFProtocol'
+  #     sss.dependency 'SFBaseUI/SFUIKit/SFViewController'
+  #   end
     
-    # SFCountdown
-    ss.subspec 'SFCountdown' do |sss|
-      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFCountdown/*.{h,m}'
-    end
+  #   # SFCountdown
+  #   ss.subspec 'SFCountdown' do |sss|
+  #     sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFCountdown/*.{h,m}'
+  #   end
     
-    # SFProgress
-    ss.subspec 'SFProgress' do |sss|
-      sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFProgress/*.{h,m}'
-    end
+  #   # SFProgress
+  #   ss.subspec 'SFProgress' do |sss|
+  #     sss.source_files = 'SFBaseUI/Classes/SFUIKit/SFProgress/*.{h,m}'
+  #     sss.dependency 'SFBaseUI/SFUIKit/SFView'
+  #   end
 
-  end
+  # end
   
   
 #  # SFDesignPattern
 #  s.subspec 'SFDesignPattern' do |ss|
-#
+
 #    ss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h'
 #    ss.public_header_files = 'SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h'
-#    
+   
 #    # SFMvc
 #    ss.subspec 'SFMvc' do |sss|
 #      sss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h'
 #      sss.public_header_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h'
-#      
+     
 #      # SFTableMvc
 #      sss.subspec 'SFTableMvc' do |ssss|
 #        ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvc/SFTableMvc/*.{h,m}'
 #      end
-#      
+     
 #    end
-#
+
 #    # SFMvvm
 #    ss.subspec 'SFMvvm' do |sss|
 #      sss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h'
 #      sss.public_header_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h'
-#      
+     
 #      # SFMvvmProtocol
 #      sss.subspec 'SFMvvmProtocol' do |ssss|
 #        ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvmProtocol/*.{h,m}'
 #      end
-#      
+     
 #      # SFViewModel
 #      sss.subspec 'SFViewModel' do |ssss|
 #        ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFViewModel/*.{h,m}'
 #      end
-#      
+     
 #      # SFTableMvvm
 #      sss.subspec 'SFTableMvvm' do |ssss|
 #        ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFTableMvvm/*.{h,m}'
 #      end
-#      
+     
 #    end
-#
+
 #  end
-#
+
 #  # SFModel
 #  s.subspec 'SFModel' do |ss|
-#
+
 #    ss.source_files = 'SFBaseUI/Classes/SFModel/SFModel.h'
 #    ss.public_header_files = 'SFBaseUI/Classes/SFModel/SFModel.h'
-#    
+   
 #    # SFModelProtocol
 #    ss.subspec 'SFModelProtocol' do |sss|
 #        sss.source_files = 'SFBaseUI/Classes/SFModel/SFModelProtocol/*.{h,m}'
 #    end
-#    
+   
 #    # SFTableModel
 #    ss.subspec 'SFTableModel' do |sss|
 #        sss.source_files = 'SFBaseUI/Classes/SFModel/SFTableModel/*.{h,m}'
 #    end
-#
+
 #  end
 
   
-  s.resource_bundles = {
-      'SFBaseUI' => ['SFBaseUI/Assets/*']
-  }
+  # s.resource_bundles = {
+  #     'SFBaseUI' => ['SFBaseUI/Assets/*']
+  # }
 
   s.frameworks = 'UIKit', 'Foundation'
   

@@ -12,7 +12,6 @@ PODS:
     - MJRefresh
     - ReactiveObjC
     - SFBaseUI/SFMakerKit (= 0.1.1)
-    - SFBaseUI/SFUIKit (= 0.1.1)
     - SFCategory
     - SFCrashInspector
     - SFMacro
@@ -23,6 +22,7 @@ PODS:
     - ReactiveObjC
     - SFBaseUI/SFMakerKit/SFButton (= 0.1.1)
     - SFBaseUI/SFMakerKit/SFLabel (= 0.1.1)
+    - SFBaseUI/SFMakerKit/SFMaker (= 0.1.1)
     - SFBaseUI/SFMakerKit/SFObject (= 0.1.1)
     - SFBaseUI/SFMakerKit/SFView (= 0.1.1)
     - SFCategory
@@ -33,11 +33,21 @@ PODS:
     - Masonry
     - MJRefresh
     - ReactiveObjC
+    - SFBaseUI/SFMakerKit/SFMaker
     - SFCategory
     - SFCrashInspector
     - SFMacro
     - YYModel
   - SFBaseUI/SFMakerKit/SFLabel (0.1.1):
+    - Masonry
+    - MJRefresh
+    - ReactiveObjC
+    - SFBaseUI/SFMakerKit/SFMaker
+    - SFCategory
+    - SFCrashInspector
+    - SFMacro
+    - YYModel
+  - SFBaseUI/SFMakerKit/SFMaker (0.1.1):
     - Masonry
     - MJRefresh
     - ReactiveObjC
@@ -49,6 +59,7 @@ PODS:
     - Masonry
     - MJRefresh
     - ReactiveObjC
+    - SFBaseUI/SFMakerKit/SFMaker
     - SFCategory
     - SFCrashInspector
     - SFMacro
@@ -57,95 +68,7 @@ PODS:
     - Masonry
     - MJRefresh
     - ReactiveObjC
-    - SFCategory
-    - SFCrashInspector
-    - SFMacro
-    - YYModel
-  - SFBaseUI/SFUIKit (0.1.1):
-    - Masonry
-    - MJRefresh
-    - ReactiveObjC
-    - SFBaseUI/SFUIKit/SFButton (= 0.1.1)
-    - SFBaseUI/SFUIKit/SFCollection (= 0.1.1)
-    - SFBaseUI/SFUIKit/SFCountdown (= 0.1.1)
-    - SFBaseUI/SFUIKit/SFProgress (= 0.1.1)
-    - SFBaseUI/SFUIKit/SFProtocol (= 0.1.1)
-    - SFBaseUI/SFUIKit/SFScroll (= 0.1.1)
-    - SFBaseUI/SFUIKit/SFTable (= 0.1.1)
-    - SFBaseUI/SFUIKit/SFView (= 0.1.1)
-    - SFBaseUI/SFUIKit/SFViewController (= 0.1.1)
-    - SFCategory
-    - SFCrashInspector
-    - SFMacro
-    - YYModel
-  - SFBaseUI/SFUIKit/SFButton (0.1.1):
-    - Masonry
-    - MJRefresh
-    - ReactiveObjC
-    - SFCategory
-    - SFCrashInspector
-    - SFMacro
-    - YYModel
-  - SFBaseUI/SFUIKit/SFCollection (0.1.1):
-    - Masonry
-    - MJRefresh
-    - ReactiveObjC
-    - SFCategory
-    - SFCrashInspector
-    - SFMacro
-    - YYModel
-  - SFBaseUI/SFUIKit/SFCountdown (0.1.1):
-    - Masonry
-    - MJRefresh
-    - ReactiveObjC
-    - SFCategory
-    - SFCrashInspector
-    - SFMacro
-    - YYModel
-  - SFBaseUI/SFUIKit/SFProgress (0.1.1):
-    - Masonry
-    - MJRefresh
-    - ReactiveObjC
-    - SFCategory
-    - SFCrashInspector
-    - SFMacro
-    - YYModel
-  - SFBaseUI/SFUIKit/SFProtocol (0.1.1):
-    - Masonry
-    - MJRefresh
-    - ReactiveObjC
-    - SFCategory
-    - SFCrashInspector
-    - SFMacro
-    - YYModel
-  - SFBaseUI/SFUIKit/SFScroll (0.1.1):
-    - Masonry
-    - MJRefresh
-    - ReactiveObjC
-    - SFCategory
-    - SFCrashInspector
-    - SFMacro
-    - YYModel
-  - SFBaseUI/SFUIKit/SFTable (0.1.1):
-    - Masonry
-    - MJRefresh
-    - ReactiveObjC
-    - SFCategory
-    - SFCrashInspector
-    - SFMacro
-    - YYModel
-  - SFBaseUI/SFUIKit/SFView (0.1.1):
-    - Masonry
-    - MJRefresh
-    - ReactiveObjC
-    - SFCategory
-    - SFCrashInspector
-    - SFMacro
-    - YYModel
-  - SFBaseUI/SFUIKit/SFViewController (0.1.1):
-    - Masonry
-    - MJRefresh
-    - ReactiveObjC
+    - SFBaseUI/SFMakerKit/SFMaker
     - SFCategory
     - SFCrashInspector
     - SFMacro
@@ -227,7 +150,7 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  SFBaseUI: e5714f80caaed8dc1a603f6da24f3eae7604c3db
+  SFBaseUI: edb9b0f0e3d9283da81575541968d4e3a9d3bee4
   SFCategory: 4adc606da20bcce6620f10a89cda3dc2b105274c
   SFCrashInspector: b89568cbbb18d9318984911789dacde5efa02236
   SFMacro: feaf9eaac7cfa4797a99a3d8119895ff843335fe

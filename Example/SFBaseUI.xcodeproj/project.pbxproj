@@ -8,13 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2DE2EDC2817FBA8246016C56 /* Pods_SFBaseUI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48C7C2EFC082ED5ACA17673 /* Pods_SFBaseUI_Example.framework */; };
-		5114071125AD374B00886F20 /* SFCountdownViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5114070C25AD374A00886F20 /* SFCountdownViewDemo.m */; };
-		5114071225AD374B00886F20 /* SFCountdownLabelDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5114070D25AD374A00886F20 /* SFCountdownLabelDemo.m */; };
-		5114071325AD374B00886F20 /* SFCountdownButtonDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5114070E25AD374A00886F20 /* SFCountdownButtonDemo.xib */; };
-		5114071425AD374B00886F20 /* SFCountdownButtonDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5114070F25AD374A00886F20 /* SFCountdownButtonDemo.m */; };
 		5114071925AD386800886F20 /* SFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5114071825AD386800886F20 /* SFHomeViewController.m */; };
-		511407AB25AD4F8D00886F20 /* SFCircleProgressViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 511407A925AD4F8D00886F20 /* SFCircleProgressViewDemo.m */; };
-		511407AC25AD4F8D00886F20 /* SFCircleProgressViewDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 511407AA25AD4F8D00886F20 /* SFCircleProgressViewDemo.xib */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -46,18 +40,8 @@
 		065F2BD5DFC962D73B9CCCC5 /* Pods-SFBaseUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFBaseUI_Tests.release.xcconfig"; path = "Target Support Files/Pods-SFBaseUI_Tests/Pods-SFBaseUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		15EC3D03496E75C0D2B6024A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		46972D08FEDF50DF7EAFF084 /* Pods-SFBaseUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFBaseUI_Example.release.xcconfig"; path = "Target Support Files/Pods-SFBaseUI_Example/Pods-SFBaseUI_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5114070A25AD374900886F20 /* SFCountdownButtonDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCountdownButtonDemo.h; sourceTree = "<group>"; };
-		5114070B25AD374A00886F20 /* SFCountdownViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCountdownViewDemo.h; sourceTree = "<group>"; };
-		5114070C25AD374A00886F20 /* SFCountdownViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCountdownViewDemo.m; sourceTree = "<group>"; };
-		5114070D25AD374A00886F20 /* SFCountdownLabelDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCountdownLabelDemo.m; sourceTree = "<group>"; };
-		5114070E25AD374A00886F20 /* SFCountdownButtonDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFCountdownButtonDemo.xib; sourceTree = "<group>"; };
-		5114070F25AD374A00886F20 /* SFCountdownButtonDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCountdownButtonDemo.m; sourceTree = "<group>"; };
-		5114071025AD374B00886F20 /* SFCountdownLabelDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCountdownLabelDemo.h; sourceTree = "<group>"; };
 		5114071725AD386800886F20 /* SFHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFHomeViewController.h; sourceTree = "<group>"; };
 		5114071825AD386800886F20 /* SFHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFHomeViewController.m; sourceTree = "<group>"; };
-		511407A825AD4F8D00886F20 /* SFCircleProgressViewDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFCircleProgressViewDemo.h; sourceTree = "<group>"; };
-		511407A925AD4F8D00886F20 /* SFCircleProgressViewDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFCircleProgressViewDemo.m; sourceTree = "<group>"; };
-		511407AA25AD4F8D00886F20 /* SFCircleProgressViewDemo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFCircleProgressViewDemo.xib; sourceTree = "<group>"; };
 		5159E2D02594664B00C77140 /* SFBaseProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFBaseProtocol.h; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SFBaseUI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFBaseUI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -112,30 +96,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5114070925AD372900886F20 /* SFCountdown(倒计时) */ = {
-			isa = PBXGroup;
-			children = (
-				5114070A25AD374900886F20 /* SFCountdownButtonDemo.h */,
-				5114070F25AD374A00886F20 /* SFCountdownButtonDemo.m */,
-				5114070E25AD374A00886F20 /* SFCountdownButtonDemo.xib */,
-				5114071025AD374B00886F20 /* SFCountdownLabelDemo.h */,
-				5114070D25AD374A00886F20 /* SFCountdownLabelDemo.m */,
-				5114070B25AD374A00886F20 /* SFCountdownViewDemo.h */,
-				5114070C25AD374A00886F20 /* SFCountdownViewDemo.m */,
-			);
-			name = "SFCountdown(倒计时)";
-			sourceTree = "<group>";
-		};
-		5114079E25AD4F4600886F20 /* SFProgress(进度条) */ = {
-			isa = PBXGroup;
-			children = (
-				511407A825AD4F8D00886F20 /* SFCircleProgressViewDemo.h */,
-				511407A925AD4F8D00886F20 /* SFCircleProgressViewDemo.m */,
-				511407AA25AD4F8D00886F20 /* SFCircleProgressViewDemo.xib */,
-			);
-			name = "SFProgress(进度条)";
-			sourceTree = "<group>";
-		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -176,8 +136,6 @@
 				6003F59C195388D20070C39A /* SFAppDelegate.h */,
 				6003F59D195388D20070C39A /* SFAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				5114079E25AD4F4600886F20 /* SFProgress(进度条) */,
-				5114070925AD372900886F20 /* SFCountdown(倒计时) */,
 				5114071725AD386800886F20 /* SFHomeViewController.h */,
 				5114071825AD386800886F20 /* SFHomeViewController.m */,
 				5159E2D02594664B00C77140 /* SFBaseProtocol.h */,
@@ -326,11 +284,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				5114071325AD374B00886F20 /* SFCountdownButtonDemo.xib in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
-				511407AC25AD4F8D00886F20 /* SFCircleProgressViewDemo.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,11 +406,7 @@
 			files = (
 				6003F59E195388D20070C39A /* SFAppDelegate.m in Sources */,
 				5114071925AD386800886F20 /* SFHomeViewController.m in Sources */,
-				511407AB25AD4F8D00886F20 /* SFCircleProgressViewDemo.m in Sources */,
-				5114071225AD374B00886F20 /* SFCountdownLabelDemo.m in Sources */,
-				5114071125AD374B00886F20 /* SFCountdownViewDemo.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				5114071425AD374B00886F20 /* SFCountdownButtonDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

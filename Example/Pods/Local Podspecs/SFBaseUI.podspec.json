@@ -20,11 +20,6 @@
   },
   "source_files": "SFBaseUI/Classes/SFBaseUI.h",
   "public_header_files": "SFBaseUI/Classes/SFBaseUI.h",
-  "resource_bundles": {
-    "SFBaseUI": [
-      "SFBaseUI/Assets/*"
-    ]
-  },
   "frameworks": [
     "UIKit",
     "Foundation"
@@ -59,63 +54,44 @@
       "public_header_files": "SFBaseUI/Classes/SFMakerKit/SFMakerKit.h",
       "subspecs": [
         {
+          "name": "SFMaker",
+          "source_files": "SFBaseUI/Classes/SFMakerKit/SFMaker/*.{h,m}"
+        },
+        {
           "name": "SFButton",
-          "source_files": "SFBaseUI/Classes/SFMakerKit/SFButton/*.{h,m}"
+          "source_files": "SFBaseUI/Classes/SFMakerKit/SFButton/*.{h,m}",
+          "dependencies": {
+            "SFBaseUI/SFMakerKit/SFMaker": [
+
+            ]
+          }
         },
         {
           "name": "SFLabel",
-          "source_files": "SFBaseUI/Classes/SFMakerKit/SFLabel/*.{h,m}"
+          "source_files": "SFBaseUI/Classes/SFMakerKit/SFLabel/*.{h,m}",
+          "dependencies": {
+            "SFBaseUI/SFMakerKit/SFMaker": [
+
+            ]
+          }
         },
         {
           "name": "SFObject",
-          "source_files": "SFBaseUI/Classes/SFMakerKit/SFObject/*.{h,m}"
+          "source_files": "SFBaseUI/Classes/SFMakerKit/SFObject/*.{h,m}",
+          "dependencies": {
+            "SFBaseUI/SFMakerKit/SFMaker": [
+
+            ]
+          }
         },
         {
           "name": "SFView",
-          "source_files": "SFBaseUI/Classes/SFMakerKit/SFView/*.{h,m}"
-        }
-      ]
-    },
-    {
-      "name": "SFUIKit",
-      "source_files": "SFBaseUI/Classes/SFUIKit/SFUIKit.h",
-      "public_header_files": "SFBaseUI/Classes/SFUIKit/SFUIKit.h",
-      "subspecs": [
-        {
-          "name": "SFProtocol",
-          "source_files": "SFBaseUI/Classes/SFUIKit/SFProtocol/*.{h,m}"
-        },
-        {
-          "name": "SFView",
-          "source_files": "SFBaseUI/Classes/SFUIKit/SFView/*.{h,m}"
-        },
-        {
-          "name": "SFButton",
-          "source_files": "SFBaseUI/Classes/SFUIKit/SFButton/*.{h,m}"
-        },
-        {
-          "name": "SFViewController",
-          "source_files": "SFBaseUI/Classes/SFUIKit/SFViewController/*.{h,m}"
-        },
-        {
-          "name": "SFScroll",
-          "source_files": "SFBaseUI/Classes/SFUIKit/SFScroll/*.{h,m}"
-        },
-        {
-          "name": "SFTable",
-          "source_files": "SFBaseUI/Classes/SFUIKit/SFTable/*.{h,m}"
-        },
-        {
-          "name": "SFCollection",
-          "source_files": "SFBaseUI/Classes/SFUIKit/SFCollection/*.{h,m}"
-        },
-        {
-          "name": "SFCountdown",
-          "source_files": "SFBaseUI/Classes/SFUIKit/SFCountdown/*.{h,m}"
-        },
-        {
-          "name": "SFProgress",
-          "source_files": "SFBaseUI/Classes/SFUIKit/SFProgress/*.{h,m}"
+          "source_files": "SFBaseUI/Classes/SFMakerKit/SFView/*.{h,m}",
+          "dependencies": {
+            "SFBaseUI/SFMakerKit/SFMaker": [
+
+            ]
+          }
         }
       ]
     }
