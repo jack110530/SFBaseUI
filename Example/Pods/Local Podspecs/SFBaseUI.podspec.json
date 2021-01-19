@@ -175,6 +175,11 @@
       "name": "SFDesignPattern",
       "source_files": "SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h",
       "public_header_files": "SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h",
+      "dependencies": {
+        "SFBaseUI/SFUIKit": [
+
+        ]
+      },
       "subspecs": [
         {
           "name": "SFModel",
@@ -192,17 +197,23 @@
           "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h",
           "public_header_files": "SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h",
           "dependencies": {
-            "SFBaseUI/SFUIKit": [
-
-            ],
             "SFBaseUI/SFDesignPattern/SFModel": [
 
             ]
           },
           "subspecs": [
             {
+              "name": "SFMvcProtocol",
+              "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvcProtocol/*.{h,m}"
+            },
+            {
               "name": "SFTableMvc",
-              "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvc/SFTableMvc/*.{h,m}"
+              "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvc/SFTableMvc/*.{h,m}",
+              "dependencies": {
+                "SFBaseUI/SFDesignPattern/SFMvc/SFMvcProtocol": [
+
+                ]
+              }
             }
           ]
         }

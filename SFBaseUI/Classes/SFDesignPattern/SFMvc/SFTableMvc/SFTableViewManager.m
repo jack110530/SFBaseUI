@@ -6,7 +6,7 @@
 //
 
 #import "SFTableViewManager.h"
-#import <YYCategories/YYCategories.h>
+#import "SFMvcModelProtocol.h"
 
 @interface SFTableViewManager ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) SFTableView *tableView;
@@ -66,7 +66,10 @@
                     atIndex:(NSInteger)index {
     NSArray *oldSectionModels = self.tableModel.sectionModels;
     NSMutableArray *newSectionModels = [NSMutableArray arrayWithArray:oldSectionModels];
-    [newSectionModels insertObjects:sectionModels atIndex:index];
+    NSUInteger i = index;
+    for (id obj in sectionModels) {
+        [newSectionModels insertObject:obj atIndex:i++];
+    }
     self.tableModel.sectionModels = newSectionModels.copy;
 }
 
@@ -108,7 +111,10 @@
 - (void)sf_insertCellModels:(NSArray<SFTableViewCellModel *> *)cellModels inSectionModel:(SFTableViewSectionModel *)sectionModel atIndex:(NSInteger)index {
     NSArray *oldCellModels = sectionModel.cellModels;
     NSMutableArray *newCellModels = [NSMutableArray arrayWithArray:oldCellModels];
-    [newCellModels insertObjects:cellModels atIndex:index];
+    NSUInteger i = index;
+    for (id obj in cellModels) {
+        [newCellModels insertObject:obj atIndex:i++];
+    }
     sectionModel.cellModels = newCellModels.copy;
 }
 
@@ -126,11 +132,15 @@
 - (__kindof UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     __kindof SFTableViewSectionModel *sectionModel = self.tableModel.sectionModels[indexPath.section];
     __kindof SFTableViewCellModel *cellModel = sectionModel.cellModels[indexPath.row];
-    __kindof SFTableViewCell *cell = [self.tableView sf_dequeueCell:cellModel.cls indexPath:indexPath];
-    if (self.cellForRowAtIndexPathBlock) {
-        self.cellForRowAtIndexPathBlock(self.tableView, cell, cellModel, indexPath);
+    if ([cellModel conformsToProtocol:@protocol(SFMvcModelProtocol)]) {
+        __kindof SFTableViewCellModel<SFMvcModelProtocol> *mvcCellModel = (__kindof SFTableViewCellModel<SFMvcModelProtocol> *)cellModel;
+        __kindof SFTableViewCell *cell = [self.tableView sf_dequeueCell:mvcCellModel.tableViewCellCls indexPath:indexPath];
+        if (self.cellForRowAtIndexPathBlock) {
+            self.cellForRowAtIndexPathBlock(self.tableView, cell, cellModel, indexPath);
+        }
+        return cell;
     }
-    return cell;
+    return nil;
 }
 
 // MARK: UITableViewDelegate
@@ -191,6 +201,8 @@
         self.didDeselectRowAtIndexPathBlock(self.tableView, cell, cellModel, indexPath);
     }
 }
+
+
 
 
 #pragma mark - getter

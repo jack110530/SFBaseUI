@@ -8,6 +8,10 @@
 #ifndef SFMvc_h
 #define SFMvc_h
 
+
+// MARK: SFMvcProtocol
+#import "SFMvcModelProtocol.h"
+
 // MARK: SFTableMvc
 #import "SFTableViewManager.h"
 

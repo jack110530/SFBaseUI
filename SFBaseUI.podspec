@@ -139,6 +139,7 @@ TODO: Add long description of the pod here.
 
     ss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h'
     ss.public_header_files = 'SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h'
+    ss.dependency 'SFBaseUI/SFUIKit'
 
     # SFModel
     ss.subspec 'SFModel' do |sss|
@@ -157,13 +158,17 @@ TODO: Add long description of the pod here.
     ss.subspec 'SFMvc' do |sss|
       sss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h'
       sss.public_header_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h'
-
-      sss.dependency 'SFBaseUI/SFUIKit'
       sss.dependency 'SFBaseUI/SFDesignPattern/SFModel'
+
+      # SFMvcProtocol
+      sss.subspec 'SFMvcProtocol' do |ssss|
+        ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvcProtocol/*.{h,m}'
+      end
       
       # SFTableMvc
       sss.subspec 'SFTableMvc' do |ssss|
         ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvc/SFTableMvc/*.{h,m}'
+        ssss.dependency 'SFBaseUI/SFDesignPattern/SFMvc/SFMvcProtocol'
       end
       
     end

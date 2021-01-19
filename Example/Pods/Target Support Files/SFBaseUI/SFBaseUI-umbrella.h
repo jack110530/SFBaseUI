@@ -17,6 +17,7 @@
 #import "SFTableViewModel.h"
 #import "SFTableViewSectionModel.h"
 #import "SFMvc.h"
+#import "SFMvcModelProtocol.h"
 #import "SFTableViewManager.h"
 #import "SFMakerKit.h"
 #import "SFMaker+UIButton.h"

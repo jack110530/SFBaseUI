@@ -20,6 +20,7 @@ PODS:
     - ReactiveObjC
     - SFBaseUI/SFDesignPattern/SFModel (= 0.1.2)
     - SFBaseUI/SFDesignPattern/SFMvc (= 0.1.2)
+    - SFBaseUI/SFUIKit
     - SFCategory
     - SFCrashInspector
     - SFMacro
@@ -27,12 +28,14 @@ PODS:
     - Masonry
     - ReactiveObjC
     - SFBaseUI/SFDesignPattern/SFModel/SFTableModel (= 0.1.2)
+    - SFBaseUI/SFUIKit
     - SFCategory
     - SFCrashInspector
     - SFMacro
   - SFBaseUI/SFDesignPattern/SFModel/SFTableModel (0.1.2):
     - Masonry
     - ReactiveObjC
+    - SFBaseUI/SFUIKit
     - SFCategory
     - SFCrashInspector
     - SFMacro
@@ -40,7 +43,16 @@ PODS:
     - Masonry
     - ReactiveObjC
     - SFBaseUI/SFDesignPattern/SFModel
+    - SFBaseUI/SFDesignPattern/SFMvc/SFMvcProtocol (= 0.1.2)
     - SFBaseUI/SFDesignPattern/SFMvc/SFTableMvc (= 0.1.2)
+    - SFBaseUI/SFUIKit
+    - SFCategory
+    - SFCrashInspector
+    - SFMacro
+  - SFBaseUI/SFDesignPattern/SFMvc/SFMvcProtocol (0.1.2):
+    - Masonry
+    - ReactiveObjC
+    - SFBaseUI/SFDesignPattern/SFModel
     - SFBaseUI/SFUIKit
     - SFCategory
     - SFCrashInspector
@@ -49,6 +61,7 @@ PODS:
     - Masonry
     - ReactiveObjC
     - SFBaseUI/SFDesignPattern/SFModel
+    - SFBaseUI/SFDesignPattern/SFMvc/SFMvcProtocol
     - SFBaseUI/SFUIKit
     - SFCategory
     - SFCrashInspector
@@ -249,7 +262,7 @@ SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  SFBaseUI: 31d9d1e658c7e9a9e629bbd638282f911437fc03
+  SFBaseUI: a6d8e6ef9e1a08e78c37541bca810aff23f35953
   SFCategory: 4adc606da20bcce6620f10a89cda3dc2b105274c
   SFCrashInspector: b89568cbbb18d9318984911789dacde5efa02236
   SFMacro: feaf9eaac7cfa4797a99a3d8119895ff843335fe
