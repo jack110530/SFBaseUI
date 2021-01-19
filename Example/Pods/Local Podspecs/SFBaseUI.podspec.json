@@ -203,6 +203,9 @@
           "dependencies": {
             "SFBaseUI/SFDesignPattern/SFModel": [
 
+            ],
+            "SFBaseUI/SFDesignPattern/SFProtocol": [
+
             ]
           },
           "subspecs": [
@@ -216,6 +219,11 @@
           "name": "SFMvvm",
           "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h",
           "public_header_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h",
+          "dependencies": {
+            "SFBaseUI/SFDesignPattern/SFProtocol": [
+
+            ]
+          },
           "subspecs": [
             {
               "name": "SFTableMvvm",
@@ -225,10 +233,6 @@
 
                 ]
               }
-            },
-            {
-              "name": "SFBaseMvvm",
-              "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFBaseMvvm/*.{h,m}"
             }
           ]
         }
