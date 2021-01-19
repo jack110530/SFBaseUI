@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SFBaseUI'
-  s.version          = '0.1.1'
+  s.version          = '0.1.0'
   s.summary          = 'SFBaseUI 基础库 UI层'
 
 # This description is used to generate tags and improve search results.
