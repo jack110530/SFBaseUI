@@ -44,9 +44,11 @@
                 if ([cellModel conformsToProtocol:@protocol(SFMvvmModelProtocol)]) {
                     __kindof SFTableViewCellModel<SFMvvmModelProtocol> *mvvmCellModel = (__kindof SFTableViewCellModel<SFMvvmModelProtocol> *)cellModel;
                     if (!mvvmCell.sf_viewModel) {
-                        mvvmCell.sf_viewModel = [mvvmCellModel.viewModelCls viewModelWithView:mvvmCell];
+                        Class cls = mvvmCellModel.viewModelCls;
+                        mvvmCell.sf_viewModel = [[cls alloc]init];
+                        [mvvmCell.sf_viewModel bindingWithView:mvvmCell];
                     }
-                    [mvvmCell.sf_viewModel updateDataWithModel:mvvmCellModel];
+                    [mvvmCell.sf_viewModel updateWithModel:mvvmCellModel];
                 }
             }
         };

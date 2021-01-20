@@ -35,7 +35,9 @@
 }
 - (void)setImg:(NSString *)img {
     _img = img;
-    self.imgView.image = [UIImage imageNamed:img];
+    if (img) {
+        self.imgView.image = [UIImage imageNamed:img];
+    }
 }
 
 @end

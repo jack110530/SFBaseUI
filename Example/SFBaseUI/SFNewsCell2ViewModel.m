@@ -21,22 +21,13 @@
 
 @implementation SFNewsCell2ViewModel
 
-#pragma mark - init
-+ (instancetype)viewModelWithView:(UIView<SFMvvmViewProtocol> *)view {
-    return [[self alloc]initWithView:view];
+- (void)bindingWithView:(SFNewsCell2 *)cell {
+    self.cell = cell;
+    RAC(self.cell, title) = RACObserve(self, model.title);
+    RAC(self.cell, desc) = RACObserve(self, model.desc);
+    RAC(self.cell, img) = RACObserve(self, model.img);
 }
-- (instancetype)initWithView:(SFNewsCell2 *)cell {
-    if (self = [super init]) {
-        self.cell = cell;
-        RAC(self.cell, title) = RACObserve(self, model.title);
-        RAC(self.cell, desc) = RACObserve(self, model.desc);
-        RAC(self.cell, img) = RACObserve(self, model.img);
-    }
-    return self;
-}
-
-#pragma mark - update
-- (void)updateDataWithModel:(SFNewsModel *)model {
+- (void)updateWithModel:(SFNewsModel *)model {
     self.model = model;
 }
 
