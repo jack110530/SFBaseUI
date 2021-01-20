@@ -63,7 +63,7 @@
     self.tableViewManager = [SFTableViewManager managerTableView:self.tableView];
     
     // 视图层数据展示
-    self.tableViewManager.cellForRowAtIndexPathBlock = ^(__kindof SFTableView * _Nonnull tableView, __kindof SFTableViewCell * _Nonnull cell, __kindof SFTableViewCellModel * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {
+    self.tableViewManager.cellForRowAtIndexPathBlock = ^(__kindof SFTableView * _Nonnull tableView, __kindof SFTableViewCell * _Nonnull cell, __kindof NSObject<SFTableViewCellModelProtocol> * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {
         if ([cell isKindOfClass:[SFNewsCell1 class]]) {
             SFNewsCell1 *newsCell1 = (SFNewsCell1 *)cell;
             SFNewsModel *newsModel = (SFNewsModel *)cellModel;
@@ -79,8 +79,8 @@
         }
     };
     // 点击cell
-    self.tableViewManager.didSelectRowAtIndexPathBlock = ^(__kindof SFTableView * _Nonnull tableView, __kindof SFTableViewCell * _Nonnull cell, __kindof SFTableViewCellModel * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {
-        // 处理界面之间的跳转
+    self.tableViewManager.didSelectRowAtIndexPathBlock = ^(__kindof SFTableView * _Nonnull tableView, __kindof SFTableViewCell * _Nonnull cell, __kindof NSObject<SFTableViewCellModelProtocol> * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {
+        
     };
     
     // View视图层页面交互 通知 Controller调度层去获取数据
@@ -104,7 +104,7 @@
         [self.tableView.mj_header endRefreshing];
         [self.tableView.mj_footer endRefreshing];
         // 获取到数据 -> 逻辑处理，数据组装
-        SFTableViewSectionModel *sectionModel = weakSelf.tableViewManager.tableModel.sectionModels[0];
+        NSObject<SFTableViewSectionModelProtocol> *sectionModel = weakSelf.tableViewManager.tableModel.sectionModels[0];
         if (self.page == 0) {
             [weakSelf.tableViewManager setCellModels:models inSectionModel:sectionModel];
         }else{

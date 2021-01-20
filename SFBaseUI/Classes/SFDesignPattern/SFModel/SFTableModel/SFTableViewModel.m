@@ -9,19 +9,11 @@
 
 @implementation SFTableViewModel
 
-// YYModel
-+ (NSDictionary *)modelContainerPropertyGenericClass {
-    return @{@"sectionModels":[SFTableViewSectionModel class]};
-}
+@synthesize sectionModels;
+@synthesize header;
+@synthesize footer;
 
-#pragma mark - getter
-- (NSArray<SFTableViewSectionModel *> *)sectionModels {
-    if (!_sectionModels) {
-        SFTableViewSectionModel *sectionModel = [[SFTableViewSectionModel alloc]init];
-        _sectionModels = @[sectionModel];
-    }
-    return _sectionModels;
-}
+
 
 
 @end

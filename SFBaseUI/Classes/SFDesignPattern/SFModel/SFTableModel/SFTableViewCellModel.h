@@ -6,13 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SFTableViewCellModelProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SFTableViewCellModel : NSObject
+@interface SFTableViewCellModel : NSObject<SFTableViewCellModelProtocol>
 
-@property (nonatomic, strong) NSNumber *height;
-@property (nonatomic, strong) NSNumber *estimatedHeight;
 
 @end
 

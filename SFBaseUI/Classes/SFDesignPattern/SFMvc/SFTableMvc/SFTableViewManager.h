@@ -9,92 +9,89 @@
 // view
 #import "SFTableView.h"
 #import "SFTableViewCell.h"
-// model
-#import "SFTableViewModel.h"
-#import "SFTableViewSectionModel.h"
-#import "SFTableViewCellModel.h"
+// modelProtocol
+#import "SFTableViewModelProtocol.h"
+#import "SFTableViewSectionModelProtocol.h"
+#import "SFTableViewCellModelProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SFTableViewManager : NSObject
 @property (nonatomic, strong, readonly) SFTableView *tableView;
-@property (nonatomic, strong, readonly) SFTableViewModel *tableModel;
+@property (nonatomic, strong, readonly) NSObject<SFTableViewModelProtocol> *tableModel;
 
 
 #pragma mark - 回调
 /// 配置cell
-@property (nonatomic, copy) void (^cellForRowAtIndexPathBlock)(__kindof SFTableView *tableView, __kindof SFTableViewCell *cell, __kindof SFTableViewCellModel *cellModel, NSIndexPath *indexPath);
+@property (nonatomic, copy) void (^cellForRowAtIndexPathBlock)(__kindof SFTableView *tableView, __kindof SFTableViewCell *cell, __kindof NSObject<SFTableViewCellModelProtocol> *cellModel, NSIndexPath *indexPath);
 
 /// 选中cell
-@property (nonatomic, copy) void (^didSelectRowAtIndexPathBlock)(__kindof SFTableView *tableView, __kindof SFTableViewCell *cell, __kindof SFTableViewCellModel *cellModel, NSIndexPath *indexPath);
+@property (nonatomic, copy) void (^didSelectRowAtIndexPathBlock)(__kindof SFTableView *tableView, __kindof SFTableViewCell *cell, __kindof NSObject<SFTableViewCellModelProtocol> *cellModel, NSIndexPath *indexPath);
 
 /// 取消选中cell
-@property (nonatomic, copy) void (^didDeselectRowAtIndexPathBlock)(__kindof SFTableView *tableView, __kindof SFTableViewCell *cell, __kindof SFTableViewCellModel *cellModel, NSIndexPath *indexPath);
+@property (nonatomic, copy) void (^didDeselectRowAtIndexPathBlock)(__kindof SFTableView *tableView, __kindof SFTableViewCell *cell, __kindof NSObject<SFTableViewCellModelProtocol> *cellModel, NSIndexPath *indexPath);
 
 
 #pragma mark - init
 + (instancetype)managerTableView:(__kindof SFTableView *)tableView;
 - (instancetype)initWithTableView:(__kindof SFTableView *)tableView;
 
-
-
-
 #pragma mark - 数据源操作
-
 // MARK: section
 
 /// 赋值sectionModels
 /// @param sectionModels section数据模型数组
-- (void)setSectionModels:(NSArray<SFTableViewSectionModel *> *)sectionModels;
+- (void)setSectionModels:(NSArray<NSObject<SFTableViewSectionModelProtocol> *> *)sectionModels;
 
 /// 追加section
 /// @param sectionModel section数据模型
-- (void)appendSectionModel:(SFTableViewSectionModel *)sectionModel;
+- (void)appendSectionModel:(NSObject<SFTableViewSectionModelProtocol> *)sectionModel;
 
 /// 追加一组section
 /// @param sectionModels section数据模型数组
-- (void)appendSectionModels:(NSArray<SFTableViewSectionModel *> *)sectionModels;
+- (void)appendSectionModels:(NSArray<NSObject<SFTableViewSectionModelProtocol> *> *)sectionModels;
 
 /// 插入section
 /// @param sectionModel section数据模型
 /// @param index 插入位置
-- (void)insertSectionModel:(SFTableViewSectionModel *)sectionModel
-                      atIndex:(NSInteger)index;
+- (void)insertSectionModel:(NSObject<SFTableViewSectionModelProtocol> *)sectionModel
+                   atIndex:(NSInteger)index;
 
 /// 插入一组section
 /// @param sectionModels section数据模型数组
 /// @param index 插入位置
-- (void)insertSectionModels:(NSArray<SFTableViewSectionModel *> *)sectionModels
-                       atIndex:(NSInteger)index;
+- (void)insertSectionModels:(NSArray<NSObject<SFTableViewSectionModelProtocol> *> *)sectionModels
+                    atIndex:(NSInteger)index;
 
 
 // MARK: cell
 
 /// 赋值cellModels
 /// @param cellModels cell数据模型数组
-- (void)setCellModels:(NSArray<SFTableViewCellModel *> *)cellModels inSectionModel:(SFTableViewSectionModel *)sectionModel;
+- (void)setCellModels:(NSArray<NSObject<SFTableViewCellModelProtocol> *> *)cellModels inSectionModel:(NSObject<SFTableViewSectionModelProtocol> *)sectionModel;
 
 /// 追加cell
 /// @param cellModel cell数据模型
 /// @param sectionModel 所在section数据模型
-- (void)appendCellModel:(SFTableViewCellModel *)cellModel inSectionModel:(SFTableViewSectionModel *)sectionModel;
+- (void)appendCellModel:(NSObject<SFTableViewCellModelProtocol> *)cellModel inSectionModel:(NSObject<SFTableViewSectionModelProtocol> *)sectionModel;
 
 /// 追加一组cell
 /// @param cellModels cell数据模型数组
 /// @param sectionModel 所在section数据模型
-- (void)appendCellModels:(NSArray<SFTableViewCellModel *> *)cellModels inSectionModel:(SFTableViewSectionModel *)sectionModel;
+- (void)appendCellModels:(NSArray<NSObject<SFTableViewCellModelProtocol> *> *)cellModels inSectionModel:(NSObject<SFTableViewSectionModelProtocol> *)sectionModel;
 
 /// 插入cell
 /// @param cellModel cell数据模型
 /// @param sectionModel 所在section数据模型
 /// @param index 插入位置
-- (void)insertCellModel:(SFTableViewCellModel *)cellModel inSectionModel:(SFTableViewSectionModel *)sectionModel atIndex:(NSInteger)index;
+- (void)insertCellModel:(NSObject<SFTableViewCellModelProtocol> *)cellModel inSectionModel:(NSObject<SFTableViewSectionModelProtocol> *)sectionModel atIndex:(NSInteger)index;
 
 /// 插入一组cell
 /// @param cellModels cell数据模型数组
 /// @param sectionModel 所在section数据模型
 /// @param index 插入位置
-- (void)insertCellModels:(NSArray<SFTableViewCellModel *> *)cellModels inSectionModel:(SFTableViewSectionModel *)sectionModel atIndex:(NSInteger)index;
+- (void)insertCellModels:(NSArray<NSObject<SFTableViewCellModelProtocol> *> *)cellModels inSectionModel:(NSObject<SFTableViewSectionModelProtocol> *)sectionModel atIndex:(NSInteger)index;
+
 
 
 @end

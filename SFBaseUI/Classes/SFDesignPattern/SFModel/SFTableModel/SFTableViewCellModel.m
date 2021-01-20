@@ -9,4 +9,7 @@
 
 @implementation SFTableViewCellModel
 
+@synthesize height;
+@synthesize estimatedHeight;
+
 @end

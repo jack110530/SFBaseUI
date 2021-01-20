@@ -32,11 +32,11 @@
     RAC(self.tableViewManager.tableView, tableFooterView) = RACObserve(self.tableViewManager.tableModel, footer);    
     
     // 视图层数据展示
-    self.tableViewManager.cellForRowAtIndexPathBlock = ^(__kindof SFTableView * _Nonnull tableView, __kindof SFTableViewCell * _Nonnull cell, __kindof SFTableViewCellModel * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {
+    self.tableViewManager.cellForRowAtIndexPathBlock = ^(__kindof SFTableView * _Nonnull tableView, __kindof SFTableViewCell * _Nonnull cell, __kindof NSObject<SFTableViewCellModelProtocol> * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {
         if ([cell conformsToProtocol:@protocol(SFMvvmViewProtocol)]) {
             __kindof SFTableViewCell<SFMvvmViewProtocol> *mvvmCell = (SFTableViewCell<SFMvvmViewProtocol> *)cell;
             if ([cellModel conformsToProtocol:@protocol(SFMvvmModelProtocol)]) {
-                __kindof SFTableViewCellModel<SFMvvmModelProtocol> *mvvmCellModel = (__kindof SFTableViewCellModel<SFMvvmModelProtocol> *)cellModel;
+                __kindof NSObject<SFTableViewCellModelProtocol,SFMvvmModelProtocol> *mvvmCellModel = (__kindof NSObject<SFTableViewCellModelProtocol,SFMvvmModelProtocol> *)cellModel;
                 if (!mvvmCell.sf_viewModel) {
                     Class cls = mvvmCellModel.sf_viewModelCls;
                     mvvmCell.sf_viewModel = [[cls alloc]init];

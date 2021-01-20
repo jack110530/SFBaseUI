@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SFNewsModel : SFTableViewCellModel<SFMvvmModelProtocol>
+@interface SFNewsModel : NSObject<SFTableViewCellModelProtocol,SFMvvmModelProtocol>
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *desc;

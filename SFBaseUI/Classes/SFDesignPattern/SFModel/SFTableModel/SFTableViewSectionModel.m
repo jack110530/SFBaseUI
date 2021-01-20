@@ -9,18 +9,12 @@
 
 @implementation SFTableViewSectionModel
 
-// YYModel
-+ (NSDictionary *)modelContainerPropertyGenericClass {
-    return @{@"cellModels":[SFTableViewCellModel class]};
-}
-
-#pragma mark - getter
-- (NSArray<SFTableViewCellModel *> *)cellModels {
-    if (!_cellModels) {
-        _cellModels = @[];
-    }
-    return _cellModels;
-}
-
+@synthesize cellModels;
+@synthesize header;
+@synthesize footer;
+@synthesize headerHeight;
+@synthesize footerHeight;
+@synthesize estimatedHeaderHeight;
+@synthesize estimatedFooterHeight;
 
 @end

@@ -6,19 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SFTableViewCellModel.h"
+#import "SFTableViewSectionModelProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SFTableViewSectionModel : NSObject
-
-@property (nonatomic, copy) NSArray<SFTableViewCellModel *> *cellModels;
-@property (nonatomic, strong) UIView *header;
-@property (nonatomic, strong) UIView *footer;
-@property (nonatomic, strong) NSNumber *headerHeight;
-@property (nonatomic, strong) NSNumber *footerHeight;
-@property (nonatomic, strong) NSNumber *estimatedHeaderHeight;
-@property (nonatomic, strong) NSNumber *estimatedFooterHeight;
+@interface SFTableViewSectionModel : NSObject<SFTableViewSectionModelProtocol>
 
 @end
 

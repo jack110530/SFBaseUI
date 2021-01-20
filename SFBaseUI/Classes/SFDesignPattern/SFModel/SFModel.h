@@ -13,5 +13,10 @@
 #import "SFTableViewCellModel.h"
 #import "SFTableViewSectionModel.h"
 
+// MARK: modelProtocol
+#import "SFTableViewModelProtocol.h"
+#import "SFTableViewSectionModelProtocol.h"
+#import "SFTableViewCellModelProtocol.h"
+
 
 #endif /* SFModel_h */
