@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol SFMvvmModelProtocol <SFMvcModelProtocol>
 
-@required
+@optional
 @property (nonatomic, strong) Class<SFMvvmViewModelProtocol> viewModelCls;
 
 @end
