@@ -9,9 +9,9 @@
 
 @implementation SFTableViewModel
 
-@synthesize sectionModels;
-@synthesize header;
-@synthesize footer;
+@synthesize sf_sectionModels;
+@synthesize sf_header;
+@synthesize sf_footer;
 
 
 

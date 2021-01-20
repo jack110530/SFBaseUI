@@ -81,8 +81,8 @@
                 [newDic setObject:NSClassFromString(@"SFNewsCell2") forKey:@"sf_viewCls"];
                 [newDic setObject:NSClassFromString(@"SFNewsCell2ViewModel") forKey:@"sf_viewModelCls"];
             }
-            [newDic setObject:[NSNumber numberWithFloat:UITableViewAutomaticDimension] forKey:@"height"];
-            [newDic setObject:[NSNumber numberWithFloat:50] forKey:@"estimatedHeight"];
+            [newDic setObject:[NSNumber numberWithFloat:UITableViewAutomaticDimension] forKey:@"sf_height"];
+            [newDic setObject:[NSNumber numberWithFloat:50] forKey:@"sf_estimatedHeight"];
             
             // 数据转模型
             SFNewsModel *model = [SFNewsModel yy_modelWithDictionary:newDic];
