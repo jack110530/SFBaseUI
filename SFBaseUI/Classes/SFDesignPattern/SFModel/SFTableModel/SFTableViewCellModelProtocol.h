@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol SFTableViewCellModelProtocol <NSObject>
 
 @required
-@property (nonatomic, strong) NSNumber *height;
-@property (nonatomic, strong) NSNumber *estimatedHeight;
+@property (nonatomic, strong) NSNumber *sf_height;
+@property (nonatomic, strong) NSNumber *sf_estimatedHeight;
 
 @end
 

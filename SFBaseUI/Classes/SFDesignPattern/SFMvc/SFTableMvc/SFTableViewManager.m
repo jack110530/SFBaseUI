@@ -34,7 +34,7 @@
         // 初始化数据
         SFTableViewSectionModel *sectionModel = [[SFTableViewSectionModel alloc]init];
         self.tableModel = [[SFTableViewModel alloc]init];
-        self.tableModel.sectionModels = @[sectionModel];
+        self.tableModel.sf_sectionModels = @[sectionModel];
     }
     return self;
 }
@@ -47,7 +47,7 @@
 /// 赋值sectionModels
 /// @param sectionModels section数据模型数组
 - (void)setSectionModels:(NSArray<NSObject<SFTableViewSectionModelProtocol> *> *)sectionModels {
-    self.tableModel.sectionModels = sectionModels;
+    self.tableModel.sf_sectionModels = sectionModels;
 }
 
 /// 追加section
@@ -59,7 +59,7 @@
 /// 追加一组section
 /// @param sectionModels section数据模型数组
 - (void)appendSectionModels:(NSArray<NSObject<SFTableViewSectionModelProtocol> *> *)sectionModels {
-    [self insertSectionModels:sectionModels atIndex:self.tableModel.sectionModels.count-1];
+    [self insertSectionModels:sectionModels atIndex:self.tableModel.sf_sectionModels.count-1];
 }
 
 /// 插入section
@@ -75,13 +75,13 @@
 /// @param index 插入位置
 - (void)insertSectionModels:(NSArray<NSObject<SFTableViewSectionModelProtocol> *> *)sectionModels
                     atIndex:(NSInteger)index {
-    NSArray *oldSectionModels = self.tableModel.sectionModels;
+    NSArray *oldSectionModels = self.tableModel.sf_sectionModels;
     NSMutableArray *newSectionModels = [NSMutableArray arrayWithArray:oldSectionModels];
     NSUInteger i = index;
     for (id obj in sectionModels) {
         [newSectionModels insertObject:obj atIndex:i++];
     }
-    self.tableModel.sectionModels = newSectionModels.copy;
+    self.tableModel.sf_sectionModels = newSectionModels.copy;
 }
 
 
@@ -93,7 +93,7 @@
     if (!sectionModel) {
         return;
     }
-    sectionModel.cellModels = cellModels;
+    sectionModel.sf_cellModels = cellModels;
 }
 
 /// 追加cell
@@ -107,7 +107,7 @@
 /// @param cellModels cell数据模型数组
 /// @param sectionModel 所在section数据模型
 - (void)appendCellModels:(NSArray<NSObject<SFTableViewCellModelProtocol> *> *)cellModels inSectionModel:(NSObject<SFTableViewSectionModelProtocol> *)sectionModel {
-    [self insertCellModels:cellModels inSectionModel:sectionModel atIndex:sectionModel.cellModels.count-1];
+    [self insertCellModels:cellModels inSectionModel:sectionModel atIndex:sectionModel.sf_cellModels.count-1];
 }
 
 /// 插入cell
@@ -126,13 +126,13 @@
     if (!sectionModel) {
         return;
     }
-    NSArray *oldCellModels = sectionModel.cellModels;
+    NSArray *oldCellModels = sectionModel.sf_cellModels;
     NSMutableArray *newCellModels = [NSMutableArray arrayWithArray:oldCellModels];
     NSUInteger i = index;
     for (id obj in cellModels) {
         [newCellModels insertObject:obj atIndex:i++];
     }
-    sectionModel.cellModels = newCellModels.copy;
+    sectionModel.sf_cellModels = newCellModels.copy;
 }
 
 
@@ -140,15 +140,15 @@
 #pragma mark - delegate
 // MARK: UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.tableModel.sectionModels.count;
+    return self.tableModel.sf_sectionModels.count;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sectionModels[section];
-    return sectionModel.cellModels.count;
+    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sf_sectionModels[section];
+    return sectionModel.sf_cellModels.count;
 }
 - (__kindof UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sectionModels[indexPath.section];
-    __kindof NSObject<SFTableViewCellModelProtocol> *cellModel = sectionModel.cellModels[indexPath.row];
+    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sf_sectionModels[indexPath.section];
+    __kindof NSObject<SFTableViewCellModelProtocol> *cellModel = sectionModel.sf_cellModels[indexPath.row];
     if ([cellModel conformsToProtocol:@protocol(SFMvcModelProtocol)]) {
         __kindof NSObject<SFTableViewCellModelProtocol,SFMvcModelProtocol> *mvcCellModel = (__kindof NSObject<SFTableViewCellModelProtocol,SFMvcModelProtocol> *)cellModel;
         __kindof SFTableViewCell *cell = [self.tableView sf_dequeueCell:mvcCellModel.sf_viewCls indexPath:indexPath];
@@ -163,56 +163,56 @@
 // MARK: UITableViewDelegate
 // Variable height support
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sectionModels[indexPath.section];
-    __kindof NSObject<SFTableViewCellModelProtocol> *cellModel = sectionModel.cellModels[indexPath.row];
-    return [cellModel.height floatValue];
+    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sf_sectionModels[indexPath.section];
+    __kindof NSObject<SFTableViewCellModelProtocol> *cellModel = sectionModel.sf_cellModels[indexPath.row];
+    return [cellModel.sf_height floatValue];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sectionModels[section];
-    return [sectionModel.headerHeight floatValue];
+    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sf_sectionModels[section];
+    return [sectionModel.sf_headerHeight floatValue];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sectionModels[section];
-    return [sectionModel.footerHeight floatValue];
+    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sf_sectionModels[section];
+    return [sectionModel.sf_footerHeight floatValue];
 }
 
 // estimatedHeight
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sectionModels[indexPath.section];
-    __kindof NSObject<SFTableViewCellModelProtocol> *cellModel = sectionModel.cellModels[indexPath.row];
-    return [cellModel.estimatedHeight floatValue];
+    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sf_sectionModels[indexPath.section];
+    __kindof NSObject<SFTableViewCellModelProtocol> *cellModel = sectionModel.sf_cellModels[indexPath.row];
+    return [cellModel.sf_estimatedHeight floatValue];
 }
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section {
-    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sectionModels[section];
-    return [sectionModel.estimatedHeaderHeight floatValue];
+    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sf_sectionModels[section];
+    return [sectionModel.sf_estimatedHeaderHeight floatValue];
 }
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForFooterInSection:(NSInteger)section {
-    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sectionModels[section];
-    return [sectionModel.estimatedFooterHeight floatValue];
+    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sf_sectionModels[section];
+    return [sectionModel.sf_estimatedFooterHeight floatValue];
 }
 
 // section header & footer
 - (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sectionModels[section];
-    return sectionModel.header;
+    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sf_sectionModels[section];
+    return sectionModel.sf_header;
 }
 - (nullable UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sectionModels[section];
-    return sectionModel.footer;
+    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sf_sectionModels[section];
+    return sectionModel.sf_footer;
 }
 
 // cell select & deselect
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sectionModels[indexPath.section];
-    __kindof NSObject<SFTableViewCellModelProtocol> *cellModel = sectionModel.cellModels[indexPath.row];
+    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sf_sectionModels[indexPath.section];
+    __kindof NSObject<SFTableViewCellModelProtocol> *cellModel = sectionModel.sf_cellModels[indexPath.row];
     __kindof SFTableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     if (self.didSelectRowAtIndexPathBlock) {
         self.didSelectRowAtIndexPathBlock(self.tableView, cell, cellModel, indexPath);
     }
 }
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
-    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sectionModels[indexPath.section];
-    __kindof NSObject<SFTableViewCellModelProtocol> *cellModel = sectionModel.cellModels[indexPath.row];
+    __kindof NSObject<SFTableViewSectionModelProtocol> *sectionModel = self.tableModel.sf_sectionModels[indexPath.section];
+    __kindof NSObject<SFTableViewCellModelProtocol> *cellModel = sectionModel.sf_cellModels[indexPath.row];
     __kindof SFTableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     if (self.didDeselectRowAtIndexPathBlock) {
         self.didDeselectRowAtIndexPathBlock(self.tableView, cell, cellModel, indexPath);

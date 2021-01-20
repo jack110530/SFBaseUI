@@ -17,8 +17,8 @@
 
 @implementation SFNewsModel
 
-@synthesize height;
-@synthesize estimatedHeight;
+@synthesize sf_height;
+@synthesize sf_estimatedHeight;
 @synthesize sf_viewCls;
 @synthesize sf_viewModelCls;
 

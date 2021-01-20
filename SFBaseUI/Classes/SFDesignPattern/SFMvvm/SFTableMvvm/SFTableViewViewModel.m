@@ -25,11 +25,11 @@
     [RACObserve(self.tableViewManager, tableModel) subscribeNext:^(id  _Nullable x) {
         [self.tableViewManager.tableView reloadData];
     }];
-    [RACObserve(self.tableViewManager.tableModel, sectionModels) subscribeNext:^(id  _Nullable x) {
+    [RACObserve(self.tableViewManager.tableModel, sf_sectionModels) subscribeNext:^(id  _Nullable x) {
         [self.tableViewManager.tableView reloadData];
     }];
-    RAC(self.tableViewManager.tableView, tableHeaderView) = RACObserve(self.tableViewManager.tableModel, header);
-    RAC(self.tableViewManager.tableView, tableFooterView) = RACObserve(self.tableViewManager.tableModel, footer);    
+    RAC(self.tableViewManager.tableView, tableHeaderView) = RACObserve(self.tableViewManager.tableModel, sf_header);
+    RAC(self.tableViewManager.tableView, tableFooterView) = RACObserve(self.tableViewManager.tableModel, sf_footer);    
     
     // 视图层数据展示
     self.tableViewManager.cellForRowAtIndexPathBlock = ^(__kindof SFTableView * _Nonnull tableView, __kindof SFTableViewCell * _Nonnull cell, __kindof NSObject<SFTableViewCellModelProtocol> * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {

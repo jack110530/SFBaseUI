@@ -13,13 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol SFTableViewSectionModelProtocol <NSObject>
 
 @required
-@property (nonatomic, copy) NSArray<NSObject<SFTableViewCellModelProtocol> *> *cellModels;
-@property (nonatomic, strong) UIView *header;
-@property (nonatomic, strong) UIView *footer;
-@property (nonatomic, strong) NSNumber *headerHeight;
-@property (nonatomic, strong) NSNumber *footerHeight;
-@property (nonatomic, strong) NSNumber *estimatedHeaderHeight;
-@property (nonatomic, strong) NSNumber *estimatedFooterHeight;
+@property (nonatomic, copy) NSArray<NSObject<SFTableViewCellModelProtocol> *> *sf_cellModels;
+@property (nonatomic, strong) UIView *sf_header;
+@property (nonatomic, strong) UIView *sf_footer;
+@property (nonatomic, strong) NSNumber *sf_headerHeight;
+@property (nonatomic, strong) NSNumber *sf_footerHeight;
+@property (nonatomic, strong) NSNumber *sf_estimatedHeaderHeight;
+@property (nonatomic, strong) NSNumber *sf_estimatedFooterHeight;
 
 @end
 

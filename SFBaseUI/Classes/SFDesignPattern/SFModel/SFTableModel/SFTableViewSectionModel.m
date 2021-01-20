@@ -9,12 +9,12 @@
 
 @implementation SFTableViewSectionModel
 
-@synthesize cellModels;
-@synthesize header;
-@synthesize footer;
-@synthesize headerHeight;
-@synthesize footerHeight;
-@synthesize estimatedHeaderHeight;
-@synthesize estimatedFooterHeight;
+@synthesize sf_cellModels;
+@synthesize sf_header;
+@synthesize sf_footer;
+@synthesize sf_headerHeight;
+@synthesize sf_footerHeight;
+@synthesize sf_estimatedHeaderHeight;
+@synthesize sf_estimatedFooterHeight;
 
 @end

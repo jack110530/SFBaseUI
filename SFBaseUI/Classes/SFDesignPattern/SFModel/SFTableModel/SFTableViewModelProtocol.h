@@ -13,9 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol SFTableViewModelProtocol <NSObject>
 
 @required
-@property (nonatomic, copy) NSArray<NSObject<SFTableViewSectionModelProtocol> *> *sectionModels;
-@property (nonatomic, strong) UIView *header;
-@property (nonatomic, strong) UIView *footer;
+@property (nonatomic, copy) NSArray<NSObject<SFTableViewSectionModelProtocol> *> *sf_sectionModels;
+@property (nonatomic, strong) UIView *sf_header;
+@property (nonatomic, strong) UIView *sf_footer;
 
 @end
 
