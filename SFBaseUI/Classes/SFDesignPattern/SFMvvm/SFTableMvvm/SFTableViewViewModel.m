@@ -16,7 +16,7 @@
 
 @implementation SFTableViewViewModel
 
-- (void)sf_bindingWithView:(UIView<SFMvvmViewProtocol> *)view {
+- (void)sf_bindingWithView:(UIView *)view {
     
     // 转交代理
     self.tableViewManager = [SFTableViewManager managerTableView:view];

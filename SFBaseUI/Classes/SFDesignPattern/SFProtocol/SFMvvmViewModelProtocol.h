@@ -17,12 +17,12 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 /// 绑定
 /// @param view 绑定视图
-- (void)sf_bindingWithView:(UIView<SFMvvmViewProtocol> *)view;
+- (void)sf_bindingWithView:(UIView *)view;
 
 /// 绑定
 /// @param view 绑定视图
 /// @param vc 绑定控制器
-- (void)sf_bindingWithView:(UIView<SFMvvmViewProtocol> *)view viewController:(UIViewController *)vc;
+- (void)sf_bindingWithView:(UIView *)view viewController:(UIViewController *)vc;
 
 /// 更新
 /// @param model 数据模型

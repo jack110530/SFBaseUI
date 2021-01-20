@@ -24,8 +24,8 @@
 
 @implementation SFNewsViewModel
 
-#pragma mark - init
-- (void)sf_bindingWithView:(UIView<SFMvvmViewProtocol> *)view {
+#pragma mark - binding
+- (void)sf_bindingWithView:(UIView *)view {
     [super sf_bindingWithView:view];
     // View视图层页面交互 通知 ViewModel 去获取数据
     self.tableViewManager.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
