@@ -7,7 +7,7 @@
 
 #import "SFCountdownView.h"
 #import <SFMacro/SFFunc.h>
-#import <SFCrashInspector/SFCrachInspector.h>
+#import <SFCrashInspector/SFProxy.h>
 #import <Masonry/Masonry.h>
 
 #define SFDefaultFmt_deadline   @"yyyy/MM/dd HH:mm:ss截止"
