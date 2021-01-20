@@ -21,13 +21,13 @@
 
 @implementation SFNewsCell2ViewModel
 
-- (void)bindingWithView:(SFNewsCell2 *)cell {
+- (void)sf_bindingWithView:(SFNewsCell2 *)cell {
     self.cell = cell;
     RAC(self.cell, title) = RACObserve(self, model.title);
     RAC(self.cell, desc) = RACObserve(self, model.desc);
     RAC(self.cell, img) = RACObserve(self, model.img);
 }
-- (void)updateWithModel:(SFNewsModel *)model {
+- (void)sf_updateWithModel:(SFNewsModel *)model {
     self.model = model;
 }
 

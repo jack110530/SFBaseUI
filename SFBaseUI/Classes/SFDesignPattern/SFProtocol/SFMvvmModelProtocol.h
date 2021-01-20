@@ -13,7 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol SFMvvmModelProtocol <SFMvcModelProtocol>
 
 @optional
-@property (nonatomic, strong) Class<SFMvvmViewModelProtocol> viewModelCls;
+/// ViewModel类对象
+@property (nonatomic, strong) Class<SFMvvmViewModelProtocol> sf_viewModelCls;
 
 @end
 

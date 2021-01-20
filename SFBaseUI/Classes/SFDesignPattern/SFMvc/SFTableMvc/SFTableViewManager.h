@@ -45,26 +45,26 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 赋值sectionModels
 /// @param sectionModels section数据模型数组
-- (void)sf_setSectionModels:(NSArray<SFTableViewSectionModel *> *)sectionModels;
+- (void)setSectionModels:(NSArray<SFTableViewSectionModel *> *)sectionModels;
 
 /// 追加section
 /// @param sectionModel section数据模型
-- (void)sf_appendSectionModel:(SFTableViewSectionModel *)sectionModel;
+- (void)appendSectionModel:(SFTableViewSectionModel *)sectionModel;
 
 /// 追加一组section
 /// @param sectionModels section数据模型数组
-- (void)sf_appendSectionModels:(NSArray<SFTableViewSectionModel *> *)sectionModels;
+- (void)appendSectionModels:(NSArray<SFTableViewSectionModel *> *)sectionModels;
 
 /// 插入section
 /// @param sectionModel section数据模型
 /// @param index 插入位置
-- (void)sf_insertSectionModel:(SFTableViewSectionModel *)sectionModel
+- (void)insertSectionModel:(SFTableViewSectionModel *)sectionModel
                       atIndex:(NSInteger)index;
 
 /// 插入一组section
 /// @param sectionModels section数据模型数组
 /// @param index 插入位置
-- (void)sf_insertSectionModels:(NSArray<SFTableViewSectionModel *> *)sectionModels
+- (void)insertSectionModels:(NSArray<SFTableViewSectionModel *> *)sectionModels
                        atIndex:(NSInteger)index;
 
 
@@ -72,29 +72,29 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 赋值cellModels
 /// @param cellModels cell数据模型数组
-- (void)sf_setCellModels:(NSArray<SFTableViewCellModel *> *)cellModels inSectionModel:(SFTableViewSectionModel *)sectionModel;
+- (void)setCellModels:(NSArray<SFTableViewCellModel *> *)cellModels inSectionModel:(SFTableViewSectionModel *)sectionModel;
 
 /// 追加cell
 /// @param cellModel cell数据模型
 /// @param sectionModel 所在section数据模型
-- (void)sf_appendCellModel:(SFTableViewCellModel *)cellModel inSectionModel:(SFTableViewSectionModel *)sectionModel;
+- (void)appendCellModel:(SFTableViewCellModel *)cellModel inSectionModel:(SFTableViewSectionModel *)sectionModel;
 
 /// 追加一组cell
 /// @param cellModels cell数据模型数组
 /// @param sectionModel 所在section数据模型
-- (void)sf_appendCellModels:(NSArray<SFTableViewCellModel *> *)cellModels inSectionModel:(SFTableViewSectionModel *)sectionModel;
+- (void)appendCellModels:(NSArray<SFTableViewCellModel *> *)cellModels inSectionModel:(SFTableViewSectionModel *)sectionModel;
 
 /// 插入cell
 /// @param cellModel cell数据模型
 /// @param sectionModel 所在section数据模型
 /// @param index 插入位置
-- (void)sf_insertCellModel:(SFTableViewCellModel *)cellModel inSectionModel:(SFTableViewSectionModel *)sectionModel atIndex:(NSInteger)index;
+- (void)insertCellModel:(SFTableViewCellModel *)cellModel inSectionModel:(SFTableViewSectionModel *)sectionModel atIndex:(NSInteger)index;
 
 /// 插入一组cell
 /// @param cellModels cell数据模型数组
 /// @param sectionModel 所在section数据模型
 /// @param index 插入位置
-- (void)sf_insertCellModels:(NSArray<SFTableViewCellModel *> *)cellModels inSectionModel:(SFTableViewSectionModel *)sectionModel atIndex:(NSInteger)index;
+- (void)insertCellModels:(NSArray<SFTableViewCellModel *> *)cellModels inSectionModel:(SFTableViewSectionModel *)sectionModel atIndex:(NSInteger)index;
 
 
 @end

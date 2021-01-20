@@ -6,18 +6,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SFMvvmViewModelProtocol.h"
 // manager
 #import "SFTableViewManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SFTableViewViewModel : NSObject
+@interface SFTableViewViewModel : NSObject<SFMvvmViewModelProtocol>
 
-@property (nonatomic, strong) SFTableViewManager *tableViewManager;
-
-#pragma mark - init
-+ (instancetype)viewModelWithTableView:(__kindof SFTableView *)tableView;
-- (instancetype)initWithTableView:(__kindof SFTableView *)tableView;
+@property (nonatomic, strong, readonly) SFTableViewManager *tableViewManager;
 
 @end
 

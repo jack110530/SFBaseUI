@@ -106,9 +106,9 @@
         // 获取到数据 -> 逻辑处理，数据组装
         SFTableViewSectionModel *sectionModel = weakSelf.tableViewManager.tableModel.sectionModels[0];
         if (self.page == 0) {
-            [weakSelf.tableViewManager sf_setCellModels:models inSectionModel:sectionModel];
+            [weakSelf.tableViewManager setCellModels:models inSectionModel:sectionModel];
         }else{
-            [weakSelf.tableViewManager sf_appendCellModels:models inSectionModel:sectionModel];
+            [weakSelf.tableViewManager appendCellModels:models inSectionModel:sectionModel];
         }
         // Controller调度层 通知 视图层更新页面
         [weakSelf.tableViewManager.tableView reloadData];

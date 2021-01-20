@@ -17,8 +17,8 @@
 
 @implementation SFNewsModel
 
-@synthesize viewCls;
-@synthesize viewModelCls;
+@synthesize sf_viewCls;
+@synthesize sf_viewModelCls;
 
 
 #pragma mark - 模拟网络请求
@@ -73,11 +73,11 @@
             NSMutableDictionary *newDic = [NSMutableDictionary dictionaryWithDictionary:dic];
             NSString *img = newDic[@"img"]?:@"";
             if ([img isEqualToString:@""]) {
-                [newDic setObject:NSClassFromString(@"SFNewsCell1") forKey:@"viewCls"];
-                [newDic setObject:NSClassFromString(@"SFNewsCell1ViewModel") forKey:@"viewModelCls"];
+                [newDic setObject:NSClassFromString(@"SFNewsCell1") forKey:@"sf_viewCls"];
+                [newDic setObject:NSClassFromString(@"SFNewsCell1ViewModel") forKey:@"sf_viewModelCls"];
             }else{
-                [newDic setObject:NSClassFromString(@"SFNewsCell2") forKey:@"viewCls"];
-                [newDic setObject:NSClassFromString(@"SFNewsCell2ViewModel") forKey:@"viewModelCls"];
+                [newDic setObject:NSClassFromString(@"SFNewsCell2") forKey:@"sf_viewCls"];
+                [newDic setObject:NSClassFromString(@"SFNewsCell2ViewModel") forKey:@"sf_viewModelCls"];
             }
             [newDic setObject:[NSNumber numberWithFloat:UITableViewAutomaticDimension] forKey:@"height"];
             [newDic setObject:[NSNumber numberWithFloat:50] forKey:@"estimatedHeight"];

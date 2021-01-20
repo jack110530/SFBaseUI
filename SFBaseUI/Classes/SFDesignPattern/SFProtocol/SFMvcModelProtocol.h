@@ -14,7 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol SFMvcModelProtocol <NSObject>
 
 @optional
-@property (nonatomic, strong) Class<SFCustomUIProtocol,SFTableViewReusedProtocol> viewCls;
+/// View类对象
+@property (nonatomic, strong) Class<SFCustomUIProtocol,SFTableViewReusedProtocol> sf_viewCls;
 
 @end
 

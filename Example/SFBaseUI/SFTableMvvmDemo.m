@@ -13,7 +13,7 @@
 #import <MJRefresh/MJRefresh.h>
 
 @interface SFTableMvvmDemo ()
-@property (nonatomic, strong) SFTableView *tableView;
+@property (nonatomic, strong) SFTableView<SFMvvmViewProtocol> *tableView;
 @property (nonatomic, strong) SFNewsViewModel *newsViewModel;
 @end
 
@@ -29,16 +29,17 @@
         make.edges.equalTo(self.view);
     }];
     
-    self.newsViewModel = [SFNewsViewModel viewModelWithTableView:self.tableView];
+    self.newsViewModel = [[SFNewsViewModel alloc] init];
+    [self.newsViewModel sf_bindingWithView:self.tableView];
     [self.tableView.mj_header beginRefreshing];
 }
 
 
 
 #pragma mark - getter
-- (SFTableView *)tableView {
+- (SFTableView<SFMvvmViewProtocol> *)tableView {
     if (!_tableView) {
-        _tableView = [[SFTableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _tableView = [[SFTableView<SFMvvmViewProtocol> alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
     }
     return _tableView;
 }
