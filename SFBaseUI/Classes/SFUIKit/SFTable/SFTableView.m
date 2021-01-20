@@ -25,7 +25,7 @@
 #pragma mark - custom ui
 - (void)customUI {
     // 自定义UI
-    self.backgroundColor = [UIColor clearColor];
+    self.backgroundColor = [UIColor whiteColor];
     self.separatorInset = UIEdgeInsetsZero;
     self.estimatedRowHeight = 44;
     self.rowHeight = UITableViewAutomaticDimension;
