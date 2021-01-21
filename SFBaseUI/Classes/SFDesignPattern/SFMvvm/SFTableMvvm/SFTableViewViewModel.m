@@ -31,8 +31,7 @@
     RAC(self.tableViewManager.tableView, tableHeaderView) = RACObserve(self.tableViewManager.tableModel, sf_header);
     RAC(self.tableViewManager.tableView, tableFooterView) = RACObserve(self.tableViewManager.tableModel, sf_footer);    
     
-    // 视图层数据展示
-    self.tableViewManager.cellForRowAtIndexPathBlock = ^(__kindof SFTableView * _Nonnull tableView, __kindof SFTableViewCell * _Nonnull cell, __kindof NSObject<SFTableViewCellModelProtocol> * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {
+    self.tableViewManager.mvvmBindingBlock = ^(__kindof SFTableView * _Nonnull tableView, __kindof SFTableViewCell * _Nonnull cell, __kindof NSObject<SFTableViewCellModelProtocol> * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {
         if ([cell conformsToProtocol:@protocol(SFMvvmViewProtocol)]) {
             __kindof SFTableViewCell<SFMvvmViewProtocol> *mvvmCell = (SFTableViewCell<SFMvvmViewProtocol> *)cell;
             if ([cellModel conformsToProtocol:@protocol(SFMvvmModelProtocol)]) {
@@ -42,6 +41,16 @@
                     mvvmCell.sf_viewModel = [[cls alloc]init];
                     [mvvmCell.sf_viewModel sf_bindingWithView:mvvmCell];
                 }
+            }
+        }
+    };
+    
+    // 数据更新
+    self.tableViewManager.mvvmUpdateBlock = ^(__kindof SFTableView * _Nonnull tableView, __kindof SFTableViewCell * _Nonnull cell, __kindof NSObject<SFTableViewCellModelProtocol> * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {
+        if ([cell conformsToProtocol:@protocol(SFMvvmViewProtocol)]) {
+            __kindof SFTableViewCell<SFMvvmViewProtocol> *mvvmCell = (SFTableViewCell<SFMvvmViewProtocol> *)cell;
+            if ([cellModel conformsToProtocol:@protocol(SFMvvmModelProtocol)]) {
+                __kindof NSObject<SFTableViewCellModelProtocol,SFMvvmModelProtocol> *mvvmCellModel = (__kindof NSObject<SFTableViewCellModelProtocol,SFMvvmModelProtocol> *)cellModel;
                 [mvvmCell.sf_viewModel sf_updateWithModel:mvvmCellModel];
             }
         }

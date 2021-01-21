@@ -31,6 +31,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// 取消选中cell
 @property (nonatomic, copy) void (^didDeselectRowAtIndexPathBlock)(__kindof SFTableView *tableView, __kindof SFTableViewCell *cell, __kindof NSObject<SFTableViewCellModelProtocol> *cellModel, NSIndexPath *indexPath);
 
+// MARK: MVVM相关回调
+/// mvvmBinding
+@property (nonatomic, copy) void (^mvvmBindingBlock)(__kindof SFTableView *tableView, __kindof SFTableViewCell *cell, __kindof NSObject<SFTableViewCellModelProtocol> *cellModel, NSIndexPath *indexPath);
+/// mvvmUpdate
+@property (nonatomic, copy) void (^mvvmUpdateBlock)(__kindof SFTableView *tableView, __kindof SFTableViewCell *cell, __kindof NSObject<SFTableViewCellModelProtocol> *cellModel, NSIndexPath *indexPath);
+
 
 #pragma mark - init
 + (instancetype)managerTableView:(__kindof SFTableView *)tableView;
