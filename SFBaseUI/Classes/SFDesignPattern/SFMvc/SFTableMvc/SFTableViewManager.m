@@ -152,11 +152,11 @@
     if ([cellModel conformsToProtocol:@protocol(SFMvcModelProtocol)]) {
         __kindof NSObject<SFTableViewCellModelProtocol,SFMvcModelProtocol> *mvcCellModel = (__kindof NSObject<SFTableViewCellModelProtocol,SFMvcModelProtocol> *)cellModel;
         __kindof SFTableViewCell *cell = [self.tableView sf_dequeueCell:mvcCellModel.sf_viewCls indexPath:indexPath];
-        if (self.mvvmBindingBlock) {
-            self.mvvmBindingBlock(self.tableView, cell, cellModel, indexPath);
-        }
         if (self.cellForRowAtIndexPathBlock) {
             self.cellForRowAtIndexPathBlock(self.tableView, cell, cellModel, indexPath);
+        }
+        if (self.mvvmBindingBlock) {
+            self.mvvmBindingBlock(self.tableView, cell, cellModel, indexPath);
         }
         if (self.mvvmUpdateBlock) {
             self.mvvmUpdateBlock(self.tableView, cell, cellModel, indexPath);
