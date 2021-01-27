@@ -6,8 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SFCustomUIProtocol.h"
-#import "SFTableViewReusedProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 /// View类对象
-@property (nonatomic, strong) Class<SFCustomUIProtocol,SFTableViewReusedProtocol> sf_viewCls;
+@property (nonatomic, strong) Class sf_viewCls;
 
 @end
 

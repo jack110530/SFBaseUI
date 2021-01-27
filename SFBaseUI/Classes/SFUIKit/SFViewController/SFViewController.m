@@ -19,22 +19,5 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeNone;
 }
-- (void)loadView {
-    [super loadView];
-    [self customUI];
-}
-
-#pragma mark - custom ui
-- (void)customUI {
-    // 自定义UI
-}
-
-#pragma mark - custom layout
-- (void)viewWillLayoutSubviews {
-    // 自定义布局
-    [super viewWillLayoutSubviews];
-}
-
-
 
 @end

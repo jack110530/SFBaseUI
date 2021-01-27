@@ -8,27 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2DE2EDC2817FBA8246016C56 /* Pods_SFBaseUI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48C7C2EFC082ED5ACA17673 /* Pods_SFBaseUI_Example.framework */; };
-		5114071925AD386800886F20 /* SFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5114071825AD386800886F20 /* SFHomeViewController.m */; };
-		51317FCE25B6E377009CCDF9 /* SFCircleProgressViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FB525B6E375009CCDF9 /* SFCircleProgressViewDemo.m */; };
-		51317FCF25B6E377009CCDF9 /* SFCountdownLabelDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FB725B6E375009CCDF9 /* SFCountdownLabelDemo.m */; };
+		5121337625C1069C007FB5DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		51317FD025B6E377009CCDF9 /* SFCountdownButtonDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51317FB825B6E375009CCDF9 /* SFCountdownButtonDemo.xib */; };
-		51317FD125B6E377009CCDF9 /* SFNewsCell2ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FB925B6E375009CCDF9 /* SFNewsCell2ViewModel.m */; };
-		51317FD225B6E377009CCDF9 /* SFNewsCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FBC25B6E375009CCDF9 /* SFNewsCell1.m */; };
-		51317FD325B6E377009CCDF9 /* SFNewsCell1ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FC025B6E376009CCDF9 /* SFNewsCell1ViewModel.m */; };
-		51317FD425B6E377009CCDF9 /* SFTableMvcDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FC125B6E376009CCDF9 /* SFTableMvcDemo.m */; };
-		51317FD525B6E377009CCDF9 /* SFNewsCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FC225B6E376009CCDF9 /* SFNewsCell2.m */; };
 		51317FD625B6E377009CCDF9 /* SFCircleProgressViewDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51317FC425B6E376009CCDF9 /* SFCircleProgressViewDemo.xib */; };
-		51317FD725B6E377009CCDF9 /* SFCountdownButtonDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FC525B6E376009CCDF9 /* SFCountdownButtonDemo.m */; };
-		51317FD825B6E377009CCDF9 /* SFCountdownViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FC725B6E376009CCDF9 /* SFCountdownViewDemo.m */; };
-		51317FD925B6E377009CCDF9 /* SFNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FCA25B6E377009CCDF9 /* SFNewsModel.m */; };
 		51317FDA25B6E377009CCDF9 /* SFNewsCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51317FCB25B6E377009CCDF9 /* SFNewsCell2.xib */; };
-		51317FDB25B6E377009CCDF9 /* SFNewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FCC25B6E377009CCDF9 /* SFNewsViewModel.m */; };
-		51317FDC25B6E377009CCDF9 /* SFTableMvvmDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FCD25B6E377009CCDF9 /* SFTableMvvmDemo.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
-		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* SFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* SFAppDelegate.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
@@ -57,6 +44,8 @@
 		46972D08FEDF50DF7EAFF084 /* Pods-SFBaseUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFBaseUI_Example.release.xcconfig"; path = "Target Support Files/Pods-SFBaseUI_Example/Pods-SFBaseUI_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5114071725AD386800886F20 /* SFHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFHomeViewController.h; sourceTree = "<group>"; };
 		5114071825AD386800886F20 /* SFHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFHomeViewController.m; sourceTree = "<group>"; };
+		512132AA25C0F910007FB5DE /* SFDarkModeDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFDarkModeDemo.h; sourceTree = "<group>"; };
+		512132AB25C0F910007FB5DE /* SFDarkModeDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFDarkModeDemo.m; sourceTree = "<group>"; };
 		51317FB325B6E375009CCDF9 /* SFCountdownViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCountdownViewDemo.h; sourceTree = "<group>"; };
 		51317FB425B6E375009CCDF9 /* SFNewsCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFNewsCell1.h; sourceTree = "<group>"; };
 		51317FB525B6E375009CCDF9 /* SFCircleProgressViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCircleProgressViewDemo.m; sourceTree = "<group>"; };
@@ -137,9 +126,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		512132A925C0F8EB007FB5DE /* 暗黑模式 */ = {
+			isa = PBXGroup;
+			children = (
+				512132AA25C0F910007FB5DE /* SFDarkModeDemo.h */,
+				512132AB25C0F910007FB5DE /* SFDarkModeDemo.m */,
+			);
+			name = "暗黑模式";
+			sourceTree = "<group>";
+		};
 		51317FDF25B6E388009CCDF9 /* DEMO */ = {
 			isa = PBXGroup;
 			children = (
+				512132A925C0F8EB007FB5DE /* 暗黑模式 */,
 				51317FE225B6E3D8009CCDF9 /* 设计模式 */,
 				51317FE125B6E3AE009CCDF9 /* 进度条 */,
 				51317FE025B6E396009CCDF9 /* 倒计时 */,
@@ -520,6 +519,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SFBaseUI_Example/Pods-SFBaseUI_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
@@ -532,6 +532,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
@@ -554,21 +555,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5121337625C1069C007FB5DE /* main.m in Sources */,
 				6003F59E195388D20070C39A /* SFAppDelegate.m in Sources */,
-				51317FD725B6E377009CCDF9 /* SFCountdownButtonDemo.m in Sources */,
-				51317FCE25B6E377009CCDF9 /* SFCircleProgressViewDemo.m in Sources */,
-				51317FD925B6E377009CCDF9 /* SFNewsModel.m in Sources */,
-				51317FCF25B6E377009CCDF9 /* SFCountdownLabelDemo.m in Sources */,
-				51317FD425B6E377009CCDF9 /* SFTableMvcDemo.m in Sources */,
-				51317FDB25B6E377009CCDF9 /* SFNewsViewModel.m in Sources */,
-				51317FD525B6E377009CCDF9 /* SFNewsCell2.m in Sources */,
-				51317FD825B6E377009CCDF9 /* SFCountdownViewDemo.m in Sources */,
-				51317FD125B6E377009CCDF9 /* SFNewsCell2ViewModel.m in Sources */,
-				51317FD325B6E377009CCDF9 /* SFNewsCell1ViewModel.m in Sources */,
-				5114071925AD386800886F20 /* SFHomeViewController.m in Sources */,
-				6003F59A195388D20070C39A /* main.m in Sources */,
-				51317FDC25B6E377009CCDF9 /* SFTableMvvmDemo.m in Sources */,
-				51317FD225B6E377009CCDF9 /* SFNewsCell1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

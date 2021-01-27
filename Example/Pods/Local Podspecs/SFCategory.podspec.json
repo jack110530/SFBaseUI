@@ -32,6 +32,8 @@
   "subspecs": [
     {
       "name": "SFFoundation",
+      "source_files": "SFCategory/Classes/SFFoundation/SFFoundation.h",
+      "public_header_files": "SFCategory/Classes/SFFoundation/SFFoundation.h",
       "subspecs": [
         {
           "name": "NSObject",
@@ -45,6 +47,8 @@
     },
     {
       "name": "SFKit",
+      "source_files": "SFCategory/Classes/SFKit/SFKit.h",
+      "public_header_files": "SFCategory/Classes/SFKit/SFKit.h",
       "subspecs": [
         {
           "name": "UIView",
@@ -61,6 +65,34 @@
         {
           "name": "UIViewController",
           "source_files": "SFCategory/Classes/SFKit/UIViewController/*.{h,m}"
+        },
+        {
+          "name": "SFProtocol",
+          "source_files": "SFCategory/Classes/SFKit/SFProtocol/*.{h,m}"
+        },
+        {
+          "name": "UITableView",
+          "source_files": "SFCategory/Classes/SFKit/UITableView/*.{h,m}",
+          "dependencies": {
+            "SFCategory/SFKit/SFProtocol": [
+
+            ],
+            "SFCategory/SFFoundation/NSObject": [
+
+            ]
+          }
+        },
+        {
+          "name": "UICollectionView",
+          "source_files": "SFCategory/Classes/SFKit/UICollectionView/*.{h,m}",
+          "dependencies": {
+            "SFCategory/SFKit/SFProtocol": [
+
+            ],
+            "SFCategory/SFFoundation/NSObject": [
+
+            ]
+          }
         }
       ]
     }

@@ -6,14 +6,11 @@
 //
 
 #import "SFViewController.h"
-#import "SFCollectionView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SFCollectionViewController : SFViewController<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
-@property (nonatomic,strong) UICollectionViewLayout *layout;
-@property (nonatomic,strong,readonly) SFCollectionView *collectionView;
 
 @end
 

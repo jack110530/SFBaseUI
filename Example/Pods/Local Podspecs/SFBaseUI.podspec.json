@@ -39,6 +39,9 @@
     ],
     "ReactiveObjC": [
 
+    ],
+    "Aspects": [
+
     ]
   },
   "subspecs": [
@@ -98,17 +101,8 @@
       "public_header_files": "SFBaseUI/Classes/SFUIKit/SFUIKit.h",
       "subspecs": [
         {
-          "name": "SFProtocol",
-          "source_files": "SFBaseUI/Classes/SFUIKit/SFProtocol/*.{h,m}"
-        },
-        {
           "name": "SFView",
-          "source_files": "SFBaseUI/Classes/SFUIKit/SFView/*.{h,m}",
-          "dependencies": {
-            "SFBaseUI/SFUIKit/SFProtocol": [
-
-            ]
-          }
+          "source_files": "SFBaseUI/Classes/SFUIKit/SFView/*.{h,m}"
         },
         {
           "name": "SFButton",
@@ -116,45 +110,7 @@
         },
         {
           "name": "SFViewController",
-          "source_files": "SFBaseUI/Classes/SFUIKit/SFViewController/*.{h,m}",
-          "dependencies": {
-            "SFBaseUI/SFUIKit/SFProtocol": [
-
-            ]
-          }
-        },
-        {
-          "name": "SFScroll",
-          "source_files": "SFBaseUI/Classes/SFUIKit/SFScroll/*.{h,m}",
-          "dependencies": {
-            "SFBaseUI/SFUIKit/SFViewController": [
-
-            ]
-          }
-        },
-        {
-          "name": "SFTable",
-          "source_files": "SFBaseUI/Classes/SFUIKit/SFTable/*.{h,m}",
-          "dependencies": {
-            "SFBaseUI/SFUIKit/SFProtocol": [
-
-            ],
-            "SFBaseUI/SFUIKit/SFViewController": [
-
-            ]
-          }
-        },
-        {
-          "name": "SFCollection",
-          "source_files": "SFBaseUI/Classes/SFUIKit/SFCollection/*.{h,m}",
-          "dependencies": {
-            "SFBaseUI/SFUIKit/SFProtocol": [
-
-            ],
-            "SFBaseUI/SFUIKit/SFViewController": [
-
-            ]
-          }
+          "source_files": "SFBaseUI/Classes/SFUIKit/SFViewController/*.{h,m}"
         },
         {
           "name": "SFCountdown",
@@ -168,73 +124,6 @@
 
             ]
           }
-        }
-      ]
-    },
-    {
-      "name": "SFDesignPattern",
-      "source_files": "SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h",
-      "public_header_files": "SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h",
-      "dependencies": {
-        "SFBaseUI/SFUIKit": [
-
-        ]
-      },
-      "subspecs": [
-        {
-          "name": "SFModel",
-          "source_files": "SFBaseUI/Classes/SFDesignPattern/SFModel/SFModel.h",
-          "public_header_files": "SFBaseUI/Classes/SFDesignPattern/SFModel/SFModel.h",
-          "subspecs": [
-            {
-              "name": "SFTableModel",
-              "source_files": "SFBaseUI/Classes/SFDesignPattern/SFModel/SFTableModel/*.{h,m}"
-            }
-          ]
-        },
-        {
-          "name": "SFProtocol",
-          "source_files": "SFBaseUI/Classes/SFDesignPattern/SFProtocol/*.{h,m}"
-        },
-        {
-          "name": "SFMvc",
-          "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h",
-          "public_header_files": "SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h",
-          "dependencies": {
-            "SFBaseUI/SFDesignPattern/SFModel": [
-
-            ],
-            "SFBaseUI/SFDesignPattern/SFProtocol": [
-
-            ]
-          },
-          "subspecs": [
-            {
-              "name": "SFTableMvc",
-              "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvc/SFTableMvc/*.{h,m}"
-            }
-          ]
-        },
-        {
-          "name": "SFMvvm",
-          "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h",
-          "public_header_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h",
-          "dependencies": {
-            "SFBaseUI/SFDesignPattern/SFProtocol": [
-
-            ]
-          },
-          "subspecs": [
-            {
-              "name": "SFTableMvvm",
-              "source_files": "SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFTableMvvm/*.{h,m}",
-              "dependencies": {
-                "SFBaseUI/SFDesignPattern/SFMvc/SFTableMvc": [
-
-                ]
-              }
-            }
-          ]
         }
       ]
     }

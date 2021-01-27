@@ -27,26 +27,17 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
 #pragma clang diagnostic pop
     }
-}
-
-#pragma mark - custom ui
-- (void)customUI {
-    [super customUI];
     [self.scrollView addSubview:self.contentView];
     [self.view addSubview:self.scrollView];
-}
-
-#pragma mark - custom layout
-- (void)viewWillLayoutSubviews {
+    
+    [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
     [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.scrollView);
         make.width.equalTo(self.scrollView);
         make.height.greaterThanOrEqualTo(self.scrollView);
     }];
-    [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
-    }];
-    [super viewWillLayoutSubviews];
 }
 
 #pragma mark - func

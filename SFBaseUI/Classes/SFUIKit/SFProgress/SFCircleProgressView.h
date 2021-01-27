@@ -5,11 +5,11 @@
 //  Created by 黄山锋 on 2021/1/12.
 //
 
-#import "SFView.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SFCircleProgressView : SFView
+@interface SFCircleProgressView : UIView
 
 /// 开始角度，默认(-M_PI_2)
 @property (nonatomic,assign) IBInspectable CGFloat startAngle;

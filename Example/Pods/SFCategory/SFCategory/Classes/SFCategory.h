@@ -10,33 +10,10 @@
 
 
 #pragma mark - NSFoundation
-// MARK: NSObject
-#import "NSObject+SFExtension.h"
-
-// MARK: NSString
-#import "NSString+SFRegex.h"
-
-
-
+#import "SFFoundation.h"
 
 #pragma mark - UIKit
-// MARK: UIView
-#import "UIView+SFClip.h"
-#import "UIView+SFFrame.h"
-#import "UIView+SFGesture.h"
-#import "UIView+SFGradient.h"
-#import "UIView+SFAnimation.h"
-
-// MARK: UIButton
-#import "UIButton+SFExtension.h"
-#import "UIButton+SFEnlargeScope.h"
-
-// MARK: UIImage
-#import "UIImage+SFExtension.h"
-
-
-// MARK: UIViewController
-#import "UIViewController+SFNavigator.h"
+#import "SFKit.h"
 
 
 

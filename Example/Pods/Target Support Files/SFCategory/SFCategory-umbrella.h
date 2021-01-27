@@ -11,11 +11,18 @@
 #endif
 
 #import "SFCategory.h"
+#import "SFFoundation.h"
 #import "NSObject+SFExtension.h"
 #import "NSString+SFRegex.h"
+#import "SFKit.h"
+#import "SFCollectionViewReusedProtocol.h"
+#import "SFReusedProtocol.h"
+#import "SFTableViewReusedProtocol.h"
 #import "UIButton+SFEnlargeScope.h"
 #import "UIButton+SFExtension.h"
+#import "UICollectionView+SFReuse.h"
 #import "UIImage+SFExtension.h"
+#import "UITableView+SFReuse.h"
 #import "UIView+SFAnimation.h"
 #import "UIView+SFClip.h"
 #import "UIView+SFFrame.h"

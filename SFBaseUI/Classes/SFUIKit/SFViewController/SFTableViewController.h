@@ -6,14 +6,13 @@
 //
 
 #import "SFViewController.h"
-#import "SFTableView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SFTableViewController : SFViewController<UITableViewDataSource, UITableViewDelegate>
-/// 默认UITableViewStylePlain
-@property (nonatomic, assign) UITableViewStyle tableStyle;
-@property (nonatomic,strong,readonly) SFTableView *tableView;
+
+- (instancetype)initWithStyle:(UITableViewStyle)style NS_DESIGNATED_INITIALIZER;
+
 @end
 
 NS_ASSUME_NONNULL_END

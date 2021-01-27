@@ -27,10 +27,8 @@
     return NO;
 }
 
-
-#pragma mark - custom ui
-- (void)customUI {
-    [super customUI];
+- (void)customInit {
+    [super customInit];
     [self.contentView addSubview:self.titleLabel];
     [self.contentView addSubview:self.descLabel];
     [self.contentView addSubview:self.commentTextField];
@@ -50,16 +48,10 @@
         make.bottom.mas_equalTo(-10);
         make.height.mas_equalTo(34);
     }];
-    
-    
+
+
     RACChannelTo(self, comment) = RACChannelTo(self.commentTextField, text);
     [self.commentTextField.rac_textSignal subscribe:RACChannelTo(self, comment)];
-}
-
-#pragma mark - custom layout
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    
 }
 
 

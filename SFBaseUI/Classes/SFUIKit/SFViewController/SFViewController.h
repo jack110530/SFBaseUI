@@ -6,11 +6,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SFCustomUIProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SFViewController : UIViewController<SFCustomUIProtocol>
+@interface SFViewController : UIViewController
 
 @end
 

@@ -14,6 +14,7 @@
 #import "SFCircleProgressViewDemo.h"
 #import "SFTableMvcDemo.h"
 #import "SFTableMvvmDemo.h"
+#import "SFDarkModeDemo.h"
 
 
 @interface SFHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -27,6 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor orangeColor];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.datas = @[
@@ -36,6 +38,7 @@
         @"SFCircleProgressViewDemo",
         @"SFTableMvcDemo",
         @"SFTableMvvmDemo",
+        @"SFDarkModeDemo",
     ];
     
 }
