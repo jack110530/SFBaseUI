@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SFCollectionViewController : SFViewController<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
+@property (nonatomic,strong,readonly) UICollectionView *collectionView;
+- (instancetype)initWithLayout:(UICollectionViewLayout *)layout;
 
 @end
 
