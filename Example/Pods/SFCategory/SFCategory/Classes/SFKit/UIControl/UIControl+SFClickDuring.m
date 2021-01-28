@@ -16,7 +16,7 @@
 @implementation UIControl (SFClickDuring)
 
 + (void)load {
-    [self sf_swizzlingInstanceMethod:@selector(sendAction:to:from:forEvent:) swizzledMethod:@selector(sf_sendAction:to:forEvent:) withClass:[self class]];
+    [self sf_swizzlingInstanceMethod:@selector(sendAction:to:forEvent:) swizzledMethod:@selector(sf_sendAction:to:forEvent:) withClass:[self class]];
 }
 
 

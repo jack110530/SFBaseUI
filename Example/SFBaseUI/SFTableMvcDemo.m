@@ -60,7 +60,7 @@
     }];
     
     // 转交代理（MVC中只是单纯的转交代理，为Controller调度层减压）
-    self.tableViewManager = [SFTableViewManager managerTableView:self.tableView];
+    self.tableViewManager = [SFTableViewManager managerWithTableView:self.tableView];
     
     // 视图层数据展示
     self.tableViewManager.cellForRowAtIndexPathBlock = ^(__kindof UITableView * _Nonnull tableView, __kindof UITableViewCell * _Nonnull cell, __kindof NSObject<SFCellModelProtocol> * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {
@@ -104,7 +104,7 @@
         [self.tableView.mj_header endRefreshing];
         [self.tableView.mj_footer endRefreshing];
         // 获取到数据 -> 逻辑处理，数据组装
-        NSObject<SFSectionModelProtocol> *sectionModel = weakSelf.tableViewManager.tableModel.sf_sectionModels[0];
+        NSObject<SFSectionModelProtocol> *sectionModel = weakSelf.tableViewManager.listModel.sf_sectionModels[0];
         if (self.page == 0) {
             [weakSelf.tableViewManager setCellModels:models inSectionModel:sectionModel];
         }else{

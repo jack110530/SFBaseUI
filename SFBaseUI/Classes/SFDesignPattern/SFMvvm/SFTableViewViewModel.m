@@ -21,17 +21,17 @@
         return;
     }
     // 转交代理
-    self.tableViewManager = [SFTableViewManager managerTableView:tableView];
+    self.tableViewManager = [SFTableViewManager managerWithTableView:tableView];
     
     // 数据绑定
-    [RACObserve(self.tableViewManager, tableModel) subscribeNext:^(id  _Nullable x) {
+    [RACObserve(self.tableViewManager, listModel) subscribeNext:^(id  _Nullable x) {
         [self.tableViewManager.tableView reloadData];
     }];
-    [RACObserve(self.tableViewManager.tableModel, sf_sectionModels) subscribeNext:^(id  _Nullable x) {
+    [RACObserve(self.tableViewManager.listModel, sf_sectionModels) subscribeNext:^(id  _Nullable x) {
         [self.tableViewManager.tableView reloadData];
     }];
-    RAC(self.tableViewManager.tableView, tableHeaderView) = RACObserve(self.tableViewManager.tableModel, sf_header);
-    RAC(self.tableViewManager.tableView, tableFooterView) = RACObserve(self.tableViewManager.tableModel, sf_footer);    
+    RAC(self.tableViewManager.tableView, tableHeaderView) = RACObserve(self.tableViewManager.listModel, sf_header);
+    RAC(self.tableViewManager.tableView, tableFooterView) = RACObserve(self.tableViewManager.listModel, sf_footer);    
     
     self.tableViewManager.mvvmBindingBlock = ^(__kindof UITableView * _Nonnull tableView, __kindof UITableViewCell * _Nonnull cell, __kindof NSObject<SFCellModelProtocol> * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {
         if ([cell conformsToProtocol:@protocol(SFMvvmViewProtocol)]) {

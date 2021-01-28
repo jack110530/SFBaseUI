@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SFTableViewManager : NSObject
 @property (nonatomic, strong, readonly) UITableView *tableView;
-@property (nonatomic, strong, readonly) NSObject<SFListModelProtocol> *tableModel;
+@property (nonatomic, strong, readonly) NSObject<SFListModelProtocol> *listModel;
 
 
 #pragma mark - 回调
@@ -37,7 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 #pragma mark - init
-+ (instancetype)managerTableView:(__kindof UITableView *)tableView;
++ (instancetype)managerWithTableView:(__kindof UITableView *)tableView;
 - (instancetype)initWithTableView:(__kindof UITableView *)tableView;
 
 #pragma mark - 数据源操作

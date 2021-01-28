@@ -44,7 +44,7 @@
         [weakSelf.tableViewManager.tableView.mj_header endRefreshing];
         [weakSelf.tableViewManager.tableView.mj_footer endRefreshing];
         // 获取到数据 -> 逻辑处理，数据组装
-        NSObject<SFSectionModelProtocol> *sectionModel = weakSelf.tableViewManager.tableModel.sf_sectionModels[0];
+        NSObject<SFSectionModelProtocol> *sectionModel = weakSelf.tableViewManager.listModel.sf_sectionModels[0];
         if (self.page == 0) {
             [weakSelf.tableViewManager setCellModels:models inSectionModel:sectionModel];
         }else{

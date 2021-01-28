@@ -14,6 +14,7 @@
 #import "SFDesignPattern.h"
 #import "SFCellModel.h"
 #import "SFCellModelProtocol.h"
+#import "SFCollectionViewCellModelProtocol.h"
 #import "SFListModel.h"
 #import "SFListModelProtocol.h"
 #import "SFSectionModel.h"
