@@ -1,20 +1,19 @@
 //
-//  NSObject+MethodSwizzling.m
-//  TestDemo
+//  NSObject+SFMethodSwizzling.m
+//  SFCategory
 //
-//  Created by 黄山锋 on 2020/10/14.
-//  Copyright © 2020 SFTeam. All rights reserved.
+//  Created by 黄山锋 on 2021/1/27.
 //
 
-#import "NSObject+MethodSwizzling.h"
+#import "NSObject+SFMethodSwizzling.h"
 #import <objc/runtime.h>
 
-@implementation NSObject (MethodSwizzling)
+@implementation NSObject (SFMethodSwizzling)
 
-+ (void)sf_swizzleClassMethod:(SEL)originalSel swizzledMethod:(SEL)swizzledMethod withClass:(Class)targetClass {
++ (void)sf_swizzlingClassMethod:(SEL)originalSel swizzledMethod:(SEL)swizzledMethod withClass:(Class)targetClass {
     swizzlingMethod(targetClass, YES, originalSel, swizzledMethod);
 }
-+ (void)sf_swizzleInstanceMethod:(SEL)originalSel swizzledMethod:(SEL)swizzledMethod withClass:(Class)targetClass {
++ (void)sf_swizzlingInstanceMethod:(SEL)originalSel swizzledMethod:(SEL)swizzledMethod withClass:(Class)targetClass {
     swizzlingMethod(targetClass, NO, originalSel, swizzledMethod);
 }
 

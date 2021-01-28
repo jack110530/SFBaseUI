@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <SFCategory/SFCategory.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -13,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 /// View类对象
-@property (nonatomic, strong) Class sf_viewCls;
+@property (nonatomic, strong) Class<SFReusedProtocol> sf_viewCls;
 
 @end
 

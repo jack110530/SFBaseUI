@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SFBaseUI'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'SFBaseUI 基础库 UI层'
 
 # This description is used to generate tags and improve search results.
@@ -107,60 +107,39 @@ TODO: Add long description of the pod here.
   end
   
   
-  # # SFDesignPattern
-  # s.subspec 'SFDesignPattern' do |ss|
+  # SFDesignPattern
+  s.subspec 'SFDesignPattern' do |ss|
 
-  #   ss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h'
-  #   ss.public_header_files = 'SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h'
-  #   ss.dependency 'SFBaseUI/SFUIKit'
+    ss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h'
+    ss.public_header_files = 'SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h'
+    ss.dependency 'SFBaseUI/SFUIKit'
 
-  #   # SFModel
-  #   ss.subspec 'SFModel' do |sss|
+    # SFModel
+    ss.subspec 'SFModel' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFModel/*.{h,m}'
+    end
 
-  #     sss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFModel/SFModel.h'
-  #     sss.public_header_files = 'SFBaseUI/Classes/SFDesignPattern/SFModel/SFModel.h'
-      
-  #     # SFTableModel
-  #     sss.subspec 'SFTableModel' do |ssss|
-  #         ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFModel/SFTableModel/*.{h,m}'
-  #     end
+    # SFProtocol
+    ss.subspec 'SFProtocol' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFProtocol/*.{h,m}'
+    end
 
-  #   end
+    # SFMvc
+    ss.subspec 'SFMvc' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvc/*.{h,m}'
+      sss.dependency 'SFBaseUI/SFDesignPattern/SFModel'
+      sss.dependency 'SFBaseUI/SFDesignPattern/SFProtocol'
+    end
 
-  #   # SFProtocol
-  #   ss.subspec 'SFProtocol' do |sss|
-  #     sss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFProtocol/*.{h,m}'
-  #   end
+    # SFMvvm
+    ss.subspec 'SFMvvm' do |sss|
+      sss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/*.{h,m}'
+      sss.dependency 'SFBaseUI/SFDesignPattern/SFModel'
+      sss.dependency 'SFBaseUI/SFDesignPattern/SFProtocol'
+      sss.dependency 'SFBaseUI/SFDesignPattern/SFMvc'
+    end
 
-  #   # SFMvc
-  #   ss.subspec 'SFMvc' do |sss|
-  #     sss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h'
-  #     sss.public_header_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvc/SFMvc.h'
-  #     sss.dependency 'SFBaseUI/SFDesignPattern/SFModel'
-  #     sss.dependency 'SFBaseUI/SFDesignPattern/SFProtocol'
-      
-  #     # SFTableMvc
-  #     sss.subspec 'SFTableMvc' do |ssss|
-  #       ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvc/SFTableMvc/*.{h,m}'
-  #     end
-      
-  #   end
-
-  #   # SFMvvm
-  #   ss.subspec 'SFMvvm' do |sss|
-  #     sss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h'
-  #     sss.public_header_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFMvvm.h'
-  #     sss.dependency 'SFBaseUI/SFDesignPattern/SFProtocol'
-      
-  #     # SFTableMvvm
-  #     sss.subspec 'SFTableMvvm' do |ssss|
-  #       ssss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFMvvm/SFTableMvvm/*.{h,m}'
-  #       ssss.dependency 'SFBaseUI/SFDesignPattern/SFMvc/SFTableMvc'
-  #     end
-      
-  #   end
-
-  # end
+  end
 
   
 
@@ -172,10 +151,11 @@ TODO: Add long description of the pod here.
   s.frameworks = 'UIKit', 'Foundation'
   
   
-  s.dependency 'Masonry'
+  
   s.dependency 'SFCategory'
   s.dependency 'SFMacro'
   s.dependency 'SFCrashInspector'
+  s.dependency 'Masonry'
   s.dependency 'ReactiveObjC'
   s.dependency 'Aspects'
   

@@ -1,15 +1,15 @@
 //
-//  SFTableViewCellModelProtocol.h
+//  SFCellModelProtocol.h
 //  SFBaseUI
 //
-//  Created by 黄山锋 on 2021/1/20.
+//  Created by 黄山锋 on 2021/1/27.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol SFTableViewCellModelProtocol <NSObject>
+@protocol SFCellModelProtocol <NSObject>
 
 @required
 @property (nonatomic, strong) NSNumber *sf_height;

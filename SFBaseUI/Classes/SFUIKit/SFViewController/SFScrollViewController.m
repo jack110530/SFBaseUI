@@ -6,7 +6,7 @@
 //
 
 #import "SFScrollViewController.h"
-#import <SFMacro/SFFunc.h>
+#import <SFMacro/SFMacro.h>
 #import <Masonry/Masonry.h>
 
 @interface SFScrollViewController ()

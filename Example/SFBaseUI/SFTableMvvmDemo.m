@@ -13,7 +13,7 @@
 #import <MJRefresh/MJRefresh.h>
 
 @interface SFTableMvvmDemo ()
-@property (nonatomic, strong) SFTableView<SFMvvmViewProtocol> *tableView;
+@property (nonatomic, strong) UITableView<SFMvvmViewProtocol> *tableView;
 @property (nonatomic, strong) SFNewsViewModel *newsViewModel;
 @end
 
@@ -37,9 +37,9 @@
 
 
 #pragma mark - getter
-- (SFTableView<SFMvvmViewProtocol> *)tableView {
+- (UITableView<SFMvvmViewProtocol> *)tableView {
     if (!_tableView) {
-        _tableView = [[SFTableView<SFMvvmViewProtocol> alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _tableView = [[UITableView<SFMvvmViewProtocol> alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
     }
     return _tableView;
 }

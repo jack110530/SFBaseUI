@@ -6,11 +6,13 @@
 //  Copyright © 2021 jack110530. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <SFBaseUI/SFBaseUI.h>
+#import <SFCategory/SFCategory.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SFNewsCell2 : SFTableViewCell<SFMvvmViewProtocol>
+@interface SFNewsCell2 : UITableViewCell<SFMvvmViewProtocol>
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *desc;

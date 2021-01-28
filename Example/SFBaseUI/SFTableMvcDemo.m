@@ -18,7 +18,7 @@
 #import "SFNewsCell2.h"
 
 @interface SFTableMvcDemo ()
-@property (nonatomic, strong) SFTableView *tableView;
+@property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) SFTableViewManager *tableViewManager;
 
 // 分页
@@ -63,7 +63,7 @@
     self.tableViewManager = [SFTableViewManager managerTableView:self.tableView];
     
     // 视图层数据展示
-    self.tableViewManager.cellForRowAtIndexPathBlock = ^(__kindof SFTableView * _Nonnull tableView, __kindof SFTableViewCell * _Nonnull cell, __kindof NSObject<SFTableViewCellModelProtocol> * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {
+    self.tableViewManager.cellForRowAtIndexPathBlock = ^(__kindof UITableView * _Nonnull tableView, __kindof UITableViewCell * _Nonnull cell, __kindof NSObject<SFCellModelProtocol> * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {
         if ([cell isKindOfClass:[SFNewsCell1 class]]) {
             SFNewsCell1 *newsCell1 = (SFNewsCell1 *)cell;
             SFNewsModel *newsModel = (SFNewsModel *)cellModel;
@@ -79,7 +79,7 @@
         }
     };
     // 点击cell
-    self.tableViewManager.didSelectRowAtIndexPathBlock = ^(__kindof SFTableView * _Nonnull tableView, __kindof SFTableViewCell * _Nonnull cell, __kindof NSObject<SFTableViewCellModelProtocol> * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {
+    self.tableViewManager.didSelectRowAtIndexPathBlock = ^(__kindof UITableView * _Nonnull tableView, __kindof UITableViewCell * _Nonnull cell, __kindof NSObject<SFCellModelProtocol> * _Nonnull cellModel, NSIndexPath * _Nonnull indexPath) {
         
     };
     
@@ -104,7 +104,7 @@
         [self.tableView.mj_header endRefreshing];
         [self.tableView.mj_footer endRefreshing];
         // 获取到数据 -> 逻辑处理，数据组装
-        NSObject<SFTableViewSectionModelProtocol> *sectionModel = weakSelf.tableViewManager.tableModel.sf_sectionModels[0];
+        NSObject<SFSectionModelProtocol> *sectionModel = weakSelf.tableViewManager.tableModel.sf_sectionModels[0];
         if (self.page == 0) {
             [weakSelf.tableViewManager setCellModels:models inSectionModel:sectionModel];
         }else{
@@ -117,9 +117,9 @@
 
 
 #pragma mark - getter
-- (SFTableView *)tableView {
+- (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[SFTableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
     }
     return _tableView;
 }

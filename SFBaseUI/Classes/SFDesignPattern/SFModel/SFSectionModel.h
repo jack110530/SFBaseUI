@@ -1,0 +1,17 @@
+//
+//  SFSectionModel.h
+//  SFBaseUI
+//
+//  Created by 黄山锋 on 2021/1/27.
+//
+
+#import <Foundation/Foundation.h>
+#import "SFSectionModelProtocol.h"
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface SFSectionModel : NSObject<SFSectionModelProtocol>
+
+@end
+
+NS_ASSUME_NONNULL_END

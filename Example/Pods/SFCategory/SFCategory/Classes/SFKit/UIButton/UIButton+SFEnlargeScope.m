@@ -6,26 +6,14 @@
 //
 
 #import "UIButton+SFEnlargeScope.h"
+#import "NSObject+SFMethodSwizzling.h"
 #import <objc/runtime.h>
 
 @implementation UIButton (SFEnlargeScope)
 
 + (void)load
 {
-    SEL originalSel = @selector(pointInside:withEvent:);
-    SEL newSel = @selector(sf_pointInside:withEvent:);
-    Method originalMethod = class_getInstanceMethod(self, originalSel);
-    Method newMethod = class_getInstanceMethod(self, newSel);
-    class_addMethod(self,
-                    originalSel,
-                    class_getMethodImplementation(self, originalSel),
-                    method_getTypeEncoding(originalMethod));
-    class_addMethod(self,
-                    newSel,
-                    class_getMethodImplementation(self, newSel),
-                    method_getTypeEncoding(newMethod));
-    method_exchangeImplementations(class_getInstanceMethod(self, originalSel),
-                                   class_getInstanceMethod(self, newSel));
+    [self sf_swizzlingInstanceMethod:@selector(pointInside:withEvent:) swizzledMethod:@selector(sf_pointInside:withEvent:) withClass:[self class]];
 }
 
 - (BOOL)sf_pointInside:(CGPoint)point withEvent:(UIEvent *)event {

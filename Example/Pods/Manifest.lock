@@ -12,8 +12,58 @@ PODS:
     - Aspects
     - Masonry
     - ReactiveObjC
+    - SFBaseUI/SFDesignPattern (= 0.1.4)
     - SFBaseUI/SFMakerKit (= 0.1.4)
     - SFBaseUI/SFUIKit (= 0.1.4)
+    - SFCategory
+    - SFCrashInspector
+    - SFMacro
+  - SFBaseUI/SFDesignPattern (0.1.4):
+    - Aspects
+    - Masonry
+    - ReactiveObjC
+    - SFBaseUI/SFDesignPattern/SFModel (= 0.1.4)
+    - SFBaseUI/SFDesignPattern/SFMvc (= 0.1.4)
+    - SFBaseUI/SFDesignPattern/SFMvvm (= 0.1.4)
+    - SFBaseUI/SFDesignPattern/SFProtocol (= 0.1.4)
+    - SFBaseUI/SFUIKit
+    - SFCategory
+    - SFCrashInspector
+    - SFMacro
+  - SFBaseUI/SFDesignPattern/SFModel (0.1.4):
+    - Aspects
+    - Masonry
+    - ReactiveObjC
+    - SFBaseUI/SFUIKit
+    - SFCategory
+    - SFCrashInspector
+    - SFMacro
+  - SFBaseUI/SFDesignPattern/SFMvc (0.1.4):
+    - Aspects
+    - Masonry
+    - ReactiveObjC
+    - SFBaseUI/SFDesignPattern/SFModel
+    - SFBaseUI/SFDesignPattern/SFProtocol
+    - SFBaseUI/SFUIKit
+    - SFCategory
+    - SFCrashInspector
+    - SFMacro
+  - SFBaseUI/SFDesignPattern/SFMvvm (0.1.4):
+    - Aspects
+    - Masonry
+    - ReactiveObjC
+    - SFBaseUI/SFDesignPattern/SFModel
+    - SFBaseUI/SFDesignPattern/SFMvc
+    - SFBaseUI/SFDesignPattern/SFProtocol
+    - SFBaseUI/SFUIKit
+    - SFCategory
+    - SFCrashInspector
+    - SFMacro
+  - SFBaseUI/SFDesignPattern/SFProtocol (0.1.4):
+    - Aspects
+    - Masonry
+    - ReactiveObjC
+    - SFBaseUI/SFUIKit
     - SFCategory
     - SFCrashInspector
     - SFMacro
@@ -117,48 +167,53 @@ PODS:
     - SFCategory
     - SFCrashInspector
     - SFMacro
-  - SFCategory (0.1.1):
-    - SFCategory/SFFoundation (= 0.1.1)
-    - SFCategory/SFKit (= 0.1.1)
+  - SFCategory (0.1.2):
+    - SFCategory/SFFoundation (= 0.1.2)
+    - SFCategory/SFKit (= 0.1.2)
     - YYCategories
-  - SFCategory/SFFoundation (0.1.1):
-    - SFCategory/SFFoundation/NSObject (= 0.1.1)
-    - SFCategory/SFFoundation/NSString (= 0.1.1)
+  - SFCategory/SFFoundation (0.1.2):
+    - SFCategory/SFFoundation/NSObject (= 0.1.2)
+    - SFCategory/SFFoundation/NSString (= 0.1.2)
     - YYCategories
-  - SFCategory/SFFoundation/NSObject (0.1.1):
+  - SFCategory/SFFoundation/NSObject (0.1.2):
     - YYCategories
-  - SFCategory/SFFoundation/NSString (0.1.1):
+  - SFCategory/SFFoundation/NSString (0.1.2):
     - YYCategories
-  - SFCategory/SFKit (0.1.1):
-    - SFCategory/SFKit/SFProtocol (= 0.1.1)
-    - SFCategory/SFKit/UIButton (= 0.1.1)
-    - SFCategory/SFKit/UICollectionView (= 0.1.1)
-    - SFCategory/SFKit/UIImage (= 0.1.1)
-    - SFCategory/SFKit/UITableView (= 0.1.1)
-    - SFCategory/SFKit/UIView (= 0.1.1)
-    - SFCategory/SFKit/UIViewController (= 0.1.1)
+  - SFCategory/SFKit (0.1.2):
+    - SFCategory/SFKit/SFProtocol (= 0.1.2)
+    - SFCategory/SFKit/UIButton (= 0.1.2)
+    - SFCategory/SFKit/UICollectionView (= 0.1.2)
+    - SFCategory/SFKit/UIControl (= 0.1.2)
+    - SFCategory/SFKit/UIImage (= 0.1.2)
+    - SFCategory/SFKit/UITableView (= 0.1.2)
+    - SFCategory/SFKit/UIView (= 0.1.2)
+    - SFCategory/SFKit/UIViewController (= 0.1.2)
     - YYCategories
-  - SFCategory/SFKit/SFProtocol (0.1.1):
+  - SFCategory/SFKit/SFProtocol (0.1.2):
     - YYCategories
-  - SFCategory/SFKit/UIButton (0.1.1):
+  - SFCategory/SFKit/UIButton (0.1.2):
+    - SFCategory/SFFoundation/NSObject
     - YYCategories
-  - SFCategory/SFKit/UICollectionView (0.1.1):
+  - SFCategory/SFKit/UICollectionView (0.1.2):
     - SFCategory/SFFoundation/NSObject
     - SFCategory/SFKit/SFProtocol
     - YYCategories
-  - SFCategory/SFKit/UIImage (0.1.1):
+  - SFCategory/SFKit/UIControl (0.1.2):
+    - SFCategory/SFFoundation/NSObject
     - YYCategories
-  - SFCategory/SFKit/UITableView (0.1.1):
+  - SFCategory/SFKit/UIImage (0.1.2):
+    - YYCategories
+  - SFCategory/SFKit/UITableView (0.1.2):
     - SFCategory/SFFoundation/NSObject
     - SFCategory/SFKit/SFProtocol
     - YYCategories
-  - SFCategory/SFKit/UIView (0.1.1):
+  - SFCategory/SFKit/UIView (0.1.2):
     - YYCategories
-  - SFCategory/SFKit/UIViewController (0.1.1):
+  - SFCategory/SFKit/UIViewController (0.1.2):
     - YYCategories
-  - SFCrashInspector (0.1.0):
-    - SFCrashInspector/SFCrashInspector (= 0.1.0)
-  - SFCrashInspector/SFCrashInspector (0.1.0)
+  - SFCrashInspector (0.1.1):
+    - SFCrashInspector/SFCrashInspector (= 0.1.1)
+  - SFCrashInspector/SFCrashInspector (0.1.1)
   - SFMacro (0.1.1)
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
@@ -169,7 +224,6 @@ DEPENDENCIES:
   - FBSnapshotTestCase
   - MJRefresh
   - SFBaseUI (from `../`)
-  - SFCategory (from `https://github.com/jack110530/SFCategory.git`, branch `master`)
   - SFCrashInspector (from `https://github.com/jack110530/SFCrashInspector.git`)
   - SFMacro (from `https://github.com/jack110530/SFMacro.git`, branch `master`)
   - YYModel
@@ -181,15 +235,13 @@ SPEC REPOS:
     - Masonry
     - MJRefresh
     - ReactiveObjC
+    - SFCategory
     - YYCategories
     - YYModel
 
 EXTERNAL SOURCES:
   SFBaseUI:
     :path: "../"
-  SFCategory:
-    :branch: master
-    :git: https://github.com/jack110530/SFCategory.git
   SFCrashInspector:
     :git: https://github.com/jack110530/SFCrashInspector.git
   SFMacro:
@@ -197,11 +249,8 @@ EXTERNAL SOURCES:
     :git: https://github.com/jack110530/SFMacro.git
 
 CHECKOUT OPTIONS:
-  SFCategory:
-    :commit: dcbde362b0f8f243f8a434e12e8b98da01ed2da8
-    :git: https://github.com/jack110530/SFCategory.git
   SFCrashInspector:
-    :commit: 8e1f9750fe70cbe00c8953bd89dce41b2722a9c4
+    :commit: b4babbee4af8d937cdcf9a91960affd955bb7f8b
     :git: https://github.com/jack110530/SFCrashInspector.git
   SFMacro:
     :commit: 218f0edd943751fbce262f274e2ae373d36e5e90
@@ -213,13 +262,13 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  SFBaseUI: 82a63c0f0b1a6371e96eceb28ee21482ed7ef59b
-  SFCategory: 03abc9530e19ed3fd78126fc70732be37473d816
-  SFCrashInspector: 67696c61a7f96574a58dbcd95a6727fcbd826be3
+  SFBaseUI: 5e299f548ae8f043c1638e85942c101f8522897d
+  SFCategory: 25c26e827d50e01c21bd659a11b5fd7b94dffc77
+  SFCrashInspector: ed8af2769bdda9e1c5bf12afab6d18a182adafce
   SFMacro: feaf9eaac7cfa4797a99a3d8119895ff843335fe
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: bea467aff1af52d5bb93e8d840ef6065c99e6098
+PODFILE CHECKSUM: be146cdad6f2657b29e74403656bc919bfe0f3fd
 
 COCOAPODS: 1.9.3

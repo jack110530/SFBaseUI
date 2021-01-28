@@ -9,6 +9,20 @@
 /* Begin PBXBuildFile section */
 		2DE2EDC2817FBA8246016C56 /* Pods_SFBaseUI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48C7C2EFC082ED5ACA17673 /* Pods_SFBaseUI_Example.framework */; };
 		5121337625C1069C007FB5DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		5121339725C11562007FB5DE /* SFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5114071825AD386800886F20 /* SFHomeViewController.m */; };
+		5121339A25C1157E007FB5DE /* SFDarkModeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 512132AB25C0F910007FB5DE /* SFDarkModeDemo.m */; };
+		5121339B25C1157E007FB5DE /* SFTableMvvmDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FCD25B6E377009CCDF9 /* SFTableMvvmDemo.m */; };
+		5121339C25C1157E007FB5DE /* SFNewsCell1ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FC025B6E376009CCDF9 /* SFNewsCell1ViewModel.m */; };
+		5121339D25C1157E007FB5DE /* SFNewsCell2ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FB925B6E375009CCDF9 /* SFNewsCell2ViewModel.m */; };
+		5121339E25C1157E007FB5DE /* SFNewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FCC25B6E377009CCDF9 /* SFNewsViewModel.m */; };
+		5121339F25C1157E007FB5DE /* SFTableMvcDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FC125B6E376009CCDF9 /* SFTableMvcDemo.m */; };
+		512133A025C1157E007FB5DE /* SFNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FCA25B6E377009CCDF9 /* SFNewsModel.m */; };
+		512133A125C1157E007FB5DE /* SFNewsCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FBC25B6E375009CCDF9 /* SFNewsCell1.m */; };
+		512133A225C1157E007FB5DE /* SFNewsCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FC225B6E376009CCDF9 /* SFNewsCell2.m */; };
+		512133A325C1157E007FB5DE /* SFCircleProgressViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FB525B6E375009CCDF9 /* SFCircleProgressViewDemo.m */; };
+		512133A425C1157E007FB5DE /* SFCountdownButtonDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FC525B6E376009CCDF9 /* SFCountdownButtonDemo.m */; };
+		512133A525C1157E007FB5DE /* SFCountdownLabelDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FB725B6E375009CCDF9 /* SFCountdownLabelDemo.m */; };
+		512133A625C1157E007FB5DE /* SFCountdownViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51317FC725B6E376009CCDF9 /* SFCountdownViewDemo.m */; };
 		51317FD025B6E377009CCDF9 /* SFCountdownButtonDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51317FB825B6E375009CCDF9 /* SFCountdownButtonDemo.xib */; };
 		51317FD625B6E377009CCDF9 /* SFCircleProgressViewDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51317FC425B6E376009CCDF9 /* SFCircleProgressViewDemo.xib */; };
 		51317FDA25B6E377009CCDF9 /* SFNewsCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51317FCB25B6E377009CCDF9 /* SFNewsCell2.xib */; };
@@ -555,6 +569,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5121339A25C1157E007FB5DE /* SFDarkModeDemo.m in Sources */,
+				5121339B25C1157E007FB5DE /* SFTableMvvmDemo.m in Sources */,
+				5121339C25C1157E007FB5DE /* SFNewsCell1ViewModel.m in Sources */,
+				5121339D25C1157E007FB5DE /* SFNewsCell2ViewModel.m in Sources */,
+				5121339E25C1157E007FB5DE /* SFNewsViewModel.m in Sources */,
+				5121339F25C1157E007FB5DE /* SFTableMvcDemo.m in Sources */,
+				512133A025C1157E007FB5DE /* SFNewsModel.m in Sources */,
+				512133A125C1157E007FB5DE /* SFNewsCell1.m in Sources */,
+				512133A225C1157E007FB5DE /* SFNewsCell2.m in Sources */,
+				512133A325C1157E007FB5DE /* SFCircleProgressViewDemo.m in Sources */,
+				512133A425C1157E007FB5DE /* SFCountdownButtonDemo.m in Sources */,
+				512133A525C1157E007FB5DE /* SFCountdownLabelDemo.m in Sources */,
+				512133A625C1157E007FB5DE /* SFCountdownViewDemo.m in Sources */,
+				5121339725C11562007FB5DE /* SFHomeViewController.m in Sources */,
 				5121337625C1069C007FB5DE /* main.m in Sources */,
 				6003F59E195388D20070C39A /* SFAppDelegate.m in Sources */,
 			);

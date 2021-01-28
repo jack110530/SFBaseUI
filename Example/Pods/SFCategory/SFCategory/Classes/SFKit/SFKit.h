@@ -11,14 +11,19 @@
 
 #pragma mark - SFProtocol
 #import "SFReusedProtocol.h"
-#import "SFTableViewReusedProtocol.h"
-#import "SFCollectionViewReusedProtocol.h"
 
 #pragma mark - UITableView
 #import "UITableView+SFReuse.h"
+#import "UITableViewHeaderFooterView+SFReuse.h"
+#import "UITableViewCell+SFReuse.h"
 
 #pragma mark - UICollectionView
 #import "UICollectionView+SFReuse.h"
+#import "UICollectionReusableView+SFReuse.h"
+#import "UICollectionViewCell+SFReuse.h"
+
+#pragma mark - UIControl
+#import "UIControl+SFClickDuring.h"
 
 #pragma mark - UIButton
 #import "UIButton+SFExtension.h"

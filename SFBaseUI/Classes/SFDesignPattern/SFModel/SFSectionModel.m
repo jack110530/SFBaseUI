@@ -1,13 +1,13 @@
 //
-//  SFTableViewSectionModel.m
+//  SFSectionModel.m
 //  SFBaseUI
 //
-//  Created by 黄山锋 on 2021/1/14.
+//  Created by 黄山锋 on 2021/1/27.
 //
 
-#import "SFTableViewSectionModel.h"
+#import "SFSectionModel.h"
 
-@implementation SFTableViewSectionModel
+@implementation SFSectionModel
 
 @synthesize sf_cellModels;
 @synthesize sf_header;

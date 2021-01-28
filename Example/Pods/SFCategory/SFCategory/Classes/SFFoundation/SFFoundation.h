@@ -10,6 +10,7 @@
 
 #pragma mark - NSObject
 #import "NSObject+SFExtension.h"
+#import "NSObject+SFMethodSwizzling.h"
 
 #pragma mark - NSString
 #import "NSString+SFRegex.h"

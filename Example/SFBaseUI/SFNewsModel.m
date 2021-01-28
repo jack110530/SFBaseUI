@@ -76,10 +76,10 @@
             NSString *img = newDic[@"img"]?:@"";
             if ([img isEqualToString:@""]) {
                 [newDic setObject:NSClassFromString(@"SFNewsCell1") forKey:@"sf_viewCls"];
-                [newDic setObject:NSClassFromString(@"SFNewsCell1ViewModel") forKey:@"sf_viewModelCls"];
+                [newDic setObject:NSClassFromString(@"SFNewsCell1ViewModel") forKey:@"sf_viewModelCls"];// mvvm时用到
             }else{
                 [newDic setObject:NSClassFromString(@"SFNewsCell2") forKey:@"sf_viewCls"];
-                [newDic setObject:NSClassFromString(@"SFNewsCell2ViewModel") forKey:@"sf_viewModelCls"];
+                [newDic setObject:NSClassFromString(@"SFNewsCell2ViewModel") forKey:@"sf_viewModelCls"];// mvvm时用到
             }
             [newDic setObject:[NSNumber numberWithFloat:UITableViewAutomaticDimension] forKey:@"sf_height"];
             [newDic setObject:[NSNumber numberWithFloat:50] forKey:@"sf_estimatedHeight"];
