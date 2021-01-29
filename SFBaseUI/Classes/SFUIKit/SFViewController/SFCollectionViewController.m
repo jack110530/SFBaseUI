@@ -24,6 +24,12 @@
 }
 
 - (void)loadView {
+    if (!self.collectionView) {
+        UICollectionViewLayout *layout = [[UICollectionViewLayout alloc]init];
+        self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
+        self.collectionView.delegate = self;
+        self.collectionView.dataSource = self;
+    }
     self.view = self.collectionView;
 }
 

@@ -27,6 +27,11 @@
 }
 
 - (void)loadView {
+    if (!self.tableView) {
+        self.tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+        self.tableView.delegate = self;
+        self.tableView.dataSource = self;
+    }
     self.view = self.tableView;
 }
 

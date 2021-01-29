@@ -48,6 +48,7 @@
 #import "SFScrollViewController.h"
 #import "SFTableViewController.h"
 #import "SFViewController.h"
+#import "SFWebViewController.h"
 
 FOUNDATION_EXPORT double SFBaseUIVersionNumber;
 FOUNDATION_EXPORT const unsigned char SFBaseUIVersionString[];

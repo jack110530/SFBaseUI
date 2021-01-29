@@ -15,6 +15,7 @@
 #import "SFTableMvcDemo.h"
 #import "SFTableMvvmDemo.h"
 #import "SFDarkModeDemo.h"
+#import "SFWebViewDemo.h"
 
 
 @interface SFHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -39,6 +40,7 @@
         @"SFTableMvcDemo",
         @"SFTableMvvmDemo",
         @"SFDarkModeDemo",
+        @"SFWebViewDemo",
     ];
     
 }

@@ -15,6 +15,7 @@
 #import "SFScrollViewController.h"
 #import "SFTableViewController.h"
 #import "SFCollectionViewController.h"
+#import "SFWebViewController.h"
 
 
 #pragma mark - SFView
