@@ -9,17 +9,23 @@
 
 @interface SFWebViewController ()
 @property (nonatomic, strong) WKWebView *webView;
+@property (nonatomic, strong) CALayer *progressLayer;
 @end
 
 @implementation SFWebViewController
 
 - (instancetype)initWithConfiguration:(WKWebViewConfiguration *)configuration {
     if (self = [super init]) {
-        self.webView = [[WKWebView alloc]initWithFrame:CGRectZero configuration:configuration];
-        self.webView.navigationDelegate = self;
-        self.webView.UIDelegate = self;
+        [self customWebViewWithConfiguration:configuration];
     }
     return self;
+}
+- (void)customWebViewWithConfiguration:(WKWebViewConfiguration *)configuration {
+    self.webView = [[WKWebView alloc]initWithFrame:CGRectZero configuration:configuration];
+    self.webView.navigationDelegate = self;
+    self.webView.UIDelegate = self;
+    [self.webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
+    [self.webView addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:NULL];
 }
 
 - (void)viewDidLoad {
@@ -32,6 +38,7 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
 #pragma clang diagnostic pop
     }
+    [self customProgress];
 }
 
 - (void)loadView {
@@ -45,16 +52,51 @@
         //不通过用户交互，是否可以打开窗口
         preferences.javaScriptCanOpenWindowsAutomatically = YES;
         config.preferences = preferences;
-        
-        self.webView = [[WKWebView alloc]initWithFrame:CGRectZero configuration:config];
-        self.webView.navigationDelegate = self;
-        self.webView.UIDelegate = self;
+        [self customWebViewWithConfiguration:config];
     }
     self.view = self.webView;
 }
 
+#pragma mark - func
+-(void)customProgress{
+    UIView *progress = [[UIView alloc]init];
+    progress.frame = CGRectMake(0, 0, self.view.bounds.size.width, 3);
+    progress.backgroundColor = [UIColor  clearColor];
+    [self.view addSubview:progress];
+     
+    CALayer *layer = [CALayer layer];
+    layer.frame = CGRectMake(0, 0, 0, 3);
+    [progress.layer addSublayer:layer];
+    self.progressLayer = layer;
+    // 默认绿色
+    self.progressTintColor = [UIColor greenColor];
+}
+
+#pragma mark - setter
+- (void)setProgressTintColor:(UIColor *)progressTintColor {
+    _progressTintColor = progressTintColor;
+    self.progressLayer.backgroundColor = progressTintColor.CGColor;
+}
 
 
+#pragma mark - KVO
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    if ([keyPath isEqualToString:@"estimatedProgress"]) {
+        self.progressLayer.opacity = 1;
+        if ([change[@"new"] floatValue] < [change[@"old"] floatValue]) {
+            return;
+        }
+        self.progressLayer.frame = CGRectMake(0, 0, self.view.bounds.size.width*[change[@"new"] floatValue], 3);
+        if ([change[@"new"]floatValue] == 1.0) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                self.progressLayer.opacity = 0;
+                self.progressLayer.frame = CGRectMake(0, 0, 0, 3);
+            });
+        }
+    }else if ([keyPath isEqualToString:@"title"]){
+        self.title = change[@"new"];
+    }
+}
 
 #pragma mark - delegate
 // MARK: WKNavigationDelegate

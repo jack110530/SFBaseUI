@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SFWebViewController : SFViewController<WKUIDelegate,WKNavigationDelegate>
 
 @property (nonatomic, strong, readonly) WKWebView *webView;
+/// 进度条颜色，默认greenColor
+@property (nonatomic, strong) UIColor *progressTintColor;
 
 - (instancetype)initWithConfiguration:(WKWebViewConfiguration *)configuration;
 
