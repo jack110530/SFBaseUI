@@ -27,10 +27,7 @@
 }
 
 - (void)loadView {
-    [self.view addSubview:self.tableView];
-    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
-    }];
+    self.view = self.tableView;
 }
 
 

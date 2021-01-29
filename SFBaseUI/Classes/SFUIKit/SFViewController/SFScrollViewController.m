@@ -17,6 +17,9 @@
 @implementation SFScrollViewController
 
 #pragma mark - life cycle
+- (void)loadView {
+    self.view = self.scrollView;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (@available(iOS 11.0, *)) {
@@ -28,11 +31,6 @@
 #pragma clang diagnostic pop
     }
     [self.scrollView addSubview:self.contentView];
-    [self.view addSubview:self.scrollView];
-    
-    [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
-    }];
     [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.scrollView);
         make.width.equalTo(self.scrollView);

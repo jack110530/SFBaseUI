@@ -6,8 +6,6 @@
 //
 
 #import "SFCollectionViewController.h"
-#import <SFMacro/SFFunc.h>
-#import <Masonry/Masonry.h>
 
 @interface SFCollectionViewController ()
 @property (nonatomic,strong) UICollectionView *collectionView;
@@ -26,10 +24,7 @@
 }
 
 - (void)loadView {
-    [self.view addSubview:self.collectionView];
-    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
-    }];
+    self.view = self.collectionView;
 }
 
 

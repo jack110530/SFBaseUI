@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SFTableViewController : SFViewController<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic,strong,readonly) UITableView *tableView;
-- (instancetype)initWithStyle:(UITableViewStyle)style NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithStyle:(UITableViewStyle)style;
 
 @end
 
