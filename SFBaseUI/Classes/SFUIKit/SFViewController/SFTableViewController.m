@@ -16,23 +16,23 @@
 @implementation SFTableViewController
 
 
-
 - (instancetype)initWithStyle:(UITableViewStyle)style {
     if (self = [super init]) {
-        self.tableView = [[UITableView alloc]initWithFrame:CGRectZero style:style];
-        self.tableView.delegate = self;
-        self.tableView.dataSource = self;
+        [self customTableViewWithStyle:style];
     }
     return self;
 }
-
-- (void)loadView {
+- (void)customTableViewWithStyle:(UITableViewStyle)style {
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectZero style:style];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+}
+- (void)viewDidLoad {
+    [super viewDidLoad];
     if (!self.tableView) {
-        self.tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
-        self.tableView.delegate = self;
-        self.tableView.dataSource = self;
+        [self customTableViewWithStyle:UITableViewStylePlain];
     }
-    self.view = self.tableView;
+    [self.view addSubview:self.tableView];
 }
 
 

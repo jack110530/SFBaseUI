@@ -30,18 +30,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    if (@available(iOS 11.0, *)) {
-        self.webView.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    } else {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-        self.automaticallyAdjustsScrollViewInsets = NO;
-#pragma clang diagnostic pop
-    }
-    [self customProgress];
-}
-
-- (void)loadView {
     if (!self.webView) {
         WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
         config.selectionGranularity = WKSelectionGranularityDynamic;
@@ -54,8 +42,18 @@
         config.preferences = preferences;
         [self customWebViewWithConfiguration:config];
     }
-    self.view = self.webView;
+    if (@available(iOS 11.0, *)) {
+        self.webView.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        self.automaticallyAdjustsScrollViewInsets = NO;
+#pragma clang diagnostic pop
+    }
+    [self.view addSubview:self.webView];
+    [self customProgress];
 }
+
 
 #pragma mark - func
 -(void)customProgress{

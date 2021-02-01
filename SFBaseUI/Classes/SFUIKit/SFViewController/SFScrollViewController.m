@@ -17,9 +17,6 @@
 @implementation SFScrollViewController
 
 #pragma mark - life cycle
-- (void)loadView {
-    self.view = self.scrollView;
-}
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (@available(iOS 11.0, *)) {
@@ -30,6 +27,7 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
 #pragma clang diagnostic pop
     }
+    [self.view addSubview:self.scrollView];
     [self.scrollView addSubview:self.contentView];
     [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.scrollView);
@@ -37,18 +35,6 @@
         make.height.greaterThanOrEqualTo(self.scrollView);
     }];
 }
-
-#pragma mark - func
-
-
-
-#pragma mark - delegate
-
-
-
-#pragma mark - setter
-
-
 
 #pragma mark - getter
 SFLazyLoad(UIScrollView, scrollView, {

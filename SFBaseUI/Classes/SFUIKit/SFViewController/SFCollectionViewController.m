@@ -16,21 +16,22 @@
 
 - (instancetype)initWithLayout:(UICollectionViewLayout *)layout {
     if (self = [super init]) {
-        self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
-        self.collectionView.delegate = self;
-        self.collectionView.dataSource = self;
+        [self customCollectionViewWithLayout:layout];
     }
     return self;
 }
-
-- (void)loadView {
+- (void)customCollectionViewWithLayout:(UICollectionViewLayout *)layout {
+    self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
+    self.collectionView.delegate = self;
+    self.collectionView.dataSource = self;
+}
+- (void)viewDidLoad {
+    [super viewDidLoad];
     if (!self.collectionView) {
         UICollectionViewLayout *layout = [[UICollectionViewLayout alloc]init];
-        self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
-        self.collectionView.delegate = self;
-        self.collectionView.dataSource = self;
+        [self customCollectionViewWithLayout:layout];
     }
-    self.view = self.collectionView;
+    [self.view addSubview:self.collectionView];
 }
 
 
