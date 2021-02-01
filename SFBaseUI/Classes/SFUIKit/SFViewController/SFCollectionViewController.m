@@ -25,11 +25,15 @@
     self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
+    [self.view addSubview:self.collectionView];
+    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (!self.collectionView) {
-        UICollectionViewLayout *layout = [[UICollectionViewLayout alloc]init];
+        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
         [self customCollectionViewWithLayout:layout];
     }
     if (@available(iOS 11.0, *)) {
