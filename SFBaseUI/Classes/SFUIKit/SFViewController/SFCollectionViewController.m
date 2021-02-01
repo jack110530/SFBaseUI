@@ -6,6 +6,7 @@
 //
 
 #import "SFCollectionViewController.h"
+#import <Masonry/Masonry.h>
 
 @interface SFCollectionViewController ()
 @property (nonatomic,strong) UICollectionView *collectionView;
