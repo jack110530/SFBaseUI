@@ -32,6 +32,14 @@
     if (!self.tableView) {
         [self customTableViewWithStyle:UITableViewStylePlain];
     }
+    if (@available(iOS 11.0, *)) {
+        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        self.automaticallyAdjustsScrollViewInsets = NO;
+#pragma clang diagnostic pop
+    }
     [self.view addSubview:self.tableView];
 }
 

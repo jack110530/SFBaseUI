@@ -31,6 +31,14 @@
         UICollectionViewLayout *layout = [[UICollectionViewLayout alloc]init];
         [self customCollectionViewWithLayout:layout];
     }
+    if (@available(iOS 11.0, *)) {
+        self.collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        self.automaticallyAdjustsScrollViewInsets = NO;
+#pragma clang diagnostic pop
+    }
     [self.view addSubview:self.collectionView];
 }
 
