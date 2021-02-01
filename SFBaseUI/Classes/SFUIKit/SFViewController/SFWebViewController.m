@@ -51,6 +51,9 @@
 #pragma clang diagnostic pop
     }
     [self.view addSubview:self.webView];
+    [self.webView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
     [self customProgress];
 }
 
