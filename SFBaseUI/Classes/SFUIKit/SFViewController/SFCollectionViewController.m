@@ -23,6 +23,7 @@
 }
 - (void)customCollectionViewWithLayout:(UICollectionViewLayout *)layout {
     self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
+    self.collectionView.backgroundColor = [UIColor whiteColor];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     [self.view addSubview:self.collectionView];

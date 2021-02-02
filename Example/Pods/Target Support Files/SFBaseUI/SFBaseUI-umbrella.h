@@ -42,6 +42,7 @@
 #import "SFCountdownLabel.h"
 #import "SFCountdownView.h"
 #import "SFCircleProgressView.h"
+#import "SFAlertView.h"
 #import "UIView+SFCustomInit.h"
 #import "SFCollectionViewController.h"
 #import "SFNavigationController.h"

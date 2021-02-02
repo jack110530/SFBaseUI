@@ -20,6 +20,7 @@
 
 #pragma mark - SFView
 #import "UIView+SFCustomInit.h"
+#import "SFAlertView.h"
 
 
 #pragma mark - SFButton

@@ -24,6 +24,7 @@
 }
 - (void)customTableViewWithStyle:(UITableViewStyle)style {
     self.tableView = [[UITableView alloc]initWithFrame:CGRectZero style:style];
+    self.tableView.backgroundColor = [UIColor whiteColor];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
 }

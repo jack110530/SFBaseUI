@@ -27,6 +27,7 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
 #pragma clang diagnostic pop
     }
+    self.scrollView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.scrollView];
     [self.scrollView addSubview:self.contentView];
     [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
