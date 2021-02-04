@@ -112,7 +112,6 @@ TODO: Add long description of the pod here.
 
     ss.source_files = 'SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h'
     ss.public_header_files = 'SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h'
-    ss.dependency 'SFBaseUI/SFUIKit'
 
     # SFModel
     ss.subspec 'SFModel' do |sss|

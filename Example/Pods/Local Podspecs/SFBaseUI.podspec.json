@@ -131,11 +131,6 @@
       "name": "SFDesignPattern",
       "source_files": "SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h",
       "public_header_files": "SFBaseUI/Classes/SFDesignPattern/SFDesignPattern.h",
-      "dependencies": {
-        "SFBaseUI/SFUIKit": [
-
-        ]
-      },
       "subspecs": [
         {
           "name": "SFModel",

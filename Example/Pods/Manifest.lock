@@ -26,7 +26,6 @@ PODS:
     - SFBaseUI/SFDesignPattern/SFMvc (= 0.1.5)
     - SFBaseUI/SFDesignPattern/SFMvvm (= 0.1.5)
     - SFBaseUI/SFDesignPattern/SFProtocol (= 0.1.5)
-    - SFBaseUI/SFUIKit
     - SFCategory
     - SFCrashInspector
     - SFMacro
@@ -34,7 +33,6 @@ PODS:
     - Aspects
     - Masonry
     - ReactiveObjC
-    - SFBaseUI/SFUIKit
     - SFCategory
     - SFCrashInspector
     - SFMacro
@@ -44,7 +42,6 @@ PODS:
     - ReactiveObjC
     - SFBaseUI/SFDesignPattern/SFModel
     - SFBaseUI/SFDesignPattern/SFProtocol
-    - SFBaseUI/SFUIKit
     - SFCategory
     - SFCrashInspector
     - SFMacro
@@ -55,7 +52,6 @@ PODS:
     - SFBaseUI/SFDesignPattern/SFModel
     - SFBaseUI/SFDesignPattern/SFMvc
     - SFBaseUI/SFDesignPattern/SFProtocol
-    - SFBaseUI/SFUIKit
     - SFCategory
     - SFCrashInspector
     - SFMacro
@@ -63,7 +59,6 @@ PODS:
     - Aspects
     - Masonry
     - ReactiveObjC
-    - SFBaseUI/SFUIKit
     - SFCategory
     - SFCrashInspector
     - SFMacro
@@ -268,7 +263,7 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  SFBaseUI: a62e8353b3680ca0c79fa025a7ffc2b28f03ddea
+  SFBaseUI: 6c8d7bbffe12d499137ab5246f2eef0336f163e0
   SFCategory: 25c26e827d50e01c21bd659a11b5fd7b94dffc77
   SFCrashInspector: ed8af2769bdda9e1c5bf12afab6d18a182adafce
   SFMacro: feaf9eaac7cfa4797a99a3d8119895ff843335fe

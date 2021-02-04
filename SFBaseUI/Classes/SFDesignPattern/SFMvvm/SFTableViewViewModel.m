@@ -17,6 +17,9 @@
 @implementation SFTableViewViewModel
 
 - (void)sf_bindingWithView:(UITableView *)tableView {
+    [self sf_bindingWithView:tableView viewController:nil];
+}
+- (void)sf_bindingWithView:(UITableView *)tableView viewController:(nullable UIViewController *)vc {
     if (![tableView isKindOfClass:[UITableView class]]) {
         return;
     }
